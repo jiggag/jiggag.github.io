@@ -1,12 +1,12 @@
 ---
 layout: page
 title: About me
-subtitle: 직각어깨를 꿈꾸다
+subtitle: for jiggag
 ---
 
 
-- **직각어깨**
-- 개발자
+- **jiggag**
+- dev
 
 
 ### JIGGAG

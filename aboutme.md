@@ -1,15 +1,16 @@
 ---
 layout: page
 title: About me
-subtitle: for jiggag
+subtitle: 직각어깨를 꿈꾸는
 ---
 
 
-- **jiggag**
-- dev
+- **직각어깨**
+- 개발자
 
 
 ### JIGGAG
 
 [jiggag - github](https://github.com/jiggag)
+
 [jiggag - blog](https://jiggag.github.io)

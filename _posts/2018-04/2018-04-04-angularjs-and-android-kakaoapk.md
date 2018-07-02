@@ -25,21 +25,32 @@ angularjs로 만들어진 하이브리드앱에서 회원 가입 및 로그인�
 
 ```
 
-# cordova 설치
-$ npm install -g cordova
+## cordova 설치
+- npm install -g cordova
 
-# cordova 프로젝트 생성 : 생성하고자 하는 workspace에서
+## 폰갭 혹은 코르도바 프로젝트 생성
+# cordova create [project_directory] [com.name.project_name] [Project_name]
+
+# cordova 프로젝트 생성 시 : 생성하고자 하는 workspace에서
 # cordova create 경로 패키지 프로젝트명
-$ cd \workspace
-$ cordova create projectfolder com.app.kakao kakaotest
+- cd \workspace
+- cordova create projectfolder com.app.kakao kakaotest
+
+# phonegap 프로젝트 생성 시
+- phonegap create projectfolder com.app.kakao kakaotest
+
 
 # cordova 플랫폼 추가 : 해당 프로젝트 경로로 이동 후
-$ cd projectfolder
-$ cordova platform add android
-$ cordova platform add ios
+- cd projectfolder
+- cordova platform add android
+- cordova platform add ios
 
 # cordova 플랫폼 제거
-$ cordova platform remove ios
+- cordova platform remove ios
+
+# cordova 플러그인 추가 .. 
+- cordova plugin add org.apache.cordova.device
+- cordova plugin add org.apache.cordova.console
 
 ```
 
@@ -52,7 +63,5 @@ $ cordova platform remove ios
 
 하이브리드앱에서 네이티브앱의 기능을 사용하려면 cordova플러그인을 이용해 접근해야한다.
 우선 프로젝트에 android프로젝트 폴더에서 가져온 cordova-plugin을 설치한다.
+cordova.js를 선언하면 하이브리드앱 준비 끝
 
-
-
-#### 추가 예정

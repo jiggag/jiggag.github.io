@@ -1,32 +1,32 @@
 ---
 layout: post
 published: true
-title: ÄõÃ÷ ½ºÄÉÁì·¯ ¿¡·¯¸¦ ÅëÇØ ¾Ë°Ô µÈ Á¡
-subtitle: ³ª¸¸ ¸ô¶úÁö
+title: ì¿¼ì¸  ìŠ¤ì¼€ì¥´ëŸ¬ ì—ëŸ¬ë¥¼ í†µí•´ ì•Œê²Œ ëœ ì 
+subtitle: ë‚˜ë§Œ ëª°ëì§€
 tags: [spring,quartz,scheduler,error]
 ---
 
-½ºÇÁ¸µ ÇÁ·ÎÁ§Æ® ÁøÇà Áß ÄõÃ÷½ºÄÉÁì·¯¿¡ »õ·Î¿î ½ºÄÉÁÙ µî·ÏÇÏ´Ù ¿¡·¯°¡ ¹ß»ıÇß°í ÀÌ¿¡ ¾Ë°ÔµÈ Á¡À» Àû¾îµÎ±â
+ìŠ¤í”„ë§ í”„ë¡œì íŠ¸ ì§„í–‰ ì¤‘ ì¿¼ì¸ ìŠ¤ì¼€ì¥´ëŸ¬ì— ìƒˆë¡œìš´ ìŠ¤ì¼€ì¤„ ë“±ë¡í•˜ë‹¤ ì—ëŸ¬ê°€ ë°œìƒí–ˆê³  ì´ì— ì•Œê²Œëœ ì ì„ ì ì–´ë‘ê¸°
 
 ```
 
 
-# ¿À·ù 1 :
+# ì˜¤ë¥˜ 1 :
     
 	java.lang.IllegalStateException
 		Caused by: org.springframework.beans.factory.BeanCreationException
 			Caused by: org.springframework.beans.BeanInstantiationException
 				Caused by: org.quartz.ObjectAlreadyExistsException
 
-	- ½ºÄÉÁÙÀÇ ÀÌ¸§ÀÌ Áßº¹‰çÀ»¶§ ¹ß»ı
+	- ìŠ¤ì¼€ì¤„ì˜ ì´ë¦„ì´ ì¤‘ë³µ ë°œìƒ
 
-# ¿À·ù 2 :
+# ì˜¤ë¥˜ 2 :
 
 	java.lang.IllegalStateException
 		Caused by: org.springframework.beans.factory.BeanCreationException
 			Caused by: org.springframework.beans.BeanInstantiationException
 				Caused by: org.apache.ibatis.binding.BindingException
 
-	- Á¤È®ÇÑ ÀÌÀ¯¸¦ ¾ËÁö ¸øÇÏ³ª ¾îµò°¡¿¡ ¼±¾ğµÇÁö ¾ÊÀº beanÀ» ¿äÃ»ÇßÀ» ¶§ ¹ß»ı
+	- ì •í™•í•œ ì´ìœ ë¥¼ ì•Œì§€ ëª»í•˜ë‚˜ ì–´ë”˜ê°€ì— ì„ ì–¸ë˜ì§€ ì•Šì€ beanì„ ìš”ì²­í–ˆì„ ë•Œ ë°œìƒ
 
 ```

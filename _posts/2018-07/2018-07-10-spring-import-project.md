@@ -21,7 +21,7 @@ tags: [spring,project,import]
 
 new - project 생성 후 해당 프로젝트에 import - File System 그리고 import하려고 하는 프로젝트 소스폴더를 찾아서 선택선택
 
-![new_project](/jiggag.github.io/img/posts/2018/07/new_project.jpg)
+![new_project](/jiggag.github.io/img/posts/2018/07/new-project.jpg)
 ![import_file_system](/jiggag.github.io/img/posts/2018/07/import-file-system.jpg)
-![import_file_system2](/jiggag.github.io/img/posts/2018/07/import_file_system2.jpg)
+![import_file_system2](/jiggag.github.io/img/posts/2018/07/import-file-system2.jpg)
 

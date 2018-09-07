@@ -8,7 +8,7 @@ tags: [spring,project,import]
 
 스프링에서 백업해둔 프로젝트 import하려는데 프로젝트 폴더에 .project도 없고 .settings도 없어서 스프링에서 프로젝트를 인식하지 못할때...
 
-![import_project_not_found](/jiggag.github.io/img/posts/2018/07/import-project.jpg)
+![import_project_not_found](https://github.com/jiggag/jiggag.github.io/blob/master/img/posts/2018/07/import-project.jpg)
 
 
 ## 가장 좋은 건 복사

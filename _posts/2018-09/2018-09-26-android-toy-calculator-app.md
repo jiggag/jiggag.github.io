@@ -52,7 +52,7 @@ WARNING: Uninstalling will remove the application data!
 앱 내 광고를 추가하고자 애드몹을 가입하고 구현가이드를 찾아보고 여러 블로그도 참고하였다. 그러나 플러그인 버전 충돌이 생겼고 결국 애드몹 문서를 정독하고 나서야 해결할 수 있었다. 
 ***무엇이든 홈페이지 설명이 최고***
 
-![calculator_layout](https://github.com/jiggag/jiggag.github.io/blob/master/img/posts/2018/09/calculator_layout.png){: width="100px"}
+![calculator_layout](https://github.com/jiggag/jiggag.github.io/blob/master/img/posts/2018/09/calculator_layout.png | width=100)
 
 
 ## 버튼 클릭 이벤트
@@ -86,6 +86,6 @@ AndroidManifest.xml에서 현재 액티비티에 orientation 설정을 추가하면 화면이 가로�
 
 그리고 명절을 보내고 있던 중 9월 24일 결국 해버렸다. 사실 이러면 안되는거 같은데 완전한 구현이 되기전에 앱을 출시해버리고야 말았다! 우선 역사적인 순간이니 기록은 해뒀는대.. 이제 수많은 오류들을 수정해야한다.
 
-![직각계산기](https://github.com/jiggag/jiggag.github.io/blob/master/img/posts/2018/09/jiggag_calc.png){: width="100px"}
+![직각계산기](https://github.com/jiggag/jiggag.github.io/blob/master/img/posts/2018/09/jiggag_calc.png | width=100)
 
 

@@ -1,11 +1,10 @@
 ---
-layout:post
-published:true
-title:안드로이드 계산기 앱 등록
-subtitle:기술블로그에서 토이1 - 직각계산기
-tags:[android,toy]
+layout: post
+published: true
+title: 안드로이드 계산기 앱 등록
+subtitle: 기술블로그에서 토이1 - 직각계산기
+tags: [android,toy]
 ---
-
 ## 기술블로그 구독
 기술블로그들을 메일로 보내주는 서비스를 알게 되었다. 그리고 다음날 10시 첫 구독 메일을 받았다.
 

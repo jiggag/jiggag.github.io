@@ -37,3 +37,11 @@ gtag('event', '이벤트액션', {'event_category':'이벤트카테고리','even
 new Date(2018,10,1,0,0,0) : 2018-11-1 00:00:00으로 인식
 ```
 
+## Angularjs
+```html
+<span ng-if="조건">아예 그리지도 않음</span>
+<span ng-show="조건">그려는 두고 안보여줌</span>
+```
+ng-if와 ng-show의 차이점
+그리지도 않거나 그려두고 숨기거나
+

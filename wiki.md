@@ -51,3 +51,18 @@ ng-if와 ng-show의 차이점
 
 ## github
 create file에 폴더명/파일명으로 등록하면 자동으로 해당 폴더를 생성하고 파일이 추가
+
+
+## 웹 크롤링 : Jsoup
+```java
+final String connUrl = "https://www.크롤링.com";
+
+Document doc = Jsoup.connect(connUrl).post();
+Elements ele = doc.select("div.first table");
+
+for(Element el : ele.select("tr")){
+	 String txt = el.select("td").text();
+}
+```
+Jsoup 이용하여 크롤링
+해당 url의 html을 Document에 담아서 찾고자하는 태그나 클래스로 내용 가져오기

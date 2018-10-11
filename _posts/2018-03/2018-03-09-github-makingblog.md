@@ -34,7 +34,7 @@ git repository를 myname.github.io로 만들어서 github page를 생성한다.
 http://jekyllthemes.org/
 여기서는 이 블로그의 테마로 사용한 beautiful-jekyll을 예시로 한다.
 
-```
+```script
 $ git clone https://github.com/daattali/beautiful-jekyll.git
 $ cd beautiful-jekyll
 $ rm .git	# git commit 정보들을 담고 있으므로 나만의 것을 위해 삭제
@@ -53,7 +53,7 @@ https://jiggag.github.io
 이 설정이 나를 4시간동안 괴롭혔다.
 
 ## _config.yml 설정
-```
+```script
 # 다운받은 _config.yml 수정
 # 깃허브 블로그 url
 url: "http://jiggag.github.io"

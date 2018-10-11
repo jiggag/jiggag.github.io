@@ -10,7 +10,7 @@ tags: [spring,quartz,scheduler,error]
 ## 스프링 프로젝트 진행 중 쿼츠스케쥴러에 새로운 스케줄 등록하다 에러가 발생했고 이에 알게된 점을 적어두기
 
 
-```
+```script
 
 
 # 오류 1 :

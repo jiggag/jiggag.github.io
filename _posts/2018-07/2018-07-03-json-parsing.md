@@ -15,7 +15,7 @@ tags: [spring,json,parsing]
 
 #### 프론트 JSON -> 백엔드 STRING -> JSON으로 파싱
 
-```
+```script
 
 Could not read document: Can not deserialize instance of java.lang.String out of START_ARRAY token
 
@@ -33,7 +33,7 @@ Could not read document: Can not deserialize instance of java.lang.String out of
 정말 단순하게 생각했다
 JSON을 문자로 바꿔주자
 
-```
+```script
 
 jsonValue + ""
 
@@ -62,7 +62,7 @@ JSON객체를 정확하게 문자로 JAVA로 넘겨줄 수 있는 방법
 
 #### JSON 파싱
 
-```
+```script
 
 # pom.xml
 

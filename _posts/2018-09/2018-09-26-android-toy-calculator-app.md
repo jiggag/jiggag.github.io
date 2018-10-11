@@ -27,7 +27,7 @@ tags: [android,toy]
 
 정신차리고 안드로이드 프로젝트 생성하고 계산기를 구성할 기본적인 설정부터 적용하였다.
 
-```
+```script
     - AndroidManifest.xml
       // 기본 앱 설정
      
@@ -40,7 +40,7 @@ tags: [android,toy]
 ```
 
 ## 검색
-```
+```script
 Installation failed with message Invalid File: D:\calculator\app\build\intermediates\split-apk\debug\slices\slice_5.apk. It is possible that this issue is resolved by uninstalling an existing version of the apk if it is present, and then re-installing.
 WARNING: Uninstalling will remove the application data!
 ```

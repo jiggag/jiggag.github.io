@@ -12,7 +12,7 @@ tags: [spring,maven,poi,jar,excel]
 
 스프링 메이븐에서 jar, 이 라이브러리를 사용하고자하면 pom.xml의 dependencies에 추가해줘야한다.
 
-```
+```script
 # pom.xml에 아래와 같이 라이브러리를 추가
 <dependency>
 	<groupId>org.apache.poi</groupId>
@@ -28,7 +28,7 @@ pom.xml에 추가하고 나면 잠시후 maven dependences에 poi-3.11이라는 
 
 ## 엑셀 파일 읽어오기
 
-```
+```script
 
 # 엑셀 파일 경로에 접근
 FileInputStream file = new FileInputStream("d:\\excelread.xlsx");
@@ -84,7 +84,7 @@ System.out.println(value);
 
 ## 엑셀 파일 읽어오기 예시
 
-```
+```script
 
 FileInputStream file = new FileInputStream("d:\\excelread.xlsx");
 XSSFWorkbook workbook = new XSSFWorkbook(file);

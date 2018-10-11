@@ -54,7 +54,7 @@ create file에 폴더명/파일명으로 등록하면 자동으로 해당 폴더
 
 
 ## 웹 크롤링 : Jsoup
-```java
+```script
 final String connUrl = "https://www.크롤링.com";
 
 Document doc = Jsoup.connect(connUrl).post();

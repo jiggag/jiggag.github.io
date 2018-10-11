@@ -66,3 +66,11 @@ for(Element el : ele.select("tr")){
 ```
 Jsoup 이용하여 크롤링
 해당 url의 html을 Document에 담아서 찾고자하는 태그나 클래스로 내용 가져오기
+
+## BOJ
+```script
+BOJ.2557
+Hello World!를 출력하시오.
+```
+Hello World!에서 !를 빼고서는 왜 안될까 뭐가 잘못된걸까 고민하던 방금 전
+근데 다른 언어보다 자바를 이용한 문제 풀이의 메모리와 시간이 높은데 

@@ -18,7 +18,7 @@ tags: [angularjs,frontend,project]
 [angular-seed](http://github.com/angular/angular-seed) repository를 clone하여 프로젝트를 다운받는다.
 이는 angular 1, anularjs를 이용한 프로젝트이다.
 
-```
+```script
 $ git clone http://github.com/angular/angular-seed.git	# repository 다운로드
 $ cd angular-seed
 $ ren angular-seed jiggag-front-angular	# 프로젝트 폴더명 변경 : ren [원래 폴더/파일명] [수정 폴더/파일명]
@@ -36,7 +36,7 @@ $ npm start	# http://localhost:8000
 
 ## 프로젝트 구성 변경
 
-```
+```script
 # 현재의 프로젝트 구성
 app/
 	components
@@ -57,10 +57,13 @@ bower.json
 karma.conf.js
 license
 package.json
+
 # 모듈 설치 경로 변경 : .bowerrc
 "directory": "src/vendor"	# "app/bower-components"
+
 # 서버 경로 변경 : package.json
 "start": "http-server -a localhost -p 8000 -c-1 ./src",
+
 # 그리고 폴더.. 변경된 나의 프로젝트 구성
 src/
 	app/

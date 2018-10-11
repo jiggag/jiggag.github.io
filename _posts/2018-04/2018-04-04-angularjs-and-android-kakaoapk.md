@@ -23,7 +23,7 @@ angularjs로 만들어진 하이브리드앱에서 회원 가입 및 로그인�
 안드로이드 스튜디오에서 하이브리드 앱 프로젝트를 생성하기 위해 npm에서 cordova를 설치한다.
 그리고 cordova를 이용해 프로젝트를 생성하고 플랫폼을 추가하면 준비 완료
 
-```
+```script
 
 ## cordova 설치
 - npm install -g cordova

@@ -19,7 +19,7 @@ markdown 파일명으로 url이 호출되고 있다.
 
 ## _config.yml 설정 변경
 
-```
+```script
 
 # 기존의 url
 permalink: /:year-:month-:day-:title/

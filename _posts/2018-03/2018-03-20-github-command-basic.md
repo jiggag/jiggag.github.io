@@ -13,7 +13,7 @@ tags: [github]
 
 #### git 초기화 및 커밋
 
-```
+```script
 
 $ git init : 해당 경로를 git에 등록 초기화
 $ git add [files] : 커밋하고자 하는 파일, 폴더를 추가
@@ -25,7 +25,7 @@ $ git push [alias] [branch] : 해당 저장소의 브랜치에 커밋하기
 
 #### git 저장소의 내용 가져오기
 
-```
+```script
 
 $ git fetch [alias] : 브랜치 alias의 변경된 내용들을 가져온다
 

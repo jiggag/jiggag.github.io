@@ -80,3 +80,15 @@ Hello World!에서 !를 빼고서는 왜 안될까 뭐가 잘못된걸까 고민
 ## 스프링
 프로젝트를 옮겨서 스프링에 impory하려고 하는데 스프링에서 프로젝트를 찾지 못한다면
 import하려는 프로젝트명으로 새로운 프로젝트를 생성하면 .project파일이  생성되면서 자동 import된다
+
+## 반응형 크기
+```css
+모바일
+@media(min-width:320px)
+
+태블릿
+@media(min-width:768px)
+
+PC
+@media(min-width:960px)
+```

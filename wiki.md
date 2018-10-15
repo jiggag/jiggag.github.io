@@ -82,7 +82,7 @@ Hello World!에서 !를 빼고서는 왜 안될까 뭐가 잘못된걸까 고민
 import하려는 프로젝트명으로 새로운 프로젝트를 생성하면 .project파일이  생성되면서 자동 import된다
 
 ## 반응형 크기
-```css
+```script
 모바일
 @media(min-width:320px)
 
@@ -91,4 +91,51 @@ import하려는 프로젝트명으로 새로운 프로젝트를 생성하면 .pr
 
 PC
 @media(min-width:960px)
+```
+
+## 자스민 테스트
+AngularJS 프론트 단위 테스트
+* karma.conf.js
+```script
+module.exports = function(config) { 
+	config.set({
+	...
+
+	// 테스트할 스크립트 경로 지정
+	files: [ "src/**/*.js" ]
+
+	...
+  });
+};
+```
+
+* app_test.js
+```script
+describe("App : module 'App' 테스트", function() {
+
+	// 테스트 실행 전 모듈 App 호출
+	beforeEach(module("App"));
+
+	describe("모듈 App이 정의되어 있는지 확인 ", function() {
+		it("모듈 App에 AppCtrl이 정의되어 있는가?", inject(function($controller, $rootScope) {
+			var scope = $rootScope.$new();
+		        var ctrl = $controller("AppCtrl", { $scope: scope}); 
+			expect(ctrl).toBeDefined();
+		}));
+	});
+});
+```
+```script
+// describe 내 선언된 모든 테스트가 실행되기 전 한번 실행
+beforeAll(function() {});
+
+// describe 내 선언된 모든 it 실행 전 매번 실행하는 전처리
+beforeEach(function() {});
+
+// describe 내 선언된 모든 it 실행 후 매번 실행하는 후처리
+afterEach(function() {});
+
+it('테스트 내용 설명', function() {
+	// 테스트
+});
 ```

@@ -125,17 +125,22 @@ describe("App : module 'App' 테스트", function() {
 	});
 });
 ```
+
 ```script
-// describe 내 선언된 모든 테스트가 실행되기 전 한번 실행
+* describe 내 선언된 모든 테스트가 실행되기 전 한번 실행
 beforeAll(function() {});
 
-// describe 내 선언된 모든 it 실행 전 매번 실행하는 전처리
+* describe 내 선언된 모든 it 실행 전 매번 실행하는 전처리
 beforeEach(function() {});
 
-// describe 내 선언된 모든 it 실행 후 매번 실행하는 후처리
+* describe 내 선언된 모든 it 실행 후 매번 실행하는 후처리
 afterEach(function() {});
 
 it('테스트 내용 설명', function() {
 	// 테스트
 });
 ```
+
+## MySQL
+Export : Data Export > 내보내는 테이블 체크 > 해당 위치에 dump파일로 export
+Import : Data Import > 해당dump 파일 선택 후 import

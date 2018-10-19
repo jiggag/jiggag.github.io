@@ -144,3 +144,35 @@ it('테스트 내용 설명', function() {
 ## MySQL
 Export : Data Export > 내보내는 테이블 체크 > 해당 위치에 dump파일로 export
 Import : Data Import > 해당dump 파일 선택 후 import
+
+
+## git
+```script
+$ git --version
+설치된 git의 버전 확인
+
+$ git config --global --list
+전역으로 선언된 설정목록을 확인
+
+$ git config --global user.name
+$ git config --global user.email
+각각의 전역 설정(name,email) 확인
+
+$ git config user.name
+$ git config user.email
+해당 저장소에만 설정된 값
+
+$ git config --global user.name [username]
+$ git config --global user.email [useremail]
+[username]으로 사용자 이름 전역 설정
+
+$ cd [tab]
+cd 입력 후 tab키를 누르면 이동 가능한 하위 경로를 확인
+
+$ cd e:
+e드라이브로 이동
+
+$ git init
+해당 경로를 git저장소로 등록
+```
+

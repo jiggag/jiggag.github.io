@@ -178,8 +178,17 @@ $ git init
 
 
 ## cordova
-
 activity의 webview안에 url호출하면 웹으로 인식
-cordova loadurl(launchurl) 하면 앱뷰로 인식
-config.xml의 <content>는 www폴더의 index.html를 기본으로 시작페이지 
 
+cordova loadurl(launchurl) 하면 앱뷰로 인식
+
+config.xml의 <content>는 www폴더의 index.html를 기본으로 시작페이지
+
+
+
+## Android + MySQL + PHP + Apache
+안드로이드 스튜디오에서 MySQL 연동을 위해 DB접속을 위한 PHP를 아파치 서버에 올려두고 DB접속
+
+기존의 아파치에 PHP파일이 열리지 않아 bitnami를 설치하여 아파치+MySQL을 새로 포트에 연결해주었고
+
+새로 만든 아파치 경로 htdocs폴더 아래에 PHP파일을 두고 http://localhost/phptxt.php로 접속하니 해당 DB접속상태확인

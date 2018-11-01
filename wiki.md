@@ -68,6 +68,30 @@ Jsoup 이용하여 크롤링
 해당 url의 html을 Document에 담아서 찾고자하는 태그나 클래스로 내용 가져오기
 
 
+## 안드로이드 웹 크롤링
+* app: build.gradle
+```script
+dependencies 추가
+compile 'org.jsoup:jsoup:1.11.3'
+```
+
+* AndroidManifest.xml
+```script
+인터넷 사용 권한 추가
+<uses-permission android:name="android.permission.INTERNET" />
+```
+
+* MainFunc.java
+```script
+get,post : 파라미터 data 여부에 따라
+Document doc = Jsoup.connect(url).get();
+Elements ele = doc.select("div");
+
+for(Element el : ele.select("p")){
+	크롤링 데이터
+}
+```
+
 ## BOJ
 ```script
 BOJ.2557

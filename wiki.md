@@ -216,3 +216,27 @@ config.xml의 <content>는 www폴더의 index.html를 기본으로 시작페이�
 기존의 아파치에 PHP파일이 열리지 않아 bitnami를 설치하여 아파치+MySQL을 새로 포트에 연결해주었고
 
 새로 만든 아파치 경로 htdocs폴더 아래에 PHP파일을 두고 http://localhost/phptxt.php로 접속하니 해당 DB접속상태확인
+
+
+## FCM
+```script
+"to" : "/topics/push-test" - 등록된 주제 push-test 에게 알림
+"to" : "토큰명" - 해당 토큰 기기에만 알림
+"condition": "'dogs' in topics && 'cats' in topics"  - 주제 dogs이면서 cat인 기기에게 알림
+```
+
+## FCM 구독 추가/제거
+FirebaseMessaging.getInstance().subscribeToTopic("notice");
+FirebaseMessaging.getInstance().unsubscribeFromTopic("notice");
+
+## 푸시 메세지 형식
+```script
+{
+"notification": {"title": "푸시 알림 타이틀", "body": "푸시 알림 내용"},
+"data":{"title":"푸시 메세지 타이틀","message":"푸시 메세지 내용"},
+"time_to_live" : 10,
+"condition" : "'on-push' in topics && !('un-push' in topics)" 	
+}
+```
+안드로이드에서는 포그라운드,백그라운드 상관없이 data메세지 형식으로 보내면 알림이 왔지만 ios에서는 notification으로만 온다.
+두가지를 같이 작성해서 보내면 notification이 우선으로 처리되는지 안드로이드 포그라운드에서 푸시내용이 보이지 않았다.

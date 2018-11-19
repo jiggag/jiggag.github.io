@@ -240,3 +240,21 @@ FirebaseMessaging.getInstance().unsubscribeFromTopic("notice");
 ```
 안드로이드에서는 포그라운드,백그라운드 상관없이 data메세지 형식으로 보내면 알림이 왔지만 ios에서는 notification으로만 온다.
 두가지를 같이 작성해서 보내면 notification이 우선으로 처리되는지 안드로이드 포그라운드에서 푸시내용이 보이지 않았다.
+
+
+## css : table
+```script
+table { 
+	table-layout: fixed; 
+}
+ * 테이블 내에서 <td>의 크기 고정
+ 
+table td {
+	width:100%;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+* td에 width값, overflow: hidden;, text-overflow:ellipsis; 써줘야 말줄임 적용된다.
+* white-space:nowrap; 줄바꿈 방지
+```

@@ -258,3 +258,21 @@ table td {
 * td에 width값, overflow: hidden;, text-overflow:ellipsis; 써줘야 말줄임 적용된다.
 * white-space:nowrap; 줄바꿈 방지
 ```
+
+
+## pom.xml
+```script
+Description Resource Path Location Type
+Unable to load annotation processor factory 'C:\workspace\ex\libs\ICERTSecu_JDK18.jar' for project ex ex
+Annotation processor factory path APT Build Problem
+
+
+<dependency>
+	<groupId>sample</groupId>
+	<artifactId>com.icert.comm.secu</artifactId>
+	<version>1.0</version>
+	<scope>system</scope>
+	<systemPath>${project.basedir}/libs/ICERTSecu_JDK18.jar</systemPath>
+</dependency>
+```
+project.basedir : maven 설정 - Update project

@@ -276,3 +276,15 @@ Annotation processor factory path APT Build Problem
 </dependency>
 ```
 project.basedir : maven 설정 - Update project
+
+
+## 자바 스트림
+```script
+list.stream().filter(p -> p).foreach(
+	system.out.print(p);
+);
+```
+
+## ArrayList, LinkedList
+배열 리스트
+연결된 리스트

@@ -2,7 +2,7 @@
 layout:post
 published:true
 title:안드로이드 카드게임
-subtitle:토이1 [뇌순발력 카드게임]
+subtitle:토이1 뇌순발력 카드게임
 tags:[android,toy]
 ---
 

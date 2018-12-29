@@ -25,6 +25,49 @@ tags : [android,toy]
 
 먼저 랜덤 숫자로 문제를 생성하고 정답을 계산
 
+```java
+
+    /*
+    NOTE 2018-12-29
+    문제 생성 : 랜덤 수 2개, 사칙연산
+    */
+    private void init() {
+
+        int random1 = (int) (Math.random() * 50 + 1);
+        int random2 = (int) (Math.random() * 50 + 1);
+        int operator = (int) (Math.random() * 4);
+        String[] operatorArr = {"+", "-", "*", "/"};
+        
+	    	int answer = calc(random1, random2, operator);
+
+        TextView textPreview = (TextView) findViewById(R.id.quiz);
+        textPreview.setText(quiz(random1, random2, operatorArr[operator]));
+
+        TextView answerPreview = (TextView) findViewById(R.id.answer);
+        answerPreview.setText("정답 : " + answer);
+
+    }
+
+    private String quiz(int ran1, int ran2, String operator){
+        return ran1 + " " + operator + " " + ran2 + " = ?";
+    }
+
+    private int calc(int ran1, int ran2, int operator){
+      int answer = 0;
+      if(operator == 0){
+        answer = ran1 + ran2;
+      }else if(operator == 1){
+        answer = ran1 - ran2;
+      }else if(operator == 2){
+        answer = ran1 * ran2;
+      }else if(operator == 3){
+        answer = ran1 / ran2;
+      }else{
+        // 에러 발생
+      }
+          return answer;
+    }
+```
 
 #### 글이 안올라가는 경우
 - title, subtitle에 괄호가 있으면 안되는것같다

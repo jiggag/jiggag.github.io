@@ -30,7 +30,11 @@ tags : [android,toy]
     /*
     NOTE 2018-12-29
     문제 생성 : 랜덤 수 2개, 사칙연산
+    
+    NOTE 2018-12-30
+    보기 생성 : 덧셈뺄셈, 곱셈나눗셈에 따른 보기방식
     */
+	
     private void init() {
 
         int random1 = (int) (Math.random() * 50 + 1);
@@ -38,7 +42,7 @@ tags : [android,toy]
         int operator = (int) (Math.random() * 4);
         String[] operatorArr = {"+", "-", "*", "/"};
         
-	    	int answer = calc(random1, random2, operator);
+	int answer = calc(random1, random2, operator);
 
         TextView textPreview = (TextView) findViewById(R.id.quiz);
         textPreview.setText(quiz(random1, random2, operatorArr[operator]));
@@ -46,6 +50,10 @@ tags : [android,toy]
         TextView answerPreview = (TextView) findViewById(R.id.answer);
         answerPreview.setText("정답 : " + answer);
 
+        TextView exPreview = (TextView) findViewById(R.id.ex_btn);
+        exPreview.setText("보기 : " + exArr[0] + " / " + exArr[1] +" / " + exArr[2] +" / "
+                + exArr[3] +" / " + exArr[4] +" / " + exArr[5] + " / "
+                + exArr[6] +" / " + exArr[7] +" / " + exArr[8]);
     }
 
     private String quiz(int ran1, int ran2, String operator){
@@ -66,6 +74,28 @@ tags : [android,toy]
         // 에러 발생
       }
           return answer;
+    }
+    
+    private int[] calcEx(int operator, int answer){
+        int exArr[] = new int[9];
+        
+        // 정답의 위치 난수 생성
+        int m = (int) (Math.random() * 9);
+        
+        // 덧뺄셈 : 정답 +-1
+        // 곱나눗셈 : 정답 +-10
+        if(operator == 0 || operator == 1){
+           for(int i = 0 ; i < 9 ; i++){
+               exArr[i] = answer + i - m;
+           }
+        }else if(operator == 2 || operator == 3){
+            for(int i = 0 ; i < 9 ; i++){
+                exArr[i] = answer + (i - m)*10;
+            }
+        }else{
+            // 에러 발생
+        }
+        return exArr;
     }
 ```
 

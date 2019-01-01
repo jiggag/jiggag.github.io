@@ -31,6 +31,8 @@ layout: base
         </div>
       {% endif %}
 
+      {% include ad.html %}
+      
       <article role="main" class="blog-post">
         {{ content }}
       </article>
@@ -52,6 +54,8 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
+      {% include ad.html %}
+      
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">

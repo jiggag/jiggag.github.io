@@ -25,6 +25,7 @@ tags : [android,toy]
 
 먼저 랜덤 숫자로 문제를 생성하고 정답을 계산
 사칙연산에 따라 보기 생성방식을 다르게 하였다
+보기 버튼 생성 후 각각 텍스트 적용하였고 클릭이벤트 발생 시 정답을 체크
 
 ```java
 
@@ -34,17 +35,24 @@ tags : [android,toy]
     
     NOTE 2018-12-30
     보기 생성 : 덧셈뺄셈, 곱셈나눗셈에 따른 보기방식
+    
+    NOTE 2019-01-01
+    보기 버튼 생성 : 클릭 시 정답 여부 체크
     */
-	
-    private void init() {
 
+    int answer;
+    int exArr[];
+    
+    private void init() {
         int random1 = (int) (Math.random() * 50 + 1);
         int random2 = (int) (Math.random() * 50 + 1);
         int operator = (int) (Math.random() * 4);
         String[] operatorArr = {"+", "-", "*", "/"};
         
-	int answer = calc(random1, random2, operator);
-
+	// 정답
+	answer = calc(random1, random2, operator);
+        exArr = calcEx(operator, answer);
+	
         TextView textPreview = (TextView) findViewById(R.id.quiz);
         textPreview.setText(quiz(random1, random2, operatorArr[operator]));
 
@@ -55,6 +63,36 @@ tags : [android,toy]
         exPreview.setText("보기 : " + exArr[0] + " / " + exArr[1] +" / " + exArr[2] +" / "
                 + exArr[3] +" / " + exArr[4] +" / " + exArr[5] + " / "
                 + exArr[6] +" / " + exArr[7] +" / " + exArr[8]);
+	
+	// 보기 버튼
+	Button one = (Button) findViewById(R.id.btn_one);
+        Button two = (Button) findViewById(R.id.btn_two);
+        Button three = (Button) findViewById(R.id.btn_three);
+        Button four = (Button) findViewById(R.id.btn_four);
+        Button five = (Button) findViewById(R.id.btn_five);
+        Button six = (Button) findViewById(R.id.btn_six);
+        Button seven = (Button) findViewById(R.id.btn_seven);
+        Button eight = (Button) findViewById(R.id.btn_eight);
+        Button nine = (Button) findViewById(R.id.btn_nine);
+        one.setText("" + exArr[0]);
+        two.setText("" + exArr[1]);
+        three.setText("" + exArr[2]);
+        four.setText("" + exArr[3]);
+        five.setText("" + exArr[4]);
+        six.setText("" + exArr[5]);
+        seven.setText("" + exArr[6]);
+        eight.setText("" + exArr[7]);
+        nine.setText("" + exArr[8]);
+        one.setOnClickListener(btnListener);
+        two.setOnClickListener(btnListener);
+        three.setOnClickListener(btnListener);
+        four.setOnClickListener(btnListener);
+        five.setOnClickListener(btnListener);
+        six.setOnClickListener(btnListener);
+        seven.setOnClickListener(btnListener);
+        eight.setOnClickListener(btnListener);
+        nine.setOnClickListener(btnListener);
+
     }
 
     private String quiz(int ran1, int ran2, String operator){
@@ -98,6 +136,7 @@ tags : [android,toy]
         }
         return exArr;
     }
+    
 ```
 
 #### 글이 안올라가는 경우

@@ -1,7 +1,7 @@
 ---
 layout : post
 published : true
-title : 파이썬 설치 및 
+title : 파이썬 설치 및 실행
 subtitle : 갑자기 파이썬
 tags : [python]
 ---
@@ -10,7 +10,7 @@ tags : [python]
 
 핀테크 공부하다 빅데이터로 넘어가기
 
-- https://www.python.org/downloads/
+- <https://www.python.org/downloads/>
 - **Add python x.x to PATH** 환경변수 자동 설정 체크
 - **윈도우+R** > **powershell** 실행 > **python** 입력 설치 확인
 - print('HELLO PYTHON') : **py** 확장자로 samply.py 저장

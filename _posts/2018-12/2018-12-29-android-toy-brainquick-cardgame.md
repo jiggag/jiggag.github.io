@@ -27,6 +27,7 @@ tags : [android,toy]
 사칙연산에 따라 보기 생성방식을 다르게 하였다
 보기 버튼 생성 후 각각 텍스트 적용하였고 클릭이벤트 발생 시 정답을 체크
 
+#### MainActivity.java
 ```java
 
     /*
@@ -38,15 +39,34 @@ tags : [android,toy]
     
     NOTE 2019-01-01
     보기 버튼 생성 : 클릭 시 정답 여부 체크
+    
+    NOTE 2019-01-04
+    상단에 현재 게임 정보 표시
+    난이도별 연산자 선택
+    레벨별 최소 획득 점수 설정
     */
 
     int answer;
     int exArr[];
     
     private void init() {
-        int random1 = (int) (Math.random() * 50 + 1);
-        int random2 = (int) (Math.random() * 50 + 1);
-        int operator = (int) (Math.random() * 4);
+	
+        TextView gameInfo = (TextView) findViewById(R.id.info);
+        gameInfo.setText("게임 레벨 : " + level + " / 획득 가능한 점수 : " + point + " / 누적 : " + score);
+
+        int random1 = (int) (Math.random() * 10 + (1 * (int) (level / 10)));
+        int random2 = (int) (Math.random() * 10 + (1 * (int) (level / 10)));
+	
+        int operator = 0;	
+        if (level < 50) {
+            operator = (int) (Math.random() * 1);
+        } else if (level >= 50 && level < 100){
+            operator = (int) (Math.random() * 2);
+        } else if (level >= 100 && level < 200){
+            operator = (int) (Math.random() * 3);
+        } else if (level >= 200){
+            operator = (int) (Math.random() * 4);
+        }
         String[] operatorArr = {"+", "-", "*", "/"};
         
 	// 정답
@@ -56,6 +76,7 @@ tags : [android,toy]
         TextView textPreview = (TextView) findViewById(R.id.quiz);
         textPreview.setText(quiz(random1, random2, operatorArr[operator]));
 
+/*
         TextView answerPreview = (TextView) findViewById(R.id.answer);
         answerPreview.setText("정답 : " + answer);
 
@@ -63,7 +84,8 @@ tags : [android,toy]
         exPreview.setText("보기 : " + exArr[0] + " / " + exArr[1] +" / " + exArr[2] +" / "
                 + exArr[3] +" / " + exArr[4] +" / " + exArr[5] + " / "
                 + exArr[6] +" / " + exArr[7] +" / " + exArr[8]);
-	
+*/
+
 	// 보기 버튼
 	Button one = (Button) findViewById(R.id.btn_one);
         Button two = (Button) findViewById(R.id.btn_two);
@@ -137,6 +159,91 @@ tags : [android,toy]
         return exArr;
     }
     
+    // 정답 체크
+    private void checkAnswer(int answer, int submit){
+        boolean check = false;
+        if(answer == submit){
+            check = true;
+        }
+
+        // 정답이면 다음문제
+        if(check){
+            // + 점수
+            score();
+            init();
+        }else{
+            // - 점수
+            fail();
+        }
+    }
+
+    public View.OnClickListener btnListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()) {
+                case R.id.btn_one:
+                    checkAnswer(answer, exArr[0]);
+                    break;
+                case R.id.btn_two:
+                    checkAnswer(answer, exArr[1]);
+                    break;
+                case R.id.btn_three:
+                    checkAnswer(answer, exArr[2]);
+                    break;
+                case R.id.btn_four:
+                    checkAnswer(answer, exArr[3]);
+                    break;
+                case R.id.btn_five:
+                    checkAnswer(answer, exArr[4]);
+                    break;
+                case R.id.btn_six:
+                    checkAnswer(answer, exArr[5]);
+                    break;
+                case R.id.btn_seven:
+                    checkAnswer(answer, exArr[6]);
+                    break;
+                case R.id.btn_eight:
+                    checkAnswer(answer, exArr[7]);
+                    break;
+                case R.id.btn_nine:
+                    checkAnswer(answer, exArr[8]);
+                    break;
+            }
+        }
+    };
+
+    private void score(){
+        score += point;
+    }
+    
+    private void score(){
+        score += point;
+
+    }
+
+    // 오답 클릭 시 얻을 수 있는 점수 감소
+    private void fail(){
+        // 레벨별 최소 획득 점수
+        if((point*0.5) >= (level * 10)){
+            point *= 0.5;
+        }else{
+            point = level * 10;
+        }
+    }
+
+    
+```
+
+#### AndroidManifest.xml
+```xml
+
+        <!-- NOTE 2019-01-01 : screenOrientation를 추가하여 앱 화면 세로로 고정-->
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 ```
 
 #### 글이 안올라가는 경우

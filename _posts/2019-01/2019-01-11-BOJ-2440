@@ -1,0 +1,26 @@
+---
+layout : post
+published : true
+title : BOJ 2440
+subtitle : N부터 별 그리기
+tags : [BOJ]
+---
+## BOJ 2440
+
+입력 받은 정수 N으로 첫째 줄에는 별 N개, 둘째 줄에는 별 N-1개, ..., N번째 줄에는 별 1개를 찍는 문제
+
+
+```java
+Scanner sc = new Scanner(System.in);	
+int A = sc.nextInt();
+
+for(int i=0;i<A;i++){
+    int x = A-i;
+    for(int j=0;j<x;j++){
+	System.out.print("*");
+    }
+    System.out.println();
+}
+```
+
+입력받은 N만큼 for문이 돌면서 N개, N-1, N-2 ... 1개의 별을 그려주기 위해 이중 for문을 작성하였다.

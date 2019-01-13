@@ -44,10 +44,22 @@ tags : [android,toy]
     상단에 현재 게임 정보 표시
     난이도별 연산자 선택
     레벨별 최소 획득 점수 설정
+    
+    NOTE 2019-01-13
+    카운트다운 표시
+    난이도별 타이머 증가
+    잔여 시간을 점수에 포함
     */
 
     int answer;
     int exArr[];
+    int score;
+    int point;
+    int level;
+    long timerScore;
+
+    private TextView countdown;
+    private CountDownTimer countDownTimer;
     
     private void init() {
 	
@@ -115,6 +127,26 @@ tags : [android,toy]
         eight.setOnClickListener(btnListener);
         nine.setOnClickListener(btnListener);
 
+        // 난이도별 카운트다운 계산
+        countdown = (TextView) findViewById(R.id.countdown);
+        timer(5000  + (int)(level/20)*1000);
+        countDownTimer.start();
+
+    }
+
+    // 타이머 초기화
+    private void timer(int timerValue){
+        countDownTimer = new CountDownTimer(timerValue, 1) {
+            public void onTick(long millisUntilFinished) {
+                countdown.setText(String.valueOf(millisUntilFinished));
+                // 남은 시간을 점수에 포함
+                timerScore = millisUntilFinished;
+            }
+            public void onFinish() {
+                countdown.setText(String.valueOf(0));
+                timerScore = 0;
+            }
+        };
     }
 
     private String quiz(int ran1, int ran2, String operator){
@@ -213,13 +245,9 @@ tags : [android,toy]
     };
 
     private void score(){
-        score += point;
+        score += point + timerScore;
     }
     
-    private void score(){
-        score += point;
-
-    }
 
     // 오답 클릭 시 얻을 수 있는 점수 감소
     private void fail(){

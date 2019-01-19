@@ -2,6 +2,12 @@
 layout: null
 ---
 
+/* 2019.1.19 Add font */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:700');
+html{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 @import url("pygment_highlights.css");
 
 /* --- General --- */

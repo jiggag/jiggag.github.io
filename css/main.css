@@ -317,13 +317,13 @@ footer .theme-by {
 /* --- Post preview --- */
 
 .post-preview {
-  padding: 20px 0;
+  padding: 12px 0;
   border-bottom: 1px solid #eee;
 }
 
 @media only screen and (min-width: 768px) {
   .post-preview {
-    padding: 35px 0;
+    padding: 12px 0;
   }
 }
 
@@ -357,7 +357,7 @@ footer .theme-by {
   color: #808080;
   font-size: 14px;
   font-style: italic;
-  margin: 0 0 10px;
+  margin: 0;
 }
 .post-preview .post-entry {
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */

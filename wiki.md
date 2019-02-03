@@ -42,11 +42,11 @@ new Date(2018,10,1,0,0,0) : 2018-11-1 00:00:00으로 인식
 <span ng-if="조건">아예 그리지도 않음</span>
 <span ng-show="조건">그려는 두고 안보여줌</span>
 ```
-ng-if와 ng-show의 차이점
+ng-if와 ng-show의 차이점<br/>
 그리지도 않거나 그려두고 숨기거나
 
 ## 구글애널리틱스와 파이어베이스
-구글애널리틱스는 웹
+구글애널리틱스는 웹<br/>
 파이어베이스는 앱
 
 ## github
@@ -97,12 +97,12 @@ for(Element el : ele.select("p")){
 BOJ.2557
 Hello World!를 출력하시오.
 ```
-Hello World!에서 !를 빼고서는 왜 안될까 뭐가 잘못된걸까 고민하던 방금 전
+Hello World!에서 !를 빼고서는 왜 안될까 뭐가 잘못된걸까 고민하던 방금 전<br/>
 근데 다른 언어보다 자바를 이용한 문제 풀이의 메모리와 시간이 높은데 왜그럴까
 
 
 ## 스프링
-프로젝트를 옮겨서 스프링에 import하려고 하는데 스프링에서 프로젝트를 찾지 못한다면
+프로젝트를 옮겨서 스프링에 import하려고 하는데 스프링에서 프로젝트를 찾지 못한다면<br/>
 import하려는 프로젝트명으로 새로운 프로젝트를 생성하면 .project파일이  생성되면서 자동 import된다
 
 ## 반응형 크기
@@ -166,7 +166,7 @@ it('테스트 내용 설명', function() {
 ```
 
 ## MySQL
-Export : Data Export > 내보내는 테이블 체크 > 해당 위치에 dump파일로 export
+Export : Data Export > 내보내는 테이블 체크 > 해당 위치에 dump파일로 export<br/>
 Import : Data Import > 해당dump 파일 선택 후 import
 
 
@@ -202,18 +202,18 @@ $ git init
 
 
 ## cordova
-activity의 webview안에 url호출하면 웹으로 인식
+activity의 webview안에 url호출하면 웹으로 인식<br/><br/>
 
-cordova loadurl(launchurl) 하면 앱뷰로 인식
+cordova loadurl(launchurl) 하면 앱뷰로 인식<br/>
 
 config.xml의 <content>는 www폴더의 index.html를 기본으로 시작페이지
 
 
 
 ## Android + MySQL + PHP + Apache
-안드로이드 스튜디오에서 MySQL 연동을 위해 DB접속을 위한 PHP를 아파치 서버에 올려두고 DB접속
+안드로이드 스튜디오에서 MySQL 연동을 위해 DB접속을 위한 PHP를 아파치 서버에 올려두고 DB접속<br/>
 
-기존의 아파치에 PHP파일이 열리지 않아 bitnami를 설치하여 아파치+MySQL을 새로 포트에 연결해주었고
+기존의 아파치에 PHP파일이 열리지 않아 bitnami를 설치하여 아파치+MySQL을 새로 포트에 연결해주었고<br/>
 
 새로 만든 아파치 경로 htdocs폴더 아래에 PHP파일을 두고 http://localhost/phptxt.php로 접속하니 해당 DB접속상태확인
 
@@ -226,7 +226,7 @@ config.xml의 <content>는 www폴더의 index.html를 기본으로 시작페이�
 ```
 
 ## FCM 구독 추가/제거
-FirebaseMessaging.getInstance().subscribeToTopic("notice");
+FirebaseMessaging.getInstance().subscribeToTopic("notice");<br/>
 FirebaseMessaging.getInstance().unsubscribeFromTopic("notice");
 
 ## 푸시 메세지 형식
@@ -238,7 +238,7 @@ FirebaseMessaging.getInstance().unsubscribeFromTopic("notice");
 "condition" : "'on-push' in topics && !('un-push' in topics)" 	
 }
 ```
-안드로이드에서는 포그라운드,백그라운드 상관없이 data메세지 형식으로 보내면 알림이 왔지만 ios에서는 notification으로만 온다.
+안드로이드에서는 포그라운드,백그라운드 상관없이 data메세지 형식으로 보내면 알림이 왔지만 ios에서는 notification으로만 온다.<br/>
 두가지를 같이 작성해서 보내면 notification이 우선으로 처리되는지 안드로이드 포그라운드에서 푸시내용이 보이지 않았다.
 
 
@@ -286,5 +286,9 @@ list.stream().filter(p -> p).foreach(
 ```
 
 ## ArrayList, LinkedList
-배열 리스트
+배열 리스트<br/>
 연결된 리스트
+
+## 프로젝트
+동작을 하는 프로젝트<br/>
+사람들은 거짓말을 한다 - 직접 해봐라

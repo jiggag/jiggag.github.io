@@ -292,3 +292,9 @@ list.stream().filter(p -> p).foreach(
 ## 프로젝트
 동작을 하는 프로젝트<br/>
 사람들은 거짓말을 한다 - 직접 해봐라
+
+## Vue.js
+vue-cli로 프로젝트 설치<br/>
+vue router로 spa 구성<vr/>
+axios로 http 연결하여 rest api 호출<br/>
+interceptor로 http request, response 

@@ -298,3 +298,9 @@ vue-cli로 프로젝트 설치<br/>
 vue router로 spa 구성<vr/>
 axios로 http 연결하여 rest api 호출<br/>
 interceptor로 http request, response 
+```script
+vue create hello-vue
+vue add route
+vue add vuex
+```
+```

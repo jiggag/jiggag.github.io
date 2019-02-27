@@ -293,24 +293,6 @@ list.stream().filter(p -> p).foreach(
 동작을 하는 프로젝트<br/>
 사람들은 거짓말을 한다 - 직접 해봐라
 
-## Vue.js
-vue-cli로 프로젝트 설치<br/>
-vue router로 spa 구성<vr/>
-axios로 http 연결하여 rest api 호출<br/>
-interceptor로 http request, response 
-```script
-vue create hello-vue
-vue add route
-vue add vuex
-```
-### Vue Date Format
-```script
-npm install vue-moment
-import moment from "moment"
-Vue.use('moment')
-{{ date | moment('YYYY년 MM월 DD일') }} => 2019년 02월 24일
-```
-
 ## 빅데이터
 오늘 읽은 블로그에서는 게시물을 저장하고 조회수를 업데이트하는 것 뿐만아니라
 (게시물 번호, 유저 번호, 읽은 시간)과 같은 내용도 데이터를 저장하여 유저가 어떤 종류의 글을 읽는지 분류를 할 수 있고 추천글을 보여줄수 있다는 것이였다. 나는 그동안 이런 종류의 데이터를 저장한 적이 없었고 다만 어떻게 추천글을 보여주는 것일까 생각했을때 설마 그 많은 유저별 데이터를 다 저장할까 의심했지만 진짜 저장하고 있다는 사실에 더 놀라웠다. 데이터가 많아질수록 조회해오기 위한 시간이 더 길어진다. 이를 어떻게 빠르게 가져올 것이며 계속 쌓이는 수많은 데이터를 다 저장 할 수 있을까

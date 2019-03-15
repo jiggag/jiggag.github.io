@@ -299,8 +299,8 @@ list.stream().filter(p -> p).foreach(
 
 
 ## webpack, gulp, gradle
-gulp로 jasmin 테스트 하고 webpack으로 패키징
-webpack - 패키지로 빌드
-gulp - 자동화하고 빌드
-gradle - 빌드
-babel - 자바스크립트 컴파일
+gulp로 jasmin 테스트 하고 webpack으로 패키징  
+webpack - 패키지로 빌드  
+gulp - 자동화하고 빌드  
+gradle - 빌드  
+babel - 자바스크립트 컴파일  

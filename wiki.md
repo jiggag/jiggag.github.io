@@ -64,9 +64,12 @@ for(Element el : ele.select("tr")){
 	 String txt = el.select("td").text();
 }
 ```
-Jsoup 이용하여 크롤링
-해당 url의 html을 Document에 담아서 찾고자하는 태그나 클래스로 내용 가져오기
-
+Jsoup 이용하여 크롤링  
+해당 url의 html을 Document에 담아서 찾고자하는 태그나 클래스로 내용 가져오기  
+  
+- 2019.3.17  
+이게 cors 해결방법 중 하나인 jsonp와 같은 내용인걸까?  
+해당 페이지를 script로 호출해오는 것이라 했는데..  
 
 ## 안드로이드 웹 크롤링
 * app: build.gradle
@@ -304,3 +307,5 @@ webpack - 패키지로 빌드
 gulp - 자동화하고 빌드  
 gradle - 빌드  
 babel - 자바스크립트 컴파일  
+  
+

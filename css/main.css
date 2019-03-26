@@ -3,7 +3,9 @@ layout: null
 ---
 
 /* 2019.1.19 Add font */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:700');
+/* @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:700'); */
+/* 2019.3.26 Add font */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR');
 
 @import url("pygment_highlights.css");
 
@@ -11,7 +13,8 @@ layout: null
 
 body {
   /* font-family: 'Lora', 'Times New Roman', serif; */
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Noto Serif KR', serif;
   font-size: 18px;
   color: #404040;
   position: relative;

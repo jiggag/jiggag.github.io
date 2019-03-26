@@ -18,7 +18,7 @@ baseurl: ""
 title: JIGGAG
 
 # Short description of your site
-description: blog by jiggag
+description: 
 
 # --- Navigation bar options --- #
 
@@ -80,7 +80,7 @@ social-network-links:
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+  instagram: _jiggag_
 #  youtube: user/deanat78
 #  spotify: yourname
 #  telephone: +14159998888
@@ -92,7 +92,7 @@ social-network-links:
 share-links-active:
   twitter: true
   facebook: true
-  google: false
+  google: true
   linkedin: true
 
 # How to display the link to the website in the footer

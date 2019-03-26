@@ -30,7 +30,8 @@ p {
 }
 h1,h2,h3,h4,h5,h6 {
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Noto Serif KR', serif;
   font-weight: 800;
 }
 a {
@@ -66,7 +67,8 @@ hr.small {
 
 .main-explain-area {
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Noto Serif KR', serif;
   padding: 15px inherit;
 }
 
@@ -118,7 +120,8 @@ img {
   background-color: {{ site.navbar-col }};
   border-bottom: 1px solid #EAEAEA;
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Noto Serif KR', serif;
   {% if site.navbar-img %}
   background-image: url({{ site.navbar-img }});
   background-attachment: fixed;
@@ -296,7 +299,8 @@ footer .list-inline {
 }
 footer .copyright {
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Noto Serif KR', serif;
   text-align: center;
   margin-bottom: 0;
 }
@@ -364,7 +368,8 @@ footer .theme-by {
 }
 .post-preview .post-entry {
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Noto Serif KR', serif;
 }
 .post-entry-container {
   display: inline-block;
@@ -402,7 +407,8 @@ footer .theme-by {
 
 .blog-tags {
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Noto Serif KR', serif;
   color: #999;
   font-size: 15px;
   margin-bottom: 30px;
@@ -521,7 +527,8 @@ footer .theme-by {
   font-size: 11px;
   color: #EEE;
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Noto Serif KR', serif;
   right: 0;
   bottom: 0;
   display: none;
@@ -606,7 +613,8 @@ footer .theme-by {
 
 .pager li a {
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Noto Serif KR', serif;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
@@ -773,7 +781,8 @@ td.gutter {
 
 #full-tags-list {
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Noto Serif KR', serif;
 }
 
 #full-tags-list .tag-entry {

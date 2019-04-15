@@ -314,4 +314,10 @@ babel - 자바스크립트 컴파일
 프로젝트 설치할 때 패키지 포함 여부  
   
 ## Firebase Hosting, Funtions
+  
+## 함수형
+Array.map  
+Array.filter
+Array.reduce
+Object.key
 

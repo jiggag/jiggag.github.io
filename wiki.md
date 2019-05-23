@@ -321,3 +321,6 @@ Array.filter
 Array.reduce
 Object.key
 
+## Typescript
+모든것에 타입 선언  
+득인가 실인가

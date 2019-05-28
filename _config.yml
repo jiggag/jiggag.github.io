@@ -15,7 +15,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: 직각어깨를 꿈꾸는 
+title: 직각어깨를 꿈꾸는 개발자
 
 # Short description of your site
 #description: 
@@ -129,7 +129,7 @@ excerpt_length: 50
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
-title-separator: "-"
+# title-separator: "-"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 

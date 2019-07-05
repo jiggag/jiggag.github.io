@@ -1,3 +1,10 @@
+---
+layout: post
+published: true
+title : 플레이스토어 개인정보처리방침
+subtitle : 앱이 삭제됬다는 메일이 날라왔다
+tags: [playstore]
+---
 ## Privacy Policy
 
 jiggag built the StopWatch app as a Free app. This SERVICE is provided by jiggag at no cost and is intended for use as is.

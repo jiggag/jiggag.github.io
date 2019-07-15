@@ -480,7 +480,11 @@ footer .theme-by {
   transition: opacity 1s linear;
 }
 .intro-header .page-heading {
-  text-align: center;
+  text-align: left;
+}
+.intro-header .page-heading .page-title {
+  font-size: 30px;
+  font-weight: 600;
 }
 .intro-header.big-img .page-heading,
 .intro-header.big-img .post-heading {
@@ -548,7 +552,7 @@ footer .theme-by {
     // font-size: 80px;
   }
   .intro-header .post-heading h1 {
-    font-size: 50px;
+    // font-size: 50px;
   }
   .intro-header.big-img .img-desc {
     font-size: 14px;

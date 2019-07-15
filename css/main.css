@@ -772,7 +772,7 @@ td.gutter {
 }
 
 .navbar-default button.navbar-toggle[aria-expanded="true"] {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Tags page */

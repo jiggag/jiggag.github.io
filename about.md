@@ -1,5 +1,6 @@
 ---
 layout: page
+title: About
 ---
 <div class="profile">
   <p><img src="/img/baseball.png" /> 직각어깨를 꿈꾸며</p>

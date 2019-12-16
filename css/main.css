@@ -39,6 +39,7 @@ h1,h2,h3,h4,h5,h6 code {
   font-size: 95%;
 }
 code {
+  margin: 10px 0;
   font-family: 'Noto Serif KR', serif;
 }
 a {

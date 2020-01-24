@@ -816,4 +816,5 @@ td.gutter {
 /* about.md */
 .profile { width:280px;margin:auto;padding: 50px 0; }
 .profile p { margin: 0; }
-.profile img { width: 18px;height: 18px; }
+.profile img { width: 18px;height: 18px;margin-right: 10px; }
+.profile>div { margin-bottom: 20px; }

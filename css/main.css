@@ -818,3 +818,14 @@ td.gutter {
 .profile p { margin: 0; }
 .profile img { width: 18px;height: 18px;margin-right: 10px; }
 .profile>div { margin-bottom: 20px; }
+
+
+/* mlog.html */
+#logs {
+  max-width: 400px;
+  width: 60%;
+  position: relative;
+  margin: 4px auto;
+}
+#logs .log a { color: #404040; }
+#logs .log time { color: #404040;position: absolute;right: 0;bottom: 0;font-size: 12px; }

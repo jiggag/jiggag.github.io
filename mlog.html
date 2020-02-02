@@ -5,15 +5,11 @@ title: 'Monthly Log'
 
 {%- assign log = 'log' -%}
 
-<div id="full-log-list">
-  <div class="post-list">
-      {%- for post in site.tags[log] -%}
-          <div class="tag-entry">
-              <a href="{{- site.url -}}{{- post.url -}}">{{- post.title -}}</a>
-              <div class="entry-date">
-                  <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%Y.%m.%d" -}}</time>
-              </div>
-          </div>
-      {%- endfor -%}
-  </div>
+<div id="logs">
+    {%- for post in site.tags[log] -%}
+        <div class="log">
+            <a href="{{- site.url -}}{{- post.url -}}">{{- post.title -}}</a>
+            <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%Y.%m.%d" -}}</time>
+        </div>
+    {%- endfor -%}
 </div>

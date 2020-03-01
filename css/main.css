@@ -831,4 +831,7 @@ td.gutter {
   padding: 4px 0;
 }
 #logs .log a { color: #404040; }
-#logs .log time { color: #404040;position: absolute;right: 0;bottom: 0;font-size: 12px; }
+#logs .log time { color: #404040;font-size: 12px; }  
+@media only screen and (min-width: 400px) {
+  #logs .log time { position: absolute;right: 0;bottom: 4px; }  
+}

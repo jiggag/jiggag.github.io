@@ -14,7 +14,7 @@ layout: page
     <p><img src="/img/blog.png" width="18" alt="블로그" /> https://jiggag.github.io</p>
   </div>
   <div class="skill">
-    <p>React, React Native, AngularJS</p>
-    <p>Java, MySQL</p>
+    <p>React, React Native, Redux, Redux-Saga</p>
+    <p>AngularJS, Java, MySQL</p>
   </div>
 </div>

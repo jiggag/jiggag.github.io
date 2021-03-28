@@ -1,8 +1,8 @@
 ---
 layout : post
 published : true
-title : Chapter 01 코틀린 시작하기
-subtitle : 코틀린이란
+title : 코틀린이란
+subtitle : Chapter 01 코틀린 시작하기
 tags : [코틀린, 스터디, kotlin]
 --- 
 
@@ -128,7 +128,7 @@ tags : [코틀린, 스터디, kotlin]
     - 메소드를 호출한 객체에서 다른 객체로 위임할 때 타입을 안정적으로 사용한다
     - ref. Groovy, Ruby
 - argument-matching
-    - if-else 중첩 대신 인자 매칭 문법을 사용하여 코드를 간결하게 작성한다
+    - if-else 중첩 대신 인자 매칭 문법 when을 사용하여 코드를 간결하게 작성한다
     - ref. Erlang, Scala
 - 함수 확장
     - 이미 존재하는 함수를 확장하는 것이 쉽다

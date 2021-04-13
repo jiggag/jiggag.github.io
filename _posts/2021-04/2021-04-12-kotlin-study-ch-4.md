@@ -219,8 +219,46 @@ fun systemInfo(): String {
 - range, 배열, 콜렉션으로 반복하는 코드를 작성한다
 - when 전달인자 매칭문법으로 기존 조건문보다 간결하고 코드의 노이즈를 제거한다
 
+# 🚨?!?!?
+
+- **arrayOf랑 listOf의 차이?**
+  - arrayOf는 사이즈가 고정되어있음
 
 # 🙈 더 알아보기
 
+- when을 Decomplie하면?
+  - if이거나 switch
+
+  ```kotlin
+  // when 인자가 없는 경우
+  print(when {
+    list.size == 3 -> true
+    list.size > 4 -> 1
+    else -> false
+  })
+
+  >>> Decompile
+  Object var2 = ((Standalone)this).list.size() == 3 ? true : (((Standalone)this).list.size() > 4 ? 1 : false);
+
+  // when 인자가 있는 경우
+  print(when (list.size){
+    3 -> true
+    4 -> 1
+    else -> false
+  })
+
+  >>> Decompile
+  Object var10001;
+    switch(((Standalone)this).list.size()) {
+    case 3:
+      var10001 = true;
+      break;
+    case 4:
+      var10001 = 1;
+      break;
+    default:
+      var10001 = false;
+    }
+  ```
 - import kotlin
     - kotlin 패키지에 포함된 함수는 kotlin.arrayOf() 형태나 kotlin을 따로 import하지 않아도 arrayOf()로만 사용 가능하다

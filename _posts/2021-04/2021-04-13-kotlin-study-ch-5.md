@@ -130,7 +130,7 @@ public fun <K, V> mapOf(vararg pairs: Pair<K, V>): Map<K, V> =
     2. map으로 돌면서
     3. to를 이용해 Pair로 만들었다
 
-    ⇒ map으로 기존 airportCodes를 변경하였고 airportCodes는 List<Pair<String, Int>> 형태가 되었다
+    ⇒ map으로 기존 airportCodes로 temperatures 생성하였고 List<Pair<String, Int>> 형태가 되었다
 
 - 객체 쌍이 필요하거나 튜플이 필요한 곳에 Pair, Triple이 유용하다
     - 간결하고 컴파일 시간에 타입 안정성을 제공한다

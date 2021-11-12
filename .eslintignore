@@ -1,0 +1,4 @@
+.cache
+jekyll
+node_modules
+public

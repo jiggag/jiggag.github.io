@@ -6,8 +6,8 @@
  */
 
 import * as React from 'react';
-import { Helmet, HelmetProps } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import { Helmet, HelmetProps } from 'react-helmet';
 
 interface SeoProps {
   description?: string;
@@ -16,7 +16,9 @@ interface SeoProps {
   title: string;
 }
 
-const Seo = ({ description = '', lang = 'en', meta = [], title }: SeoProps) => {
+const Seo = function ({
+  description = '', lang = 'en', meta = [], title,
+}: SeoProps) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -28,7 +30,7 @@ const Seo = ({ description = '', lang = 'en', meta = [], title }: SeoProps) => {
           }
         }
       }
-    `
+    `,
   );
 
   const metaDescription = description || site.siteMetadata.description;

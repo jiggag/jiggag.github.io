@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { PageProps, Link, GatsbySSR } from 'gatsby';
-
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 
@@ -8,7 +7,7 @@ interface UsingSSRProps {
   serverData: unknown;
 }
 
-const UsingSSR: React.FC<UsingSSRProps> = ({ serverData }) => {
+const UsingSSR: React.FC<UsingSSRProps> = function ({ serverData }) {
   return (
     <Layout>
       <Seo title="Using SSR" />
@@ -16,7 +15,8 @@ const UsingSSR: React.FC<UsingSSRProps> = ({ serverData }) => {
       <img style={{ width: '300px' }} alt="A random dog" src={serverData.message} />
       <p>Welcome to a server side rendered page with a random dog photo</p>
       <p>
-        To learn more, head over to our{' '}
+        To learn more, head over to our
+        {' '}
         <a href="https://www.gatsbyjs.com/docs/reference/rendering-options/server-side-rendering/">
           documentation about Server Side Rendering
         </a>

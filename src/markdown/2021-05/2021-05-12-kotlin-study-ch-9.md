@@ -24,7 +24,7 @@ tags : [코틀린, 스터디, kotlin]
 - 상속과 델리게이션 어느 것이 더 유용할까
     - 클래스의 객체가 단순하게 다른 클래스의 객체를 `사용`하기만 한다면 `델리게이션`
     - 클래스의 객체가 다른 클래스의 객체의 자리에 `대체`되어야한다면 `상속`
-    ![delegation](/jiggag.github.io/img/posts/2021/05/delegation.png)
+    ![delegation](../../images/2021/05/delegation.png)
 
     - 첫번째는 Candidate는 BaseClass를 상속받았고 Caller가 Candidate가 항상 들고 다니는 BaseClass에 접근한다
         - 자식클래스(Candidate)는 부모클래스(BaseClass)의 동작을 변경할 수 없다

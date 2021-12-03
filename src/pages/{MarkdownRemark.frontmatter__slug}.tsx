@@ -1,5 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Layout from '../components/layout';
+import Seo from '../components/seo';
 
 interface MarkdownRemarkProps {
   data: {
@@ -15,23 +17,24 @@ interface MarkdownRemarkProps {
 }
 
 const MarkdownRemark = function ({
-  data, // this prop will be injected by the GraphQL query below.
+  data: { markdownRemark: { frontmatter, html } },
 }: MarkdownRemarkProps) {
-  const { markdownRemark } = data; // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark;
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <div className="blog-post-header">
-          <h1>{frontmatter.title}</h1>
-          <h6>{frontmatter.date}</h6>
+    <Layout>
+      <Seo title={frontmatter.title} />
+      <div className="blog-post-container">
+        <div className="blog-post">
+          <div className="blog-post-header">
+            <h1>{frontmatter.title}</h1>
+            <h6>{frontmatter.date}</h6>
+          </div>
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
         </div>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
       </div>
-    </div>
+    </Layout>
   );
 };
 

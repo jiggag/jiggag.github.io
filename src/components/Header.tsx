@@ -5,7 +5,7 @@ interface HeaderProps {
   siteTitle?: string;
 }
 
-const Header = function ({ siteTitle = '' }: HeaderProps) {
+export const Header = function ({ siteTitle = '' }: HeaderProps) {
   return (
     <header
       style={{
@@ -35,5 +35,3 @@ const Header = function ({ siteTitle = '' }: HeaderProps) {
     </header>
   );
 };
-
-export default Header;

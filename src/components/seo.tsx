@@ -16,7 +16,7 @@ interface SeoProps {
   title: string;
 }
 
-const Seo = function ({
+export const Seo = function ({
   description = '', lang = 'en', meta = [], title,
 }: SeoProps) {
   const { site } = useStaticQuery(
@@ -80,5 +80,3 @@ const Seo = function ({
     />
   );
 };
-
-export default Seo;

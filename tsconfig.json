@@ -12,12 +12,6 @@
     "esModuleInterop": true,
     "allowJs": true,
     "baseUrl": "src",
-    "paths": {
-      "components/*": ["./components/*"],
-      "images/*": ["./images/*"],
-      "markdown/*": ["./markdown/*"],
-      "pages/*": ["./pages/*"],
-    },
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "public", ".cache"]

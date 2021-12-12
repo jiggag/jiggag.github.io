@@ -10,17 +10,19 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { Footer } from 'components/Footer';
 import { Header } from 'components/Header';
 import './layout.css';
+import { Site } from 'types';
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 export const Layout = function ({ children }: LayoutProps) {
-  const data = useStaticQuery(graphql`
+  const data = useStaticQuery<Site>(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
+          author
         }
       }
     }
@@ -28,7 +30,7 @@ export const Layout = function ({ children }: LayoutProps) {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || 'Title'} />
+      <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: '0 auto',
@@ -37,7 +39,7 @@ export const Layout = function ({ children }: LayoutProps) {
         }}
       >
         <main>{children}</main>
-        <Footer />
+        <Footer author={data.site.siteMetadata.author} />
       </div>
     </>
   );

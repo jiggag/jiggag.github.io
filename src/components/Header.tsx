@@ -2,10 +2,10 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 interface HeaderProps {
-  siteTitle?: string;
+  siteTitle: string;
 }
 
-export const Header = function ({ siteTitle = '' }: HeaderProps) {
+export const Header = function ({ siteTitle }: HeaderProps) {
   return (
     <header
       style={{

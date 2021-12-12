@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export default function HTML(props) {
+const HTML = function (props) {
   return (
     <html {...props.htmlAttributes}>
       <head>
@@ -30,7 +30,9 @@ export default function HTML(props) {
       </body>
     </html>
   )
-}
+};
+
+export default HTML;
 
 HTML.propTypes = {
   htmlAttributes: PropTypes.object,

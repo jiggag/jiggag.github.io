@@ -1,17 +1,17 @@
 import * as React from 'react';
 
-export const Footer = function () {
+interface FooterProps {
+  author: string;
+}
+
+export const Footer = function ({ author }: FooterProps) {
   return (
     <footer
       style={{
         marginTop: '2rem',
       }}
     >
-      ©
-      {' '}
-      {new Date().getFullYear()}
-      , Built with
-      {' '}
+      {`${author}, Built with `}
       <a href="https://www.gatsbyjs.com">Gatsby</a>
     </footer>
   );

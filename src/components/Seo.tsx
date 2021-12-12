@@ -8,6 +8,7 @@
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Helmet, HelmetProps } from 'react-helmet';
+import { Site } from 'types';
 
 interface SeoProps {
   description?: string;
@@ -17,16 +18,15 @@ interface SeoProps {
 }
 
 export const Seo = function ({
-  description = '', lang = 'en', meta = [], title,
+  description = '', lang = 'ko', meta = [], title,
 }: SeoProps) {
-  const { site } = useStaticQuery(
+  const { site } = useStaticQuery<Site>(
     graphql`
       query {
         site {
           siteMetadata {
             title
             description
-            author
           }
         }
       }
@@ -34,7 +34,6 @@ export const Seo = function ({
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const defaultTitle = site.siteMetadata?.title;
 
   return (
     <Helmet
@@ -42,7 +41,7 @@ export const Seo = function ({
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={([
         {
           name: 'description',
@@ -59,22 +58,6 @@ export const Seo = function ({
         {
           property: 'og:type',
           content: 'website',
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary',
-        },
-        {
-          name: 'twitter:creator',
-          content: site.siteMetadata?.author || '',
-        },
-        {
-          name: 'twitter:title',
-          content: title,
-        },
-        {
-          name: 'twitter:description',
-          content: metaDescription,
         },
       ] as HelmetProps['meta']).concat(meta)}
     />

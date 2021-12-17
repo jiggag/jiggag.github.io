@@ -1,35 +1,66 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import { graphql, Link } from 'gatsby';
 import { Layout } from 'components/Layout';
 import { Seo } from 'components/Seo';
 
-const IndexPage = function () {
+const IndexPage = function ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}: {
+  data: {
+    allMarkdownRemark: {
+      edges: {
+        node: {
+          id: string;
+          frontmatter: {
+            title: string;
+            slug: string;
+            published: boolean;
+            date: string;
+          }
+        }
+      }[];
+    };
+  };
+}) {
   return (
     <Layout>
       <Seo title="Home" />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <StaticImage
-        src="../images/gatsby-astronaut.png"
-        width={300}
-        quality={95}
-        formats={['auto', 'webp', 'avif']}
-        alt="A Gatsby astronaut"
-        style={{ marginBottom: '1.45rem' }}
-      />
-      <p>
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-        {' '}
-        <br />
-        <Link to="/using-ssr">Go to "Using SSR"</Link>
-        {' '}
-        <br />
-        <Link to="/using-dsg">Go to "Using DSG"</Link>
-      </p>
+      {edges.filter(({ node }) => node.frontmatter.published).map(({ node: { id, frontmatter: { title, slug, date } } }) => (
+        <p
+          key={id}
+          style={{
+            margin: 0,
+          }}
+        >
+          <Link to={slug}>
+            {title}
+            /
+            {date}
+          </Link>
+        </p>
+      ))}
     </Layout>
   );
 };
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+    query {
+        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        slug
+                        title
+                        published
+                        date(formatString: "YYYY-MM-DD")
+                    }
+                }
+            }
+        }
+    }
+`;

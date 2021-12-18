@@ -1,24 +1,12 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
 import { Layout } from 'components/Layout';
 import { Seo } from 'components/Seo';
-
-interface MarkdownRemarkProps {
-  data: {
-    markdownRemark: {
-      frontmatter: {
-        slug: string;
-        date: string;
-        title: string;
-      };
-      html: string;
-    }
-  }
-}
+import { MarkdownRemarkProps } from 'types';
 
 const MarkdownRemark = function ({
   data: { markdownRemark: { frontmatter, html } },
-}: MarkdownRemarkProps) {
+}: PageProps<MarkdownRemarkProps<'slug' | 'date' | 'title'>>) {
   return (
     <Layout>
       <Seo title={frontmatter.title} />

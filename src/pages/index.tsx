@@ -1,29 +1,14 @@
 import * as React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql, Link, PageProps } from 'gatsby';
 import { Layout } from 'components/Layout';
 import { Seo } from 'components/Seo';
+import { AllMarkdownRemarkProps } from 'types';
 
 const IndexPage = function ({
   data: {
     allMarkdownRemark: { edges },
   },
-}: {
-  data: {
-    allMarkdownRemark: {
-      edges: {
-        node: {
-          id: string;
-          frontmatter: {
-            title: string;
-            slug: string;
-            published: boolean;
-            date: string;
-          }
-        }
-      }[];
-    };
-  };
-}) {
+}: PageProps<AllMarkdownRemarkProps<'title' | 'slug' | 'published' | 'date'>>) {
   return (
     <Layout>
       <Seo title="Home" />

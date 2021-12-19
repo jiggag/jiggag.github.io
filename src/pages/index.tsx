@@ -12,20 +12,32 @@ const IndexPage = function ({
   return (
     <Layout>
       <Seo title="Home" />
-      {edges.filter(({ node }) => node.frontmatter.published).map(({ node: { id, frontmatter: { title, slug, date } } }) => (
-        <p
-          key={id}
-          style={{
-            margin: 0,
-          }}
+      <main style={{
+        overflow: 'auto',
+        flex: 1,
+      }}
+      >
+        <div style={{
+          background: '#f1ede7',
+          padding: '0.5rem 1rem',
+        }}
         >
-          <Link to={slug}>
-            {title}
-            /
-            {date}
-          </Link>
-        </p>
-      ))}
+          {edges.filter(({ node }) => node.frontmatter.published).map(({ node: { id, frontmatter: { title, slug, date } } }) => (
+            <p
+              key={id}
+              style={{
+                margin: 0,
+              }}
+            >
+              <Link to={slug}>
+                {title}
+                /
+                {date}
+              </Link>
+            </p>
+          ))}
+        </div>
+      </main>
     </Layout>
   );
 };

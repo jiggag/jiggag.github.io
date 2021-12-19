@@ -4,6 +4,7 @@ module.exports = {
     description: '직각어깨를 꿈꾸는 개발자',
     author: '©Jiggag',
     siteUrl: 'https://jiggag.github.io/',
+    github: 'https://github.com/jiggag',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

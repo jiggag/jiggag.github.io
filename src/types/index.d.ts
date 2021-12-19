@@ -3,6 +3,7 @@ interface SiteMetadata {
   description: string;
   author: string;
   siteUrl: string;
+  github: string;
 }
 
 export interface Site {

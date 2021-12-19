@@ -11,16 +11,14 @@ const MarkdownRemark = function ({
     <Layout>
       <Seo title={frontmatter.title} />
       <div className="blog-post-container">
-        <div className="blog-post">
-          <div className="blog-post-header">
-            <h1>{frontmatter.title}</h1>
-            <h6>{frontmatter.date}</h6>
-          </div>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+        <div className="blog-post-header">
+          <h1>{frontmatter.title}</h1>
+          <h6>{frontmatter.date}</h6>
         </div>
+        <div
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </div>
     </Layout>
   );

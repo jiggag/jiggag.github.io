@@ -12,7 +12,7 @@ const MarkdownRemark = function ({
       <Seo title={frontmatter.title} />
       <div className="blog-post-container">
         <div className="blog-post-header">
-          <h1>{frontmatter.title}</h1>
+          <h3>{frontmatter.title}</h3>
           <h6>{frontmatter.date}</h6>
         </div>
         <div

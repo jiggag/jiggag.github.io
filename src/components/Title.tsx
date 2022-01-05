@@ -4,15 +4,18 @@ import { Link } from 'gatsby';
 
 interface TitleProps {
   to?: string;
+  className?: string;
   children: ReactNode;
 }
 
-export const Title = function ({ to = '', children }: TitleProps) {
+export const Title = function ({ to = '', className, children }: TitleProps) {
   return (
-    <p style={{
-      margin: 0,
-      fontSize: '1.5rem',
-    }}
+    <p
+      className={className}
+      style={{
+        margin: 0,
+        fontSize: '1.5rem',
+      }}
     >
       <Link
         to={to}

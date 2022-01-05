@@ -8,6 +8,7 @@ interface FooterProps {
 export const Footer = function ({ author, github }: FooterProps) {
   return (
     <footer
+      className="field-row"
       style={{
         width: '100%',
         display: 'inline-flex',
@@ -22,24 +23,17 @@ export const Footer = function ({ author, github }: FooterProps) {
         {`${author}, Built with `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>
       </div>
-      <a
-        href={github}
+      <button
+        onClick={() => {
+          window.location.href = github;
+        }}
         style={{
-          color: 'black',
-          textDecoration: 'none',
+          padding: '0.1rem 0',
+          width: '10rem',
         }}
       >
-        <div style={{
-          border: '1px solid',
-          textAlign: 'center',
-          padding: '0.1rem 0',
-          width: '7rem',
-          boxShadow: 'rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px',
-        }}
-        >
-          Github
-        </div>
-      </a>
+        Github
+      </button>
     </footer>
   );
 };

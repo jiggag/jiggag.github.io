@@ -11,6 +11,7 @@ import { Footer } from 'components/Footer';
 import { Header } from 'components/Header';
 import './layout.css';
 import './main.css';
+import '98.css';
 import { Site } from 'types';
 
 interface LayoutProps {
@@ -32,26 +33,27 @@ export const Layout = function ({ customHeader, children }: LayoutProps) {
   `);
 
   return (
-    <div style={{
-      padding: '3px 3px',
-      height: '100vh',
-    }}
+    <div
+      className="window"
+      style={{
+        height: '100vh',
+      }}
     >
       <div style={{
-        boxShadow: 'rgba(9, 30, 66, 0.75) 0px 1px 1px, rgba(9, 30, 66, 0.33) 0px 0px 2px 1px',
-        padding: '2px 2px',
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        background: '#d7d0c5',
       }}
       >
         <Header siteTitle={data.site.siteMetadata.title} />
         {customHeader}
-        <main style={{
-          overflow: 'auto',
-          flex: 1,
-        }}
+        <main
+          className="window-body"
+          style={{
+            overflow: 'auto',
+            flex: 1,
+            margin: 0,
+          }}
         >
           {children}
         </main>

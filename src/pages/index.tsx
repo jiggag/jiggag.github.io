@@ -12,23 +12,14 @@ const IndexPage = function ({
   return (
     <Layout>
       <Seo title="Home" />
-      <div style={{
-        padding: '0.5rem 1rem',
-      }}
-      >
+      <div className="home-container">
         {edges.filter(({ node }) => node.frontmatter.published).map(({ node: { id, frontmatter: { title, slug, date } } }) => (
-          <p
-            key={id}
-            style={{
-              margin: 0,
-            }}
-          >
-            <Link to={slug}>
+          <Link to={slug} key={id}>
+            <div className="home-post-title">
               {title}
-              /
-              {date}
-            </Link>
-          </p>
+              <p>{date}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </Layout>

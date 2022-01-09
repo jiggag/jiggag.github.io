@@ -9,9 +9,7 @@ import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Footer } from 'components/Footer';
 import { Header } from 'components/Header';
-import './layout.css';
 import './main.css';
-import '98.css';
 import { Site } from 'types';
 
 interface LayoutProps {
@@ -35,25 +33,13 @@ export const Layout = function ({ customHeader, children }: LayoutProps) {
   return (
     <div
       className="window"
-      style={{
-        height: '100vh',
-      }}
     >
-      <div style={{
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-      }}
+      <div className="window-container"
       >
         <Header siteTitle={data.site.siteMetadata.title} />
         {customHeader}
         <main
           className="window-body"
-          style={{
-            overflow: 'auto',
-            flex: 1,
-            margin: 0,
-          }}
         >
           {children}
         </main>

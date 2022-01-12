@@ -1,0 +1,238 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.2222873932a2af5f300c.css" data-identity="gatsby-global-css">*{font-family:Nanum Gothic!important}:root{--surface:silver;--content:#e2e2e2;--button-highlight:#fff;--button-face:#dfdfdf;--button-shadow:grey;--window-frame:#0a0a0a;--dialog-blue:navy;--dialog-blue-light:#1084d0;--dialog-gray:grey;--dialog-gray-light:#b5b5b5;--link-blue:#00f;--element-spacing:8px;--border-width:1px;--border-raised-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight);--border-raised-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);--border-sunken-outer:inset -1px -1px var(--button-highlight),inset 1px 1px var(--window-frame);--border-sunken-inner:inset -2px -2px var(--button-face),inset 2px 2px var(--button-shadow);--border-window-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-face);--border-window-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-highlight)}body{margin:0}pre{background:var(--button-highlight);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);display:block;margin:4px 0;padding:var(--element-spacing)}pre code{background:unset;color:unset;font-size:12px}code{background:#0000ff95;border-radius:10px;color:#fff;font-size:14px;padding:0 6px}a{color:var(--link-blue);text-decoration:none}.window{background:var(--surface);box-shadow:var(--border-window-outer),var(--border-window-inner);height:100vh;margin:auto;max-width:500px}.window-container{display:flex;flex-direction:column;height:100%}.window-body{flex:1 1;margin:0 0 0 var(--element-spacing);overflow:auto;padding-right:var(--element-spacing)}.title-bar{align-items:center;background:linear-gradient(150deg,var(--dialog-blue),var(--dialog-blue-light));display:flex;justify-content:space-between;margin:3px 3px 0;padding:2px var(--element-spacing)}.title-bar .title{color:#fff;font-size:24px;margin:0;text-decoration:none}.title-bar-controls{display:flex}.title-bar-controls button{display:block;min-height:14px;min-width:16px;padding:0}.title-bar-controls button[aria-label=Close]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA4IDciPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMGgydjFoMXYxaDJWMWgxVjBoMnYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxSDZWNkg1VjVIM3YxSDJ2MUgwVjZoMVY1aDFWNGgxVjNIMlYySDFWMUgwVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;margin-left:2px;width:20px}.title-bar-text{color:#fff;font-weight:700;letter-spacing:0;margin-right:24px}.blog-post-container{background:var(--content);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0 0 0;overflow-x:scroll;padding:var(--element-spacing)}.blog-post-content h1,h2{font-size:20px}.blog-post-content h3,h4{font-size:16px}.blog-post-content ul{padding-left:20px}.home-post-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.home-post-title p{font-size:12px;margin:4px 0}.footer{align-items:center;display:flex;padding:12px 15px}.footer .footer-label{align-self:flex-end;font-size:12px;width:100%}button{background:var(--surface);border:none;border-radius:0;box-shadow:var(--border-raised-outer),var(--border-raised-inner);box-sizing:border-box;min-height:23px;min-width:75px;padding:0 12px}button:not(:disabled):active{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);padding:2px 3px 0 13px}@media (not(hover)){button:not(:disabled):hover{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner)}}button:focus{outline:1px dotted #000;outline-offset:-4px}button::-moz-focus-inner{border:0}::-webkit-scrollbar{width:16px}::-webkit-scrollbar:horizontal{height:17px}::-webkit-scrollbar-corner{background:var(--button-face)}::-webkit-scrollbar-track{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9InNpbHZlciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDB2MWgxdjFoMVYxSDFWMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxdjFIMHYxaDFWMWgxVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}::-webkit-scrollbar-thumb{background-color:var(--button-face);box-shadow:var(--border-raised-outer),var(--border-raised-inner)}::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement{display:block}::-webkit-scrollbar-button:vertical:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:vertical:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA2SDR2MWgxdjFoMXYxaDF2MWgxVjloMVY4aDFWN2gxVjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:horizontal:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDRIOHYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxaDFWNFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);width:16px}::-webkit-scrollbar-button:horizontal:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDRINnY3aDF2LTFoMVY5aDFWOGgxVjdIOVY2SDhWNUg3VjRaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);width:16px}</style><meta name="generator" content="Gatsby 4.1.4"/><title data-react-helmet="true">3월 한달동안 로그 | JIGGAG</title><meta data-react-helmet="true" name="description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:title" content="3월 한달동안 로그"/><meta data-react-helmet="true" property="og:description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:type" content="website"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script data-gatsby="web-vitals-polyfill">
+            !function(){var e,t,n,i,r={passive:!0,capture:!0},a=new Date,o=function(){i=[],t=-1,e=null,f(addEventListener)},c=function(i,r){e||(e=r,t=i,n=new Date,f(removeEventListener),u())},u=function(){if(t>=0&&t<n-a){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+t};i.forEach((function(e){e(r)})),i=[]}},s=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){c(e,t),a()},i=function(){a()},a=function(){removeEventListener("pointerup",n,r),removeEventListener("pointercancel",i,r)};addEventListener("pointerup",n,r),addEventListener("pointercancel",i,r)}(t,e):c(t,e)}},f=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,s,r)}))},p="hidden"===document.visibilityState?0:1/0;addEventListener("visibilitychange",(function e(t){"hidden"===document.visibilityState&&(p=t.timeStamp,removeEventListener("visibilitychange",e,!0))}),!0);o(),self.webVitals={firstInputPolyfill:function(e){i.push(e),u()},resetFirstInputPolyfill:o,get firstHiddenTime(){return p}}}();
+          </script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>            
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-4711551515762404",
+                enable_page_level_ads: true
+              });
+          </script><link as="script" rel="preload" href="/webpack-runtime-64497d164bea53b55ab8.js"/><link as="script" rel="preload" href="/framework-094b0089736b8f621f0d.js"/><link as="script" rel="preload" href="/app-7b0a9d9c8a02f3d5ef04.js"/><link as="script" rel="preload" href="/commons-5bade2ed2558cad4a45d.js"/><link as="script" rel="preload" href="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"/><link as="fetch" rel="preload" href="/page-data/blog/monthly-log/2021-03/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3000541721.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3293771174.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4711551515762404" crossorigin="anonymous"></script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="window"><div class="window-container"><header class="title-bar"><a class="title title-bar-text" href="/">JIGGAG</a><div class="title-bar-controls"><button aria-label="Close"></button></div></header><main class="window-body"><div class="blog-post-container"><div class="blog-post-header"><h3>3월 한달동안 로그</h3><h6>2021년 4월 2일</h6></div><div class="blog-post-content"><h2>3/29 ~ 3/31</h2>
+<h4><code>lint-staged</code></h4>
+<ul>
+<li><code>monorepo</code>에 <code>lint-staged</code> 설정하기</li>
+<li>root에 <code>husky</code> 설정</li>
+<li>eslint, kotlint, swiftlint</li>
+<li>왜 이렇게 많지!!!!</li>
+</ul>
+<h4><code>eslint</code></h4>
+<ul>
+<li>많고 많은 rule 읽어보기... 너무 많다</li>
+<li>lint 한번 돌리는데 오억시간... 추가하고 추가하고 얹어있는 플러그인 설정 덕분이라 예상되며 어떻게 줄이면 좋을까</li>
+<li>개인적으로 좋아하는 즐겨하는 lint 설정들은 js부터 사용했던것이고 ts로 완전 전환되었음에도 그대로 유지하고 있었다</li>
+<li>오히려 불필요한 옵션값임에도 그냥 스타일로 굳어진 듯한 옵션</li>
+<li>특히 props를 스프레드로 전달하는 것을 좋아라하지 않았는데 이유는 어떤 값이 들어있는지 오고가는지 잘 모르겠어서!</li>
+<li>개발 당시에는 스프레드로 쫘라락 전달하면 간단했지만</li>
+<li>나중에 오류가 발생했을떄나 무언가 수정, 리팩터링 하려고 할 때 <code>도대체 이 값은 어디서부터 전해내려오고 있는지</code></li>
+<li>그 값을 찾고자 스프레드를 거슬러 가는 것은 더 귀찮았기에 꼭 챙겨다니는 옵션</li>
+<li><code>react/jsx-props-no-spreading</code></li>
+<li>근데 ts에서는 인터페이스가 명시되어있으니 스프레드로 전달해도 금받 찾을 수 있지않을까</li>
+</ul>
+<hr>
+<h2>3/22 ~ 3/28</h2>
+<h4><code>MySQL</code></h4>
+<ul>
+<li>예전에도 발생했었던듯한 오류</li>
+<li>최근에 발생하지 않아서 해결됬나 했더니 다시 발생</li>
+<li>
+<pre><code>  Error: Packets out of order. Got: 1 Expected: 0
+  PROTOCOL_PACKETS_OUT_OF_ORDER
+</code></pre>
+</li>
+<li>오류나면 슬랙 알림을 붙여놨더니 수십개가 날라온다...</li>
+<li><code>max_allowed_packet=500M</code></li>
+<li>알림이 너무 와서 재시작부터...</li>
+</ul>
+<h4><code>RN 0.64</code></h4>
+<ul>
+<li>버전 업 이후 빌드 에러</li>
+<li><a href="https://github.com/react-native-community/upgrade-support/issues/138">같은 에러가 발생한다는 깃헙 이슈가 등록되었다</a></li>
+<li>무엇이 문제일까</li>
+<li>🚨아아아아아아아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㄱ</li>
+<li>아무리 봐도... 되지 않길래 RN 0.64 업데이트 성공해던 프로젝트를 가져와서 빌드해보니 이것도 안된다</li>
+<li>왜 안되는걸까</li>
+<li>RN 프로젝트를 새로 만들어봐야겠다 -> 안된다...</li>
+<li>xcode에서는 되는데 왜 커맨드로는 안되는걸까...</li>
+<li>(+ fastlane 빌드도 안되는 것....)</li>
+</ul>
+<h4><code>스터디</code></h4>
+<ul>
+<li>스터디가 처음인줄 알았는데 예전에 함수형 자바스크립트를 타입스크립트로 변환하는 스터디를 잠깐 했었다</li>
+<li>물론 오래 못가고 참석이 저조하여 자연스럽게 사라졌다... (그 레포는 아직도 간직 중이다)</li>
+<li>그때 얻은 교훈으로 스터디를 처음에는 지인이랑 하는게 좋지 않을까 생각했다</li>
+<li>그리고 좋은 타이밍에 같이 코틀린을 스터디하는 동료를 찾았다!</li>
+<li>평소에도 꾸준하게 하던 모습에 동기부여를 몰래 받고 있었는데 같이 스터디를 하게 되었으니</li>
+<li>이번 스터디는 잘 할 수 있겠지 하는 기대중!</li>
+</ul>
+<h4><code>메서드 타입</code></h4>
+<ul>
+<li>이런저런 라이브러리를 보다가</li>
+<li>또는 어디선가 보았던</li>
+<li>메서드 타입을 명시한 두가지 방법</li>
+<li><code>method: () => void</code></li>
+<li><code>method(): void</code></li>
+<li>이유는 기억나지 않지만 항상 위의 방법으로 사용하고 있었다</li>
+<li>그래서 새로 진행하고 있는 프로젝트에서는 두번째 방식으로 타입을 명시해보았다</li>
+<li>너무 단순하게 사용하고 있었는지 모르겠지만 별다른 이슈가 없어서 <code>단순히 표현의 차이인가</code>하고 생각을 마무리했었다</li>
+<li>그리고 지난 주말 <code>무언가 해봐야 눈에 보인다</code>고 관련된 내용의 블로그를 접하게 되었다</li>
+<li>첫번째 방법은 프로퍼티 방식의 메서드 타입이고 두번째 방법은 줄여쓰기 방식의 메서드 타입이다</li>
+<li>파라미터의 타입이 공변성, 반공변성 어떤 형태를 가지는지에 따라 타입에러를 발생시킨다 (????)</li>
+<li><a href="https://seob.dev/posts/%EA%B3%B5%EB%B3%80%EC%84%B1%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/">참고: 공변성이란 무엇인가</a></li>
+<li><a href="https://edykim.com/ko/post/what-is-coercion-and-anticommunism/">참고: 공변성과 반공변성은 무엇인가?</a></li>
+<li>외부 라이브러리에서 줄여쓰기 형태의 타입으로 많이 보게 된다면 공변성을 위한 것이라고...</li>
+<li><code>공변성이란 무엇인가???</code>...</li>
+</ul>
+<hr>
+<h2>3/15 ~ 3/21</h2>
+<h4><code>피노키오</code></h4>
+<ul>
+<li>제페토</li>
+<li>지미니 크리켓</li>
+<li>나무인형 피노키오를 만든 제페토</li>
+<li>피노키오가 사람이 될 수 있도록 도와준 지미니 크리켓</li>
+<li>꿈 + 호흡?생명?</li>
+</ul>
+<h4><code>Carousel</code></h4>
+<ul>
+<li>그동안 사용했던 가장 스타가 많은 <code>react-native-snap-carusel</code></li>
+<li>UI 라이브러리로 사용하는 <code>react-native-ui-lib</code></li>
+<li>둘 다 무한반복 캐러샐을 그려보았다</li>
+<li><code>snap-carousel</code>에서는 정방향으로는 문제가 되지 않는데 역방향으로 스와이프하게 되면 1번 페이지에서 마지막 페이지로 이동할때 캐러샐이 깜박이는 이슈가 발생하였다</li>
+<li>근데 <code>ui-lib</code>에서는 동일한 데이터로 그려주었는데 이슈가 발생하지 않는다</li>
+<li>단순하게 <code>그럼 ui-lib으로 그려야지!</code> 하고 끝나려는데 그래도 <code>차이가 뭔지 한번 봐야겠다</code>하고 라이브러리를 열어보았다</li>
+<li><code>ui-lib</code>의 캐러샐은 <code>ScrollView</code>로 되어있었고 스크롤 위치를 이동시켜 레이아웃을 작성하였다</li>
+<li>반대로 <code>snap-carousel</code>에서는 두가지 옵션이 존재했다</li>
+<li><code>ScrollView이거나 FlatList이거나</code></li>
+<li>두 라이브러리의 차이점은 이 부분에 있겠다는 느낌이 확 와닿으면서 해당 옵션의 조건이 되는 코드로 따라 올라가보았다</li>
+<li>그리고 해당 옵션을 설정하는 <code>useScrollView</code>를 props 설정해보니 해당 이슈가 해결되었다</li>
+</ul>
+<h4><code>babel</code></h4>
+<ul>
+<li><code>Error: Reanimated 2 failed to create a worklet, maybe you forgot to add Reanimated's babel plugin</code></li>
+<li><code>react-native-ui-lib</code>의 <code>Carousel</code>을 사용하려고 하는데 갑자기 나타난 오류 메세지</li>
+<li>babel 설정에 플러그인 추가</li>
+</ul>
+<h4><code>개인 메일 주소</code></h4>
+<ul>
+<li>작년 여름 도메인을 장만했는데 개인 사이트를 띄웠던 것도 라즈베리파이로 서버 이전하면서 다시 죽었고... 살리지 않고 있다</li>
+<li>왜그르냐</li>
+<li>그러다 gmail 말고 개인 메일주소가 갖고 싶어서 <code>메일서버를 띄워볼까?</code>하는 찰나의 순간</li>
+<li>정신차리고 조금 찾아보니 도메인 설정 조금만 해주면 개인 메일을 가질 수 있다는 것을 깨닫고 바로 실행</li>
+<li><a href="https://www.gamjaa.com/blog/1461">지메일을 개인 도메인으로</a></li>
+</ul>
+<h4><code>RN Native Module</code></h4>
+<ul>
+<li><a href="https://bitfrit.com/writing-a-native-module-for-react-native-using-kotlin/">네이티브 모듈 코틀린으로 만들어보기</a></li>
+<li>기존에 사용하던 라이브러리들을 간단하게 필요 기능만 직접 만들어보았다</li>
+<li>라이브러리를 사용할 필요 없이 직접 구현해도 될 정도의 기능 (앱 종료, 앱 버전 가져오기)</li>
+<li>코틀린 학습을 목적으로 시작해서 그런지 하는김에 iOS는 swift로 만들어 보려고 했는데 빠르게 기능을 추가하고 싶어서 objective-c로 변경...</li>
+<li>한번에 두가지 욕심은 욕심이였을뿐</li>
+</ul>
+<h4><code>RN 0.64</code></h4>
+<ul>
+<li><a href="https://reactnative.dev/blog/2021/03/12/version-0.64">RN 0.64</a></li>
+<li>안드로이드에만 있던 hermes가 iOS에도 적용되었다</li>
+<li>근데 APK 사이즈가 미묘하게 줄어든것 말고는... 아직 크게 와닿지 않았는데 이번 버전에 iOS도 추가되었다고하니 적용해봐야겠다</li>
+<li>또한 이번 버전에서 inline import를 지원하게 되면서 초기 로딩 속도를 개선할 수 있을 것 같다</li>
+<li><a href="https://reactnative.dev/docs/performance">퍼포먼스 문서</a>를 다시 읽어보는데 <code>FlatList</code>에 <code>getItemLayout</code>은 항상 빼먹고 있는데 꼭 이번주에 넣으리라</li>
+<li>그리고 이상하게도 프로덕션 빌드된 iOS Bugsnag에 트래킹된 내용인 <code>RangeError Out of memory ... [native code] stringify</code>은 아무리 찾아봐도 <code>console.log</code>로 남기고 있는 부분인데</li>
+<li>바벨 플러그인 <code>transform-remove-console</code>이 적용되어있음에도 찍히고 있다... 왜...? -> release 빌드가 되고 있지 않은걸까?</li>
+<li>이번 버전에서 가장 크게 변화된 내용이라고 생각되는 부분은 <a href="https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html">새로운 JSX -> React를 매번 import 하지 않아도 된다는 것</a></li>
+<li>실제 JSX 코드에서 사용하고 있는 것이 아니라 <code>React.createElement</code>형태로 컴파일된 코드에서 사용하기 위해 미리 <code>React</code>를 import를 해둬야만했다 -> eslint 옵션에 사용하지 않는 구문으로 경고가 발생한다</li>
+<li>그러나 리액트와 babel 버전이 업데이트 되면서 컴파일 할때 자동 추가되도록 변경되었다</li>
+</ul>
+<hr>
+<h2>3/8 ~ 3/14</h2>
+<h4><code>JSX.element</code></h4>
+<ul>
+<li>한달만에 다시 헷갈리는 타입...</li>
+<li>JSX.Element &#x3C; ReactElement &#x3C; ReactNode</li>
+<li>ReactElement는 <code>type, props, key</code>를 갖는 타입</li>
+<li>JSX.Element는 <code>React.ReactElement&#x3C;any, any></code>로 특정 타입 props를 받은 ReactElement</li>
+<li>ReactNode는 <code>type ReactNode = ReactChild | ReactFragment | ReactPortal | boolean | null | undefined;</code> 모든 것을 다 반환하는 노드 대장</li>
+<li>함수형 컴포넌트는 <code>ReactElement | null</code>를 반환하고</li>
+<li>클래스 컴포넌트는 <code>render()</code>가 <code>ReactNode</code>를 반환한다</li>
+<li>JSX를 바벨이 트랜스파일링해서 <code>React.createElement</code>의 형태가 되고 이는 <code>ReactElement</code> 타입을 반환한다</li>
+<li>JSX.Element와 null을 반환하는 컴포넌트인 경우 <code>ReactNode</code> 또는 <code>JSX.Element | null</code></li>
+<li><a href="https://stackoverflow.com/questions/58123398/when-to-use-jsx-element-vs-reactnode-vs-reactelement">3가지 타입의 차이점: stackoverflow</a></li>
+<li><a href="https://simsimjae.tistory.com/426">3가지 타입의 차이점</a></li>
+</ul>
+<h4><code>recoil</code></h4>
+<ul>
+<li><code>드디어 써볼 수 있는 기회가!</code></li>
+<li>처음 리액트 프로젝트를 접하고 그 이후로 쭉 리덕스+사가 조합으로만 사용해왔다</li>
+<li>보일러플레이트가 많긴 하지만 이것도 계속 프로젝트를 진행하다보니 익숙해져서 점점 깔끔(눈에 익어버리는)해지는 효과도 있는듯</li>
+<li>혼자 개발해서 아쉬웠던 점인 <code>나 스스로가 나의 프로젝트에 갇혀버리는 듯</code>한 기분</li>
+<li>고정관념을 깨야하는데</li>
+<li>사실 혼자 스터디해도 되는데 의욕만큼 부족한 실천으로 나중에 봐야지만 거듭하다... (코틀린도 마찬가지)</li>
+<li>이번에 기회가 되서 써볼 수 있는 시간이 생겼다</li>
+<li>간단하게 <a href="https://ui.toast.com/weekly-pick/ko_20200616">Toast 기술 블로그</a>만 봤는데도 벌써 흥미가득</li>
+<li>stable 버전은 아니지만 그럴거 같지 않지만 만약 사라진다면!?</li>
+<li>그래도 사라지기 전에 경험해볼 수 있는게 사라지더라도 왜 사라졌는지 알 수 있겠지</li>
+</ul>
+<h4><code>utf8mb4</code></h4>
+<ul>
+<li>갑자기 <code>글을 많이 쓰면 저장이 안되는거야?</code></li>
+<li>글자수 제한을 둔적이 없는데...</li>
+<li>뭐라고 입력했는지는 알 수 없으니 잔뜩 글을 입력해보았는데 <code>잘 들어가는데?</code></li>
+<li>한글만 들어가면 될 줄 알고 디비 설정을 <code>utf8</code>로 해뒀는데 이모지는 생각도 못했다</li>
+<li>강제로 이모지를 넣어보려하니 진짜로 안들어가네?</li>
+<li>우선 테이블 설정을 <code>utf8mb4</code>로 바꾸니깐 들어가길래 <code>다시 해봐!</code></li>
+<li>여전히 이모지 저장은 되지 않고 있었다</li>
+<li><code>mysql</code> 설정을 <code>utf8mb4</code>로 바꾸고 재시작하고 나서야 제대로 들어가고 나오기 시작한다</li>
+</ul>
+<h4><code>react-native-mail</code></h4>
+<ul>
+<li>예전에 사용하던 라이브러리</li>
+<li>타입만 추가해서 PR</li>
+<li>내가 사용할때 필요했고 있으면 좋겠고</li>
+<li>사실 굳이 하려던건 아니였는데</li>
+<li>기존에 참여했던 프로젝트에 문서만을 남겨두고 마무리해야 하는 상황</li>
+<li>언젠가 이 프로젝를 열어서 업데이트를 진행 할 때 조금이나마 도움이 됬으면 하는 마음으로</li>
+</ul>
+<hr>
+<h2>3/1 ~ 3/7</h2>
+<h4><code>퇴사</code></h4>
+<ul>
+<li>같이 할 수 있어서 좋았다</li>
+<li>다 할 수 있어서 좋았다</li>
+<li>또 하면 좋겠다</li>
+<li>나는 그렇게 생각하는데</li>
+<li>같이 해주려나 모르겠다</li>
+<li>끝</li>
+</ul>
+<h4><code>문서 작성</code></h4>
+<ul>
+<li><a href="https://tech.kakaoenterprise.com/102">테크니컬 라이팅 4대 원칙</a></li>
+</ul>
+<h4><code>@bugsnag/react-native</code></h4>
+<ul>
+<li>안드로이드 js에서 <code>Bugsnag.notify</code>하면 오류 발생</li>
+<li>직접 <code>gradle</code> 버전을 수정해서 사용하도록 하긴 했는데 아무래도 이건 좋지 않은 것 같아 <a href="https://github.com/bugsnag/bugsnag-js/issues/1313">github issue</a> 등록</li>
+<li>용감했다... 용감만했다</li>
+<li>몇시간 지나지 않아 바로 답변이 달렸고</li>
+<li><code>build.gradle</code>에 설정한 <code>bugsnag</code> 버전과 실제로 <code>@bugsnag/react-native</code>에서 바라보는 <code>gradle</code> 버전이 다르기에 에러가 발생한 것 같다</li>
+<li>실제로 <code>build.gradle</code>에서는 <code>com.bugsnag:bugsnag-android-gradle-plugin:5.+</code>로 설정되어있었는데 이건 <a href="https://docs.bugsnag.com/platforms/react-native/react-native/manual-setup/#android">공식 문서</a>를 참고한건데...</li>
+<li><code>5.+</code>로 설정된 부분은 <code>v5.*.*</code> 최상 버전을 가져오고 있었고 현재까지 배포된 가장 최신버전인 <code>v5.7.0</code>을 당겨오고 있었다</li>
+<li>그러나 내가 사용중인 <code>@bugsnag/react-native v7.8.0</code>에서 바라보고 있는 <code>gradle</code>의 버전은 <code>v5.6.2</code>였기에 오류가 발생하는 것</li>
+<li><code>v5.6.2</code>라고 생각하고 모듈이 동작해야하는데 <code>v5.6.2</code>에서 <code>v5.7.0</code>으로 업데이트 되면서 <a href="https://github.com/bugsnag/bugsnag-android/pull/977">해당 메서드의 인자가 변경되었다</a></li>
+<li>만약 우연하게도 업데이트된 버전에서도 메서드가 동일했다면 몰랐을 오류...</li>
+<li>bugsnag support에 상세 내용을 보내고 시간이 조금 지나서 github issue가 종료 되었다는 메일이 날라왔다.</li>
+<li><a href="https://github.com/bugsnag/bugsnag-js/issues/1313#issuecomment-791421309">해당 이슈를 종료하는 마지막 댓글</a>에는 <code>build.gradle</code> 모듈을 임의로 변경하는 것보다 릴리즈된 버전을 사용하는 것을 추천하며 새로운 버전이 릴리즈 되었음을 알려주었다.</li>
+<li>라이브러리 버전이 의도치 않게 꼬이면서? 발생했던 오류는 새로운 버전이 릴리즈 되면서 안드로이드 모듈 버전도 업데이트 되었고 자연스럽게 해결되었다</li>
+<li>모듈 버전을 임의로 수정했을때 <code>혹시 문제되는게 없을까?</code>하며 오류가 발생하는 버전을 이슈를 등록했고 속마음을 읽어주듯 빠른 답변과 해결에 감사하다</li>
+</ul></div></div></main><footer class="footer"><div class="footer-label">©Jiggag, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></div><button>Github</button></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-115373374-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/monthly-log/2021-03/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-635a9dfd597478a1f0fa.js"],"app":["/app-7b0a9d9c8a02f3d5ef04.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-1713fa5a79ba6287b581.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-56ac5eb6f68a10947a02.js"],"component---src-pages-markdown-remark-frontmatter-slug-tsx":["/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"],"component---src-pages-using-ssr-tsx":["/component---src-pages-using-ssr-tsx-a3849e895b554ed9c74d.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-2c91f22b06497815d93c.js"],"component---src-templates-using-dsg-tsx":["/component---src-templates-using-dsg-tsx-96c55d73ae3a8c0dec54.js"]};/*]]>*/</script><script src="/polyfill-635a9dfd597478a1f0fa.js" nomodule=""></script><script src="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js" async=""></script><script src="/commons-5bade2ed2558cad4a45d.js" async=""></script><script src="/app-7b0a9d9c8a02f3d5ef04.js" async=""></script><script src="/framework-094b0089736b8f621f0d.js" async=""></script><script src="/webpack-runtime-64497d164bea53b55ab8.js" async=""></script></body></html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.2222873932a2af5f300c.css" data-identity="gatsby-global-css">*{font-family:Nanum Gothic!important}:root{--surface:silver;--content:#e2e2e2;--button-highlight:#fff;--button-face:#dfdfdf;--button-shadow:grey;--window-frame:#0a0a0a;--dialog-blue:navy;--dialog-blue-light:#1084d0;--dialog-gray:grey;--dialog-gray-light:#b5b5b5;--link-blue:#00f;--element-spacing:8px;--border-width:1px;--border-raised-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight);--border-raised-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);--border-sunken-outer:inset -1px -1px var(--button-highlight),inset 1px 1px var(--window-frame);--border-sunken-inner:inset -2px -2px var(--button-face),inset 2px 2px var(--button-shadow);--border-window-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-face);--border-window-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-highlight)}body{margin:0}pre{background:var(--button-highlight);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);display:block;margin:4px 0;padding:var(--element-spacing)}pre code{background:unset;color:unset;font-size:12px}code{background:#0000ff95;border-radius:10px;color:#fff;font-size:14px;padding:0 6px}a{color:var(--link-blue);text-decoration:none}.window{background:var(--surface);box-shadow:var(--border-window-outer),var(--border-window-inner);height:100vh;margin:auto;max-width:500px}.window-container{display:flex;flex-direction:column;height:100%}.window-body{flex:1 1;margin:0 0 0 var(--element-spacing);overflow:auto;padding-right:var(--element-spacing)}.title-bar{align-items:center;background:linear-gradient(150deg,var(--dialog-blue),var(--dialog-blue-light));display:flex;justify-content:space-between;margin:3px 3px 0;padding:2px var(--element-spacing)}.title-bar .title{color:#fff;font-size:24px;margin:0;text-decoration:none}.title-bar-controls{display:flex}.title-bar-controls button{display:block;min-height:14px;min-width:16px;padding:0}.title-bar-controls button[aria-label=Close]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA4IDciPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMGgydjFoMXYxaDJWMWgxVjBoMnYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxSDZWNkg1VjVIM3YxSDJ2MUgwVjZoMVY1aDFWNGgxVjNIMlYySDFWMUgwVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;margin-left:2px;width:20px}.title-bar-text{color:#fff;font-weight:700;letter-spacing:0;margin-right:24px}.blog-post-container{background:var(--content);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0 0 0;overflow-x:scroll;padding:var(--element-spacing)}.blog-post-content h1,h2{font-size:20px}.blog-post-content h3,h4{font-size:16px}.blog-post-content ul{padding-left:20px}.home-post-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.home-post-title p{font-size:12px;margin:4px 0}.footer{align-items:center;display:flex;padding:12px 15px}.footer .footer-label{align-self:flex-end;font-size:12px;width:100%}button{background:var(--surface);border:none;border-radius:0;box-shadow:var(--border-raised-outer),var(--border-raised-inner);box-sizing:border-box;min-height:23px;min-width:75px;padding:0 12px}button:not(:disabled):active{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);padding:2px 3px 0 13px}@media (not(hover)){button:not(:disabled):hover{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner)}}button:focus{outline:1px dotted #000;outline-offset:-4px}button::-moz-focus-inner{border:0}::-webkit-scrollbar{width:16px}::-webkit-scrollbar:horizontal{height:17px}::-webkit-scrollbar-corner{background:var(--button-face)}::-webkit-scrollbar-track{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9InNpbHZlciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDB2MWgxdjFoMVYxSDFWMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxdjFIMHYxaDFWMWgxVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}::-webkit-scrollbar-thumb{background-color:var(--button-face);box-shadow:var(--border-raised-outer),var(--border-raised-inner)}::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement{display:block}::-webkit-scrollbar-button:vertical:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:vertical:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA2SDR2MWgxdjFoMXYxaDF2MWgxVjloMVY4aDFWN2gxVjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:horizontal:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDRIOHYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxaDFWNFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);width:16px}::-webkit-scrollbar-button:horizontal:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDRINnY3aDF2LTFoMVY5aDFWOGgxVjdIOVY2SDhWNUg3VjRaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);width:16px}</style><meta name="generator" content="Gatsby 4.1.4"/><title data-react-helmet="true">filter, map, reduce, sequence | JIGGAG</title><meta data-react-helmet="true" name="description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:title" content="filter, map, reduce, sequence"/><meta data-react-helmet="true" property="og:description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:type" content="website"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script data-gatsby="web-vitals-polyfill">
+            !function(){var e,t,n,i,r={passive:!0,capture:!0},a=new Date,o=function(){i=[],t=-1,e=null,f(addEventListener)},c=function(i,r){e||(e=r,t=i,n=new Date,f(removeEventListener),u())},u=function(){if(t>=0&&t<n-a){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+t};i.forEach((function(e){e(r)})),i=[]}},s=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){c(e,t),a()},i=function(){a()},a=function(){removeEventListener("pointerup",n,r),removeEventListener("pointercancel",i,r)};addEventListener("pointerup",n,r),addEventListener("pointercancel",i,r)}(t,e):c(t,e)}},f=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,s,r)}))},p="hidden"===document.visibilityState?0:1/0;addEventListener("visibilitychange",(function e(t){"hidden"===document.visibilityState&&(p=t.timeStamp,removeEventListener("visibilitychange",e,!0))}),!0);o(),self.webVitals={firstInputPolyfill:function(e){i.push(e),u()},resetFirstInputPolyfill:o,get firstHiddenTime(){return p}}}();
+          </script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>            
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-4711551515762404",
+                enable_page_level_ads: true
+              });
+          </script><link as="script" rel="preload" href="/webpack-runtime-64497d164bea53b55ab8.js"/><link as="script" rel="preload" href="/framework-094b0089736b8f621f0d.js"/><link as="script" rel="preload" href="/app-7b0a9d9c8a02f3d5ef04.js"/><link as="script" rel="preload" href="/commons-5bade2ed2558cad4a45d.js"/><link as="script" rel="preload" href="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"/><link as="fetch" rel="preload" href="/page-data/blog/kotlin-study-ch11/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3000541721.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3293771174.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4711551515762404" crossorigin="anonymous"></script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="window"><div class="window-container"><header class="title-bar"><a class="title title-bar-text" href="/">JIGGAG</a><div class="title-bar-controls"><button aria-label="Close"></button></div></header><main class="window-body"><div class="blog-post-container"><div class="blog-post-header"><h3>filter, map, reduce, sequence</h3><h6>2021년 5월 26일</h6></div><div class="blog-post-content"><pre><code class="language-markdown">[참고 도서]
+- 다재다능 코틀린 프로그래밍
+</code></pre>
+<h1>코틀린의 내부 반복자</h1>
+<ul>
+<li>함수형 프로그래밍에서는 내부 반복자를 사용한다</li>
+<li>내부 반복자는 <code>반복을 자동으로 실행한다</code>
+<ul>
+<li>개발자가 반복에 집중하는 것이 아니라 콜렉션이나 범위에 있는 <code>각 요소</code>에 집중하도록 해준다</li>
+</ul>
+</li>
+<li>내부 반복자는 <code>명시적 뮤터빌리티를 피하게 해준다</code></li>
+<li>내부 반복자는 람다를 전달해 반복과 관련된 여러 작업들을 수행하는 고차함수이다
+<ul>
+<li>고차함수는 반복을 위한 공통 코드를 제공한다</li>
+<li>고차함수 filter()에 람다가 실제 선택될 요소를 전달한다</li>
+</ul>
+</li>
+<li>코틀린의 내부 반복자로 편리하고 표현이 간단하지만 외부 반복자에 비해 <code>퍼포먼스</code>가 안 좋을 수 있다
+<ul>
+<li>전체 데이터 콜렉션을 다루는 경우 오버헤드 이슈가 존재하는데 이를 <code>시퀀스</code> 를 이용해 실행을 지연시켜서 처리한다</li>
+<li>(이전 챕터에서 알아본 listOf와 sequenceOf의 mutable한 변수에 대한 결과값 차이가 이러한 이유이다)</li>
+</ul>
+</li>
+</ul>
+<h1>외부 반복자 vs 내부 반복자</h1>
+<pre><code class="language-kotlin">val numbers = listOf(1, 2, 3)
+
+// 외부 반복자 for..in
+for (i in numbers) {
+  if (i > 2) {
+    println(">>> $i")
+  }
+}
+
+// 내부 반복자 filter + forEach
+numbers.filter { it > 2 }
+	.forEach { println(it) }
+</code></pre>
+<ul>
+<li>
+<p>외부 반복자보다 내부 반복자를 이용해 좀 더 흐름이 아름다워졌다</p>
+</li>
+<li>
+<p>filter, forEach 고차함수를 이용해 람다를 전달하였다</p>
+</li>
+<li>
+<p>만약 새로운 값을 반환하는 것이 필요한 경우에도 내부 반복자를 사용하여 <code>함수형 파이프라인</code> 을 구현할 수 있다</p>
+<pre><code class="language-kotlin">// 외부 반복자
+val mutableResult = mutableListOf&#x3C;Int>()
+for (i in numbers) {
+  if (i > 1) {
+    mutableResult.add(i)
+  }
+}
+println(mutableResult)
+
+// 내부 반복자
+val immutableResult = numbers.filter { it > 1 }
+  .map { it }
+println(immutableResult)
+</code></pre>
+</li>
+</ul>
+<h1>내부 반복자</h1>
+<h2>filter, map, reduce</h2>
+<ul>
+<li>코틀린 스탠다드 라이브러리에서 내부 반복을 위해 제공하는 고차함수</li>
+<li>일반적으로 js에서 사용하던 방식과 동일하나 reduce에 초기값 인자가 없는 것이 다르네?</li>
+<li>전달되는 콜렉션을 변경하지 않고 연산을 수행하며 복사된 값을 리턴한다 ⇒ Immutable</li>
+</ul>
+<h2>first</h2>
+<ul>
+<li><code>first()</code> 함수를 사용하여 콜렉션의 첫번째 요소를 가져온다</li>
+<li><code>list[0]</code>로 가져와도 되는데 왜 이 함수를 사용하는걸까?
+<ul>
+<li><code>함수형 파이프라인!!!</code></li>
+</ul>
+</li>
+</ul>
+<h2>flatMap</h2>
+<pre><code class="language-kotlin">val obj = listOf(listOf("1", "2", "3"), listOf("4", "5", "6")) // List&#x3C;List&#x3C;String>>
+val flat = obj.map { listOf("value $it") }.flatten() // List&#x3C;String>
+val flatMap = obj.flatMap { value -> listOf("new value $value") } // List&#x3C;Sting>
+println(flat) // [value [1, 2, 3], value [4, 5, 6]]
+println(flatMap) // [new value [1, 2, 3], new value [4, 5, 6]]
+</code></pre>
+<ul>
+<li><code>flatten()</code> 함수를 이용해 중첩된 콜렉션을 플랫하게 펼쳐진 데이터로 만들어준다</li>
+<li><code>flatMap()</code> 함수는 map + flatten과 동일하게 동작한다</li>
+</ul>
+<h2>sortedBy</h2>
+<pre><code class="language-kotlin">data class People(val name: String, val age: Int)
+val people = listOf(
+  People("가하파", 10),
+  People("가나다", 5)
+)
+val sortedName = people.sortedBy { it.name }
+print(sortedName) // [People(name=가나다, age=5), People(name=가하파, age=10)]
+</code></pre>
+<ul>
+<li>함수형 파이프라인 안에서 정렬한다</li>
+<li><code>sortedBy, sortedByDescending</code></li>
+</ul>
+<h2>groupBy</h2>
+<pre><code class="language-kotlin">val groupedName = people.groupBy { it.name.first() }
+print(groupedName) // {가=[People(name=가하파, age=10), People(name=가나다, age=5)]}
+</code></pre>
+<ul>
+<li>groupBy로 전달한 값이 키가 되어 그룹화한다</li>
+</ul>
+<h1>지연 연산을 위한 시퀀스</h1>
+<ul>
+<li>시퀀스는 콜렉션의 성능 향상을 위해 최적화된 랩퍼이다</li>
+<li>콜렉션의 연산이 계속 실행되는 것과 다르게 시퀀스에서 호출되는 함수는 지연되어 실행된다
+<ul>
+<li>실행이 불필요한 경우 실행을 지연시킨다</li>
+<li>최적화를 하지 않으면 필요하지 않은 연산도 계속 하기 때문에 성능이 떨어진다</li>
+</ul>
+</li>
+</ul>
+<h2>시퀀스로 성능 향상하기</h2>
+<ul>
+<li>
+<p>시퀀스를 사용하지 않은 일반적인 경우</p>
+<pre><code class="language-kotlin">data class Person(val name: String, val age: Int)
+val people = listOf(
+  Person("가하파", 10),
+  Person("가나다", 5),
+  Person("어머나", 15)
+)
+fun isAdult(person: Person): Boolean {
+  println("person ${person.name}: ${person.age}")
+  return person.age > 5
+}
+fun fetchName(person: Person): String {
+  println("fetch name ${person.name}")
+  return person.name
+}
+val firstAdultName = people.filter(::isAdult).map(::fetchName).first()
+println(firstAdultName)
+
+>>>
+person 가하파: 10
+person 가나다: 5
+person 어머나: 15
+fetch name 가하파
+fetch name 어머나
+가하파
+</code></pre>
+<ol>
+<li>filter와 map에 람다 대신 함수 레퍼런스를 전달하였다</li>
+<li>filter에서 실행한 isAdult로 adult 리스트를 만들었다</li>
+<li>map으로 adultName 리스트를 만들었다</li>
+<li>그리고 adultName 리스트의 첫번째 요소를 가져와서 반환하였다</li>
+</ol>
+<p>⇒ 하나의 값 (adultName 리스트의 첫번째 요소)를 얻기 위해 모든 연산(person 로그가 계속 찍혔다)이 실행되어야한다</p>
+</li>
+<li>
+<p>사용하지 않을 연산은 하지 않도록 <code>시퀀스</code>로 연산을 지연시킨다</p>
+<pre><code class="language-kotlin">val firstAdultName = people.asSequence().filter(::isAdult).map(::fetchName).first()
+
+>>>
+person 가하파: 10
+fetch name 가하파
+가하파
+</code></pre>
+<ol>
+<li><code>asSequence()</code> 로 people 콜렉션을 한번 감싸서 사용하였다</li>
+</ol>
+<p>⇒ 필요한 연산만 실행되었다(people 로그가 하나만 찍혔다)</p>
+</li>
+<li>
+<p>시퀀스로 감싸서 사용하면 시퀀스가 시퀀스를 리턴하고 시퀀스는 다시 시퀀스를 리턴한다</p>
+<ul>
+<li>최종적으로 filter나 map에 전달된 람다는 실행되지 않고 지연된다</li>
+<li>그리고 first 함수로 연산이 시작되는 순간 파이프라인을 타고 실행된 결과를 반환한다</li>
+</ul>
+</li>
+<li>
+<p><strong><code>시퀀스는 마지막 메소드가 호출될 때까지 실행을 연기하고 결과를 얻기 위해 최소한의 연산만을 수행한다</code></strong></p>
+<ul>
+<li>그럼 모든 콜렉션을 시퀀스로 지연 연산 시키면 성능이 좋을까?</li>
+<li>지연 연산을 사용하지 않는 것이 디버깅이나 코드 추론이 용이하다</li>
+<li>코드가 커질수록 시퀀스를 사용해서 중간에 연산 과정에서 생기는 오버헤드를 줄일 수 있다</li>
+</ul>
+</li>
+</ul>
+<h2>무한 시퀀스</h2>
+<ul>
+<li>지연 연산을 통해 퍼포먼스만 얻는 것이 아니라 <code>온디맨드 연산</code>에도 장점이 있다
+<ul>
+<li>
+<p>온디맨드 연산은 요소의 무한 시퀀스를 만드는데 도움을 준다</p>
+</li>
+<li>
+<p>무한 시퀀스는 값으로 시작되어 발생 패턴에 따라 시퀀스가 따라온다</p>
+<p>⇒ 피보나치 수열 (앞의 두 값을 더한 결과값이 새로운 값이 되므로 무한 시퀀스)</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-kotlin">fun isPrime(value: Long) = value > 1 &#x26;&#x26; (2 until value).none { i -> value % i == 0L }
+tailrec fun nextPrime(value: Long): Long = if (isPrime(value + 1)) value + 1 else nextPrime(value + 1)
+
+println(nextPrime(2)) // 3
+println(nextPrime(5)) // 7
+</code></pre>
+<ul>
+<li>
+<p>해당 값이 소수인지 검증하는 isPrime</p>
+</li>
+<li>
+<p>다음 소수 값을 반환하는 nextPrime</p>
+</li>
+<li>
+<p><code>generateSequence()</code> 를 이용해 무한 시퀀스를 만들 수 있다</p>
+<pre><code class="language-kotlin">val primes = generateSequence(5, ::nextPrime)
+println(primes.take(4).toList()) // [5, 7, 11, 13]
+</code></pre>
+<ul>
+<li>5부터 nextPrime을 호출하는 무한시퀀스 primes를 만들었다</li>
+<li>그리고 take로 4개의 값을 가져오도록하였다
+<ul>
+<li>이때까지 primes의 nextPrime은 호출이 지연되어있다</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>seqeunce</code> 람다로 온디맨드 무한 시퀀스를 만들 수 있다</p>
+<pre><code class="language-kotlin">val primes = sequence {
+  var i: Long = 0
+  while (true) {
+    i++
+    if (isPrime(i)) {
+      yield(i)
+    }
+  }
+}
+println(primes.take(4).toList()) // [2, 3, 5, 7]
+</code></pre>
+</li>
+</ul>
+<h1>마무리</h1>
+<ul>
+<li>함수형 프로그래밍에서 많이 사용하는 내부 반복자를 이용해 유연하고 표현력 있는 코드를 작성한다</li>
+<li>코틀린 콜렉션에서 직접 사용할 수 있는 내부 반복자를 제공하지만 <code>콜렉션의 모든 요소에 대하여 무조건 반복 실행 되기 때문에 오버헤드가 발생한다</code>
+<ul>
+<li>필요하지 않는 실행까지도 모두 연산을 실행하기 때문인데</li>
+<li>이를 위해 코틀린은 시퀀스를 랩퍼로 제공하여 실행을 지연시킨다</li>
+</ul>
+</li>
+<li>지연 연산 실행으로 필요하지 않은 연산을 제거하여 성능을 끌어올린다</li>
+</ul>
+<h1>🚨?!?!?</h1>
+<hr>
+<h1>🙈 더 알아보기</h1>
+<ul>
+<li>
+<p>무한 시퀀스</p>
+<pre><code class="language-kotlin">val primes = sequence {
+  var i: Long = 0
+  while (true) {
+    i++
+    if (isPrime(i)) {
+      yield(i)
+      yield(i)
+    }
+  }
+}
+println(primes.take(4).toList()) // [2, 2, 3, 3]
+</code></pre>
+<ul>
+<li>yield???
+<ul>
+<li>generator 같네?!</li>
+</ul>
+</li>
+<li>take로 4개의 값을 가져오겠다라고 했는데</li>
+<li>yield가 2번 있으니 하나씩 값을 반환 → [2, 2, 3, 3]</li>
+</ul>
+</li>
+</ul></div></div></main><footer class="footer"><div class="footer-label">©Jiggag, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></div><button>Github</button></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-115373374-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/kotlin-study-ch11/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-635a9dfd597478a1f0fa.js"],"app":["/app-7b0a9d9c8a02f3d5ef04.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-1713fa5a79ba6287b581.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-56ac5eb6f68a10947a02.js"],"component---src-pages-markdown-remark-frontmatter-slug-tsx":["/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"],"component---src-pages-using-ssr-tsx":["/component---src-pages-using-ssr-tsx-a3849e895b554ed9c74d.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-2c91f22b06497815d93c.js"],"component---src-templates-using-dsg-tsx":["/component---src-templates-using-dsg-tsx-96c55d73ae3a8c0dec54.js"]};/*]]>*/</script><script src="/polyfill-635a9dfd597478a1f0fa.js" nomodule=""></script><script src="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js" async=""></script><script src="/commons-5bade2ed2558cad4a45d.js" async=""></script><script src="/app-7b0a9d9c8a02f3d5ef04.js" async=""></script><script src="/framework-094b0089736b8f621f0d.js" async=""></script><script src="/webpack-runtime-64497d164bea53b55ab8.js" async=""></script></body></html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.2222873932a2af5f300c.css" data-identity="gatsby-global-css">*{font-family:Nanum Gothic!important}:root{--surface:silver;--content:#e2e2e2;--button-highlight:#fff;--button-face:#dfdfdf;--button-shadow:grey;--window-frame:#0a0a0a;--dialog-blue:navy;--dialog-blue-light:#1084d0;--dialog-gray:grey;--dialog-gray-light:#b5b5b5;--link-blue:#00f;--element-spacing:8px;--border-width:1px;--border-raised-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight);--border-raised-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);--border-sunken-outer:inset -1px -1px var(--button-highlight),inset 1px 1px var(--window-frame);--border-sunken-inner:inset -2px -2px var(--button-face),inset 2px 2px var(--button-shadow);--border-window-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-face);--border-window-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-highlight)}body{margin:0}pre{background:var(--button-highlight);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);display:block;margin:4px 0;padding:var(--element-spacing)}pre code{background:unset;color:unset;font-size:12px}code{background:#0000ff95;border-radius:10px;color:#fff;font-size:14px;padding:0 6px}a{color:var(--link-blue);text-decoration:none}.window{background:var(--surface);box-shadow:var(--border-window-outer),var(--border-window-inner);height:100vh;margin:auto;max-width:500px}.window-container{display:flex;flex-direction:column;height:100%}.window-body{flex:1 1;margin:0 0 0 var(--element-spacing);overflow:auto;padding-right:var(--element-spacing)}.title-bar{align-items:center;background:linear-gradient(150deg,var(--dialog-blue),var(--dialog-blue-light));display:flex;justify-content:space-between;margin:3px 3px 0;padding:2px var(--element-spacing)}.title-bar .title{color:#fff;font-size:24px;margin:0;text-decoration:none}.title-bar-controls{display:flex}.title-bar-controls button{display:block;min-height:14px;min-width:16px;padding:0}.title-bar-controls button[aria-label=Close]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA4IDciPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMGgydjFoMXYxaDJWMWgxVjBoMnYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxSDZWNkg1VjVIM3YxSDJ2MUgwVjZoMVY1aDFWNGgxVjNIMlYySDFWMUgwVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;margin-left:2px;width:20px}.title-bar-text{color:#fff;font-weight:700;letter-spacing:0;margin-right:24px}.blog-post-container{background:var(--content);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0 0 0;overflow-x:scroll;padding:var(--element-spacing)}.blog-post-content h1,h2{font-size:20px}.blog-post-content h3,h4{font-size:16px}.blog-post-content ul{padding-left:20px}.home-post-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.home-post-title p{font-size:12px;margin:4px 0}.footer{align-items:center;display:flex;padding:12px 15px}.footer .footer-label{align-self:flex-end;font-size:12px;width:100%}button{background:var(--surface);border:none;border-radius:0;box-shadow:var(--border-raised-outer),var(--border-raised-inner);box-sizing:border-box;min-height:23px;min-width:75px;padding:0 12px}button:not(:disabled):active{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);padding:2px 3px 0 13px}@media (not(hover)){button:not(:disabled):hover{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner)}}button:focus{outline:1px dotted #000;outline-offset:-4px}button::-moz-focus-inner{border:0}::-webkit-scrollbar{width:16px}::-webkit-scrollbar:horizontal{height:17px}::-webkit-scrollbar-corner{background:var(--button-face)}::-webkit-scrollbar-track{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9InNpbHZlciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDB2MWgxdjFoMVYxSDFWMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxdjFIMHYxaDFWMWgxVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}::-webkit-scrollbar-thumb{background-color:var(--button-face);box-shadow:var(--border-raised-outer),var(--border-raised-inner)}::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement{display:block}::-webkit-scrollbar-button:vertical:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:vertical:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA2SDR2MWgxdjFoMXYxaDF2MWgxVjloMVY4aDFWN2gxVjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:horizontal:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDRIOHYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxaDFWNFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);width:16px}::-webkit-scrollbar-button:horizontal:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDRINnY3aDF2LTFoMVY5aDFWOGgxVjdIOVY2SDhWNUg3VjRaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);width:16px}</style><meta name="generator" content="Gatsby 4.1.4"/><title data-react-helmet="true">1월 한달동안 로그 | JIGGAG</title><meta data-react-helmet="true" name="description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:title" content="1월 한달동안 로그"/><meta data-react-helmet="true" property="og:description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:type" content="website"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script data-gatsby="web-vitals-polyfill">
+            !function(){var e,t,n,i,r={passive:!0,capture:!0},a=new Date,o=function(){i=[],t=-1,e=null,f(addEventListener)},c=function(i,r){e||(e=r,t=i,n=new Date,f(removeEventListener),u())},u=function(){if(t>=0&&t<n-a){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+t};i.forEach((function(e){e(r)})),i=[]}},s=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){c(e,t),a()},i=function(){a()},a=function(){removeEventListener("pointerup",n,r),removeEventListener("pointercancel",i,r)};addEventListener("pointerup",n,r),addEventListener("pointercancel",i,r)}(t,e):c(t,e)}},f=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,s,r)}))},p="hidden"===document.visibilityState?0:1/0;addEventListener("visibilitychange",(function e(t){"hidden"===document.visibilityState&&(p=t.timeStamp,removeEventListener("visibilitychange",e,!0))}),!0);o(),self.webVitals={firstInputPolyfill:function(e){i.push(e),u()},resetFirstInputPolyfill:o,get firstHiddenTime(){return p}}}();
+          </script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>            
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-4711551515762404",
+                enable_page_level_ads: true
+              });
+          </script><link as="script" rel="preload" href="/webpack-runtime-64497d164bea53b55ab8.js"/><link as="script" rel="preload" href="/framework-094b0089736b8f621f0d.js"/><link as="script" rel="preload" href="/app-7b0a9d9c8a02f3d5ef04.js"/><link as="script" rel="preload" href="/commons-5bade2ed2558cad4a45d.js"/><link as="script" rel="preload" href="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"/><link as="fetch" rel="preload" href="/page-data/blog/monthly-log/2021-01/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3000541721.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3293771174.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4711551515762404" crossorigin="anonymous"></script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="window"><div class="window-container"><header class="title-bar"><a class="title title-bar-text" href="/">JIGGAG</a><div class="title-bar-controls"><button aria-label="Close"></button></div></header><main class="window-body"><div class="blog-post-container"><div class="blog-post-header"><h3>1월 한달동안 로그</h3><h6>2021년 2월 1일</h6></div><div class="blog-post-content"><h2>1/24 ~ 1/31</h2>
+<h4><code>iOS 사진 접근</code></h4>
+<ul>
+<li>특정 경로에 있는 사진 파일들을 접근하여 앱 내에 리스트화 해주는 것을 안드로이드로만 개발해두었다</li>
+<li>왜냐하면 iOS 개발자 계정이 없어서 릴리즈하지 않았기 때문에!</li>
+<li>그러나 어제 개발자 계정을 구입하였다</li>
+<li>그러니 그동안 미뤄둔 앱들을 등록하려고 했더니 미뤄둔 작업 + 수정이 필요한 것들이 눈덩이가 눈사람이 되었다</li>
+<li>그 중 아직 해본적 없었던 + 안드로이드 조차도 커스텀해서 사용한 <code>사진 라이브러리</code>를 먼저 작업하려고 한다</li>
+<li><code>PHImageRequestOptions</code>, <code>PHFetchOptions</code> 설정을 만지다보니 내가 접근하고자 하는 스크린샷의 사진 파일을 가져오는데 성공했다</li>
+<li>예상과는 다르게 이미지 파일을 어떻게 가져와서 반환해주어야 하는지 아직 찾지 못했다...</li>
+<li>경험이 이렇게 중요하구나 생각이 드는 시점이다</li>
+<li>그동안 안드로이드만 사용하고 사이드 프로젝트도 안드로이드로만 치우쳐있다보니 iOS는 모르겠다 ㅠㅠ</li>
+</ul>
+<h4><code>iOS</code></h4>
+<ul>
+<li>개발자 계정 등록했다</li>
+<li>그리고 테스트폰으로 아이폰6를 거래하고 돌아오는 길</li>
+<li>케이블을 샀는데 2.2m인줄 알았는데 22cm였다</li>
+<li>도저히 22cm로는 사용하기 불편할 것 같아서 라즈베리파이 연결해두던 케이블이랑 교체 작업</li>
+<li>라즈베리 웹이랑 노드 서버 다시 띄워야하네...</li>
+</ul>
+<h4><code>리디셀렉트</code></h4>
+<ul>
+<li>한달 무료 구독을 시작했다</li>
+<li>아티클이 관심이 가는데</li>
+<li>가장 개인적인게 창의적이다</li>
+<li>예술은 모방에서 시작한다</li>
+<li>누구에게 어떤 목적으로 어떤 형식으로 말할까</li>
+</ul>
+<h4><code>RN 라이브러리</code></h4>
+<ul>
+<li>네이티브 모듈을 만들고 싶었고 그동안 기존에 작은 라이브러리 형태를 보고 따라만들었었는데 cli가 있었다!</li>
+<li><a href="https://github.com/brodybits/create-react-native-module">create-react-native-module</a></li>
+<li>Framework가 모듈을 설치하면 같이 포함되면 좋겠는데... 했더니 podspec에 추가하니 되는구나</li>
+</ul>
+<h4><code>SWR</code></h4>
+<ul>
+<li>계속 신기하고 새로운걸 시도하는 건 참 어렵고 재미난 일이다</li>
+<li>그동안 API response를 redux에 가공해서 담아두고 사용했는데 SWR로 캐싱된 데이터를 바로 가져온다</li>
+<li>이번에 redux랑 saga 둘 다 사용하지 않고 graphql + swr만을 사용해보는 토이플젝을 진행 중</li>
+<li>이걸 다시 redux로 바꿔버려하는 굴뚝 같은 마음 부여잡고 문서, 블로그, 이것 저것 찾아가며 진행...</li>
+<li>기능이 아주 단순한 것 같았으나 기본이 가장 중요하고 어려운 것임을 깨닫는 CRUD</li>
+<li>전체 사용자가 올린 에피소드 리스트 호출하고 저장한 에피소드, 내가 올린 에피소드를 보여주기만 하면 되는데 하다보니 <code>이거 페이징은?????</code></li>
+<li>겪어보는데 의의를 두자는 마음 붙잡고 페이징은 없는 상태로 v1은 완료했는데 <code>느리다</code></li>
+<li>처음 리스트 가져와서 렌더링까지 너무 느리다!</li>
+<li>왜...?</li>
+<li>느릴 이유가 없지 않나?</li>
+<li>라즈베리 서버가 느린걸까</li>
+</ul>
+<h4><code>C의 유전자</code></h4>
+<ul>
+<li>우연히 이 책을 읽고 계신 분을 보게 되었고 주제가 흥미로워 읽게 되었다</li>
+</ul>
+<h2>1/17 ~ 1/23</h2>
+<h4><code>Code Push</code></h4>
+<ul>
+<li>수정, 빌드 그리고 심사 그리고 다시 수정</li>
+<li>문구나 링크 변경 또는 버그 수정처럼 사소하거나 긴급한 작업이 이뤄져야하는 경우</li>
+<li>앱 심사, 검토, 출시까지 너무 길게 느껴질만큼 업데이트가 필요한 경우가 있다</li>
+<li>RN 번들파일을 교체하여 앱 심사를 거치지 않고 업데이트가 가능한 Code Push를 적용하고자 한다</li>
+<li>JS 번들파일을 appcenter에 올려두고 이 파일을 바라보도록 앱 빌드</li>
+<li>빌드된 앱에서 바라보고 있는 번들파일을 교체해주는 작업으로 앱 심사 없이 수정 작업이 가능해진다</li>
+<li>단, JS 번들에 속하지 않는 코드 변경은 앱 빌드가 되어야함</li>
+<li>개발, 운영 테스트 빌드해보고 반영되는 것을 확인해보니 정말 유용할 것 같다</li>
+<li>걱정되는 점으로 관리포인트가 오히려 늘어나는 것 같아 운영 구조를 잘 잡아야할 것 같다</li>
+</ul>
+<h4><code>렌더링이 문제라고 생각했는데</code></h4>
+<ul>
+<li>메인화면에서 바라보고 있는 상태가 엄청 많다</li>
+<li>많고 많고 많아서 정리해야겠다고 생각하는데</li>
+<li>메인화면에서 터치가 잘 되지 않는 현상이 발생하였고</li>
+<li>이것 때문에 렌더링이 너무 많이 발생하는건 아닐까 하고 생각했다</li>
+<li>근데 렌더링은 필요한 만큼 딱 잘되고 있는것으로 확인되는데... 왜 터치가 안되는걸까?</li>
+<li>혹시 TouchableOpacity에 오류가?????</li>
+<li>ㅋㅋㅋ 그럴리없다 다른 곳에서는 정상 동작하고 있다</li>
+<li>그렇다면 이유가 무엇일까</li>
+<li>하는 와중에 동일 화면 다른 컴포넌트에서도 터치가 잘 되지 않는 현상이 나타났다</li>
+<li>대체 이유가 뭐지 하면서 이곳저곳 모서리, 가운데, 텍스트 모든 곳을 눌러보았고</li>
+<li>우연하게 찾을 수 있었던 원인...</li>
+<li>위에 있는 컴포넌트의 padding과 아래 컴포넌트의 margin...</li>
+<li>StickyComponent 내부 컴포넌트로 postion absolute로 설정되어있다</li>
+<li>이에 헤더 컴포넌트 padding에 가려지고 아래에 위치한 컴포넌트가 덮는 현상이 발생</li>
+<li>터치 영역이 아주 소소하게 자리잡게 되었다</li>
+<li>기존에 발생했던 터치가 잘 되지 않는 이유도 이런 비슷한 이유...</li>
+<li>터치가 하다보면 가능하다는 이유만으로 단순하게 렌더링이 너무 많이 되서 한참 후에 동작하나?라고 생각했었다</li>
+<li>섣부른 잘못된 판단을 바로 잡아 다행이네</li>
+</ul>
+<h4><code>Redux + Context</code></h4>
+<ul>
+<li>지난번 Redux와 Context에 대해 생각을 하게된 계기가 되었던 글이 있었다</li>
+<li>그리고 그 스레드에서 여러 의견들이 오고 갔고 블로그 링크가 공유되었다</li>
+<li><a href="https://twitter.com/acemarke/status/1351180489646891009?s=19">Context는 상태 관리를 위한 것이 아니다</a></li>
+<li><a href="https://blog.isquaredsoftware.com/2021/01/blogged-answers-why-react-context-is-not-a-state-management-tool-and-why-it-doesnt-replace-redux/">그리고 그것에 대한 블로그</a></li>
+</ul>
+<h4><code>react-native-config</code></h4>
+<ul>
+<li>iOS 스키마 Build 시 pre-action을 설정했다</li>
+<li>그런데 .env는 읽는데 .env.production은 읽지 못한다</li>
+<li>분명 릴리즈 빌드가 되고는 있으나 Config 설정으로 명시된 값들이 여전히 .env파일의 값이다</li>
+</ul>
+<h2>1/10 ~ 1/16</h2>
+<h4><code>SWR + GraphQL</code></h4>
+<ul>
+<li>query는 가져왔다</li>
+<li>mutation은 어떻게 하지?</li>
+<li>특정 이벤트 발생 시 mutation해주려고하는데 SWR 자체가 훅이라서 훅스 안에서 사용이 안된다</li>
+<li>결국 mutation을 위한 액션을 따로 만들어서 사용하였다</li>
+<li><code>하나의 문제를 해결하고 나면 다음 문제가 기다리고 있다</code></li>
+<li>그리고 나서 만나게된 다음 문제</li>
+<li>기존에는 mutation 하면 리덕스에서 관리하고 있던 상태를 변경해주었다</li>
+<li>SWR은 어떻게 해야하는걸까?</li>
+<li>단순하게 refresh option을 줘서 새로운 API 호출을 해야하는 것일까</li>
+<li>그럼 결국 네트워크 통신을 계속 해야하는 것인데</li>
+<li><a href="https://jbee.io/react/thinking-about-global-state/"><code>불필요한 네트워크 비용을 줄이기 위해서 필요한 시점에 데이터를 불러오는 것</code></a></li>
+<li>Redux를 사용하지 않는 조건의 프로젝트 도전이 난관에 도착하였다</li>
+<li><code>mutate</code> ?!!?! 이건 뭐지</li>
+<li>mutation 하고 나서 변경 요청 된 데이터만 업데이트</li>
+<li><a href="https://min9nim.now.sh/2020-10-05-swr-intro2/">mutate 참고 블로그</a></li>
+</ul>
+<h4><code>oh my zsh</code></h4>
+<ul>
+<li>왜 갑자기 꽂혀서...</li>
+<li>그동안 기본 터미널 잘 사용하다가 문득 그냥!</li>
+<li><a href="https://medium.com/harrythegreat/oh-my-zsh-iterm2%EB%A1%9C-%ED%84%B0%EB%AF%B8%EB%84%90%EC%9D%84-%EB%8D%94-%EA%B0%95%EB%A0%A5%ED%95%98%EA%B2%8C-a105f2c01bec">참고: Oh My ZSH+ iTerm2로 터미널을 더 강력하게</a></li>
+<li>근데 왜 ssh 연결이 안되는걸까 <code>ssh: connect to host port 22: Connection refused</code>???</li>
+<li>기본 터미널에서 사용하던 단축어로 접근이 되지 않아 기억을 더듬어 주소까지 찾아서 했는데도 접속이 되지 않는다....</li>
+<li>다시 원복해야하나 생각이 드는데.. 라즈베리에 젠킨스 띄워놔서 다행이다 이유를 좀 더 찾아봐야지</li>
+</ul>
+<h4><code>이벤트 버블링</code></h4>
+<ul>
+<li><a href="https://www.carlrippon.com/event-target-v-current-target/">e.target, e.currentTarget 차이</a></li>
+<li><code>이벤트 버블링</code>: 특정 노드에서 이벤트가 발생하면 상위 노드에도 해당 이벤트가 발생</li>
+<li>이벤트 리스너에 전달된 event.target과 event.currentTarget의 차이는 이벤트 버블링에 의해 나타난다</li>
+<li><code>event.target</code>: 실제 이벤트 핸들러가 발생한 노드</li>
+<li><code>event.currentTarget</code>: 이벤트 리스너가 가져온 현재 노드</li>
+</ul>
+<h4><code>Facebook SDK</code></h4>
+<ul>
+<li>광고로 앱 설치 유도</li>
+<li>페이스북 앱 설치 광고란 무엇일까</li>
+<li>이 광고 자체에 트래킹되는 것이 따로 있을까</li>
+<li>어떻게 이 앱 광고를 누른 사람이 이벤트를 호출했다라는 퍼널이 어떻게 연결 되는 걸까</li>
+<li>iOS 14 추적 제한</li>
+</ul>
+<h4><code>코어 자바스크립트</code></h4>
+<ul>
+<li>작년에 읽었던 책 중 읽고 또 읽어도 항상 도움이 되는 책</li>
+<li>처음 볼 때 > 다시 보고 > 다시 보며 몰랐던 것도 이해할 수 있게 되고 알고 있던 내용도 다시 깊게 생각할 수 있도록</li>
+<li>아는 줄 알았지만 다시 읽다보면 모르고 있음을 깨닫는다</li>
+<li><code>실행컨텍스트</code>: 실행되는 그 순간의 환경 정보</li>
+<li><code>스코프</code>: 어디서 선언되었는지 영역을 구분</li>
+<li><code>this</code>: 어디서 호출하였는지</li>
+<li>비슷하지만 전혀 다른 그리고 시작되는 클로저</li>
+</ul>
+<h2>1/3 ~ 1/9</h2>
+<h4><code>redux? context?</code></h4>
+<ul>
+<li>우연히 들어와 읽게된 redux와 context</li>
+<li><a href="https://twitter.com/acemarke/status/1347717322673414146?s=19">context는 상태 관리를 위한 것이 아니다</a></li>
+<li><a href="https://twitter.com/DavidKPiano/status/1347723896800346112?s=19">context는 공유를 위한 것이다</a></li>
+<li>redux 대신 context를 사용하는 곳이 있어서 관심있게 읽게 되었다</li>
+<li><code>여기서 사용하고 있는 context가 무엇을 위한 것인가요?</code>라는 질문에 대한 대답을 생각본적이 없었다</li>
+<li>누군가 물어봤다면 그것은 context를 통해 가져오고 있고 그것이 redux와 비슷하다고 대답했을것이다</li>
+<li>전역으로 관리해야하는 상태는 아니지만 상위 컴포넌트에서 하위 컴포넌트로 전달을 위해 props -> props -> props 대신 아름답게 도와주는 무언가라고 생각했다</li>
+<li>그리고 이 글들을 읽으며 생각하게 된 것은</li>
+<li><code>root의 state</code>를 context를 통해 하위 컴포넌트에 전달하고 있는 것이다</li>
+<li>상태 관리는 상태를 저장하고 가져오고 변경해야하는데 context는 그렇지 않다</li>
+<li>상태는 root에 존재하고 context는 관리가 아닌 전달을 하고 있다</li>
+</ul>
+<h4><code>이벤트루프</code></h4>
+<ul>
+<li>찾아볼수록 어려워지고 혼돈만 깊어진다</li>
+</ul>
+<h4><code>클래스 컴포넌트</code></h4>
+<ul>
+<li>hooks를 사용한 이후로 클래스 컴포넌트를 사용하지 않게 된지 오래</li>
+<li>클래스 컴포넌트로 작성하라는 제약조건이 걸린 상태에서 개발은 생각보다 어려웠다</li>
+<li>그동안 사용하던 라이브러리나 구조가 전부 함수형, 훅스 기반이라 그럴까</li>
+<li>혹은 본질에 대해 잊고 있었나</li>
+<li>프로젝트를 진행하고는 있지만 반성하고 돌아보게 되는 <code>클래스 컴포넌트로 개발하기</code></li>
+</ul>
+<h4><code>나는 모른다</code></h4>
+<ul>
+<li>누군가에게 설명해주지 못한다는 것은 내가 그것을 모르고 있다는 것이다</li>
+<li>알고 있다고 생각했지만 막상 설명하려고 하면 정리되지 않은 횡설수설</li>
+<li>다른 사람에게 알려주기 위해 자료를 준비하는 기분으로 정리해보는 것이 필요하다</li>
+<li>두리뭉실 알고 있다고 생각하는 것은 설명하다가 막히고 질문에 막히고</li>
+</ul>
+<h4><code>git main branch</code></h4>
+<ul>
+<li>기본 브랜치 변경을 위해 git 버전업</li>
+<li><a href="https://blog.outsider.ne.kr/1503">git 기본 브랜치 변경</a></li>
+</ul>
+<h2>12/27 ~ 1/2</h2>
+<h4><code>마지막 불꼿 사이드</code></h4>
+<ul>
+<li>express + graphql + swr</li>
+<li>전역 상태 관리에 대한 단상을 읽고 바로 뛰어들었다</li>
+<li>생각했던 방향으로 초기 구조를 잡았는데 다른 구조는 어떻게 잡을 수 있을까</li>
+<li><code>Redux 사용 안하기</code> 너무나 황당한 제약조건을 스스로에게 걸었다</li>
+</ul></div></div></main><footer class="footer"><div class="footer-label">©Jiggag, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></div><button>Github</button></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-115373374-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/monthly-log/2021-01/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-635a9dfd597478a1f0fa.js"],"app":["/app-7b0a9d9c8a02f3d5ef04.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-1713fa5a79ba6287b581.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-56ac5eb6f68a10947a02.js"],"component---src-pages-markdown-remark-frontmatter-slug-tsx":["/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"],"component---src-pages-using-ssr-tsx":["/component---src-pages-using-ssr-tsx-a3849e895b554ed9c74d.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-2c91f22b06497815d93c.js"],"component---src-templates-using-dsg-tsx":["/component---src-templates-using-dsg-tsx-96c55d73ae3a8c0dec54.js"]};/*]]>*/</script><script src="/polyfill-635a9dfd597478a1f0fa.js" nomodule=""></script><script src="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js" async=""></script><script src="/commons-5bade2ed2558cad4a45d.js" async=""></script><script src="/app-7b0a9d9c8a02f3d5ef04.js" async=""></script><script src="/framework-094b0089736b8f621f0d.js" async=""></script><script src="/webpack-runtime-64497d164bea53b55ab8.js" async=""></script></body></html>

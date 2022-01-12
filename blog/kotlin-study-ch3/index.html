@@ -1,0 +1,398 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.2222873932a2af5f300c.css" data-identity="gatsby-global-css">*{font-family:Nanum Gothic!important}:root{--surface:silver;--content:#e2e2e2;--button-highlight:#fff;--button-face:#dfdfdf;--button-shadow:grey;--window-frame:#0a0a0a;--dialog-blue:navy;--dialog-blue-light:#1084d0;--dialog-gray:grey;--dialog-gray-light:#b5b5b5;--link-blue:#00f;--element-spacing:8px;--border-width:1px;--border-raised-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight);--border-raised-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);--border-sunken-outer:inset -1px -1px var(--button-highlight),inset 1px 1px var(--window-frame);--border-sunken-inner:inset -2px -2px var(--button-face),inset 2px 2px var(--button-shadow);--border-window-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-face);--border-window-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-highlight)}body{margin:0}pre{background:var(--button-highlight);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);display:block;margin:4px 0;padding:var(--element-spacing)}pre code{background:unset;color:unset;font-size:12px}code{background:#0000ff95;border-radius:10px;color:#fff;font-size:14px;padding:0 6px}a{color:var(--link-blue);text-decoration:none}.window{background:var(--surface);box-shadow:var(--border-window-outer),var(--border-window-inner);height:100vh;margin:auto;max-width:500px}.window-container{display:flex;flex-direction:column;height:100%}.window-body{flex:1 1;margin:0 0 0 var(--element-spacing);overflow:auto;padding-right:var(--element-spacing)}.title-bar{align-items:center;background:linear-gradient(150deg,var(--dialog-blue),var(--dialog-blue-light));display:flex;justify-content:space-between;margin:3px 3px 0;padding:2px var(--element-spacing)}.title-bar .title{color:#fff;font-size:24px;margin:0;text-decoration:none}.title-bar-controls{display:flex}.title-bar-controls button{display:block;min-height:14px;min-width:16px;padding:0}.title-bar-controls button[aria-label=Close]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA4IDciPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMGgydjFoMXYxaDJWMWgxVjBoMnYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxSDZWNkg1VjVIM3YxSDJ2MUgwVjZoMVY1aDFWNGgxVjNIMlYySDFWMUgwVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;margin-left:2px;width:20px}.title-bar-text{color:#fff;font-weight:700;letter-spacing:0;margin-right:24px}.blog-post-container{background:var(--content);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0 0 0;overflow-x:scroll;padding:var(--element-spacing)}.blog-post-content h1,h2{font-size:20px}.blog-post-content h3,h4{font-size:16px}.blog-post-content ul{padding-left:20px}.home-post-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.home-post-title p{font-size:12px;margin:4px 0}.footer{align-items:center;display:flex;padding:12px 15px}.footer .footer-label{align-self:flex-end;font-size:12px;width:100%}button{background:var(--surface);border:none;border-radius:0;box-shadow:var(--border-raised-outer),var(--border-raised-inner);box-sizing:border-box;min-height:23px;min-width:75px;padding:0 12px}button:not(:disabled):active{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);padding:2px 3px 0 13px}@media (not(hover)){button:not(:disabled):hover{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner)}}button:focus{outline:1px dotted #000;outline-offset:-4px}button::-moz-focus-inner{border:0}::-webkit-scrollbar{width:16px}::-webkit-scrollbar:horizontal{height:17px}::-webkit-scrollbar-corner{background:var(--button-face)}::-webkit-scrollbar-track{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9InNpbHZlciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDB2MWgxdjFoMVYxSDFWMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxdjFIMHYxaDFWMWgxVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}::-webkit-scrollbar-thumb{background-color:var(--button-face);box-shadow:var(--border-raised-outer),var(--border-raised-inner)}::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement{display:block}::-webkit-scrollbar-button:vertical:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:vertical:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA2SDR2MWgxdjFoMXYxaDF2MWgxVjloMVY4aDFWN2gxVjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:horizontal:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDRIOHYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxaDFWNFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);width:16px}::-webkit-scrollbar-button:horizontal:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDRINnY3aDF2LTFoMVY5aDFWOGgxVjdIOVY2SDhWNUg3VjRaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);width:16px}</style><meta name="generator" content="Gatsby 4.1.4"/><title data-react-helmet="true">코틀린은 함수도 간결하게 표현하고자 한다 | JIGGAG</title><meta data-react-helmet="true" name="description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:title" content="코틀린은 함수도 간결하게 표현하고자 한다"/><meta data-react-helmet="true" property="og:description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:type" content="website"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script data-gatsby="web-vitals-polyfill">
+            !function(){var e,t,n,i,r={passive:!0,capture:!0},a=new Date,o=function(){i=[],t=-1,e=null,f(addEventListener)},c=function(i,r){e||(e=r,t=i,n=new Date,f(removeEventListener),u())},u=function(){if(t>=0&&t<n-a){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+t};i.forEach((function(e){e(r)})),i=[]}},s=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){c(e,t),a()},i=function(){a()},a=function(){removeEventListener("pointerup",n,r),removeEventListener("pointercancel",i,r)};addEventListener("pointerup",n,r),addEventListener("pointercancel",i,r)}(t,e):c(t,e)}},f=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,s,r)}))},p="hidden"===document.visibilityState?0:1/0;addEventListener("visibilitychange",(function e(t){"hidden"===document.visibilityState&&(p=t.timeStamp,removeEventListener("visibilitychange",e,!0))}),!0);o(),self.webVitals={firstInputPolyfill:function(e){i.push(e),u()},resetFirstInputPolyfill:o,get firstHiddenTime(){return p}}}();
+          </script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>            
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-4711551515762404",
+                enable_page_level_ads: true
+              });
+          </script><link as="script" rel="preload" href="/webpack-runtime-64497d164bea53b55ab8.js"/><link as="script" rel="preload" href="/framework-094b0089736b8f621f0d.js"/><link as="script" rel="preload" href="/app-7b0a9d9c8a02f3d5ef04.js"/><link as="script" rel="preload" href="/commons-5bade2ed2558cad4a45d.js"/><link as="script" rel="preload" href="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"/><link as="fetch" rel="preload" href="/page-data/blog/kotlin-study-ch3/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3000541721.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3293771174.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4711551515762404" crossorigin="anonymous"></script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="window"><div class="window-container"><header class="title-bar"><a class="title title-bar-text" href="/">JIGGAG</a><div class="title-bar-controls"><button aria-label="Close"></button></div></header><main class="window-body"><div class="blog-post-container"><div class="blog-post-header"><h3>코틀린은 함수도 간결하게 표현하고자 한다</h3><h6>2021년 4월 8일</h6></div><div class="blog-post-content"><pre><code class="language-markdown">[참고 도서]
+- 다재다능 코틀린 프로그래밍
+</code></pre>
+<h1>코틀린 함수</h1>
+<ul>
+<li>재사용 할 수 있는 단위가 클래스인 자바와 다르게 코틀린에서는 단독 함수까지 재사용 가능하다</li>
+<li>필요할 때마다 사용할 수 있도록 단독으로 작고 단순한 함수를 만들었다
+<ul>
+<li>클래스의 메소드로 만들어지는 것이 아닌 <strong>단독으로 호출되는 함수</strong>를 만든다</li>
+<li>탑 레벨 단독 함수를 만들어서 함수형, 객체지향 모두 사용 가능하다</li>
+</ul>
+</li>
+<li>모든 파라미터를 전달하지 않고 기본 파라미터를 전달한다
+<ul>
+<li>함수와 메소드 확장을 쉽게 해준다</li>
+<li>인자에 이름을 명시하여 가독성과 가변적으로 파라미터를 전달할 수 있게 되었다</li>
+</ul>
+</li>
+</ul>
+<h1>함수 생성</h1>
+<h2>단일표현함수</h2>
+<ul>
+<li>
+<p>함수를 블록으로 감싸는 대신 등호로 함수 정의와 바디를 구분하여 짧게 표현할 수 있다</p>
+<pre><code class="language-kotlin">fun greetBlock(): String {
+	return "hello"
+}
+
+// 단일표현함수
+fun greet() = "hello"
+println(greet())
+</code></pre>
+</li>
+<li>
+<p>단일표현함수에서는 리턴 타입이 컴파일 단계에서 추론이 가능하다</p>
+<ul>
+<li>코틀린이 컨텍스트에 기반해 리턴 타입을 추론하며 타입이 다른 변수에 할당하려고 하면 컴파일 오류가 발생한다</li>
+<li>타입이 추론되지만 리턴 타입을 명시하여 구현(implement)에 의해 다른 타입으로 변경되는 것을 방지할 수 있다
+<ul>
+<li><code>fun greet(): String = "hello"</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>함수는 표현식으로</h2>
+<ul>
+<li>
+<p>모든 함수가 표현식으로 취급되어 변수에 할당하거나 이후 프로세스에서 사용할 수 있다</p>
+</li>
+<li>
+<p>함수의 리턴 내용이 없는 경우(void) <code>Unit</code> 이라는 특별한 타입으로 반환된다</p>
+<pre><code class="language-kotlin">fun sayHello() = println("hello")
+val message: String = sayHello()
+>>> hello
+>>> error: type mismatch: inferred type is Unit but String was expected
+
+fun sayHello() = println("hello")
+val message: Unit = sayHello()
+println(message)
+>>> hello
+>>> kotlin.Unit
+</code></pre>
+<ol>
+<li>리턴하는게 없는 함수를 String 타입의 변수에 할당하려고 하면 오류가 발생한다</li>
+<li><code>Unit</code> 타입을 리턴하도록 표현식으로 작성되어 있으며 Unit 또한 <code>기본 메소드</code>를 가지고 있다
+<ul>
+<li><code>Unit의 toString()</code> 메소드가 호출되었고 해당 파일을 클래스로 래핑한 이름인 kotlin.Unit이 출력되었다</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h2>파라미터</h2>
+<ul>
+<li>타입 추론이 가능한 함수의 리턴 타입과는 다르게 파라미터의 타입은 명시하여야 한다</li>
+<li>파라미터에는 var, val를 사용해 변수를 정의하지 않는다
+<ul>
+<li>파라미터 값을 변경하려하면 컴파일 오류가 발생한다</li>
+</ul>
+</li>
+</ul>
+<h2>블록으로 정의된 함수</h2>
+<ul>
+<li><code>블록으로 정의된 함수</code>는 리턴 타입을 항상 정의해줘야한다
+<ul>
+<li><strong><code>return 키워드도 꼭 필요하다!!!</code></strong></li>
+</ul>
+</li>
+<li>단일표현식 대신 블록 바디를 사용한 경우
+<ul>
+<li>
+<p><code>fun notReally() = {2}</code></p>
+</li>
+<li>
+<p>코틀린은 코드 블록 안으로 들어가서 타입 추론을 하지 않는다</p>
+</li>
+<li>
+<p><code>람다 표현식</code>이나 <code>익명함수</code>로 취급한다</p>
+<pre><code class="language-kotlin">fun f1() = 2
+fun f2() = { 2 }
+fun f3(factor: Int) = { n: Int -> n * factor }
+println(f1()) >>> 2
+println(f2()) >>> kotlin.Int // 람다표현식
+println(f2()()) >>> 2
+println(f3(2)) >>> (kotlin.Int) -> kotlin.Int // 파라미터를 가지는 람다표현식
+println(f3(2)(3)) >>> 6
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h1>기본 인자와 명시적 인자</h1>
+<h2>오버로딩</h2>
+<ul>
+<li>기존 함수와는 다른 수의 인자나 타입을 받을 수 있도록하고자 같은 이름의 함수를 작성 + 작성 + 작성
+<ul>
+<li><code>코틀린에서는 같은 이름으로 함수를 중복 생성할 수 없다</code></li>
+</ul>
+</li>
+<li>코틀린에서도 오버로딩은 가능하지만 기존 함수에 <code>기본 인자</code>나 <code>명시적 인자</code> 를 사용해 함수를 변경하는 것이 더 단순한 방법이다
+<ul>
+<li>그러나 바이너리가 변경되면 컴파일을 다시 해야한다는 단점이 있는데 하면 되지...</li>
+</ul>
+</li>
+</ul>
+<h2>기본인자로 함수 변경하기</h2>
+<ul>
+<li>
+<p>기존 함수에 인자를 추가하는 경우</p>
+<ul>
+<li>기존 함수를 사용하던 곳에서 인자가 누락되어 오류 발생</li>
+<li>자바에서는 이를 오버로딩을 통해 해결하였으나 코드량이 방대해지는 단점이 존재</li>
+<li>코틀린에서는 기본인자를 활용해 기존에 사용하던 함수에서도 오류 없이 실행되도록함</li>
+</ul>
+<pre><code class="language-kotlin">fun greet(name: String): String = "Hello $name"
+println(greet("이름")) >>> Hello 이름
+
+// 기존 함수에 일반 인자를 추가하는 경우
+fun greet(name: String, age: Int): String = "Hello $name $age"
+println(greet("이름")) // 기존 함수를 사용하던 곳에서 인자가 누락되어 오류 발생
+
+// 기본 인자 형태로 인자를 추가하는 경우
+fun greet(name: String, age: Int = 10): String = "Hello $name $age"
+println(greet("이름")) >>> Hello 이름 10
+println(greet("이름", 20)) >>> Hello 이름 20
+</code></pre>
+<ul>
+<li>
+<p>기본인자를 사용하게 되면 해당 파라미터를 전달하지 않은 경우에는 기본인자 값이 사용된다</p>
+</li>
+<li>
+<p>만약 기본인자가 일반인자보다 앞에 위치하게 된다면 항상 일반인자까지 전달하기 위해 모든 인자를 넣어줘야한다</p>
+<ul>
+<li>이는 기본인자를 사용하는 장점을 잃어버리는 것</li>
+<li>기본인자를 효과적으로 사용하기 위해 마지막 인자로 사용하는 것이 좋다</li>
+</ul>
+<pre><code class="language-kotlin">fun greet(name: String = "이름", age: Int): String = "Hello $name $age"
+println(greet("이름", 10)) >>> Hello 이름 10
+println(greet("이름", 20)) >>> Hello 이름 20
+// 기본인자가 있음에도 뒤에 일반인자까지 순서대로 전달되어야 하기에 모든 인자를 전달해줘야한다
+</code></pre>
+</li>
+<li>
+<p>기본인자에 문자열 템플릿 형태로도 지정할 수 있다</p>
+<ul>
+<li>하지만 아직 초기화되지 않은 인자를 참조한 표현식을 기본인자 값으로 사용하는 경우 컴파일 오류가 발생한다</li>
+</ul>
+<pre><code class="language-kotlin">fun greet(name: String, length: String = "${name.length}"): String = "Hello $name $length"
+println(greet("이름")) >>> Hello 이름 2
+
+fun greet(length: String = "${name.length}", name: String): String = "Hello $name $length"
+println(greet(7, "이름")) // 컴파일 오류
+// 기본인자를 생성할 때 템플릿에서 아직 초기화되지 않은 name을 사용해서 오류가 발생한다
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2>명시적 인자로 가독성 향상하기</h2>
+<ul>
+<li>
+<p>함수의 인자가 어떤 값인지 명확하게 전달하여 가독성을 향상시키기 위해 명시적 인자를 사용한다</p>
+<ul>
+<li>명시적 인자를 사용하면 파라미터의 순서를 바꿔서 사용할 수 있다</li>
+</ul>
+<pre><code class="language-kotlin">fun greet(name: String, city: String, age: Int = 10, value: Int = 20) ...
+println(greet("이것은", "무엇일까")) // 각각의 파라미터가 어떤 값인지 알 수 없다
+
+// 명시적 인자를 사용해 가독성 + 선택적 인자 전달
+println(greet(name = "이것은", city = "무엇일까", age = 20))
+println(greet(city = "무엇일까", age = 20, name = "이것은", value = 3))
+println(greet(city = "무엇일까", name = "이것은"))
+</code></pre>
+</li>
+</ul>
+<h1>다중 인자와 스프레드</h1>
+<h2>다중인자</h2>
+<ul>
+<li>
+<p>다중인자 <code>vararg</code> 는 함수가 여러 개의 인자를 받을 때 타입 안정성을 제공해주는 기능</p>
+<ul>
+<li><code>vararg</code> 키워드로 선언한 타입의 형태로 인자를 여러개 받는다</li>
+</ul>
+<pre><code class="language-kotlin">// 배열을 인자로 받는 함수
+fun max(numbers: IntArray): Int {
+	...
+}
+println(max([1, 3, 5])) // 파라미터를 배열로 전달해야한다
+
+// 다중인자 vararg을 사용한 함수
+fun max(vararg numbers: Int): Int { // Int 인자를 배열형태로 받는다
+	...
+}
+println(max(1, 3, 5)) // 여러개의 파라미터를 받는다
+</code></pre>
+</li>
+<li>
+<p>다중인자도 기본인자와 동일하게 인자가 위치하는 순서는 상관없지만 <code>어디까지가 해당 인자의 범위라고 볼 것인지</code> 를 파악하는 것이 결국 명시적 인자를 사용해야만 하므로 다중인자나 기본인자의 장점을 효과적으로 사용하기 위해 뒤쪽에 위치하는 것을 권한다</p>
+</li>
+</ul>
+<h2>스프레드 연산자</h2>
+<ul>
+<li>
+<p>이미 배열로 존재하는 값들을 <code>vararg</code> 의 인자로 다시 풀어서 전달해야 하는 경우에 사용한다</p>
+<pre><code class="language-kotlin">// vararg 형태로 Int 인자를 받는 함수
+fun max(vararg numbers: Int): Int {
+	...
+}
+
+val values = intArrayOf(1, 2, 3)
+println(max(values)) // type mismatch: inferred type is IntArray but Int was expected
+</code></pre>
+<ol>
+<li>Int형 인자를 여러개 받는 함수에 IntArray 파라미터를 넘기면서 타입 에러가 발생하였다</li>
+<li><code>println(max(values[0], values[1], values[2]))</code> 형태로 파라미터를 풀어서 전달하는 방법이 있으나 너무 코드가 지저분해진다 (코틀린의 목적은 단순하고 간결함인데!)</li>
+<li><code>println(max(*values))</code> 스프레드 연산자 <code>*</code> 를 이용해 배열을 다중인자로 전달하였다</li>
+</ol>
+</li>
+<li>
+<p>배열은 스프레드 연산자가 가능한데 리스트는 불가능하다...</p>
+<ul>
+<li><code>max(*listOf(1, 2, 3).toIntArray())</code> 이처럼 리스트를 배열로 한번 변환 후 스프레드 할 수 있다</li>
+</ul>
+</li>
+</ul>
+<h1>구조분해</h1>
+<ul>
+<li>
+<p>구조화 ↔ 구조분해</p>
+<ul>
+<li>구조화: 다른 변수의 값으로 객체를 만드는 것</li>
+<li>구조분해: 객체에서 값을 추출해 변수에 넣는 것</li>
+<li>javascript의 구조분해와 유사하지만 속성의 이름이 아닌 <code>속성의 위치</code>를 기반으로 한다</li>
+</ul>
+<pre><code class="language-kotlin">// 일반적인 방법
+fun getFullName = Triple("첫번째", "두번째", "세번째")
+val result = getFullName()
+val first = result.first // 각각 속성값들을 할당해줘야한다
+val second = result.second
+val third = result.third
+
+// 구조분해
+val (first, second, third) = getFullName() // Triple의 속성값들을 순서대로 할당한다
+val (_, _, third) = getFullName() // 필요하지 않은 속성값은 _로 스킵한다
+val (_, second) = getFullName() // 필요하지 않은 속성값은 _로 스킵한다
+</code></pre>
+</li>
+</ul>
+<h1>결론</h1>
+<ul>
+<li>코틀린에서는 <code>top-level functions</code> 최상위 함수를 개발자가 만들 수 있다
+<ul>
+<li>객체로만 이뤄질 필요가 없고 함수로만 작성이 가능하다</li>
+<li>상황에 따라 함수형, 객체지향, 절차적 구현을 가능하게 한다</li>
+</ul>
+</li>
+<li>파라미터는 항상 타입을 명시해주어야 한다</li>
+<li>블록으로 작성된 함수는 리턴타입이 필수로 명시되어야한다
+<ul>
+<li>등호로 작성된 단일표현식 함수는 리턴타입을 추론 가능하여 생략해도 된다</li>
+</ul>
+</li>
+<li>기본인자 기능을 활용하면 기존의 작성된 함수의 확장을 쉽게 할 수 있다</li>
+<li>명시적 인자를 사용해 코드의 가독성을 향상시킨다</li>
+<li><code>vararg와 *</code> 를 이용해 다중인자를 전달하면서도 타입의 안정성을 유지시켜준다</li>
+</ul>
+<h1>🚨?!?!?</h1>
+<ul>
+<li>Nothing
+<ul>
+<li>
+<p>Unit을 리턴값이 없다는 void를 대체하는 타입으로 사용하였는데 Nothing이라는 타입을 알게 되었다</p>
+</li>
+<li>
+<p>Unit과 비슷하지만 또 다르고 void와 Unit이 완전 같지 않음을 깨닫고 🙈</p>
+</li>
+<li>
+<p>Unit을 로그 찍어보면 <code>클래스.Unit</code> 으로 나오는 부분에서 추측할 수 있듯 Unit 자체가 class이다</p>
+</li>
+<li>
+<p>그렇다면 Unit을 진정한 void라고 볼 수 있을까?</p>
+<ul>
+<li>void는 리턴 값이 없다는 것을 의미하는 타입이지만 Unit은 그 자체로 class를 의미하므로 진정한 void는 아닌 것 같다</li>
+<li>그래서 Nothing이 나타난다</li>
+<li>리턴은 하지만 값이 없다는 의미의 Unit</li>
+<li>리턴이라는 것조차 하지 않는다는 Nothing</li>
+</ul>
+<pre><code class="language-kotlin">fun returnVoid() {  // Unit으로 추론된다
+    println("무언가 리턴은 하지만 리턴하는 값이 없다")
+    return
+}
+fun returnUnit(): Unit {
+    println("Unit을 리턴 타입으로 명시하면 return 키워드를 쓰지 않아도 리턴되는 값이 없는 형태로 인식된다")
+}
+
+fun nothing(): Nothing = throw Error("리턴하지 않고 에러를 던졌다")
+fun throwErrNothing(): Nothing {
+    // 블록 함수는 리턴이 필수인데 에러를 던졌으니깐 리턴이 없어도 이게 끝!
+    throw Error("리턴 타입을 Nothing 이라고 명시하였다")
+}
+fun throwErr() {
+    throw Error("리턴 타입이 Unit으로 추론되고 있다")
+}
+</code></pre>
+</li>
+<li>
+<p>모든 타입을 뜻하는 Any > Unit > Nothing</p>
+<ul>
+<li>리턴 타입을 명시하지 않은 throw를 던졌더니 Unit으로 추론되고 있다</li>
+<li>Nothing은 모든 타입 클래스가 갖고 있는 하위 타입으로 보여진다</li>
+</ul>
+</li>
+<li>
+<p><code>리턴이라는 행위의 유무</code>가 두 타입의 가장 큰 차이점!!!</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1>🙈 더 알아보기</h1>
+<ul>
+<li>오버로딩 vs 오버라이드
+<ul>
+<li>
+<p>오버로딩</p>
+<ul>
+<li>
+<p>같은 메서드 이름으로 파라미터만 다르게 하여 확장</p>
+</li>
+<li>
+<p>비슷한 코드를 중복 작성하게 됨</p>
+<pre><code class="language-kotlin">함수1(param1) {}
+함수1(param1, param2) {}
+함수1(param1, param2, param3) {}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>오버라이드</p>
+<ul>
+<li>
+<p>상속 받아온 메서드를 재정의</p>
+<pre><code class="language-kotlin">클래스 extends 부모 {
+	부모함수() {
+		// 재정의
+	}
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div></div></main><footer class="footer"><div class="footer-label">©Jiggag, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></div><button>Github</button></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-115373374-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/kotlin-study-ch3/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-635a9dfd597478a1f0fa.js"],"app":["/app-7b0a9d9c8a02f3d5ef04.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-1713fa5a79ba6287b581.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-56ac5eb6f68a10947a02.js"],"component---src-pages-markdown-remark-frontmatter-slug-tsx":["/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"],"component---src-pages-using-ssr-tsx":["/component---src-pages-using-ssr-tsx-a3849e895b554ed9c74d.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-2c91f22b06497815d93c.js"],"component---src-templates-using-dsg-tsx":["/component---src-templates-using-dsg-tsx-96c55d73ae3a8c0dec54.js"]};/*]]>*/</script><script src="/polyfill-635a9dfd597478a1f0fa.js" nomodule=""></script><script src="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js" async=""></script><script src="/commons-5bade2ed2558cad4a45d.js" async=""></script><script src="/app-7b0a9d9c8a02f3d5ef04.js" async=""></script><script src="/framework-094b0089736b8f621f0d.js" async=""></script><script src="/webpack-runtime-64497d164bea53b55ab8.js" async=""></script></body></html>

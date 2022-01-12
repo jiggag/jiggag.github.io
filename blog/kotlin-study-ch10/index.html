@@ -1,0 +1,758 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.2222873932a2af5f300c.css" data-identity="gatsby-global-css">*{font-family:Nanum Gothic!important}:root{--surface:silver;--content:#e2e2e2;--button-highlight:#fff;--button-face:#dfdfdf;--button-shadow:grey;--window-frame:#0a0a0a;--dialog-blue:navy;--dialog-blue-light:#1084d0;--dialog-gray:grey;--dialog-gray-light:#b5b5b5;--link-blue:#00f;--element-spacing:8px;--border-width:1px;--border-raised-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight);--border-raised-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);--border-sunken-outer:inset -1px -1px var(--button-highlight),inset 1px 1px var(--window-frame);--border-sunken-inner:inset -2px -2px var(--button-face),inset 2px 2px var(--button-shadow);--border-window-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-face);--border-window-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-highlight)}body{margin:0}pre{background:var(--button-highlight);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);display:block;margin:4px 0;padding:var(--element-spacing)}pre code{background:unset;color:unset;font-size:12px}code{background:#0000ff95;border-radius:10px;color:#fff;font-size:14px;padding:0 6px}a{color:var(--link-blue);text-decoration:none}.window{background:var(--surface);box-shadow:var(--border-window-outer),var(--border-window-inner);height:100vh;margin:auto;max-width:500px}.window-container{display:flex;flex-direction:column;height:100%}.window-body{flex:1 1;margin:0 0 0 var(--element-spacing);overflow:auto;padding-right:var(--element-spacing)}.title-bar{align-items:center;background:linear-gradient(150deg,var(--dialog-blue),var(--dialog-blue-light));display:flex;justify-content:space-between;margin:3px 3px 0;padding:2px var(--element-spacing)}.title-bar .title{color:#fff;font-size:24px;margin:0;text-decoration:none}.title-bar-controls{display:flex}.title-bar-controls button{display:block;min-height:14px;min-width:16px;padding:0}.title-bar-controls button[aria-label=Close]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA4IDciPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMGgydjFoMXYxaDJWMWgxVjBoMnYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxSDZWNkg1VjVIM3YxSDJ2MUgwVjZoMVY1aDFWNGgxVjNIMlYySDFWMUgwVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;margin-left:2px;width:20px}.title-bar-text{color:#fff;font-weight:700;letter-spacing:0;margin-right:24px}.blog-post-container{background:var(--content);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0 0 0;overflow-x:scroll;padding:var(--element-spacing)}.blog-post-content h1,h2{font-size:20px}.blog-post-content h3,h4{font-size:16px}.blog-post-content ul{padding-left:20px}.home-post-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.home-post-title p{font-size:12px;margin:4px 0}.footer{align-items:center;display:flex;padding:12px 15px}.footer .footer-label{align-self:flex-end;font-size:12px;width:100%}button{background:var(--surface);border:none;border-radius:0;box-shadow:var(--border-raised-outer),var(--border-raised-inner);box-sizing:border-box;min-height:23px;min-width:75px;padding:0 12px}button:not(:disabled):active{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);padding:2px 3px 0 13px}@media (not(hover)){button:not(:disabled):hover{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner)}}button:focus{outline:1px dotted #000;outline-offset:-4px}button::-moz-focus-inner{border:0}::-webkit-scrollbar{width:16px}::-webkit-scrollbar:horizontal{height:17px}::-webkit-scrollbar-corner{background:var(--button-face)}::-webkit-scrollbar-track{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9InNpbHZlciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDB2MWgxdjFoMVYxSDFWMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxdjFIMHYxaDFWMWgxVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}::-webkit-scrollbar-thumb{background-color:var(--button-face);box-shadow:var(--border-raised-outer),var(--border-raised-inner)}::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement{display:block}::-webkit-scrollbar-button:vertical:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:vertical:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA2SDR2MWgxdjFoMXYxaDF2MWgxVjloMVY4aDFWN2gxVjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:horizontal:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDRIOHYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxaDFWNFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);width:16px}::-webkit-scrollbar-button:horizontal:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDRINnY3aDF2LTFoMVY5aDFWOGgxVjdIOVY2SDhWNUg3VjRaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);width:16px}</style><meta name="generator" content="Gatsby 4.1.4"/><title data-react-helmet="true">람다로 함수형 프로그래밍 | JIGGAG</title><meta data-react-helmet="true" name="description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:title" content="람다로 함수형 프로그래밍"/><meta data-react-helmet="true" property="og:description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:type" content="website"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script data-gatsby="web-vitals-polyfill">
+            !function(){var e,t,n,i,r={passive:!0,capture:!0},a=new Date,o=function(){i=[],t=-1,e=null,f(addEventListener)},c=function(i,r){e||(e=r,t=i,n=new Date,f(removeEventListener),u())},u=function(){if(t>=0&&t<n-a){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+t};i.forEach((function(e){e(r)})),i=[]}},s=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){c(e,t),a()},i=function(){a()},a=function(){removeEventListener("pointerup",n,r),removeEventListener("pointercancel",i,r)};addEventListener("pointerup",n,r),addEventListener("pointercancel",i,r)}(t,e):c(t,e)}},f=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,s,r)}))},p="hidden"===document.visibilityState?0:1/0;addEventListener("visibilitychange",(function e(t){"hidden"===document.visibilityState&&(p=t.timeStamp,removeEventListener("visibilitychange",e,!0))}),!0);o(),self.webVitals={firstInputPolyfill:function(e){i.push(e),u()},resetFirstInputPolyfill:o,get firstHiddenTime(){return p}}}();
+          </script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>            
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-4711551515762404",
+                enable_page_level_ads: true
+              });
+          </script><link as="script" rel="preload" href="/webpack-runtime-64497d164bea53b55ab8.js"/><link as="script" rel="preload" href="/framework-094b0089736b8f621f0d.js"/><link as="script" rel="preload" href="/app-7b0a9d9c8a02f3d5ef04.js"/><link as="script" rel="preload" href="/commons-5bade2ed2558cad4a45d.js"/><link as="script" rel="preload" href="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"/><link as="fetch" rel="preload" href="/page-data/blog/kotlin-study-ch10/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3000541721.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3293771174.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4711551515762404" crossorigin="anonymous"></script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="window"><div class="window-container"><header class="title-bar"><a class="title title-bar-text" href="/">JIGGAG</a><div class="title-bar-controls"><button aria-label="Close"></button></div></header><main class="window-body"><div class="blog-post-container"><div class="blog-post-header"><h3>람다로 함수형 프로그래밍</h3><h6>2021년 5월 19일</h6></div><div class="blog-post-content"><pre><code class="language-markdown">[참고 도서]
+- 다재다능 코틀린 프로그래밍
+</code></pre>
+<h1>람다로 함수형 프로그래밍 하기</h1>
+<ul>
+<li>선언적인 함수형 프로그래밍으로 코드의 복잡성을 낮춰서 읽기 쉽고 유지보수가 쉽게 한다</li>
+<li>처리할 일과 해결방법을 모두 고려해서 명령하는 것과 다르게 선언형에서는 처리할 일만 알려주고 세부적인 것은 함수 자체가 구현한다</li>
+</ul>
+<h2>함수형</h2>
+<ul>
+<li>
+<p>명령형 => <code>i는 0에서 9까지 증가하면서 for문을 돌면서 조건에 만족하는 값이 있는지 찾아줘</code></p>
+</li>
+<li>
+<p>선언형 => <code>contains() 메소드 호출</code></p>
+</li>
+<li>
+<p>명령형에서 풀어 썼던 내용들이 선언형에서는 내부적으로 <code>캡슐화</code> 되어 있다</p>
+</li>
+<li>
+<p>읽기 쉽게 깔끔해지는 코드는 당연하다</p>
+</li>
+<li>
+<p>세부적인 내용이 알고 싶다면 캡슐화된 메소드를 타고 들어가서 확인하면 된다</p>
+</li>
+<li>
+<p><code>함수형 = 선언형 + 고차함수</code></p>
+</li>
+<li>
+<p><code>함수에 함수를 전달하고 함수를 리턴한다</code> => <code>f(g(h()))()</code> 이런것!? => <code>함수호출 체인 (함수형 컴포지션)</code></p>
+<pre><code class="language-kotlin">// 명령형
+val doubleOfEven = mutableListOf&#x3C;Int>()
+for (i in (1..10)) {
+    if (i % 2 == 0) {
+    doubleOfEven.add(i * 2)
+    }
+}
+println(doubleOfEven) // [4, 8, 12, 16, 20]
+
+// 함수형
+val doubleOfEvenFP = (1..10).filter { it % 2 == 0 }.map { it * 2 }
+println(doubleOfEvenFP) // [4, 8, 12, 16, 20]
+</code></pre>
+<ul>
+<li>명령형에서는 mutable한 변수를 사용하였지만 함수형에서는 로직의 흐름 자체로 값을 immutable하게 만들었다</li>
+</ul>
+</li>
+</ul>
+<h2>왜 사용하지? 언제 사용하지?</h2>
+<ul>
+<li>프레임워크와 라이브러리로 점차 명령형에서 선언형으로 흐르고 있다</li>
+<li>스틱 기어 자동차로 기어 변경 와다다 보다 자율 주행 자동차로 흐르듯</li>
+<li>명령형보다 함수형이 덜 복잡하고 연산에 집중할 수 있다
+<ul>
+<li>연산에 집중하기 위해 순수 함수로 동작해야하며 immutable 해야 부작용이 없다</li>
+<li>mutable 해야만 한다면 명령형이 더 나은 선택이 될 수 있다</li>
+</ul>
+</li>
+</ul>
+<h1>람다 표현식</h1>
+<ul>
+<li><code>람다</code> => 고차함수에 인자로 사용되는 짧은 함수
+<ul>
+<li>함수에 계산된 데이터를 전달하기 보다 람다를 이용해 실행 가능한 코드를 전달한다</li>
+<li>람다가 직접 계산하고 결정한다</li>
+<li>고기를 구워서 주는게 아니라 굽는 법을 알려줄테니 너가 직접 해!</li>
+</ul>
+</li>
+</ul>
+<h2>람다의 구조</h2>
+<ul>
+<li>람다는 이름이 없고 타입추론을 이용한 리턴 타입을 가지는 함수이다</li>
+<li><code>{ parameter -> body }</code>
+<ul>
+<li>파라미터와 바디로 구성되어 있다</li>
+<li>멀티라인으로 작성 할 수 있다</li>
+<li>람다의 장점인 읽기 쉬운 코드를 살리기 위해 <code>함수 인자로 전달 될 때 마지막 인자로 위치</code>하도록 한다</li>
+</ul>
+</li>
+</ul>
+<h2>람다 전달과 암시적 파라미터 it</h2>
+<ol>
+<li><code>fun isPrime(n: Int) = n > 1 &#x26;&#x26; (2 until n).none({ i: Int -> n % i == 0})</code>
+<ul>
+<li>함수 파라미터 타입은 추론이 안되서 직접 명시하였다</li>
+</ul>
+</li>
+<li><code>fun isPrime(n: Int) = n > 1 &#x26;&#x26; (2 until n).none({ i -> n % i == 0})</code>
+<ul>
+<li>람다의 파라미터는 타입이 필요하지 않는다</li>
+<li>람다로 전달된 함수의 파라미터로부터 타입을 추론한다</li>
+</ul>
+</li>
+<li><code>fun isPrime(n: Int) = n > 1 &#x26;&#x26; (2 until n).none { i -> n % i == 0 }</code>
+<ul>
+<li>람다에 파라미터가 1개만 존재하는 경우 괄호를 생략할 수 있다</li>
+</ul>
+</li>
+<li><code>fun isPrime(n: Int) = n > 1 &#x26;&#x26; (2 until n).none { n % it == 0 }</code>
+<ul>
+<li>람다의 파라미터가 1개라면 it라는 이름의 암시적 파라미터를 사용할 수 있다</li>
+<li>파라미터를 하나만 받는 짧은 람다에서는 암시적 파라미터로 더 간결하게 작성할 수 있다</li>
+<li>단, 파라미터 이름이 it인 경우와 헷갈릴 수 있다 (파라미터 이름 규칙이 있으면 괜찮지 않을까)</li>
+</ul>
+</li>
+</ol>
+<h2>람다 받기</h2>
+<pre><code class="language-kotlin">fun walkTo(action: (Int) -> Unit, n: Int) = (1..n).forEach { action(it) }
+walkTo({ i -> print(i) }, 3) // 123
+</code></pre>
+<ul>
+<li>람다를 첫번째 인자로 전달하였다</li>
+<li>람다 장점을 활용하기 위해 마지막 인자로 위치를 변경하고 <code>{}</code>로만 표현할 수 있다</li>
+</ul>
+<pre><code class="language-kotlin">fun walkTo(n: Int, action: (Int) -> Unit) = (1..n).forEach { action(it) }
+walkTo(3) { i -> print(i) }
+walkTo(1) { i ->
+    println(">>> 멀티라인 람다")
+    println(i)
+}
+walkTo(3) { print(it) }
+</code></pre>
+<ul>
+<li>마지막 인자로 위치를 변경하고 괄호를 빼고 멀티라인트로 전달해보았다</li>
+</ul>
+<h2>함수 참조 사용</h2>
+<ul>
+<li>
+<p><code>패스스루(::)</code>를 사용해 람다를 더 읽기 쉽게 만들 수 있다</p>
+<ul>
+<li><code>({ x -> method(x) })</code> => <code>(::method)</code></li>
+<li>마치 스크립트에서 <code>list.map(item => fn(item))</code>를 <code>list.map(fn)</code> 같다</li>
+</ul>
+</li>
+<li>
+<p><code>(1..n).forEach { action(it) }</code> => <code>(1..n).forEach(action)</code></p>
+<ul>
+<li>단순히 파라미터를 <code>action</code>으로 보내기 위해 사용되던 <code>{ action(it) }</code> 람다 구조를 제거했다</li>
+</ul>
+</li>
+<li>
+<p><strong><code>패스스루 람다를 사용할 수 있는 함수는 람다이여야 한다!</code></strong></p>
+<ul>
+<li>람다가 아닌 것은 패스스루로 할 수 없다</li>
+<li><code>action</code>은 일반 람다라서 <code>(1..n).forEach(action)</code>로 대체하였다</li>
+<li>만약 일반 함수라면 <code>(1..n).forEach(::action)</code> 형태가 되어야한다</li>
+<li><code>walkTo(3, { i -> print(i) })</code> => <code>walkTo(3, ::print)</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>암시적 리시버 this ?!!?!</code></strong></p>
+<pre><code class="language-kotlin">fun print(s: Int) = println(">>> $s")
+walkTo(3, ::print) // 1번
+walkTo(3, this::print) // 2번
+</code></pre>
+<ol>
+<li>1번 print에는 암시적으로 this가 참조되어있다</li>
+<li>2번 print에는 this를 앞에 명시하였다</li>
+<li>만약 this.print 함수가 없었다면 글로벌로 print 함수를 찾아간난다</li>
+</ol>
+</li>
+<li>
+<p><code>walkTo(3, System.out::print)</code></p>
+<ul>
+<li><code>System.out</code> 인스턴스의 print를 호출한다</li>
+</ul>
+</li>
+</ul>
+<h2>함수를 리턴하는 함수</h2>
+<ul>
+<li>함수가 함수를 리턴한다
+<ul>
+<li>함수를 재사용해서 중복되는 코드를 줄일 수 있다</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-kotlin">fun predicateOfLength(length: Int): (String) -> Boolean {
+    return { input: String -> input.length == length }
+}
+val list = listOf("다섯글자야", "네글자다", "세글자")
+println(list.filter(predicateOfLength(5))) // [다섯글자야]
+println(list.filter(predicateOfLength(3))) // [세글자]
+
+>>> filter에서 인자로 predicateOfLength가 리턴하는 함수를 전달하였다
+</code></pre>
+<pre><code class="language-kotlin">fun predicateOfLength(length: Int) = { input: String -> input.length == length }
+
+>>> predicateOfLength를 블록 없이 타입추론이 가능하도록 하였다
+</code></pre>
+<h1>람다와 익명 함수</h1>
+<ul>
+<li>람다를 함수의 인자로 전달하는데 동일한 람다를 여러 곳에서 필요하면 코드가 중복된다
+<ul>
+<li>이런 코드 중복을 피하기 위해 <code>람다를 변수</code>에 담거나 <code>익명 함수</code>로 대체할 수 있다</li>
+</ul>
+</li>
+<li>람다를 변수에 담아서 재사용 하는 경우 코틀린은 파라미터의 타입을 추론할 수 없어 타입을 명시해주어야 한다
+<ol>
+<li><strong><code>val fn = { input: String -> input.length == 2 }</code></strong>
+<ul>
+<li><code>fun predicateOfLength(length: Int) = { input: String -> input.length == length }</code> ⇒ 여기서 input 타입을 명시한 이유와 같다</li>
+<li>파라미터 타입을 전달하였기 때문에 람다의 리턴타입은 코틀린이 추론할 수 있게 되었다</li>
+</ul>
+</li>
+<li><strong><code>val fn: (String) -> Boolean = { input -> input.length == 2 }</code></strong>
+<ul>
+<li>다른 방법으로 리턴 타입을 명시(변수의 타입 명시)하고 파라미터 타입을 뺄 수 있다</li>
+<li>그러나 람다의 리턴 타입이 명시한 타입과 다른 경우 컴파일 에러가 발생한다</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>람다가 할당된 변수의 타입을 정의하면 반드시 리턴 타입을 지정해야한다</li>
+<li>람다의 파라미터 타입을 지정한다면 리턴 타입은 추론된다</li>
+</ul>
+</li>
+<li>변수의 타입은 추론을 사용하고 리턴 타입만 지정하는 <code>익명 함수</code>가 있다
+<ul>
+<li>일반 함수와 동일하게 작성하지만 함수 이름 없이 함수의 리턴 타입을 지정하는 규칙이 있다</li>
+<li><code>list.filter(fun(name: String): Boolean { return name.length == 2 })</code></li>
+<li>람다보다 지저분해져서... 특수한 상황 말고는 <code>람다 >>> 익명</code></li>
+<li><code>return</code> 키워드로 익명 함수에서 리턴된다</li>
+</ul>
+</li>
+</ul>
+<h1>클로저와 렉시컬 스코핑</h1>
+<ul>
+<li>
+<p><code>클로저</code> => 외부 상태에 의존하는 경우</p>
+<pre><code class="language-kotlin">var factor = 2
+val doubleFn = { e: Int -> e * factor }
+</code></pre>
+<ol>
+<li>외부 변수인 factor를 의존한다</li>
+<li>doubleFn 로컬 변수에서 찾지 못했기 때문에 클로저가 정의된 곳으로 스코프를 확장해서 factor를 찾는다</li>
+</ol>
+<p>⇒ <code>렉시컬 스코핑</code></p>
+</li>
+<li>
+<p><strong><code>함수형에서 mutable은 금기사항이다</code></strong></p>
+<ul>
+<li>
+<p>mutable인 factor가 클로저 안에서 변경될 수 있다</p>
+</li>
+<li>
+<p>이것은 결과를 예상할 수 없게 한다</p>
+<pre><code class="language-kotlin">var factor = 2
+val doubled = listOf(1, 2).map { it * factor }
+val doubledAlso = sequenceOf(1, 2).map { it * factor }
+factor = 0
+doubled.forEach { print(it) } // 24
+doubledAlso.forEach { print(it) } // 00
+</code></pre>
+<ul>
+<li>sequenceOf만 변경되었다..... 이게 뭐가 다른걸까?</li>
+</ul>
+</li>
+<li>
+<p>클로저에서 mutable 변수를 사용하는 것이 에러와 혼란의 원인이 된다</p>
+</li>
+<li>
+<p>순수함수를 사용하자</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2>비지역성(non-local)과 라벨(labeled)리턴</h2>
+<ul>
+<li>람다에서는 return 키워드를 사용하지 않는다
+<ul>
+<li>익명함수에서만 사용한다</li>
+<li>외부 함수를 리턴하는게 아니라 익명함수 자체가 값을 리턴한다</li>
+</ul>
+</li>
+<li>람다에는 왜 return이 없을까</li>
+<li>return 같은 처리를 위한 라벨리턴과 비지역성 return이 있다</li>
+</ul>
+<h2>리턴이 허용되지 않는다</h2>
+<ul>
+<li>
+<p>람다에서는 기본적으로 return이 허용되지 않는다</p>
+<pre><code class="language-kotlin">fun invokeWith(n: Int, action: (Int) -> Unit) {
+    println(">>> 실행 $n")
+    action(n)
+    println(">>> 종료 $n")
+}
+fun caller() {
+    (1..3).forEach { i ->
+        invokeWith(i) {
+            println("> invoke 람다 시작 $it")
+            if (it == 2) { return } // Kotlin: 'return' is not allowed here
+            println("> invoke 람다 종료 $it")
+        }
+    }
+}
+caller()
+</code></pre>
+<ul>
+<li><code>invokeWith</code>에 인자로 전달하는 람다 함수 안에서 return을 사용했더니 에러가 발생했다</li>
+<li>이 return이 <code>invokeWith</code>에 인자로 전달한 람다를 return하려는 것인지 <code>forEach</code>를 리턴하는 것인지, <code>caller</code>를 리턴하는 것인지 알 수 없기 때문이다</li>
+</ul>
+</li>
+</ul>
+<h2>라벨 리턴</h2>
+<ul>
+<li>
+<p>어느 상황을 return하려는 것인지 알 수 없는 상황에서 라벨 리턴을 사용해 리턴하려는 지점을 명시한다</p>
+</li>
+<li>
+<p><code>return@label</code>을 하게 되면 <code>label@</code>이 달려있는 함수가 return 된다</p>
+<pre><code class="language-kotlin">fun caller() {
+    (1..3).forEach { i ->
+        invokeWith(i) here@ {
+            println("> invoke 람다 시작 $it")
+            if (it == 2) {
+                return@here
+            }
+            println("> invoke 람다 종료 $it")
+        }
+    }
+}
+/*
+>>> 실행 1
+> invoke 람다 시작 1
+> invoke 람다 종료 1
+>>> 종료 1
+>>> 실행 2
+> invoke 람다 시작 2
+>>> 종료 2
+>>> 실행 3
+> invoke 람다 시작 3
+> invoke 람다 종료 3
+>>> 종료 3
+*/
+</code></pre>
+<ul>
+<li>람다의 흐름을 제어해서 라벨이 달려있는 블록으로 점프한다</li>
+</ul>
+<pre><code class="language-kotlin">fun caller() {
+    (1..3).forEach { i ->
+        invokeWith(i) {
+            println("> invoke 람다 시작 $it")
+            if (it == 2) {
+                return@invokeWith
+            }
+            println("> invoke 람다 종료 $it")
+        }
+    }
+}
+</code></pre>
+<ul>
+<li>함수 이름으로 암시적인 라벨로 사용할 수도 있다</li>
+</ul>
+</li>
+<li>
+<p>라벨 리턴으로는 현재 스코프의 람다만 벗어날 수 있다</p>
+</li>
+</ul>
+<h2>논로컬 리턴</h2>
+<ul>
+<li>
+<p>논로컬 리턴으로 현재 함수에서 나갈 수 있다</p>
+<ul>
+<li>라벨 리턴은 현재 함수의 람다만 벗어날 수 있었다</li>
+</ul>
+<pre><code class="language-kotlin">fun caller() {
+    (1..3).forEach { i ->
+        if (i == 2) {
+            return // forEach를 빠져나간다
+        }
+        invokeWith(i) {
+            println("> invoke 람다 시작 $it")
+            println("> invoke 람다 종료 $it")
+        }
+    }
+}
+/*
+>>> 실행 1
+> invoke 람다 시작 1
+> invoke 람다 종료 1
+>>> 종료 1
+*/
+</code></pre>
+<ul>
+<li>일반적인 라벨리턴이 아닌 return으로 forEach에 전달된 람다를 빠져나간다</li>
+</ul>
+</li>
+<li>
+<p>왜 forEach의 람다에서는 return으로 빠져나갈 수 있을까?</p>
+<ul>
+<li>코틀린 스탠다드 라이브러리 forEach는 <code>inline</code> 키워드로 정의되어있다</li>
+</ul>
+</li>
+<li>
+<p>논로컬 리턴은 inline으로 선언된 람다에서만 사용할 수 있는 것이다</p>
+</li>
+</ul>
+<h1>람다를 이용한 인라인 함수</h1>
+<ul>
+<li>람다 사용 시 퍼포먼스를 위해 inline 키워드를 사용한다
+<ul>
+<li>inline 람다는 forEach에서 리턴을 사용하는 것처럼 논로컬 흐름을 제어하기 위해 사용된다</li>
+<li>구체화된 타입 파라미터를 전달하기 위해 inline 키워드를 사용했었다 (ch6)</li>
+</ul>
+</li>
+</ul>
+<h2>인라인 최적화</h2>
+<ol>
+<li>
+<p><strong>인라인 최적화 적용전</strong></p>
+<pre><code class="language-kotlin">fun invokeTwo(n: Int, action1: (Int) -> Unit, action2: (Int) -> Unit): (Int) -> Unit {
+  println(">>>> invoke $n")
+  action1(n)
+  action2(n)
+  println(">>>> invoke exit")
+  return { _: Int -> println(">>>> invoke lambda") }
+}
+fun report(n: Int) {
+  println(">>>> start report $n")
+  val stackTrace = RuntimeException().stackTrace
+  println("stackTrace.size ${stackTrace.size}")
+  stackTrace.take(3).forEach(::println)
+}
+fun caller() {
+  invokeTwo(2, { n -> report(n) }, { n -> report(n) })
+}
+caller()
+
+>>>> invoke 2
+>>>> start report
+stackTrace.size 36
+Lamda.report(lamda.kts:121)
+Lamda$caller$1.invoke(lamda.kts:126)
+Lamda$caller$1.invoke(lamda.kts:1)
+>>>> start report
+stackTrace.size 36
+Lamda.report(lamda.kts:121)
+Lamda$caller$2.invoke(lamda.kts:126)
+Lamda$caller$2.invoke(lamda.kts:1)
+>>>> invoke exit
+</code></pre>
+<ul>
+<li>기본적으로 인라인 최적화를 하지 않은 상태이다
+<ul>
+<li>람다 함수 안에서 호출된 report의 뎁스는 36이다</li>
+</ul>
+</li>
+<li>inline 키워드를 이용해 람다를 받는 함수(invokeTwo)의 성능을 향상시킬 수 있다
+<ul>
+<li><code>**함수를 호출하는 대신 함수의 바이트코드가 함수를 호출하는 위치에 들어가게된다**</code></li>
+<li>이는 함수 호출의 오버헤드는 제거하지만 함수가 호출되는 모든 부분에 바이트코드가 들어가야해서 바이트코드 자체가 커지게 된다</li>
+<li>최적화 이득이 없는 경우 inline 키워드에 경고 문구를 띄워준다
+<ul>
+<li><code>Expected performance impact from inlining is insignificant. Inlining works best for functions with parameters of functional types</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>인라인 최적화 적용</p>
+<pre><code class="language-kotlin">inline fun invokeTwo...
+
+>>>> invoke 2
+>>>> start report 2
+stackTrace.size 33
+Lamda.report(lamda.kts:121)
+Lamda.caller(lamda.kts:126)
+Lamda.&#x3C;init>(lamda.kts:128)
+>>>> start report 2
+stackTrace.size 33
+Lamda.report(lamda.kts:121)
+Lamda.caller(lamda.kts:126)
+Lamda.&#x3C;init>(lamda.kts:128)
+>>>> invoke exit
+</code></pre>
+<ul>
+<li>inline 키워드를 붙여서 정의하여 <code>컴파일러에게 호출을 최적화</code>하라고 알려주었다
+<ul>
+<li>뎁스가 33으로 줄었다</li>
+<li>report 함수에서 <code>Lamda$caller$1.invoke</code> 호출하던 것이 <code>Lamda.caller</code> 로 변경되었다</li>
+</ul>
+</li>
+<li>inline 함수가 엄청 긴 경우 이걸 다 바이트코드로 변환해서 들고 있어야 하기 때문에 최적화를 하는 것이  오히려 파일 크기를 키우는 영향이 생겨버린다
+<ul>
+<li>측정하고 최적화하도록한다</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2>선택적 노인라인 파라미터로 최적화 제거하기</h2>
+<ul>
+<li>
+<p>inline에서 최적화를 요청했다면 <code>noinline</code> 으로 해당 함수 최적화를 제거할 수 있다</p>
+<ul>
+<li>inline 키워드를 사용한 함수에 noinline 키워드를 람다 파라미터에 붙여서 전달한다</li>
+</ul>
+<pre><code class="language-kotlin">inline fun invokeTwo(
+	n: Int,
+	action1: (Int) -> Unit,
+	noinline action2: (Int) -> Unit
+): (Int) -> Unit {
+	...
+}
+
+>>>> invoke 2
+>>>> start report 2
+stackTrace.size 33
+Lamda.report(lamda.kts:121)
+Lamda.caller(lamda.kts:126)
+Lamda.&#x3C;init>(lamda.kts:128)
+>>>> start report 2
+stackTrace.size 35
+Lamda.report(lamda.kts:121)
+Lamda$caller$2.invoke(lamda.kts:126)
+Lamda$caller$2.invoke(lamda.kts:1)
+>>>> invoke exit
+</code></pre>
+<ul>
+<li>inline으로 정의된 invokeTwo의 람다 함수 파라미터는 최적화 되어있다</li>
+<li>그러나 noinline으로 붙여주면서 action2 람다에 대해서는 최적화를 제거하였다
+<ul>
+<li>action1보다 action2의 뎁스가 더 깊다</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>인라인 람다에서는 논로컬 리턴 가능하다</h2>
+<ul>
+<li>inline 람다에서는 return 키워드로 함수에서 빠져나가는 것이 가능하다 (논로컬 리턴)
+<ul>
+<li>최적화 되어있어서 함수 뎁스에서 바로 빠져나갈 수 있다</li>
+<li>그러나 noinline으로 최적화를 제거한 action2에서는 더 많은 뎁스(콜스택)이 있기 때문에 return을 사용해도 현재 람다 함수를 빠져나갈 수 없다</li>
+</ul>
+</li>
+<li>inline, noinline 둘 다 라벨리턴은 가능하다
+<ul>
+<li>직접 빠져나갈 곳을 라벨로 기입해줬기 때문에!</li>
+</ul>
+</li>
+</ul>
+<h2>크로스인라인 파라미터</h2>
+<pre><code class="language-kotlin">inline fun invokeTwo(n: Int, action1: (Int) -> Unit, action2: (Int) -> Unit): (Int) -> Unit {
+  println(">>>> invoke $n")
+  action1(n)
+  println(">>>> invoke exit")
+  return { x: Int -> action2(x) }
+}
+
+// Can't inline 'action2' here: it may contain non-local returns. Add 'crossinline' modifier to parameter declaration 'action2
+</code></pre>
+<ul>
+<li>inline으로 최적화된 함수에서 파라미터로 전달 받은 람다를 실행하는 것이 아니라 새로 리턴하는 경우 컴파일 오류가 발생한다
+<ul>
+<li>언제 실행될지 모르는 리턴 함수로 최적화된 내용을 넣을 수 없다</li>
+</ul>
+</li>
+<li>해결법으로 noinline이나 crossinline 키워드를 붙여준다
+<ul>
+<li>
+<p>noinline은 action2에서 논로컬 리턴을 사용할 수 없음을 명시한다</p>
+</li>
+<li>
+<p>crossinline은 invokeTwo 리턴 함수를 <code>호출하는 부분에서 인라인 최적화를 시킨도록 한다</code></p>
+<pre><code class="language-kotlin">inline fun invokeTwo(
+	n: Int,
+	action1: (Int) -> Unit,
+	crossinline action2: (Int) -> Unit
+): (Int) -> Unit {
+	...
+}
+</code></pre>
+<ul>
+<li>호출하는 부분을 인라인으로 어떻게!?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1>마무리</h1>
+<ul>
+<li>함수형 프로그래밍 짱이다
+<ul>
+<li>고차함수 + 함수형 = 유동적인 코드 + 쉬운 유지보수</li>
+</ul>
+</li>
+<li>람다는 이름이 없는 함수이다
+<ul>
+<li>다른 함수의 인자로 전달이 쉽다</li>
+</ul>
+</li>
+<li>mutable 상태를 많이 사용하면 잠재적인 에러를 유발한다
+<ul>
+<li>코드를 혼란스럽게 한다</li>
+</ul>
+</li>
+<li>코틀린 람다에서는 return 규칙이 많다... 🚨
+<ul>
+<li>라벨리턴</li>
+<li>논로컬리턴</li>
+<li>inline으로 최적화하는 방법
+<ul>
+<li>inline은 성능 향상이 눈에 띄는 경우에 사용...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1>🚨?!?!?</h1>
+<ul>
+<li><strong>인라인???</strong>
+<ul>
+<li>
+<p>뭐지?</p>
+</li>
+<li>
+<p>최적화를 하는데?</p>
+</li>
+<li>
+<p>왜 외부로 나가는 함수에서는 쓸 수 없을까?</p>
+</li>
+<li>
+<p>인라인을 붙이면 그 인라인 함수를 호출한 자리에 인라인 함수 내부가 그대로 들어가게 된다</p>
+<pre><code class="language-kotlin">inline fun ex() {
+	println("1")
+}
+fun call() {
+	ex()
+}
+
+===>
+fun call() {
+	println("1") // 이런 형태로 인라인된 함수가 들어간다
+}
+</code></pre>
+</li>
+<li>
+<p>그런데 인자로 받은 람다를 다시 리턴하는 경우에는 인라인이 아니라 크로스인라인을 사용해야한다</p>
+<pre><code class="language-kotlin">inline fun ex(crossinline action: (Int) -> Unit): (Int) -> Unit {
+  return { _ -> action(1) }
+}
+fun call(): (Int) -> Unit {
+  return ex { println(it) }
+}
+fun final() {
+  call()(2)
+}
+
+===>
+fun final() {
+  action(1) // 최종적으로 리턴된 람다를 실행하는 곳에 인라인ㄷ
+}
+
+/*
+크로스인라인을 사용하지 않으면
+fun call() {
+	{ _ -> action(1) }
+}
+이런 형태가 되는건데 말이 안된다!
+*/
+</code></pre>
+</li>
+<li>
+<p><a href="%5Bhttps://medium.com/harrythegreat/kotlin-inline-noinline-%ED%95%9C%EB%B2%88%EC%97%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-1d54ff34151c%5D(https://medium.com/harrythegreat/kotlin-inline-noinline-%ED%95%9C%EB%B2%88%EC%97%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-1d54ff34151c)">참고: inline, noinline 이해하기</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1>🙈 더 알아보기</h1>
+<ul>
+<li>
+<p>선언형 vs 명령형</p>
+</li>
+<li>
+<p>클로저</p>
+</li>
+<li>
+<p>함수형</p>
+<ul>
+<li><code>f(g(h(x)))</code></li>
+<li><a href="https://velog.io/@nakta/FP-in-JS-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-%EC%A0%91%ED%95%B4%EB%B3%B4%EB%8A%94-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%95%A8%EC%88%98-%EC%BB%B4%ED%8F%AC%EC%A7%80%EC%85%98-%EC%BB%A4%EB%A7%81-s7k2z039vb">참고: 함수형 컴포지션</a></li>
+<li>전에 함수형 프로그래밍 스터디(물론 소리 없이 사라졌다) 기억이 새록새록</li>
+<li>커링</li>
+</ul>
+</li>
+<li>
+<p>암시적 리시버 this</p>
+<ul>
+<li>apply, bind, call 처럼 바인딩해주는 개념과 유사하다고 생각했는데...</li>
+</ul>
+</li>
+<li>
+<p>리스트와 시퀀스</p>
+<pre><code class="language-kotlin">var factor = 2
+val doubled = listOf(1, 2).map { it * factor }
+val doubledAlso = sequenceOf(1, 2).map { it * factor }
+factor = 0
+doubled.forEach { print(it) } // 24
+doubledAlso.forEach { print(it) } // 00
+</code></pre>
+<ul>
+<li>위 예시에서 mutable한 factor가 변경되자 <code>listOf</code>와 <code>sequenceOf</code>의 결과값이 다르게 나왔다</li>
+<li>코틀린 Sequence는 모든 단계가 처리되고 마지막에 결과를 요청한 순간 연산이 발생한다
+<ul>
+<li>factor가 변경되고 나서 연산이 일어나므로 00을 리턴하였다</li>
+</ul>
+</li>
+<li>Collection인 경우에는 각 단계가 끝나는 즉시 결과를 처리한다
+<ul>
+<li>listOf가 처리된 순간의 factor의 값 2를 따라서 결과를 24로 반환하였다</li>
+</ul>
+</li>
+<li><a href="%5Bhttps://iosroid.tistory.com/79%5D(https://iosroid.tistory.com/79)">참고: 코틀린의 시퀀스</a></li>
+</ul>
+</li>
+<li>
+<p>return</p>
+<ul>
+<li>람다에서 빠져나가기 위해 <code>라벨 리턴</code>
+<ul>
+<li>람다를 호출한 곳이 아니라 람다가 정의된 곳에서 빠져나간다</li>
+</ul>
+</li>
+<li>inline으로 정의된 경우 <code>논로컬 리턴</code>
+<ul>
+<li>현재 동작중인 람다를 선언한 곳 바깥으로 나간다</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div></div></main><footer class="footer"><div class="footer-label">©Jiggag, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></div><button>Github</button></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-115373374-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/kotlin-study-ch10/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-635a9dfd597478a1f0fa.js"],"app":["/app-7b0a9d9c8a02f3d5ef04.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-1713fa5a79ba6287b581.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-56ac5eb6f68a10947a02.js"],"component---src-pages-markdown-remark-frontmatter-slug-tsx":["/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"],"component---src-pages-using-ssr-tsx":["/component---src-pages-using-ssr-tsx-a3849e895b554ed9c74d.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-2c91f22b06497815d93c.js"],"component---src-templates-using-dsg-tsx":["/component---src-templates-using-dsg-tsx-96c55d73ae3a8c0dec54.js"]};/*]]>*/</script><script src="/polyfill-635a9dfd597478a1f0fa.js" nomodule=""></script><script src="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js" async=""></script><script src="/commons-5bade2ed2558cad4a45d.js" async=""></script><script src="/app-7b0a9d9c8a02f3d5ef04.js" async=""></script><script src="/framework-094b0089736b8f621f0d.js" async=""></script><script src="/webpack-runtime-64497d164bea53b55ab8.js" async=""></script></body></html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.2222873932a2af5f300c.css" data-identity="gatsby-global-css">*{font-family:Nanum Gothic!important}:root{--surface:silver;--content:#e2e2e2;--button-highlight:#fff;--button-face:#dfdfdf;--button-shadow:grey;--window-frame:#0a0a0a;--dialog-blue:navy;--dialog-blue-light:#1084d0;--dialog-gray:grey;--dialog-gray-light:#b5b5b5;--link-blue:#00f;--element-spacing:8px;--border-width:1px;--border-raised-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight);--border-raised-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);--border-sunken-outer:inset -1px -1px var(--button-highlight),inset 1px 1px var(--window-frame);--border-sunken-inner:inset -2px -2px var(--button-face),inset 2px 2px var(--button-shadow);--border-window-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-face);--border-window-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-highlight)}body{margin:0}pre{background:var(--button-highlight);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);display:block;margin:4px 0;padding:var(--element-spacing)}pre code{background:unset;color:unset;font-size:12px}code{background:#0000ff95;border-radius:10px;color:#fff;font-size:14px;padding:0 6px}a{color:var(--link-blue);text-decoration:none}.window{background:var(--surface);box-shadow:var(--border-window-outer),var(--border-window-inner);height:100vh;margin:auto;max-width:500px}.window-container{display:flex;flex-direction:column;height:100%}.window-body{flex:1 1;margin:0 0 0 var(--element-spacing);overflow:auto;padding-right:var(--element-spacing)}.title-bar{align-items:center;background:linear-gradient(150deg,var(--dialog-blue),var(--dialog-blue-light));display:flex;justify-content:space-between;margin:3px 3px 0;padding:2px var(--element-spacing)}.title-bar .title{color:#fff;font-size:24px;margin:0;text-decoration:none}.title-bar-controls{display:flex}.title-bar-controls button{display:block;min-height:14px;min-width:16px;padding:0}.title-bar-controls button[aria-label=Close]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA4IDciPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMGgydjFoMXYxaDJWMWgxVjBoMnYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxSDZWNkg1VjVIM3YxSDJ2MUgwVjZoMVY1aDFWNGgxVjNIMlYySDFWMUgwVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;margin-left:2px;width:20px}.title-bar-text{color:#fff;font-weight:700;letter-spacing:0;margin-right:24px}.blog-post-container{background:var(--content);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0 0 0;overflow-x:scroll;padding:var(--element-spacing)}.blog-post-content h1,h2{font-size:20px}.blog-post-content h3,h4{font-size:16px}.blog-post-content ul{padding-left:20px}.home-post-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.home-post-title p{font-size:12px;margin:4px 0}.footer{align-items:center;display:flex;padding:12px 15px}.footer .footer-label{align-self:flex-end;font-size:12px;width:100%}button{background:var(--surface);border:none;border-radius:0;box-shadow:var(--border-raised-outer),var(--border-raised-inner);box-sizing:border-box;min-height:23px;min-width:75px;padding:0 12px}button:not(:disabled):active{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);padding:2px 3px 0 13px}@media (not(hover)){button:not(:disabled):hover{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner)}}button:focus{outline:1px dotted #000;outline-offset:-4px}button::-moz-focus-inner{border:0}::-webkit-scrollbar{width:16px}::-webkit-scrollbar:horizontal{height:17px}::-webkit-scrollbar-corner{background:var(--button-face)}::-webkit-scrollbar-track{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9InNpbHZlciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDB2MWgxdjFoMVYxSDFWMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxdjFIMHYxaDFWMWgxVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}::-webkit-scrollbar-thumb{background-color:var(--button-face);box-shadow:var(--border-raised-outer),var(--border-raised-inner)}::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement{display:block}::-webkit-scrollbar-button:vertical:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:vertical:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA2SDR2MWgxdjFoMXYxaDF2MWgxVjloMVY4aDFWN2gxVjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:horizontal:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDRIOHYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxaDFWNFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);width:16px}::-webkit-scrollbar-button:horizontal:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDRINnY3aDF2LTFoMVY5aDFWOGgxVjdIOVY2SDhWNUg3VjRaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);width:16px}</style><meta name="generator" content="Gatsby 4.1.4"/><title data-react-helmet="true">코틀린 델리게이션 | JIGGAG</title><meta data-react-helmet="true" name="description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:title" content="코틀린 델리게이션"/><meta data-react-helmet="true" property="og:description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:type" content="website"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script data-gatsby="web-vitals-polyfill">
+            !function(){var e,t,n,i,r={passive:!0,capture:!0},a=new Date,o=function(){i=[],t=-1,e=null,f(addEventListener)},c=function(i,r){e||(e=r,t=i,n=new Date,f(removeEventListener),u())},u=function(){if(t>=0&&t<n-a){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+t};i.forEach((function(e){e(r)})),i=[]}},s=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){c(e,t),a()},i=function(){a()},a=function(){removeEventListener("pointerup",n,r),removeEventListener("pointercancel",i,r)};addEventListener("pointerup",n,r),addEventListener("pointercancel",i,r)}(t,e):c(t,e)}},f=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,s,r)}))},p="hidden"===document.visibilityState?0:1/0;addEventListener("visibilitychange",(function e(t){"hidden"===document.visibilityState&&(p=t.timeStamp,removeEventListener("visibilitychange",e,!0))}),!0);o(),self.webVitals={firstInputPolyfill:function(e){i.push(e),u()},resetFirstInputPolyfill:o,get firstHiddenTime(){return p}}}();
+          </script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>            
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-4711551515762404",
+                enable_page_level_ads: true
+              });
+          </script><link as="script" rel="preload" href="/webpack-runtime-64497d164bea53b55ab8.js"/><link as="script" rel="preload" href="/framework-094b0089736b8f621f0d.js"/><link as="script" rel="preload" href="/app-7b0a9d9c8a02f3d5ef04.js"/><link as="script" rel="preload" href="/commons-5bade2ed2558cad4a45d.js"/><link as="script" rel="preload" href="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"/><link as="fetch" rel="preload" href="/page-data/blog/kotlin-study-ch9/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3000541721.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3293771174.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4711551515762404" crossorigin="anonymous"></script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="window"><div class="window-container"><header class="title-bar"><a class="title title-bar-text" href="/">JIGGAG</a><div class="title-bar-controls"><button aria-label="Close"></button></div></header><main class="window-body"><div class="blog-post-container"><div class="blog-post-header"><h3>코틀린 델리게이션</h3><h6>2021년 5월 12일</h6></div><div class="blog-post-content"><pre><code class="language-markdown">[참고 도서]
+- 다재다능 코틀린 프로그래밍
+</code></pre>
+<h1>상속과 델리게이션</h1>
+<ul>
+<li>둘 다 객체지향 프로그래밍 디자인 방식으로 클래스를 다른 클래스로부터 확장시킨다</li>
+<li>상속은 베이스 클래스에 귀속된다</li>
+<li>델리게이션은 보다 유연하게 객체 자신이 처리해야 할 일을 다른 클래스의 인스턴스에게 위임한다</li>
+</ul>
+<h1>언제 델리게이션을 써야할까</h1>
+<ul>
+<li>
+<p>상속과 델리게이션 어느 것이 더 유용할까</p>
+<ul>
+<li>클래스의 객체가 단순하게 다른 클래스의 객체를 <code>사용</code>하기만 한다면 <code>델리게이션</code></li>
+<li>클래스의 객체가 다른 클래스의 객체의 자리에 <code>대체</code>되어야한다면 <code>상속</code></li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/665babd59fb6fb8c0b0b9bcfa0cdcbea/a6ec4/delegation.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 34.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA+0lEQVQoz3WRuYqGUAyFff93sFUstLBVwcrCXVFxA/f9Ic6QDPdHfmaKQEhuvnOSK63rCoplWXAcB/Z951zUt2375CKu6+IQvfd7iYoEep4HVVWh6zrOz/P8DJAIAUQtCAL4vs8gqt33zQzqSfM8I89zJEnCwLZtEUURwjDEMAwM6/secRyjKAoWdF0Xtm3zewrP81CW5a/DaZpgWRYMw2AwNXRdh6qqDCdlAlHfcRw0TQPTNKFpGtI0ZSOyLLMIA8VKNDiOI0ggyzKGv+8m7itysf77jrzy++iUkxtyqCgKQ2nwDf7+JAEVdem7SUq0al3X7PivX/4vyOEP2jz0FBn79j4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="delegation"
+        title="delegation"
+        src="/static/665babd59fb6fb8c0b0b9bcfa0cdcbea/0a47e/delegation.png"
+        srcset="/static/665babd59fb6fb8c0b0b9bcfa0cdcbea/8a4e8/delegation.png 150w,
+/static/665babd59fb6fb8c0b0b9bcfa0cdcbea/5a46d/delegation.png 300w,
+/static/665babd59fb6fb8c0b0b9bcfa0cdcbea/0a47e/delegation.png 600w,
+/static/665babd59fb6fb8c0b0b9bcfa0cdcbea/1cfc2/delegation.png 900w,
+/static/665babd59fb6fb8c0b0b9bcfa0cdcbea/c1b63/delegation.png 1200w,
+/static/665babd59fb6fb8c0b0b9bcfa0cdcbea/a6ec4/delegation.png 1438w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<ul>
+<li>첫번째는 Candidate는 BaseClass를 상속받았고 Caller가 Candidate가 항상 들고 다니는 BaseClass에 접근한다
+<ul>
+<li>자식클래스(Candidate)는 부모클래스(BaseClass)의 동작을 변경할 수 없다</li>
+<li>베이스 클래스의 외부 동작을 유지해야한다</li>
+</ul>
+</li>
+<li>두번째는 Caller가 Candidate를 통해 BaseClass에 접근한다
+<ul>
+<li>상속과는 다르게 인스턴스 분리가 가능하다</li>
+<li>필요에 따라 Candidate가 BaseClass를 변경해서 요청할 수 있다</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1>델리게이션을 사용한 디자인</h1>
+<h2>상속 디자인의 문제점</h2>
+<pre><code class="language-kotlin">interface Worker {
+	fun work()
+	fun takeVacation()
+}
+
+open class JavaProgrammer: Worker {
+	override fun work() = println("자바 개발자가 일하는 중")
+	override fun takeVacation() = println("자바 개발자 휴가")
+}
+open class KotlinProgrammer: Worker {
+	override fun work() = println("코틀린 개발자가 일하는 중")
+	override fun takeVacation() = println("코틀린 개발자 휴가")
+}
+
+class Manager: JavaProgrammer()
+</code></pre>
+<ol>
+<li>
+<p>Worker 인터페이스를 구현한 각각의 클래스에서 함수를 override했다</p>
+</li>
+<li>
+<p>이들을 관리하는 새로운 클래스 Manager를 추가하고 상속받았다</p>
+</li>
+<li>
+<p><code>JavaProgrammer</code> 를 상속받은 Manager에서는 부모클래스의 메소드를 호출한다</p>
+<pre><code class="language-kotlin">val java = Manager()
+java.work() // 자바 개발자가 일하는 중
+</code></pre>
+<p>⇒ 이렇게 되면 Manager는 JavaProgrammer에만 한정된다</p>
+<p>⇒ 한정된 클래스에서는 <code>KotlinProgrammer</code> 클래스도  같이 구현할 수 없다...</p>
+<p>⇒ 따라서 Manager가 모든 클래스의 인터페이스인 Worker에 의존하도록 델리게이션을 사용한다</p>
+</li>
+</ol>
+<h2>자바에서의 델리게이션을 어려웠다</h2>
+<ul>
+<li>
+<p>한정된 상속을 풀어내고나 델리게이션을 구현하였다</p>
+<pre><code class="language-kotlin">class Manager(val worker: Worker) {
+	fun work() = worker.work()
+	fun takeVacation() = worker.takeVacation()
+}
+
+val java = Manager(JavaProgrammer())
+java.work() // 자바 개발자가 일하는 중
+</code></pre>
+<ol>
+<li>델리게이션하려는 대상 인스턴스를 생성자로 전달하였다</li>
+<li>그리고 그 인스턴스의 메소드를 각각 다시 구현하였다</li>
+</ol>
+<p>⇒ 인자로 전달받은 인스턴스를 호출하므로써 한정적이지 않지만 각각의 메소드를 직접 구현해주어야한다</p>
+<ul>
+<li>Worker에 메소드가 추가된다면 Manager에서 해당 메소드 호출을 위해 한번 더 추가 구현작업이 필요하다
+<ul>
+<li>중복된 메소드 호출, DRY, OCP 원칙 위반</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>코틀린의 by 델리게이션</h2>
+<ul>
+<li>
+<p>자바와는 다르게 <code>코틀린 컴파일러가 델리게이션 코드를 직접 요청</code>하도록 할 수 있다</p>
+<ul>
+<li>추가되는 메소드를 각각 다시 추가할 필요가없다</li>
+</ul>
+<pre><code class="language-kotlin">class Manager(): Worker by JavaProgrammer()
+</code></pre>
+<ol>
+<li>
+<p>Manager는 아무런 메소드도 갖고 있지 않다</p>
+</li>
+<li>
+<p>JavaProgrammer을 이용해 Worker 인터페이스를 구현한 Manager</p>
+</li>
+<li>
+<p>Manager의 메소드는 by 키워드가 컴파일 시간에 델리게이션을 대신 해준다</p>
+</li>
+<li>
+<p>여기서 <code>Manager는 델리게이션 했을뿐 타입이 JavaProgrammer인 것이 아니다</code></p>
+<pre><code class="language-kotlin">val person: JavaProgrammer = Manager() // Error: Type mismatch.
+</code></pre>
+</li>
+</ol>
+</li>
+<li>
+<p><code>코틀린의 델리게이션을 사용하면 컴파일러가 내부적으로 메소드를 생성하고 요청한다</code></p>
+<ul>
+<li>코틀린 컴파일러에 의해 메소드가 합성되었고 델리게이션에게 호출을 요청하는 것이다</li>
+</ul>
+</li>
+</ul>
+<h1>파라미터 위임</h1>
+<h2>기존의 델리게이션에서의 단점</h2>
+<pre><code class="language-kotlin">class Manager(): Worker by JavaProgrammer()
+</code></pre>
+<ol>
+<li>Manager 인스턴스가 JavaProgrammer 인스턴스로 델리게이트 한다
+<ul>
+<li>Manager는 무조건 JavaProgrammer로만 요청할 수 있기에 다른 종류의 Worker 인터페이스를 구현한 클래스(ex. KotlinProgrammer)에게는 요청할 수 없다</li>
+</ul>
+</li>
+<li><code>**Manager 인스턴스는 델리게이션에 접근 할 수 없다**</code>
+<ul>
+<li>Manager 클래스 안에 다른 메소드를 작성하여도 해당 메소드에서는 델리게이션을 통한 메소드 호출을 할 수 없다</li>
+</ul>
+</li>
+</ol>
+<h2>델리게이션 생성자 파라미터</h2>
+<ul>
+<li>
+<p>기존의 델리게이션 단점들을 해결하기 위해 <code>생성자로 델리게이션 파라미터</code>를 전달한다</p>
+<pre><code class="language-kotlin">class Manager(val staff: Worker): Worker by staff {
+	fun meeting() = println("회의 ${staff.javaClass.simpleName}")
+}
+
+val java = Manager(JavaProgrammer())
+java.work() // 자바 개발자가 일하는 중
+java.meeting() // 회의 JavaProgrammer
+</code></pre>
+<ul>
+<li>생성자 파라미터 <code>staff</code> 를 by 키워드로 델리게이션 한다</li>
+<li>Manager 클래스의 meeting 메소드가 추가되었다</li>
+<li>이 메소드에서는 staff 파라미터를 통해 델리게이션 인스턴스의 메소드를 호출 할 수 있게 되었다
+<ul>
+<li>델리게이션의 유연함</li>
+<li>Manager에 추가 구현하지 않은 work 메소드를 호출하면 델리게이션 인스턴스의 work 메소드가 호출되고 추가 구현된 meeting 메소드를 호출하면 Manager 인스턴스의 메소드가 호출된다</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1>메소드 충돌 관리</h1>
+<ul>
+<li>만약 델리게이션을 사용하는 클래스와 델리게이션 클래스에 동일한 이름의 메소드가 있다면?
+<ul>
+<li>코틀린 상속에서 이런 상황을 해결하였다</li>
+<li>이름이 같은 메소드를 각각 하나씩 재구현해주었다</li>
+</ul>
+</li>
+<li>코틀린 컴파일러가 <code>델리게이션 클래스의 모든 인터페이스를 위한 랩퍼</code>를 만든다
+<ul>
+<li>컴파일러가 메소드 요청을 할 수 있게 해주는 기능</li>
+</ul>
+</li>
+<li>델리게이션 클래스의 메소드를 이용하려는 클래스에서 다시 구현하려는 경우 <code>override 키워드</code>를 사용한다
+<ul>
+<li>
+<p>구현한 메소드에 우선순위를 주고 컴파일러가 해당 메소드에 대해 델리게이션 클래스의 랩퍼 메소드를 생성하지 않는다</p>
+<pre><code class="language-kotlin">class Manager(val staff: Worker): Worker by staff {
+	override fun takeVacation() = println("특별휴가주기")
+}
+</code></pre>
+<ol>
+<li>override를 사용해 해당 메소드가 델리게이션된 메소드가 아니라 인터페이스의 메소드를 직접 구현했다는 것을 명확하게 전달한다</li>
+<li>코틀린 컴파일러가 Worker 인터페이스의 work 랩퍼 메소드만 생성할 것이다</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h1>델리게이션 주의사항</h1>
+<ul>
+<li>
+<p>상속과는 다르게 델리게이션은 기존 클래스를 대체할 수 없다</p>
+<ul>
+<li>Manager는 JavaProgrammer 인스턴스를 가지고 있을뿐 JavaProgrammer의 한 종류가 아니다</li>
+<li>델리게이션 인스턴스는 인터페이스 그 자체의 한종류이다</li>
+<li><code>val manager: Worker = Manager()</code>
+<ul>
+<li>이는 델리게이션의 부작용인데 Manager가 Worker를 이용만 해야하는데 Worker로 취급되버린다...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>생성자를 mutable로 정의하면 인스턴스와 델리게이션 참조가 다른 상황이 발생한다</p>
+<pre><code class="language-kotlin">class Manager(var staff: Worker): Worker by staff {
+  fun meeting() = println("회의 ${staff.javaClass.simpleName}")
+}
+
+val java = Manager(JavaProgrammer())
+java.work() // 자바 개발자가 일하는 중
+java.meeting() // 회의 JavaProgrammer
+java.staff = KotlinProgrammer()
+java.work() // 자바 개발자가 일하는 중
+java.meeting() // 회의 KotlinProgrammer
+</code></pre>
+<ol>
+<li>Manager의 델리게이션를 전달하는 생성자를 var로 정의했다</li>
+<li>처음에는 의도대로 JavaProgrammer로 동작한다</li>
+<li><code>java.staff = KotlinProgrammer()</code> 뮤터블한 생성자 필드를 변경해버렸다</li>
+<li>생성자를 변경했으니깐 델리게이션 메소드를 호출하는 <code>java.work()</code> 에서도 Kotlin이 나올것이라 기대했지만 Java가 나왔다</li>
+<li>델리게이션 메소드가 아닌 직접 구현한 메서드에서 호출한 staff에는 Kotlin이 나왔다</li>
+</ol>
+<p>⇒ 생성자를 변경한 것은 내부적으로 <code>this.staff = staff</code> 처럼 백킹 필드를 변경했을뿐이다</p>
+<p>⇒ 델리게이션 메소드는 처음 만들어진 그대로를 참조하고 있다</p>
+<p>⇒ 현재 Manager에서는 JavaProgrammer와 KotlinProgrammer 둘 다 사용중이다</p>
+</li>
+</ul>
+<h1>변수와 속성 델리게이션</h1>
+<h2>변수 델리게이션</h2>
+<ul>
+<li>
+<p>클래스가 아니라 변수 자체를 델리게이션 할 수 있다</p>
+<pre><code class="language-kotlin">// 델리게이션 클래스
+package 패키지경로
+import kotlin.reflect.KProperty
+
+class Delegation(var content: String) {
+  operator fun getValue(thisRef: Any?, property: KProperty&#x3C;*>) = "$content 에 이걸 더해서 가져오기"
+  operator fun setValue(thisRef: Any, property: KProperty&#x3C;*>, value: String) {
+    println(">>> property ${property.name}") // yourName
+    content = value
+  }
+}
+
+// 사용하는 곳
+import 패키지경로.Delegation
+
+var yourName: String by Delegation("이 값을 델리게이션")
+println(yourName) // 이 값을 델리게이션 에 이걸 더해서 가져오기
+yourName = "변경"
+println(yourName) // 변경 에 이걸 더해서 가져오기
+</code></pre>
+</li>
+<li>
+<p>델리게이션 인스턴스를 통해 변수를 델리게이션해서 사용할 수 있게 되었다</p>
+</li>
+</ul>
+<h2>속성 델리게이션</h2>
+<ul>
+<li>
+<p>객체의 속성값에도 델리게이션을 사용할 수 있다</p>
+</li>
+<li>
+<p>기존 데이터를 파라미터로 받아서 속성값에 주는 델리게이션 인스턴스 인자로 넘겨주고 델리게이션이 반환하는 값이 속성이 된다</p>
+<pre><code class="language-kotlin">class PostComment(dataSource: MutableMap&#x3C;String, Any>) {
+  val title: String by dataSource
+}
+var data = PostComment(mutableMapOf(
+  "title" to "이름"
+))
+</code></pre>
+</li>
+<li>
+<p>객체 전체를 델리게이션 하지 않아도 부분적으로 속성만 위임할 수 있다</p>
+</li>
+</ul>
+<h1>빌트인 스탠다드 델리게이션</h1>
+<ul>
+<li>지연 델리게이션으로 객체의 생성이나 연산 실행이 실제 필요한 순간까지 지연시킨다</li>
+<li>observable 델리게이션은 속성의 값이 변경되는 순간을 지켜보고 있다가 핸들링 할 수 있다</li>
+<li>vatoable 델리게이션은 속성의 값을 변경 요청하는 순간을 핸들링하여 실제로 값의 변경을 허락 또는 거절 할 수 있다</li>
+</ul>
+<h2>위임을 지연시키는 lazy</h2>
+<ul>
+<li>
+<p>실제로 사용되지 않는 순간임에도 불필요하게 연산되는 것을 방지하고자 사용한다</p>
+</li>
+<li>
+<p>결과가 정말 필요할때 실행해서 가져온다</p>
+<pre><code class="language-kotlin">var value by lazy { getValue() }
+
+if (false &#x26;&#x26; value) {
+	...
+}
+</code></pre>
+<ol>
+<li>value를 지연시켜두었다</li>
+<li>value를 사용하는 조건문이 항상 false이므로 지연된 value는 항상 실행되지 않는다</li>
+</ol>
+</li>
+<li>
+<p><code>by lazy { 람다 함수 }</code></p>
+<ul>
+<li>lazy 함수는 람다 표현식의 실행과 <code>동기화</code> 된다</li>
+</ul>
+</li>
+</ul>
+<h2>변경을 감지하는 observable()</h2>
+<ul>
+<li>
+<p>변수나 속성의 변화를 가로채서 observable이 등록한 이벤트 핸들러를 호출한다</p>
+<ul>
+<li>핸들러를 호출할 뿐 아무것도 리턴하지 않는다</li>
+<li>Unit, void</li>
+</ul>
+<pre><code class="language-kotlin">var count by Delegates.observable(0) { property, oldValue, newValue ->
+  println("property: ${property}, old: ${oldValue}, new: ${newValue}")
+}
+println(count)
+count++
+println(count)
+
+>>>
+0
+property: var Delegate.count: kotlin.Int, old: 0, new: 1
+1
+</code></pre>
+<ol>
+<li>변경을 감지하고자하는 변수 count에 observable 델리게이션을 사용하였다</li>
+<li>0 으로 초기화하였고 count가 변경되자 등록한 핸들러가 실행되었다</li>
+</ol>
+</li>
+<li>
+<p>모니터링, 디버깅에 유용하다</p>
+</li>
+</ul>
+<h2>변경을 거부하는 vetoable()</h2>
+<ul>
+<li>
+<p>observable과 유사하지만 다르다</p>
+</li>
+<li>
+<p>변수나 속성의 변화를 가로채서 핸들러를 실행하고 Boolean을 반환한다</p>
+<ul>
+<li>true이면 변화를 허용한다</li>
+<li>false이면 값은 변경되지 않는다</li>
+</ul>
+<pre><code class="language-kotlin">var count by Delegates.vetoable(0) { _, oldValue, newValue -> newValue > oldValue }
+println(count)
+count--
+println(count)
+count++
+println(count)
+
+>>>
+0
+0
+1
+</code></pre>
+<ol>
+<li>count를 변경하려고하자 핸들러가 실행되었다</li>
+<li>조건문을 실행하여 true/false에 따라 값이 변경되었다</li>
+</ol>
+</li>
+<li>
+<p>특정 규칙에 따라 변화를 허용하고자 하는 경우 사용한다</p>
+</li>
+</ul>
+<h1>마무리</h1>
+<ul>
+<li>상속보다는 델리게이션을 사용해 더 유연한 객체지향 프로그래밍</li>
+<li>by 키워드를 통한 코틀린의 델리게이션
+<ul>
+<li>객체 호출</li>
+<li>지역변수, 속성에 대한 접근, 변경</li>
+</ul>
+</li>
+</ul>
+<h1>🚨?!?!?</h1>
+<ul>
+<li>
+<p><strong>상속</strong></p>
+<ul>
+<li>
+<p><code>class Manager: JavaProgrammer()</code> 한정되는 인스턴스</p>
+</li>
+<li>
+<p>다른 클래스들을 여러개 상속 받을 수 없을까</p>
+</li>
+<li>
+<p>응 안된다</p>
+<pre><code class="language-kotlin">class Manager: JavaProgrammer(), KotlinProgrammer()
+// Only one class may appear in a supertype list
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>by 키워드</strong></p>
+<ul>
+<li><code>class Manager(): Worker by JavaProgrammer()</code></li>
+<li>마치 타입 같은데?</li>
+<li>상속과 비슷해보이는데?</li>
+<li>Worker 인터페이스를 구현한 <code>JavaProgrammer</code> 를 델리게이션했다는 것은 어떻게 보면 <code>class Manager: JavaProgrammer()</code> 상속과 같아보인다...</li>
+<li>그러나 델리게이션한 인스턴스 Manager의 타입은 JavaProgrammer가 아님을 위에서 확인했다</li>
+<li>상속이라면 결국 JavaProgrammer에만 한정적으로 되어버리는데 델리게이션이기에 한정되지 않고 유연해진다</li>
+</ul>
+</li>
+<li>
+<p><strong>파라미터</strong></p>
+<ul>
+<li>코틀린은 파라미터에 있는 변수를 바로 사용 할 수 있어서...</li>
+<li><code>class Name(val staff: String): Worker by staff</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1>🙈 더 알아보기</h1>
+<ul>
+<li><strong>속성 델리게이션</strong>
+<ul>
+<li>
+<p><code>val title: String by dataSource</code></p>
+</li>
+<li>
+<p>title이 dataSource를 델리게이션</p>
+</li>
+<li>
+<p>by 키워드를 따라가보면 내부적으로 <code>property.name</code> 이 불리고 있다😱</p>
+<pre><code class="language-kotlin">@kotlin.jvm.JvmName("getVar")
+@kotlin.internal.InlineOnly
+public inline operator fun &#x3C;V, V1 : V> MutableMap&#x3C;in String, out @Exact V>.getValue(thisRef: Any?, property: KProperty&#x3C;*>): V1 =
+    @Suppress("UNCHECKED_CAST") (getOrImplicitDefault(property.name) as V1)
+</code></pre>
+</li>
+</ul>
+</li>
+</ul></div></div></main><footer class="footer"><div class="footer-label">©Jiggag, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></div><button>Github</button></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-115373374-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/kotlin-study-ch9/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-635a9dfd597478a1f0fa.js"],"app":["/app-7b0a9d9c8a02f3d5ef04.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-1713fa5a79ba6287b581.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-56ac5eb6f68a10947a02.js"],"component---src-pages-markdown-remark-frontmatter-slug-tsx":["/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"],"component---src-pages-using-ssr-tsx":["/component---src-pages-using-ssr-tsx-a3849e895b554ed9c74d.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-2c91f22b06497815d93c.js"],"component---src-templates-using-dsg-tsx":["/component---src-templates-using-dsg-tsx-96c55d73ae3a8c0dec54.js"]};/*]]>*/</script><script src="/polyfill-635a9dfd597478a1f0fa.js" nomodule=""></script><script src="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js" async=""></script><script src="/commons-5bade2ed2558cad4a45d.js" async=""></script><script src="/app-7b0a9d9c8a02f3d5ef04.js" async=""></script><script src="/framework-094b0089736b8f621f0d.js" async=""></script><script src="/webpack-runtime-64497d164bea53b55ab8.js" async=""></script></body></html>

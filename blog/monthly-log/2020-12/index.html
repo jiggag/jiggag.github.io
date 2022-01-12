@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.2222873932a2af5f300c.css" data-identity="gatsby-global-css">*{font-family:Nanum Gothic!important}:root{--surface:silver;--content:#e2e2e2;--button-highlight:#fff;--button-face:#dfdfdf;--button-shadow:grey;--window-frame:#0a0a0a;--dialog-blue:navy;--dialog-blue-light:#1084d0;--dialog-gray:grey;--dialog-gray-light:#b5b5b5;--link-blue:#00f;--element-spacing:8px;--border-width:1px;--border-raised-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight);--border-raised-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);--border-sunken-outer:inset -1px -1px var(--button-highlight),inset 1px 1px var(--window-frame);--border-sunken-inner:inset -2px -2px var(--button-face),inset 2px 2px var(--button-shadow);--border-window-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-face);--border-window-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-highlight)}body{margin:0}pre{background:var(--button-highlight);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);display:block;margin:4px 0;padding:var(--element-spacing)}pre code{background:unset;color:unset;font-size:12px}code{background:#0000ff95;border-radius:10px;color:#fff;font-size:14px;padding:0 6px}a{color:var(--link-blue);text-decoration:none}.window{background:var(--surface);box-shadow:var(--border-window-outer),var(--border-window-inner);height:100vh;margin:auto;max-width:500px}.window-container{display:flex;flex-direction:column;height:100%}.window-body{flex:1 1;margin:0 0 0 var(--element-spacing);overflow:auto;padding-right:var(--element-spacing)}.title-bar{align-items:center;background:linear-gradient(150deg,var(--dialog-blue),var(--dialog-blue-light));display:flex;justify-content:space-between;margin:3px 3px 0;padding:2px var(--element-spacing)}.title-bar .title{color:#fff;font-size:24px;margin:0;text-decoration:none}.title-bar-controls{display:flex}.title-bar-controls button{display:block;min-height:14px;min-width:16px;padding:0}.title-bar-controls button[aria-label=Close]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA4IDciPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMGgydjFoMXYxaDJWMWgxVjBoMnYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxSDZWNkg1VjVIM3YxSDJ2MUgwVjZoMVY1aDFWNGgxVjNIMlYySDFWMUgwVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;margin-left:2px;width:20px}.title-bar-text{color:#fff;font-weight:700;letter-spacing:0;margin-right:24px}.blog-post-container{background:var(--content);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0 0 0;overflow-x:scroll;padding:var(--element-spacing)}.blog-post-content h1,h2{font-size:20px}.blog-post-content h3,h4{font-size:16px}.blog-post-content ul{padding-left:20px}.home-post-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.home-post-title p{font-size:12px;margin:4px 0}.footer{align-items:center;display:flex;padding:12px 15px}.footer .footer-label{align-self:flex-end;font-size:12px;width:100%}button{background:var(--surface);border:none;border-radius:0;box-shadow:var(--border-raised-outer),var(--border-raised-inner);box-sizing:border-box;min-height:23px;min-width:75px;padding:0 12px}button:not(:disabled):active{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);padding:2px 3px 0 13px}@media (not(hover)){button:not(:disabled):hover{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner)}}button:focus{outline:1px dotted #000;outline-offset:-4px}button::-moz-focus-inner{border:0}::-webkit-scrollbar{width:16px}::-webkit-scrollbar:horizontal{height:17px}::-webkit-scrollbar-corner{background:var(--button-face)}::-webkit-scrollbar-track{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9InNpbHZlciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDB2MWgxdjFoMVYxSDFWMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxdjFIMHYxaDFWMWgxVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}::-webkit-scrollbar-thumb{background-color:var(--button-face);box-shadow:var(--border-raised-outer),var(--border-raised-inner)}::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement{display:block}::-webkit-scrollbar-button:vertical:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:vertical:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA2SDR2MWgxdjFoMXYxaDF2MWgxVjloMVY4aDFWN2gxVjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:horizontal:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDRIOHYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxaDFWNFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);width:16px}::-webkit-scrollbar-button:horizontal:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDRINnY3aDF2LTFoMVY5aDFWOGgxVjdIOVY2SDhWNUg3VjRaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);width:16px}</style><meta name="generator" content="Gatsby 4.1.4"/><title data-react-helmet="true">12월 한달동안 로그 | JIGGAG</title><meta data-react-helmet="true" name="description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:title" content="12월 한달동안 로그"/><meta data-react-helmet="true" property="og:description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:type" content="website"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script data-gatsby="web-vitals-polyfill">
+            !function(){var e,t,n,i,r={passive:!0,capture:!0},a=new Date,o=function(){i=[],t=-1,e=null,f(addEventListener)},c=function(i,r){e||(e=r,t=i,n=new Date,f(removeEventListener),u())},u=function(){if(t>=0&&t<n-a){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+t};i.forEach((function(e){e(r)})),i=[]}},s=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){c(e,t),a()},i=function(){a()},a=function(){removeEventListener("pointerup",n,r),removeEventListener("pointercancel",i,r)};addEventListener("pointerup",n,r),addEventListener("pointercancel",i,r)}(t,e):c(t,e)}},f=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,s,r)}))},p="hidden"===document.visibilityState?0:1/0;addEventListener("visibilitychange",(function e(t){"hidden"===document.visibilityState&&(p=t.timeStamp,removeEventListener("visibilitychange",e,!0))}),!0);o(),self.webVitals={firstInputPolyfill:function(e){i.push(e),u()},resetFirstInputPolyfill:o,get firstHiddenTime(){return p}}}();
+          </script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>            
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-4711551515762404",
+                enable_page_level_ads: true
+              });
+          </script><link as="script" rel="preload" href="/webpack-runtime-64497d164bea53b55ab8.js"/><link as="script" rel="preload" href="/framework-094b0089736b8f621f0d.js"/><link as="script" rel="preload" href="/app-7b0a9d9c8a02f3d5ef04.js"/><link as="script" rel="preload" href="/commons-5bade2ed2558cad4a45d.js"/><link as="script" rel="preload" href="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"/><link as="fetch" rel="preload" href="/page-data/blog/monthly-log/2020-12/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3000541721.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3293771174.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4711551515762404" crossorigin="anonymous"></script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="window"><div class="window-container"><header class="title-bar"><a class="title title-bar-text" href="/">JIGGAG</a><div class="title-bar-controls"><button aria-label="Close"></button></div></header><main class="window-body"><div class="blog-post-container"><div class="blog-post-header"><h3>12월 한달동안 로그</h3><h6>2020년 12월 27일</h6></div><div class="blog-post-content"><h2><code>12월 마지막주</code></h2>
+<ul>
+<li>2020년 마지막 일주일은 그동안 나름 참았던 자유를 즐기며</li>
+<li>NBA2K와 시간을 보내려고 했다...</li>
+<li>그러나 이 또한 계획이 변경되었다 (계획은 항상 변경되는 것 같다)</li>
+<li>내가 계획했던 것들이 계획대로 되지 않았을때 스스로에게 돌아오는 충격이 생각보다 컸다</li>
+<li>당연히 계획대로 되는 것은 없다고 하지만!</li>
+<li>처음 받았던 충격보다는 두번째 받은 충격을 좀 더 수월하게 받아들일 수 있었다</li>
+<li>이런 충격이 무뎌지길 바라지는 않는다</li>
+<li>다양한 충격과 함께 다음에는 대처할 수 있는 능력을 준비하겠다</li>
+<li><code>놀고 싶었는데... 다음에 놀아야겠다</code></li>
+<li>다음 기회가 있다는 것이 얼마나 중요한지!</li>
+</ul>
+<h2>12/20 ~ 12/26</h2>
+<h4><code>전역 상태</code></h4>
+<ul>
+<li>평소에 많이 배워가고 있는 블로그에 어느날 올라온 글 하나</li>
+<li>현재 참여하고 있는 모든 프로젝트에 상태는 정말 로컬상태를 제외하고 모두 전역으로 관리하는 구조를 갖고 있다</li>
+<li>한번 잡힌 구조를 변경하려고 생각한 적은 없었지만</li>
+<li>최근 <code>SWR</code>을 알게 된 이후 <code>redux-saga</code>를 거쳐야만 하는 구조를 바꿔볼 생각을 조금.. 했었다가 들어갔다</li>
+<li>그러나 이번 글을 계기로 나의 모든 전역상태에 대해 생각을 다시 한번 해보게 되었다</li>
+<li><a href="https://jbee.io/react/thinking-about-global-state/">전역 상태 관리에 대한 단상</a></li>
+</ul>
+<h4><code>오픈소스 메인테이너로 성장하기</code></h4>
+<ul>
+<li><code>오픈소스 활동? === 다양한 경험</code></li>
+<li>코드, 테스트 작성, 디자인, 보안, 가이드 문서 작성, 홍보, 번역</li>
+<li>스펙을 정하거나 일정 산정, 사용성에 대한 제안, 디자인 개선 등 다양한 의사소통 필요</li>
+<li><code>범용적 기능에 대한 고민</code>: 더 많은 사람들이 더 쉽게 사용할 수 있도록 고민</li>
+<li><code>외부로 노출되는 성과</code>: 오픈된 코드이기에 좀 더 열심히 정리하게 되고 자동 포트폴리오</li>
+<li><code>어떻게 시작할까?</code></li>
+<li>회사 프로젝트 모듈화</li>
+<li>이미 존재하는 오픈소스에 참여: 공개된 프로젝트라고 다 참여 가능한 것은 아니라는 것을 깨달았다...</li>
+<li><code>good first issue</code></li>
+<li><a href="https://forward.nhn.com/session/25">NHN FORWARD 오픈소스 메인테이너</a></li>
+</ul>
+<h4><code>알고리즘</code></h4>
+<ul>
+<li>정렬을 해두면 특정 조건에 만족하지 않는 경우 뒤의 항목들은 건너뛰기 가능하다</li>
+<li><a href="https://sustainable-dev.tistory.com/23?category=809125">카데인 알고리즘</a></li>
+</ul>
+<h4><code>네이밍</code></h4>
+<ul>
+<li>프로젝트를 진행하다보면 아무런 고심없이 지은 네이밍 <code>i,d, data, val</code>가 생각보다 많이 나온다</li>
+<li><code>지난날 내가 작성한 코드지만 오늘날 나는 알 수 없어</code> 해당 코드를 읽기 위해 시간을 거슬러 올라간다</li>
+<li>최근에 클릭 이벤트에 발생되는 함수에 대한 네이밍을 <code>onPress*</code>로 정리하였다</li>
+<li>암묵적 룰로 정해졌고 통용적으로 사용중이나 가끔 다르게 사용해볼까 하며 작성했던 것들을 소심하게 다시 정리</li>
+<li>반복문이나 일회성 변수에 대한 네이밍을 정리하고 싶은데</li>
+<li>너무 방대하여 우선 함수명부터 정리해보려고 한다</li>
+<li>무엇을 하려고 하는 것인지 적어두면 그 안에서 사용되고 있는 값이 어떤 값인지 추론이 되지 않을까</li>
+<li><a href="https://dev.to/dcwither/stop-using-data-as-a-variable-name-3954">코드를 이해할 수 있는 네이밍</a></li>
+</ul>
+<h4><code>pm2</code></h4>
+<ul>
+<li>라즈베리파이에 설치해서 사용중인데</li>
+<li><code>pm2 list</code>로 바로 접근이 안된다</li>
+<li>왜?</li>
+<li>이유를 찾는게 귀찮아서 매번 <code>npx pm2 list</code></li>
+<li>그것도 귀찮아서 해결하기로 생각</li>
+<li><code>wget -qO- https://getpm2.com/install.sh | bash</code></li>
+<li>코드 푸시하고 젠킨스에서 설치 후 재시작까지 하도록하며 귀찮음 해결</li>
+</ul>
+<h4><code>테스트</code></h4>
+<ul>
+<li><code>단위테스트</code></li>
+<li>모듈 단위로 분리된 환경에서의 테스트</li>
+<li>그러나 의존성 있는 모듈에 대해 mock을 사용해야하며 상호 의존성 검증이 어렵다</li>
+<li><code>통합테스트</code></li>
+<li>두개 이상의 모듈을 실제 연결하여 테스트</li>
+<li>그러나 모듈 내 복잡한 알고리즘이나 분기문이 있는 경우 중복된 테스트 코드가 많아진다</li>
+<li><code>E2E테스트</code></li>
+<li>단위, 통합 테스트는 내부 로직을 알고 있는 개발자가 일부 선별하여 테스트</li>
+<li>E2E는 실제 사용자 관점에서 기능, UI 테스트</li>
+<li>브라우저를 제어하여 테스트하며 실제 발생 할 수 있는 에러를 찾을 수 있다 (Cypress)</li>
+<li><code>테스트 러너</code>: 테스트 구동 환경 (Karma, Jest)</li>
+<li>실제 브라우저 렌더링, IO 테스트가 빌요한 경우 브라우저 환경인 Karma에서 테스트</li>
+<li><code>테스트 프레임워크</code>: 테스트 코드 작성 (Mocha, Jasmin, Jest)</li>
+<li><code>테스트 더블</code>: 실제 객체 대신 테스트를 위한 모의 객체 (mock, spy)</li>
+<li><code>테스트 명세</code>: 테스트 대상이나 목적에 따라 그룹화</li>
+<li><code>스냅샷 테스트</code>: 모든 기댓값을 작성하지 않아도 직접 파일을 확인할 수 있다</li>
+<li><a href="https://ui.toast.com/fe-guide/ko_TEST">TOAST UI 테스트 가이드</a></li>
+</ul>
+<h2>12/13 ~ 12/19</h2>
+<h4><code>디자인 시스템</code></h4>
+<ul>
+<li>프로덕트 디자인에 대한 <code>일관성</code> 유지</li>
+<li><code>Atom</code> 단위에서 디자인 시스템이 갖추어야 할 <code>컴포넌트</code></li>
+<li>프라이머리 컬러와 스테이터스 컬러: 앱 전반적인 컬러와 경고, 알림을 전달하는 컬러</li>
+<li>기능을 수행하는 요소와 단순 콘텐츠 영역에 사용하는 컬러 분리: 브랜드 정체성을 보이는 컬러와 사용자에게 기능을 강조하는 컬러</li>
+<li><code>컴포넌트 네이밍</code>: size_type_button[theme]</li>
+<li><code>origin/option 속성값</code>: button padding/button color</li>
+<li><code>디자인 시스템을 도입하면 Zeplin 같은 도구를 통해 요소 사이의 간격이 몇 픽셀인지 확인할 필요가 없습니다. 이미 그런 것은 재사용 할 수 있는 형태로 구현되어 있으니까요.</code></li>
+<li>지난번 스토리북 도입을 시도하다가 잘 되지 않아 실패하고 멀리하고 있었다</li>
+<li>다시 판도라를 열어본다</li>
+<li><a href="https://tech.socarcorp.kr/design/2020/06/23/socar-design-system-01.html">쏘카 디자인 시스템</a></li>
+<li><a href="http://icunow.co.kr/design-system/">디자인 시스템?</a></li>
+<li><a href="https://story.pxd.co.kr/1434">디자인 시스템 왜 필요한가</a></li>
+<li><a href="https://ridi.design/colors/#%EC%A3%BC%EC%9A%94-%EC%BB%AC%EB%9F%AC">리디 컬러</a></li>
+<li><a href="https://blog.gangnamunni.com/post/welchis/">강남언니 디자인 시스템</a></li>
+</ul>
+<h4><code>방향성</code></h4>
+<ul>
+<li>진정성 earnest</li>
+<li>순진함 naive</li>
+<li>너드 nerd</li>
+<li><a href="https://ebadak.news/2020/12/14/earnest/">진정성과 스타트업</a></li>
+</ul>
+<h4><code>SSL</code></h4>
+<ul>
+<li><code>http</code> 사이트에 인증서 발급하고자</li>
+<li>아직 연결되지 않은 도메인에 대해서는 커넥션 오류 발생</li>
+<li>EC2를 종료하고 라즈베리로 옮겨오서면 누락된 도메인 레코드 변경해주었다</li>
+<li>분명 연결은 됬는데 왜 연결되지 않는거지? nginx access로그에도 찍히지 않는다</li>
+<li><code>netstat -nlpt</code> 포트는 열려있는데?</li>
+<li>그러다 아차 <code>netstat -anl | grep 443</code></li>
+<li>나는 공유기 포트포워딩해서 서버를 띄우고 있다</li>
+<li>그렇다면 외부에서 443으로 들어온 포트는 공유기가 나에게 들여보내주지 않고 있다면?</li>
+<li>공유기 포트포워딩 설정에 443을 추가해주었더니 잘 들어온다!</li>
+<li><a href="https://happist.com/573990/%EC%B5%9C%EC%8B%A0-lets-encrypt-ssl-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89-%EB%B0%A9%EB%B2%95-3%EA%B0%80%EC%A7%80-%EC%A0%95%EB%A6%AC">Letsencrypt 설정</a></li>
+<li><a href="https://devlog.jwgo.kr/2019/04/16/how-to-lets-encrypt-ssl-renew/">인증서 자동갱신 설정</a></li>
+</ul>
+<h4><code>될 듯</code></h4>
+<ul>
+<li>안되네...</li>
+<li>라즈베리에 띄운 스케줄이 이상하다!!!</li>
+<li><code>rdate</code> 설치하라는 옛날 블로그를 참고했으나 <code>bora.net</code>은 적용되지 않았다</li>
+<li>그러다 더 옛날 블로그를 찾아보다 <code>raspi-config</code></li>
+<li>라즈베리파이 자체 설정하는 방법인 듯</li>
+<li>타임존 변경이 간단하게 해결되었다</li>
+<li>아마 재부팅하면 타임존 확인을 다시 해봐야겠다</li>
+<li>내일은 스케줄 푸시가 제대로 도착하길 바란다</li>
+</ul>
+<h4><code>라즈베리</code></h4>
+<ul>
+<li>EC2 만료가 일주일 남았다</li>
+<li>마이그레이션 압박</li>
+<li>와이파이 공유기 통해서 도메인 연결하려고 하는데 => 이 부분이 지난 여름부터 잘 되지 않고 있다 (도메인 연결은 했는데 해당 포트로 가질 않는다..)</li>
+<li>아무리 포트포워딩 걸어줘도 공유기로 리다이렉트 되고 있었는데 이 또한 어렵게 생각했던게 오래걸렸다</li>
+<li>도메인 -> 공유기 IP -> 내부 IP -> 가고자 했던 포트는 여기</li>
+<li>공유기 IP에서 내부 IP로 향하는 길을 알려주지 않았기에 기본 공유기 포트로 가고 있었다 => 도메인을 연결해둔 외부포트를 포트포워딩을 통해 내부포트로 연결해주었다</li>
+<li>EC2에서 MySQL 사용했는데 라즈베리4에 없다 => MariaDB 대체 + 외부접속 허용 설정</li>
+<li><code>vcgencmd measure_temp</code> 라즈베리OS 온도 확인 => 혹시 열받아서 녹아버릴까봐...</li>
+<li>API서버 띄우고 푸시서버 띄우고.. pm2 설정을 젠킨스에서 생각대로 쉽게 되지 않았다</li>
+<li>그래도 마이그레이션이 성공적으로 끝나서 뿌듯하다</li>
+</ul>
+<h2>12/6 ~ 12/12</h2>
+<h4><code>알고리즘</code></h4>
+<ul>
+<li>쉬운 문제를 어렵게 생각하다 뒤늦게 깨닫고 풀기</li>
+<li>단순히 정답만 맞았을뿐 퍼포먼스는 꽝</li>
+</ul>
+<h4><code>헨젤과 그레델</code></h4>
+<ul>
+<li>여행을 떠나는 길</li>
+<li>함께 할 그레델</li>
+<li><a href="https://brunch.co.kr/@duotoneofficial/28">그레델을 만나자</a></li>
+</ul>
+<h4><code>그래프</code></h4>
+<ul>
+<li>할 수 있다</li>
+<li>갑자기 바쁜데 꼭 이럴때 몰려온다</li>
+<li>애자일, 우선순위를 정해야하고</li>
+<li>나를 위해 시험 준비는 해야한다</li>
+</ul>
+<h3><code>테스트 시나리오</code></h3>
+<ul>
+<li>테스트 통과했다는 것이 주는 안정감</li>
+<li>모든 시나리오를 작성해보고자 시작</li>
+<li>그런데 너무 많다?!</li>
+<li>1000줄을 넘어 5000줄을 바라보고 있으니 코드를 수정하는데 로딩이 걸린다</li>
+<li><code>과연 이런 코드가 의미가 있을까?</code></li>
+<li>오히려 과한게 아닐까</li>
+<li>혼자 고민하다가 질문해보았다</li>
+<li><code>테스트 코드도 리팩터링 하면 된다. 테스트 코드를 작성하는건 의미 있는 일이다.</code></li>
+<li>테스트 시나리오를 작성하면서 중복되는 부분이 많이 보였다</li>
+<li>그리고 리팩터링을 진행했더니 2000줄이 넘던 코드는 800줄로 줄어들었다!</li>
+</ul>
+<h2>12/1 ~ 12/5</h2>
+<h4><code>Tailwindcss</code></h4>
+<ul>
+<li>웹 프로젝트를 진행하려는데 <code>스타일 언제 다 넣지?</code></li>
+<li>막막했던 순간 우연하게 알게된 <code>tailwindcss</code></li>
+<li>RN 개발 시 자주 사용했던 <code>react-native-ui-lib</code>와 비슷하게 <code>class</code>로 css 지정</li>
+<li><code>마치 부트스트랩</code></li>
+<li><a href="https://tailwindcss.com/docs/installation">tailwindcss 문서</a></li>
+</ul>
+<h4><code>TDD</code></h4>
+<ul>
+<li>이번 스프린트를 준비하면서 자바스크립트를 타입스크립트로 변경하였고</li>
+<li>유틸리티 파일 + 로직의 중요도가 높은 화면에 대한 테스트 코드를 작성하였다</li>
+<li>아직 테스트 커버리지는 10프로 => 점차 높여가며 안정감을 가져갈 예정이다</li>
+<li>그리고 시작된 스프린트</li>
+<li>기존 로직을 전부 뒤엎는 정도의 사이즈가 되었다</li>
+<li>그러나 사용자에게는 이전과 달라진 정도가 느껴질 필요는 없는 상황</li>
+<li>기존 로직에 대한 테스트 코드가 작성되어있고 이에 리팩터링 하면서 점차 신규 로직으로 변경하였다</li>
+<li>실제 앱을 켜본건 모든 시나리오에 대해 테스트를 한 이후 였다</li>
+<li>테스트 코드 작성을 통해 확인한 시나리오 => 안정감 + 신뢰도</li>
+<li>새로 변경되는 로직에 대한 테스트를 하다보니 기존에 숨겨져있던 오류를 찾아내는 신박한 선물까지 받았다</li>
+<li>지난번 feconf 컨퍼런스에서 TDD에 대해 할 수 있겠다고 생각이 들었고 작지만 시작해보았다</li>
+<li>그리고 좋은 결과와 경험을 하였으며 선순환을 통해 앱 전체에 대한 안정성을 높이고 싶다</li>
+</ul>
+<h4><code>스프린트</code></h4>
+<ul>
+<li>2020년 마지막 12월을 맞이하며 <code>2020 계획</code>을 적어둔 노트를 보다가</li>
+<li><code>애자일, 스크럼, 스프린트</code>를 개발 뿐만 아니라 일상에도 적용 가능하지 않을까?</li>
+<li>연초에 세운 계획은 1년이 지나면 회고를 한다</li>
+<li>이 회고를 1년, 1개월, 1주, 1일마다 짧은 주기로 한다면?</li>
+<li><code>1월을 제외하고 비어있는 다이어리</code>가 대중화 될 일이 없지 않을까</li>
+</ul>
+<h4><code>EO</code></h4>
+<ul>
+<li>나는 경쟁력 있는게 어디 있을까</li>
+<li>이것저것 다양한 경험을 해보고 나니 내가 이 부분에서 경쟁력이 있구나</li>
+<li>내가 좋아하는 것, 잘하는 것, 나만의 색깔을 찾는 것</li>
+<li>모두 같은곳에서 시작하며 경험을 하는지에 따라 발전</li>
+<li>나를 위한, 나에 대한</li>
+</ul></div></div></main><footer class="footer"><div class="footer-label">©Jiggag, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></div><button>Github</button></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-115373374-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/monthly-log/2020-12/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-635a9dfd597478a1f0fa.js"],"app":["/app-7b0a9d9c8a02f3d5ef04.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-1713fa5a79ba6287b581.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-56ac5eb6f68a10947a02.js"],"component---src-pages-markdown-remark-frontmatter-slug-tsx":["/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"],"component---src-pages-using-ssr-tsx":["/component---src-pages-using-ssr-tsx-a3849e895b554ed9c74d.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-2c91f22b06497815d93c.js"],"component---src-templates-using-dsg-tsx":["/component---src-templates-using-dsg-tsx-96c55d73ae3a8c0dec54.js"]};/*]]>*/</script><script src="/polyfill-635a9dfd597478a1f0fa.js" nomodule=""></script><script src="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js" async=""></script><script src="/commons-5bade2ed2558cad4a45d.js" async=""></script><script src="/app-7b0a9d9c8a02f3d5ef04.js" async=""></script><script src="/framework-094b0089736b8f621f0d.js" async=""></script><script src="/webpack-runtime-64497d164bea53b55ab8.js" async=""></script></body></html>

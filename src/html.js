@@ -13,12 +13,12 @@ const HTML = function (props) {
         />
         {props.headComponents}
 
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4711551515762404"
-          crossOrigin="anonymous"
-        />
-        <link href="http://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet" />
+        {/*<script*/}
+        {/*  async*/}
+        {/*  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4711551515762404"*/}
+        {/*  crossOrigin="anonymous"*/}
+        {/*/>*/}
+        <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

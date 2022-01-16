@@ -56,7 +56,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "yarn build && gh-pages -d public -b deploy"
+    "seo": "cp src/google50be3e9d7d0850cc.html public",
+    "deploy": "yarn build && yarn seo && gh-pages -d public -b deploy"
   },
   "repository": {
     "type": "git",

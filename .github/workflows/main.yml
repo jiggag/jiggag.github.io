@@ -1,4 +1,4 @@
-name: CI
+name: Deploy
 
 on:
   push:
@@ -9,20 +9,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Config
+        run: |
+          git config --global init.defaultBranch "deploy"
+
       - uses: actions/checkout@v2
 
       - name: Cache node modules
         uses: actions/cache@v2
+        id: node-cache
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-modules-
 
       - name: Install packages
+        if: steps.node-cache.outputs.cache-hit != 'true'
         run: |
           yarn install
         
-      - name: Deploy
+      - name: Build
         run: |
-          yarn deploy
+          yarn build
+          yarn seo
+
+      - name: Deploy
+        uses: maxheld83/ghpages@v0.2.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          BUILD_DIR: 'public/'

@@ -163,6 +163,17 @@ a {
     font-size: 12px;
 }
 
+
+.not-found-title {
+    margin: var(--element-spacing) 0;
+    padding: var(--element-spacing);
+    box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+}
+.not-found-title p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
 /* 98.css button */
 button {
     box-sizing: border-box;

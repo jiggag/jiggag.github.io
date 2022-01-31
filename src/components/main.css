@@ -68,8 +68,10 @@ a {
     box-shadow: var(--border-window-outer), var(--border-window-inner);
     background: var(--surface);
     height: 100vh;
-    max-width: 500px;
     margin: auto;
+}
+.window.minimize {
+    max-width: 500px;
 }
 .window-container {
     height: 100%;
@@ -109,6 +111,20 @@ a {
     display: block;
     min-width: 16px;
     min-height: 14px;
+}
+.title-bar-controls button[aria-label="Minimize"] {
+  background-image: url("../images/minimize.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 5px left 7px;
+  width: 20px;
+  height: 19px;
+}
+.title-bar-controls button[aria-label="Maximize"] {
+  background-image: url("../images/maximize.svg");
+  background-repeat: no-repeat;
+  background-position: top 5px left 5px;
+  width: 20px;
+  height: 19px;
 }
 .title-bar-controls button[aria-label="Close"] {
     margin-left: 2px;

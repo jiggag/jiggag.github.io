@@ -2,10 +2,10 @@ import * as React from 'react';
 
 interface FooterProps {
   author: string;
-  github: string;
+  onPressGithub: () => void;
 }
 
-export const Footer = function ({ author, github }: FooterProps) {
+export const Footer = function ({ author, onPressGithub }: FooterProps) {
   return (
     <footer className="footer">
       <div className="footer-label">
@@ -13,9 +13,9 @@ export const Footer = function ({ author, github }: FooterProps) {
         <a href="https://www.gatsbyjs.com">Gatsby</a>
       </div>
       <button
-        onClick={() => {
-          window.location.href = github;
-        }}
+        type="button"
+        aria-label="Github"
+        onClick={onPressGithub}
       >
         Github
       </button>

@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Footer } from 'components/Footer';
@@ -30,20 +23,37 @@ export const Layout = function ({ customHeader, children }: LayoutProps) {
     }
   `);
 
+  const [isMaximize, setIsMaximize] = React.useState(!!localStorage.getItem('maximize'));
+
+  const toggleMaximize = React.useCallback(() => {
+    setIsMaximize(prev => {
+      if (prev) {
+        localStorage.removeItem('maximize');
+      } else {
+        localStorage.setItem('maximize', 'true');
+      }
+
+      return !prev;
+    });
+  }, []);
+
+  const onClose = React.useCallback(() => {
+    window.history.back();
+  }, []);
+
+  const onPressGithub = React.useCallback(() => {
+    window.location.href = data.site.siteMetadata.github;
+  }, [data.site.siteMetadata.github]);
+
   return (
-    <div
-      className="window"
-    >
-      <div className="window-container"
-      >
-        <Header siteTitle={data.site.siteMetadata.title} />
+    <div className={`window ${isMaximize ? 'maximize' : 'minimize'}`}>
+      <div className="window-container">
+        <Header siteTitle={data.site.siteMetadata.title} isMaximize={isMaximize} toggleMaximize={toggleMaximize} onClose={onClose} />
         {customHeader}
-        <main
-          className="window-body"
-        >
+        <main className="window-body">
           {children}
         </main>
-        <Footer author={data.site.siteMetadata.author} github={data.site.siteMetadata.github} />
+        <Footer author={data.site.siteMetadata.author} onPressGithub={onPressGithub} />
       </div>
     </div>
   );

@@ -1,4 +1,6 @@
-import * as React from 'react';
+import React, {
+  useEffect, useState, useCallback, ReactNode,
+} from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Footer } from 'components/Footer';
 import { Header } from 'components/Header';
@@ -6,8 +8,8 @@ import './main.css';
 import { Site } from 'types';
 
 interface LayoutProps {
-  customHeader?: React.ReactNode;
-  children: React.ReactNode;
+  customHeader?: ReactNode;
+  children: ReactNode;
 }
 
 export const Layout = function ({ customHeader, children }: LayoutProps) {
@@ -23,9 +25,9 @@ export const Layout = function ({ customHeader, children }: LayoutProps) {
     }
   `);
 
-  const [isMaximize, setIsMaximize] = React.useState(!!localStorage.getItem('maximize'));
+  const [isMaximize, setIsMaximize] = useState(false);
 
-  const toggleMaximize = React.useCallback(() => {
+  const toggleMaximize = useCallback(() => {
     setIsMaximize(prev => {
       if (prev) {
         localStorage.removeItem('maximize');
@@ -37,13 +39,17 @@ export const Layout = function ({ customHeader, children }: LayoutProps) {
     });
   }, []);
 
-  const onClose = React.useCallback(() => {
+  const onClose = useCallback(() => {
     window.history.back();
   }, []);
 
-  const onPressGithub = React.useCallback(() => {
+  const onPressGithub = useCallback(() => {
     window.location.href = data.site.siteMetadata.github;
   }, [data.site.siteMetadata.github]);
+
+  useEffect(() => {
+    setIsMaximize(!!localStorage.getItem('maximize'));
+  }, []);
 
   return (
     <div className={`window ${isMaximize ? 'maximize' : 'minimize'}`}>

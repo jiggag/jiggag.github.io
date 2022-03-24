@@ -15,6 +15,8 @@
     --dialog-gray: #808080;
     --dialog-gray-light: #b5b5b5;
     --link-blue: #0000ff;
+    --black: #000000;
+    --link-blue-95: #0000ff95;
 
     /* Spacing */
     --element-spacing: 8px;
@@ -52,7 +54,7 @@ pre code {
     color: unset;
 }
 code {
-    background: #0000ff95;
+    background: var(--link-blue-95);
     color: #ffffff;
     border-radius: 10px;
     padding: 0 6px;
@@ -111,6 +113,13 @@ a {
     display: block;
     min-width: 16px;
     min-height: 14px;
+}
+.title-bar-controls button[aria-label="ScrollToTop"] {
+  background-image: url("../images/scroll-to-top.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 2px left 2px;
+  width: 20px;
+  height: 20px;
 }
 .title-bar-controls button[aria-label="Minimize"] {
   background-image: url("../images/minimize.svg");
@@ -215,7 +224,7 @@ button:not(:disabled):active {
 }
 
 button:focus {
-    outline: 1px dotted #000000;
+    outline: 1px dotted var(--black);
     outline-offset: -4px;
 }
 
@@ -270,3 +279,36 @@ button::-moz-focus-inner {
     background-image: url("../images/button-right.svg");
 }
 /* 98.css scrollbar */
+
+.table-of-contents{
+    border: 1px dashed var(--link-blue-95);
+    border-radius: 10px;
+    display: inline-flex;
+    padding: 10px 30px 20px 15px;
+}
+.table-of-contents ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.table-of-contents > ul > li {
+    margin: 10px 0;
+}
+.table-of-contents > ul > li > a > code {
+    font-size: 14px;
+    font-weight: bold;
+}
+.table-of-contents > ul > li > ul {
+    margin: 5px 0;
+    padding-left: 10px;
+}
+.table-of-contents > ul > li li {
+    margin-bottom: 2px;
+}
+.table-of-contents code {
+    background: unset;
+    color: var(--black);
+    border-radius: 0;
+    border-bottom: 1px solid var(--link-blue-95);
+    font-size: 12px;
+}

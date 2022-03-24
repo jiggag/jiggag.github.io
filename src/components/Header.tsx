@@ -6,10 +6,11 @@ interface HeaderProps {
   isMaximize: boolean;
   toggleMaximize: () => void;
   onClose: () => void;
+  onScrollToTop: () => void;
 }
 
 export const Header = function ({
-  siteTitle, isMaximize, toggleMaximize, onClose,
+  siteTitle, isMaximize, toggleMaximize, onClose, onScrollToTop,
 }: HeaderProps) {
   return (
     <header className="title-bar">
@@ -17,6 +18,11 @@ export const Header = function ({
         {siteTitle}
       </Title>
       <div className="title-bar-controls">
+        <button
+          type="button"
+          aria-label="ScrollToTop"
+          onClick={onScrollToTop}
+        />
         <button
           type="button"
           aria-label={isMaximize ? 'Minimize' : 'Maximize'}

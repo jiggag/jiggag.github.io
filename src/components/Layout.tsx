@@ -1,5 +1,5 @@
 import React, {
-  useEffect, useState, useCallback, ReactNode,
+  useEffect, useState, useCallback, ReactNode, useRef,
 } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Footer } from 'components/Footer';
@@ -25,6 +25,7 @@ export const Layout = function ({ customHeader, children }: LayoutProps) {
     }
   `);
 
+  const mainRef = useRef<HTMLElement>(null);
   const [isMaximize, setIsMaximize] = useState(false);
 
   const toggleMaximize = useCallback(() => {
@@ -47,6 +48,10 @@ export const Layout = function ({ customHeader, children }: LayoutProps) {
     window.location.href = data.site.siteMetadata.github;
   }, [data.site.siteMetadata.github]);
 
+  const onScrollToTop = useCallback(() => {
+    mainRef.current?.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   useEffect(() => {
     setIsMaximize(!!localStorage.getItem('maximize'));
   }, []);
@@ -54,9 +59,15 @@ export const Layout = function ({ customHeader, children }: LayoutProps) {
   return (
     <div className={`window ${isMaximize ? 'maximize' : 'minimize'}`}>
       <div className="window-container">
-        <Header siteTitle={data.site.siteMetadata.title} isMaximize={isMaximize} toggleMaximize={toggleMaximize} onClose={onClose} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          isMaximize={isMaximize}
+          toggleMaximize={toggleMaximize}
+          onClose={onClose}
+          onScrollToTop={onScrollToTop}
+        />
         {customHeader}
-        <main className="window-body">
+        <main className="window-body" ref={mainRef}>
           {children}
         </main>
         <Footer author={data.site.siteMetadata.author} onPressGithub={onPressGithub} />

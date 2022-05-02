@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://jiggag.github.io/sitemap/sitemap-index.xml
+Host: https://jiggag.github.io

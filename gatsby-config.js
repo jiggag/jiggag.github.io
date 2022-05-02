@@ -3,13 +3,21 @@ module.exports = {
     title: 'JIGGAG',
     description: '직각어깨를 꿈꾸는 개발자',
     author: '©Jiggag',
-    siteUrl: 'https://jiggag.github.io/',
+    siteUrl: 'https://jiggag.github.io',
     github: 'https://github.com/jiggag',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://jiggag.github.io',
+        sitemap: 'https://jiggag.github.io/sitemap/sitemap-index.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

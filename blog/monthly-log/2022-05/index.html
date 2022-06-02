@@ -1,0 +1,409 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.88bfdd443e73d3e6d82f.css" data-identity="gatsby-global-css">*{font-family:SUIT Variable,sans-serif!important}:root{--surface:silver;--content:#e2e2e2;--button-highlight:#fff;--button-face:#dfdfdf;--button-shadow:grey;--window-frame:#0a0a0a;--dialog-blue:navy;--dialog-blue-light:#1084d0;--dialog-gray:grey;--dialog-gray-light:#b5b5b5;--link-blue:#00f;--black:#000;--link-blue-95:#0000ff95;--element-spacing:8px;--border-width:1px;--border-raised-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight);--border-raised-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);--border-sunken-outer:inset -1px -1px var(--button-highlight),inset 1px 1px var(--window-frame);--border-sunken-inner:inset -2px -2px var(--button-face),inset 2px 2px var(--button-shadow);--border-window-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-face);--border-window-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-highlight)}body{margin:0}pre{background:var(--button-highlight);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);display:block;margin:4px 0;padding:var(--element-spacing)}pre code{background:unset;color:unset;font-size:12px}code{background:var(--link-blue-95);border-radius:10px;color:#fff;font-size:14px;padding:0 6px}a{color:var(--link-blue);text-decoration:none}.window{background:var(--surface);box-shadow:var(--border-window-outer),var(--border-window-inner);height:100vh;margin:auto}.window.minimize{max-width:500px}.window-container{display:flex;flex-direction:column;height:100%}.window-body{flex:1 1;margin:0 0 0 var(--element-spacing);overflow:auto;padding-right:var(--element-spacing)}.title-bar{align-items:center;background:linear-gradient(150deg,var(--dialog-blue),var(--dialog-blue-light));display:flex;justify-content:space-between;margin:3px 3px 0;padding:2px var(--element-spacing)}.title-bar .title{color:#fff;font-size:24px;margin:0;text-decoration:none}.title-bar-controls{display:flex}.title-bar-controls button{display:block;min-height:14px;min-width:16px;padding:0}.title-bar-controls button[aria-label=ScrollToTop]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:bottom 2px left 2px;background-repeat:no-repeat;height:20px;width:20px}.title-bar-controls button[aria-label=Minimize]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA2IDIiPjxyZWN0IHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9IiMwMDAiLz48L3N2Zz4=);background-position:bottom 5px left 7px;background-repeat:no-repeat;height:19px;width:20px}.title-bar-controls button[aria-label=Maximize]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjkiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA5IDkiPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTkgMEgwdjloOVYwWk04IDJIMXY2aDdWMloiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;width:20px}.title-bar-controls button[aria-label=Close]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA4IDciPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMGgydjFoMXYxaDJWMWgxVjBoMnYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxSDZWNkg1VjVIM3YxSDJ2MUgwVjZoMVY1aDFWNGgxVjNIMlYySDFWMUgwVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;margin-left:2px;width:20px}.title-bar-text{color:#fff;font-weight:700;letter-spacing:0;margin-right:24px}.blog-post-container{background:var(--content);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0 0 0;overflow-x:scroll;padding:var(--element-spacing)}.blog-post-content h1,h2{font-size:20px}.blog-post-content h3,h4{font-size:16px}.blog-post-content ul{padding-left:20px}.home-post-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.home-post-title p{font-size:12px;margin:4px 0}.footer{align-items:center;display:flex;padding:12px 15px}.footer .footer-label{align-self:flex-end;font-size:12px;width:100%}.not-found-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.not-found-title p{font-size:14px;margin:10px 0}button{background:var(--surface);border:none;border-radius:0;box-shadow:var(--border-raised-outer),var(--border-raised-inner);box-sizing:border-box;min-height:23px;min-width:75px;padding:0 12px}button:not(:disabled):active{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);padding:2px 3px 0 13px}@media (not(hover)){button:not(:disabled):hover{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner)}}button:focus{outline:1px dotted var(--black);outline-offset:-4px}button::-moz-focus-inner{border:0}::-webkit-scrollbar{width:16px}::-webkit-scrollbar:horizontal{height:17px}::-webkit-scrollbar-corner{background:var(--button-face)}::-webkit-scrollbar-track{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9InNpbHZlciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDB2MWgxdjFoMVYxSDFWMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxdjFIMHYxaDFWMWgxVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}::-webkit-scrollbar-thumb{background-color:var(--button-face);box-shadow:var(--border-raised-outer),var(--border-raised-inner)}::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement{display:block}::-webkit-scrollbar-button:vertical:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:vertical:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA2SDR2MWgxdjFoMXYxaDF2MWgxVjloMVY4aDFWN2gxVjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:horizontal:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDRIOHYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxaDFWNFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);width:16px}::-webkit-scrollbar-button:horizontal:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDRINnY3aDF2LTFoMVY5aDFWOGgxVjdIOVY2SDhWNUg3VjRaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);width:16px}.table-of-contents{border:1px dashed var(--link-blue-95);border-radius:10px;display:inline-flex;padding:10px 30px 20px 15px}.table-of-contents ul{list-style:none;margin:0;padding:0}.table-of-contents>ul>li{margin:10px 0}.table-of-contents>ul>li>a>code{font-size:14px;font-weight:700}.table-of-contents>ul>li>ul{margin:5px 0;padding-left:10px}.table-of-contents>ul>li li{margin-bottom:2px}.table-of-contents code{background:unset;border-bottom:1px solid var(--link-blue-95);border-radius:0;color:var(--black);font-size:12px}</style><meta name="generator" content="Gatsby 4.1.4"/><title data-react-helmet="true">5월 한달동안 로그 | JIGGAG</title><meta data-react-helmet="true" name="description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:title" content="5월 한달동안 로그"/><meta data-react-helmet="true" property="og:description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:type" content="website"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script data-gatsby="web-vitals-polyfill">
+            !function(){var e,t,n,i,r={passive:!0,capture:!0},a=new Date,o=function(){i=[],t=-1,e=null,f(addEventListener)},c=function(i,r){e||(e=r,t=i,n=new Date,f(removeEventListener),u())},u=function(){if(t>=0&&t<n-a){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+t};i.forEach((function(e){e(r)})),i=[]}},s=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){c(e,t),a()},i=function(){a()},a=function(){removeEventListener("pointerup",n,r),removeEventListener("pointercancel",i,r)};addEventListener("pointerup",n,r),addEventListener("pointercancel",i,r)}(t,e):c(t,e)}},f=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,s,r)}))},p="hidden"===document.visibilityState?0:1/0;addEventListener("visibilitychange",(function e(t){"hidden"===document.visibilityState&&(p=t.timeStamp,removeEventListener("visibilitychange",e,!0))}),!0);o(),self.webVitals={firstInputPolyfill:function(e){i.push(e),u()},resetFirstInputPolyfill:o,get firstHiddenTime(){return p}}}();
+          </script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>            
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-4711551515762404",
+                enable_page_level_ads: true
+              });
+          </script><link as="script" rel="preload" href="/webpack-runtime-0fbc006468ecd0e380ed.js"/><link as="script" rel="preload" href="/framework-094b0089736b8f621f0d.js"/><link as="script" rel="preload" href="/app-b09e07e25d90c38eb055.js"/><link as="script" rel="preload" href="/commons-fba08f0dde7e26234785.js"/><link as="script" rel="preload" href="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"/><link as="fetch" rel="preload" href="/page-data/blog/monthly-log/2022-05/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3000541721.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3293771174.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="window minimize"><div class="window-container"><header class="title-bar"><a class="title title-bar-text" href="/">JIGGAG</a><div class="title-bar-controls"><button type="button" aria-label="ScrollToTop"></button><button type="button" aria-label="Maximize"></button><button type="button" aria-label="Close"></button></div></header><main class="window-body"><div class="blog-post-container"><div class="blog-post-header"><h3>5월 한달동안 로그</h3><h6>2022년 6월 1일</h6></div><div class="blog-post-content"><div class="table-of-contents">
+<ul>
+<li><a href="#%EC%9D%BD%EC%96%B4%EB%B3%B4%EC%95%98%EB%8D%98"><code>읽어보았던</code></a></li>
+<li><a href="#529--531"><code>5/29 ~ 5/31</code></a>
+<ul>
+<li>
+<ul>
+<li><a href="#feature-flag"><code>feature flag</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#522--528"><code>5/22 ~ 5/28</code></a>
+<ul>
+<li>
+<ul>
+<li><a href="#reactjsx-no-leaked-render"><code>react/jsx-no-leaked-render</code></a></li>
+<li><a href="#fabric--rn"><code>fabric + RN</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#515--521"><code>5/15 ~ 5/21</code></a>
+<ul>
+<li>
+<ul>
+<li><a href="#ui-thread"><code>UI thread</code></a></li>
+<li><a href="#fabric"><code>fabric</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#58--514"><code>5/8 ~ 5/14</code></a>
+<ul>
+<li>
+<ul>
+<li><a href="#flex"><code>flex*</code></a></li>
+<li><a href="#%EC%9A%A9%EB%9F%89%EB%B6%80%EC%A1%B1"><code>용량부족</code></a></li>
+<li><a href="#ui-component"><code>UI component</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#51--57"><code>5/1 ~ 5/7</code></a>
+<ul>
+<li>
+<ul>
+<li><a href="#ui-component-1"><code>UI component</code></a></li>
+<li><a href="#fastlane--fabric"><code>fastlane + fabric</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="읽어보았던" style="position:relative;"><a href="#%EC%9D%BD%EC%96%B4%EB%B3%B4%EC%95%98%EB%8D%98" aria-label="읽어보았던 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>읽어보았던</code></h2>
+<ul>
+<li><a href="https://twitter.com/dai_shi/status/1523814984605904896?t=84MrpbxKaRuEFPfaNv2R7Q&#x26;s=19">Render-as-You-Fetch</a>
+<ul>
+<li>화면에 데이터가 보여지기까지 API 응답을 기다리는 것을 스켈레톤으로 처리하고 있다</li>
+<li>같은 역할을 Suspense로 할 수 있겠지만 여기서 주는 의미는 크지 않은 것 같고</li>
+<li>render 중간에 fetch 하거나, fetch가 완료되면 render 하거나</li>
+<li>화면에 온전히 보여지기까지 최적화</li>
+<li>사용자 경험에 가장 큰 영향력을 주지 않을까</li>
+<li>useEffect에서 비동기 처리를 하도록 되어있기는 한데 (Fetch on Render)
+<ul>
+<li>초기 데이터 상태로 그려두고 데이터가 오면 업데이트</li>
+<li>라이프사이클 한번 시작되고 fetch를 한다는 차이가 있는듯</li>
+</ul>
+</li>
+<li>데이터가 오는대로 화면에 그리는 방법도 있으나 (Fetch then Render)
+<ul>
+<li>이 또한 화면에 그려줄 데이터가 오기 전까지 아무것도 그릴 수 없다</li>
+</ul>
+</li>
+<li>그럼 결국 데이터가 없는 상태에서도 화면에 보여져야하는 skeleton, fallback 처리가 필요한데
+<ul>
+<li>(Fetch on Render with Suspense, Render as You Fetch with Suspense)</li>
+<li>맨처음에 렌더를 먼저 시키고 fetch 하느냐 바로 fetch 시작하느냐의 차이?</li>
+<li>사용해온 방식은 <code>Fetch on Render with Suspense</code> 인듯</li>
+</ul>
+</li>
+<li>뭐라고 하는거지 다시 정리 (<a href="https://blog.logrocket.com/react-suspense-data-fetching/">참고</a>)</li>
+<li><code>Fetch-on-render without Suspense</code>
+<ul>
+<li>waterfall</li>
+<li>render > fetch > render</li>
+<li>컴포넌트 마운트 이후 데이터 요청하고 데이터 유무에 따라 렌더링 시키므로</li>
+</ul>
+</li>
+<li><code>Fetch-then-render without Suspense</code>
+<ul>
+<li>fetch > render</li>
+<li>비동기 처리가 완로되면 컴포넌트가 그제서야 렌더</li>
+<li>만약 비동기 계산이 오래 걸리면 화면에 아무것도 보이지 않는 시점이 길어지는 문제</li>
+</ul>
+</li>
+<li><code>Render-as-you-fetch with Suspense</code>
+<ul>
+<li>suspense render > fetch > render</li>
+<li><code>Fetch-then-render without Suspense</code>와 유사하지만</li>
+<li>비동기 데이터 요청이 완료되기 전까지 Suspense가 미리 보여진다는 것 그리고 데이터가 오면 렌더링 된다는 것</li>
+<li><code>As soon as any component receives its complete data, it gets rendered regardless of whether the other component’s request is resolved.</code></li>
+</ul>
+</li>
+<li>비동기처리를 어느 시점에 하느냐
+<ul>
+<li>그럼 지금 사용하고 있는 리액트 쿼리에서 <code>Render-as-you-fetch</code>를 구현하려면 어떻게 해야하지?</li>
+<li>훅으로 구성되어 있는 상태에서 마운트 전에 prefetch 해야하는건데</li>
+<li><a href="https://react-query.tanstack.com/guides/suspense#fetch-on-render-vs-render-as-you-fetch">리액트 쿼리 문서: fetch-on-render-vs-render-as-you-fetch</a></li>
+</ul>
+</li>
+<li><a href="https://twitter.com/housecor/status/1531642615283625984?t=xwHnymLz_6QZDYQsUovbMg&#x26;s=19">추가: 상위 컴포넌트에서 미리 fetch해서 데이터만 넘기도록...</a>
+<ul>
+<li><code>useEffect</code>에서 마운트 후 <code>fetch</code> 그리고 다시 리렌더 되는 것을</li>
+<li>미리 상위 컴포넌트에서 <code>prefetch</code>하고 넘겨주도록하여 마운트 시점에 무언가를 보여줄 수 있도록 타이밍을 당기는 것인데</li>
+<li>음.............. 과연 렌더링 리소스가 얼마나 줄어들까
+<ul>
+<li>옆길로 자꾸 빠져나가는 것 같네🤔</li>
+<li>사용자에게 얼마나 유의미한 데이터를 빠르게 보여주느냐의 목적인데</li>
+</ul>
+</li>
+<li>마운트 전에 데이터가 확실하게 보장된다면 가장 좋을텐데</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="529--531" style="position:relative;"><a href="#529--531" aria-label="529  531 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>5/29 ~ 5/31</code></h2>
+<h4 id="feature-flag" style="position:relative;"><a href="#feature-flag" aria-label="feature flag permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>feature flag</code></h4>
+<ul>
+<li>처음 들어보았는데, 찾아보니 이름은 모른채 사용하고 있었을 수 있겠다 싶다</li>
+<li>특정 기능을 특정하여 지원하거나 테스트할 수 있도록 하는 것인데</li>
+<li>어떻게 보면 ABCD테스트라고 볼 수 있을 것 같기도</li>
+<li>어쨌든 프로덕션에 포함되어있는 기능인데, 이를 어떻게 특정한 사용자에게만 지원하도록 분리 할 수 있을까</li>
+<li>앱에서 사용 예시를 생각하다가 떠오른 기억이 심사를 위한 로그인 기능 추가했던 것이다
+<ul>
+<li>서드파티 로그인만 구현된 상황에서 심사를 위한 환경 설정된 유저 정보로 로그인하기 위해 심사용 feature flag를 구현한 것</li>
+<li>심사 버전에 따라 로그인 feature flag를 설정하고 그 외에는 꺼두는 것이였다</li>
+</ul>
+</li>
+<li>근데 로그인 기능처럼 아예 분리가 간단한 것은 문제가 되지 않을 것 같은데,,,</li>
+<li>핵심 기능에서 ABCD 분리되어야한다면,,,, 모든 케이스를 구현해야하는 것 아닌가!?
+<ul>
+<li>이 기능을 지원하지 않는 경우에 대한 화면, 플로우</li>
+<li>지원하는 경우에 대한 후속 처리,,,</li>
+</ul>
+</li>
+</ul>
+<h2 id="522--528" style="position:relative;"><a href="#522--528" aria-label="522  528 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>5/22 ~ 5/28</code></h2>
+<h4 id="reactjsx-no-leaked-render" style="position:relative;"><a href="#reactjsx-no-leaked-render" aria-label="reactjsx no leaked render permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>react/jsx-no-leaked-render</code></h4>
+<ul>
+<li><a href="https://github.com/jsx-eslint/eslint-plugin-react/blob/v7.30.0/docs/rules/jsx-no-leaked-render.md">react/jsx-no-leaked-render</a></li>
+<li>이 lint rule은 정말 유용할 것 같다</li>
+<li>신나게 개발하다가 놓친 이런 사소한 것이 갑자기 터진다... 💥</li>
+<li>도움 받을 수 있다면 좋으니 써보는 것으로</li>
+</ul>
+<h4 id="fabric--rn" style="position:relative;"><a href="#fabric--rn" aria-label="fabric  rn permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>fabric + RN</code></h4>
+<ul>
+<li>하나가 해결되면 하나가 말썽이다
+<ul>
+<li>왜 시작했을까 싶을 정도....</li>
+<li>힘이 푹푹 빠진당</li>
+</ul>
+</li>
+<li><code>[!] Invalid 'Podfile' file: 859: unexpected token at 'Config Validation Error: "project.android.buildGradlePath" is not allowed</code>
+<ul>
+<li>react-native.config.js 에서 설정한 옵션을 못읽길래 지워봤더니</li>
+<li><code>Error: Cannot find module 'mkdirp'</code></li>
+<li>이정도면 cli가 잘못했다는 느낌으로 RN 버전 올라갔나 확인해보니 역시나 올라갔네...</li>
+</ul>
+</li>
+<li>불안정한 버전을 계속 시도하느니 지금 적용된 RN 0.68 + fabric 에서 다른 이슈를 확인하는게 더 낫겠다는 생각
+<ul>
+<li>문제의 그 이슈 <code>fastlane + fabric</code> 조합</li>
+<li>🙈</li>
+</ul>
+</li>
+<li>gradle만 돌리면 빌드는 되는데 fastlane이 문제라고?
+<ul>
+<li><code>gradle(task: "assembleRelease")</code> 이건 되면서</li>
+<li><code>gradle(task: "clean assembleRelease")</code> 이건 안되는건</li>
+<li>clean이 무언가 잘못했다</li>
+</ul>
+</li>
+<li><a href="https://docs.fastlane.tools/actions/gradle/">fastlane gradle 문서</a>에 <code>tasks</code> 라는게 있는데,,,
+<ul>
+<li><code>gradle(tasks: ["clean", "assembleRelease"])</code> 이것도 되지 않는다</li>
+<li><code>gradle(task: "clean")</code> 그렇지만 이건 된다고?</li>
+<li><code>gradle(task: "assembleRelease")</code> + <code>gradle(task: "clean")</code> 로 가본다</li>
+<li>된다고..??? 🙈</li>
+</ul>
+</li>
+<li>그럼 이제 다시 iOS fastlane으로 넘어가본다
+<ul>
+<li><code>error: Provisioning profile "RNStarter Development Provisioning" doesn't include signing certificate ...</code></li>
+<li>저번에 정리한 것 같은데 또 나온다고?</li>
+<li>키체인 확인해보니 만료되었네.. ㅠㅠ</li>
+</ul>
+</li>
+<li>다음 문제 발생
+<ul>
+<li><code>/bin/sh: -c: line 0: syntax error near unexpected token '('</code></li>
+<li>왠지 <code>RNStarter (Staging)</code> 앱 이름 <code>(</code> 파싱이 안되는 것 아닌가</li>
+<li>스키마 변경했더니 왜 또 문제!</li>
+<li>iOS도 fabric 적용하고 한번도 성공한 적이 없구나.. ㅠㅠ</li>
+<li>위에서 변경된 iOS Provisioning로 다시 정리해주었다</li>
+</ul>
+</li>
+<li>그 외에 로컬에서도 iOS fastlane 빌드가 안되고 있는데, 액션에서도 여전하다
+<ul>
+<li><code>std::__1::unique_lock&#x3C;folly::SharedMutexImpl&#x3C;false, void, std::__1::atomic, false, false, false> >::~unique_lock() in AppDelegate.o</code></li>
+<li><code>ld: symbol(s) not found for architecture arm64</code></li>
+<li>yoga 다음으로 매번 괴롭히는 folly</li>
+<li><a href="https://github.com/facebook/react-native/issues/33764">fagbric 적용하면서 같은 이슈를 겪는 스레드 발견</a></li>
+<li><a href="https://github.com/facebook/react-native/issues/33764#issuecomment-1134432726">flipper가 원인이 되고 있는 것인지, Propfile에서 릴리즈 빌드인 경우 flipper 자체를 건너뛰도록 설정하였다</a></li>
+<li><a href="https://github.com/facebook/react-native/commit/9f112af50abbcd059e3872ae63143c35bb8c0f7f">PR이 머지도 되었는데,, 설마 또 RN버전이 올라가고 있나</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="515--521" style="position:relative;"><a href="#515--521" aria-label="515  521 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>5/15 ~ 5/21</code></h2>
+<h4 id="ui-thread" style="position:relative;"><a href="#ui-thread" aria-label="ui thread permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>UI thread</code></h4>
+<ul>
+<li>ui, js 스레드 분리했는데도 느리다</li>
+<li><a href="https://brooklinmyers.medium.com/react-native-understanding-threads-e026c7d62bb2">InteractionManager로 해봐야지</a>
+<ul>
+<li><a href="https://reactnative.dev/docs/interactionmanager">참고: RN</a></li>
+</ul>
+</li>
+<li><code>worklet</code>에서 <code>runOnJS</code>를 쓰게 되면 <code>sharedValue</code>의 업데이트를 보장하지 못했던 이유가 이건가
+<ul>
+<li><code>runOnJS</code>로 js 스레드에서 실행하도록 했지만 그 안에서 업데이트한 <code>sharedValue</code>는 결국 <code>worklet</code>이 이벤트 루프 마지막이 되어서야 ui 스레드로 보내니깐 보장할 수 없는 듯</li>
+<li>그럼 모든 함수를 <code>worklet</code>으로 만들고 오히려 <code>runOnUI</code>로 호출하면 될까?</li>
+</ul>
+</li>
+<li>이런 것들을 검증 해보기 위해서는 뒤죽박죽 되어있는 <code>js-ui</code>를 정리해야함...</li>
+<li>추가로 ref는 그냥 일반 useRef로 받아오고 있었는데, 이것 또한 useAnimatedRef로 처리하도록 하면 어떨까
+<ul>
+<li><a href="https://docs.swmansion.com/react-native-reanimated/docs/api/nativeMethods/scrollTo">필요한 scrollTo도 여기 있다</a></li>
+</ul>
+</li>
+<li>(+ 정리하고 나니 확실히 ui 스레드에서만 동작하게 된 애니메이션들이 더 빨라졌다)
+<ul>
+<li>아쉽게도 렌더 퍼포먼스는 엄청난 효과를 얻지 못했다...</li>
+</ul>
+</li>
+</ul>
+<h4 id="fabric" style="position:relative;"><a href="#fabric" aria-label="fabric permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>fabric</code></h4>
+<ul>
+<li>끝나지 않는 <code>fabric</code> 여행기</li>
+<li><a href="https://blog.swmansion.com/announcing-reanimated-3-16167428c5f7">react-native-reanimated에 드디어 fabric 적용이 되었다</a></li>
+<li>근데 RN 0.69....</li>
+<li>또 올려야하나</li>
+<li>68로 올린지 얼마 안된 것 같은뎅...</li>
+<li>prerelease 버전으로 준비해봐야지</li>
+</ul>
+<h2 id="58--514" style="position:relative;"><a href="#58--514" aria-label="58  514 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>5/8 ~ 5/14</code></h2>
+<h4 id="flex" style="position:relative;"><a href="#flex" aria-label="flex permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>flex*</code></h4>
+<ul>
+<li>이런저런 곳에서 <code>flex</code>를 잘 사용하는지를 중요하게 생각하는 것 같다</li>
+<li>그 이유는 잘 사용하는 것은 어렵기 때문이다...</li>
+<li>어렵다</li>
+<li>단순히 flex 쓰면 끝나는게 아니다</li>
+<li><a href="https://studiomeal.com/archives/197">참고: CSS Flex를 익혀보자</a></li>
+</ul>
+<h4 id="용량부족" style="position:relative;"><a href="#%EC%9A%A9%EB%9F%89%EB%B6%80%EC%A1%B1" aria-label="용량부족 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>용량부족</code></h4>
+<ul>
+<li>맥북 용량이 부족하다</li>
+<li>왜 ㅠㅠ</li>
+<li>500기가뿐이지만 부족하면 안되는데?!</li>
+<li>파일 정리하러 들어가보니 hermes 실행파일이 왜이렇게 많지?</li>
+<li>⁉️ 블랙홀 node_modules
+<ul>
+<li><code>yarn add ../</code> 로 바로 설치하도록 했더니....</li>
+<li><code>node_modules/app/node_modules/app/node_modules/app/node_modules......</code></li>
+<li>끝나지 않는 뎁스</li>
+</ul>
+</li>
+<li>이것만으로 해결되지 않는 용량 부족...</li>
+<li><code>Library/Caches/Yarn</code> 이 친구는 왜 100기가가 넘는거지?????
+<ul>
+<li>위의 블랙홀 덕분에!</li>
+<li>여기도 무한 증분 되었다</li>
+<li><a href="https://yarnpkg.com/cli/cache/clean"><code>yarn cache clean</code></a> 출발</li>
+<li>이 친구만 정리되면 좀 나아지려나...</li>
+</ul>
+</li>
+</ul>
+<h4 id="ui-component" style="position:relative;"><a href="#ui-component" aria-label="ui component permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>UI component</code></h4>
+<ul>
+<li>처음부터 분리하지 않고 네이티브에서 구현하고 완료되면 때내는 방법으로</li>
+<li>안드로이드 먼저 구현은 되었다..
+<ul>
+<li>activity > fragment 전달하는 과정이 당황스러웠지만...</li>
+</ul>
+</li>
+<li>같은 방식으로 가면 되겠지 하면서 iOS도 그려넣는데
+<ul>
+<li>ReactProps 가져오는 방식이 안드로이드와 다르다</li>
+<li>UIView를 띄우고 거기서 바로 props에 대한 setter를 넣어줘야하는데</li>
+<li>기존에 네이티브 모듈 구현했던 방식이 UIView > UIViewController 순서로 한번 래핑되어 있다보니</li>
+<li>setter의 위치를 UIView에 설정해주지 못해 시간이 걸렸다...</li>
+<li>그냥 UIViewController 걷어내고 바로 UIView로 띄우고 setter 설정!</li>
+</ul>
+</li>
+<li><a href="https://reactnative.dev/docs/native-components-ios">RN 문서에 UI Component 설명이 잘 되어있는듯 하지만 잘 안되서</a></li>
+<li>그냥 <a href="https://github.com/facebook/react-native/blob/8bd3edec88148d0ab1f225d2119435681fbbba33/React/Views/ScrollView/RCTScrollViewManager.m">RN 깃헙에서 구현된 코드</a>를 따라가는게 더 도움이 된 것 같다</li>
+</ul>
+<h2 id="51--57" style="position:relative;"><a href="#51--57" aria-label="51  57 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>5/1 ~ 5/7</code></h2>
+<h4 id="ui-component-1" style="position:relative;"><a href="#ui-component-1" aria-label="ui component 1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>UI component</code></h4>
+<ul>
+<li>안드로이드부터 다시 마음 가다듬고 시도하는데
+<ul>
+<li>안되는중!</li>
+</ul>
+</li>
+</ul>
+<h4 id="fastlane--fabric" style="position:relative;"><a href="#fastlane--fabric" aria-label="fastlane  fabric permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>fastlane + fabric</code></h4>
+<ul>
+<li>지난번에 이어서 아직도 fastlane + fabric 빌드를 성공하지 못했다</li>
+<li><code>[CXX1405] error when building with ndkBuild using .../react-native/ReactAndroid/src/main/jni/react/jni/Android.mk: Build command failed.</code></li>
+<li>Android.mk, ndk 무언가가 잘못되었다
+<code>   	Android NDK:    	/ReactCommon/butter/Android.mk: Cannot find module with tag 'glog' in import path       	Are you sure your NDK_MODULE_PATH variable is properly defined ?   	</code></li>
+<li><a href="https://sdhoya.tistory.com/70">C++ 컴파일 오류 > 경로가 문제라는 이런저런 여러 글</a></li>
+<li>그래서 이번에 fabric에서 추가된 <a href="https://developer.android.com/ndk/guides/android_mk?hl=ko">Android.mk란 무언인가</a>
+<ul>
+<li>ndk 빌드 파일</li>
+<li>빌드 시스템의 소스 및 공유 라이브러리를 설명</li>
+<li>프로젝트/모듈 설정 정의</li>
+<li>그래서 이런저런 변수가 여럿 있는데 NDK_MODULE_PATH는 없네?!</li>
+</ul>
+</li>
+<li>ndk가 왜 !!! 😭</li>
+<li><code>run android</code>는 되는데 <code>fastlane</code>으로 돌리는게 이슈가 있는듯</li>
+</ul></div></div></main><footer class="footer"><div class="footer-label">©Jiggag, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></div><button type="button" aria-label="Github">Github</button></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-115373374-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/monthly-log/2022-05/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-635a9dfd597478a1f0fa.js"],"app":["/app-b09e07e25d90c38eb055.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-168a7ecda92120439b43.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-56ac5eb6f68a10947a02.js"],"component---src-pages-markdown-remark-frontmatter-slug-tsx":["/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"],"component---src-pages-using-ssr-tsx":["/component---src-pages-using-ssr-tsx-a3849e895b554ed9c74d.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-2c91f22b06497815d93c.js"],"component---src-templates-using-dsg-tsx":["/component---src-templates-using-dsg-tsx-96c55d73ae3a8c0dec54.js"]};/*]]>*/</script><script src="/polyfill-635a9dfd597478a1f0fa.js" nomodule=""></script><script src="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js" async=""></script><script src="/commons-fba08f0dde7e26234785.js" async=""></script><script src="/app-b09e07e25d90c38eb055.js" async=""></script><script src="/framework-094b0089736b8f621f0d.js" async=""></script><script src="/webpack-runtime-0fbc006468ecd0e380ed.js" async=""></script></body></html>

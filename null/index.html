@@ -1,0 +1,413 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.88bfdd443e73d3e6d82f.css" data-identity="gatsby-global-css">*{font-family:SUIT Variable,sans-serif!important}:root{--surface:silver;--content:#e2e2e2;--button-highlight:#fff;--button-face:#dfdfdf;--button-shadow:grey;--window-frame:#0a0a0a;--dialog-blue:navy;--dialog-blue-light:#1084d0;--dialog-gray:grey;--dialog-gray-light:#b5b5b5;--link-blue:#00f;--black:#000;--link-blue-95:#0000ff95;--element-spacing:8px;--border-width:1px;--border-raised-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight);--border-raised-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);--border-sunken-outer:inset -1px -1px var(--button-highlight),inset 1px 1px var(--window-frame);--border-sunken-inner:inset -2px -2px var(--button-face),inset 2px 2px var(--button-shadow);--border-window-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-face);--border-window-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-highlight)}body{margin:0}pre{background:var(--button-highlight);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);display:block;margin:4px 0;padding:var(--element-spacing)}pre code{background:unset;color:unset;font-size:12px}code{background:var(--link-blue-95);border-radius:10px;color:#fff;font-size:14px;padding:0 6px}a{color:var(--link-blue);text-decoration:none}.window{background:var(--surface);box-shadow:var(--border-window-outer),var(--border-window-inner);height:100vh;margin:auto}.window.minimize{max-width:500px}.window-container{display:flex;flex-direction:column;height:100%}.window-body{flex:1 1;margin:0 0 0 var(--element-spacing);overflow:auto;padding-right:var(--element-spacing)}.title-bar{align-items:center;background:linear-gradient(150deg,var(--dialog-blue),var(--dialog-blue-light));display:flex;justify-content:space-between;margin:3px 3px 0;padding:2px var(--element-spacing)}.title-bar .title{color:#fff;font-size:24px;margin:0;text-decoration:none}.title-bar-controls{display:flex}.title-bar-controls button{display:block;min-height:14px;min-width:16px;padding:0}.title-bar-controls button[aria-label=ScrollToTop]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:bottom 2px left 2px;background-repeat:no-repeat;height:20px;width:20px}.title-bar-controls button[aria-label=Minimize]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA2IDIiPjxyZWN0IHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9IiMwMDAiLz48L3N2Zz4=);background-position:bottom 5px left 7px;background-repeat:no-repeat;height:19px;width:20px}.title-bar-controls button[aria-label=Maximize]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjkiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA5IDkiPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTkgMEgwdjloOVYwWk04IDJIMXY2aDdWMloiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;width:20px}.title-bar-controls button[aria-label=Close]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA4IDciPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMGgydjFoMXYxaDJWMWgxVjBoMnYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxSDZWNkg1VjVIM3YxSDJ2MUgwVjZoMVY1aDFWNGgxVjNIMlYySDFWMUgwVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;margin-left:2px;width:20px}.title-bar-text{color:#fff;font-weight:700;letter-spacing:0;margin-right:24px}.blog-post-container{background:var(--content);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0 0 0;overflow-x:scroll;padding:var(--element-spacing)}.blog-post-content h1,h2{font-size:20px}.blog-post-content h3,h4{font-size:16px}.blog-post-content ul{padding-left:20px}.home-post-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.home-post-title p{font-size:12px;margin:4px 0}.footer{align-items:center;display:flex;padding:12px 15px}.footer .footer-label{align-self:flex-end;font-size:12px;width:100%}.not-found-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.not-found-title p{font-size:14px;margin:10px 0}button{background:var(--surface);border:none;border-radius:0;box-shadow:var(--border-raised-outer),var(--border-raised-inner);box-sizing:border-box;min-height:23px;min-width:75px;padding:0 12px}button:not(:disabled):active{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);padding:2px 3px 0 13px}@media (not(hover)){button:not(:disabled):hover{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner)}}button:focus{outline:1px dotted var(--black);outline-offset:-4px}button::-moz-focus-inner{border:0}::-webkit-scrollbar{width:16px}::-webkit-scrollbar:horizontal{height:17px}::-webkit-scrollbar-corner{background:var(--button-face)}::-webkit-scrollbar-track{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9InNpbHZlciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDB2MWgxdjFoMVYxSDFWMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxdjFIMHYxaDFWMWgxVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}::-webkit-scrollbar-thumb{background-color:var(--button-face);box-shadow:var(--border-raised-outer),var(--border-raised-inner)}::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement{display:block}::-webkit-scrollbar-button:vertical:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:vertical:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA2SDR2MWgxdjFoMXYxaDF2MWgxVjloMVY4aDFWN2gxVjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:horizontal:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDRIOHYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxaDFWNFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);width:16px}::-webkit-scrollbar-button:horizontal:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDRINnY3aDF2LTFoMVY5aDFWOGgxVjdIOVY2SDhWNUg3VjRaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);width:16px}.table-of-contents{border:1px dashed var(--link-blue-95);border-radius:10px;display:inline-flex;padding:10px 30px 20px 15px}.table-of-contents ul{list-style:none;margin:0;padding:0}.table-of-contents>ul>li{margin:10px 0}.table-of-contents>ul>li>a>code{font-size:14px;font-weight:700}.table-of-contents>ul>li>ul{margin:5px 0;padding-left:10px}.table-of-contents>ul>li li{margin-bottom:2px}.table-of-contents code{background:unset;border-bottom:1px solid var(--link-blue-95);border-radius:0;color:var(--black);font-size:12px}</style><meta name="generator" content="Gatsby 4.1.4"/><title data-react-helmet="true"></title><meta data-react-helmet="true" name="description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:title" content=""/><meta data-react-helmet="true" property="og:description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:type" content="website"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script data-gatsby="web-vitals-polyfill">
+            !function(){var e,t,n,i,r={passive:!0,capture:!0},a=new Date,o=function(){i=[],t=-1,e=null,f(addEventListener)},c=function(i,r){e||(e=r,t=i,n=new Date,f(removeEventListener),u())},u=function(){if(t>=0&&t<n-a){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+t};i.forEach((function(e){e(r)})),i=[]}},s=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){c(e,t),a()},i=function(){a()},a=function(){removeEventListener("pointerup",n,r),removeEventListener("pointercancel",i,r)};addEventListener("pointerup",n,r),addEventListener("pointercancel",i,r)}(t,e):c(t,e)}},f=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,s,r)}))},p="hidden"===document.visibilityState?0:1/0;addEventListener("visibilitychange",(function e(t){"hidden"===document.visibilityState&&(p=t.timeStamp,removeEventListener("visibilitychange",e,!0))}),!0);o(),self.webVitals={firstInputPolyfill:function(e){i.push(e),u()},resetFirstInputPolyfill:o,get firstHiddenTime(){return p}}}();
+          </script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>            
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-4711551515762404",
+                enable_page_level_ads: true
+              });
+          </script><link as="script" rel="preload" href="/webpack-runtime-0fbc006468ecd0e380ed.js"/><link as="script" rel="preload" href="/framework-094b0089736b8f621f0d.js"/><link as="script" rel="preload" href="/app-b09e07e25d90c38eb055.js"/><link as="script" rel="preload" href="/commons-fba08f0dde7e26234785.js"/><link as="script" rel="preload" href="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"/><link as="fetch" rel="preload" href="/page-data/null/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3000541721.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3293771174.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="window minimize"><div class="window-container"><header class="title-bar"><a class="title title-bar-text" href="/">JIGGAG</a><div class="title-bar-controls"><button type="button" aria-label="ScrollToTop"></button><button type="button" aria-label="Maximize"></button><button type="button" aria-label="Close"></button></div></header><main class="window-body"><div class="blog-post-container"><div class="blog-post-header"><h3></h3><h6></h6></div><div class="blog-post-content"><hr>
+<h2 id="slug-blogmonthly-log2022-10date-2022-10-31layout--postpublished--truetitle--10월-한달동안-로그subtitle--찾아보고-읽어보고-적어두기tags--log-react-memoization-fabric-reconciler-fiber" style="position:relative;"><a href="#slug-blogmonthly-log2022-10date-2022-10-31layout--postpublished--truetitle--10%EC%9B%94-%ED%95%9C%EB%8B%AC%EB%8F%99%EC%95%88-%EB%A1%9C%EA%B7%B8subtitle--%EC%B0%BE%EC%95%84%EB%B3%B4%EA%B3%A0-%EC%9D%BD%EC%96%B4%EB%B3%B4%EA%B3%A0-%EC%A0%81%EC%96%B4%EB%91%90%EA%B8%B0tags--log-react-memoization-fabric-reconciler-fiber" aria-label="slug blogmonthly log2022 10date 2022 10 31layout  postpublished  truetitle  10월 한달동안 로그subtitle  찾아보고 읽어보고 적어두기tags  log react memoization fabric reconciler fiber permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>slug: /blog/monthly-log/2022-10
+date: 2022-10-31
+layout : post
+published : true
+title : 10월 한달동안 로그
+subtitle : 찾아보고, 읽어보고, 적어두기
+tags : [log, react, memoization, fabric, reconciler, fiber]</h2>
+<div class="table-of-contents">
+<ul>
+<li><a href="#slug-blogmonthly-log2022-10date-2022-10-31layout--postpublished--truetitle--10%EC%9B%94-%ED%95%9C%EB%8B%AC%EB%8F%99%EC%95%88-%EB%A1%9C%EA%B7%B8subtitle--%EC%B0%BE%EC%95%84%EB%B3%B4%EA%B3%A0-%EC%9D%BD%EC%96%B4%EB%B3%B4%EA%B3%A0-%EC%A0%81%EC%96%B4%EB%91%90%EA%B8%B0tags--log-react-memoization-fabric-reconciler-fiber">slug: /blog/monthly-log/2022-10
+date: 2022-10-31
+layout : post
+published : true
+title : 10월 한달동안 로그
+subtitle : 찾아보고, 읽어보고, 적어두기
+tags : [log, react, memoization, fabric, reconciler, fiber]</a></li>
+<li><a href="#%EC%9D%BD%EC%96%B4%EB%B3%B4%EC%95%98%EB%8D%98"><code>읽어보았던</code></a>
+<ul>
+<li>
+<ul>
+<li><a href="#usememo%EC%99%80-usecallback"><code>useMemo와 useCallback</code></a></li>
+<li><a href="#useeffect-%EC%99%84%EB%B2%BD%EA%B0%80%EC%9D%B4%EB%93%9C"><code>useEffect 완벽가이드</code></a></li>
+<li><a href="#react-native-screens-"><code>react-native-screens</code> 🚨</a></li>
+<li><a href="#react-fiber"><code>React Fiber</code></a></li>
+<li><a href="#fabric%EC%9D%B4-%EA%B0%80%EC%A0%B8%EC%98%AC-%ED%9A%A8%EA%B3%BC"><code>Fabric이 가져올 효과</code></a></li>
+<li><a href="#reconciler"><code>Reconciler</code></a></li>
+<li><a href="#fe-%ED%85%8C%EC%8A%A4%ED%8A%B8"><code>FE 테스트</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="읽어보았던" style="position:relative;"><a href="#%EC%9D%BD%EC%96%B4%EB%B3%B4%EC%95%98%EB%8D%98" aria-label="읽어보았던 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>읽어보았던</code></h2>
+<h4 id="usememo와-usecallback" style="position:relative;"><a href="#usememo%EC%99%80-usecallback" aria-label="usememo와 usecallback permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>useMemo와 useCallback</code></h4>
+<ul>
+<li><a href="https://medium.com/@yujso66/%EB%B2%88%EC%97%AD-usememo-%EA%B7%B8%EB%A6%AC%EA%B3%A0-usecallback-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-844620cd41a1">[번역] useMemo 그리고 useCallback 이해하기</a></li>
+<li><code>리렌더링</code>
+<ul>
+<li>상태를 기반으로 DOM이 어떻게 그려졌는지에 대한 스냅샷</li>
+</ul>
+</li>
+<li>이러한 스냅샷을 빠르게 만들어서 사용자에게 UI 업데이트가 반영된 버전을 전달하기 위해 <code>리렌더링 최적화</code>가 필요하다
+<ul>
+<li>단순히 렌더링 과정에서 작업해야하는 양을 줄이거나</li>
+<li>다시 렌더링 되어야하는 횟수를 줄이는 방법이 있다</li>
+</ul>
+</li>
+<li><code>useMemo, useCallback 이용하기</code>
+<ul>
+<li>무겁고 시간이 오래 걸리는 연산을 다시 하지 않도록 캐싱된 데이터를 사용하는 것</li>
+<li>useMemo를 이용해 매번 계산을 하지 않고 다시 사용할 수 있도록 처리할 수 있다</li>
+<li>리렌더링 되는 시점마다 새로운 상태 참조값을 반환하게 되고 이는 하위 컴포넌트를 전부 리렌더링 하게 된다</li>
+<li>컴포넌트에 memo를 사용하게 된다면 마치 순수 컴포넌트인 것 처럼 여겨지지만</li>
+<li>실제로는 메모이제이션 하지 않은 props를 전달 받는다면 (프리미티브 타입이라면 그나마 괜찮지만 그렇지 않은 경우)</li>
+<li>memo가 되었더라도 참조값 변경된 props에 의해 컴포넌트 전체가 리렌더링 된다</li>
+<li>이것은 참조가 변경되지 않도록 children도 useMemo 해야하는 이유</li>
+<li>useMemo이 값의 참조 캐싱을 위한 것이라면 useCallback 값 대신 함수</li>
+</ul>
+</li>
+<li>이 글에서는 과한 useMemo, useCallback 사용을 적극 권하고 있지 않지만 개인적으로는 적극 권한다
+<ul>
+<li>분명 이슈가 생기기 때문이다</li>
+<li>아마 이 글에서는 과하게 사용하기 보다 최적화 이슈가 발생했을때 해당 원인을 좀 더 정확하게 파악하면서 처리하기를 기대하는 의미인 것 같다</li>
+</ul>
+</li>
+</ul>
+<h4 id="useeffect-완벽가이드" style="position:relative;"><a href="#useeffect-%EC%99%84%EB%B2%BD%EA%B0%80%EC%9D%B4%EB%93%9C" aria-label="useeffect 완벽가이드 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>useEffect 완벽가이드</code></h4>
+<ul>
+<li>코뿔소 JS 완벽 가이드처럼... <a href="https://overreacted.io/ko/a-complete-guide-to-useeffect/">useEffect 완벽가이드</a></li>
+<li><a href="https://overreacted.io/ko/a-complete-guide-to-useeffect/#%EB%AA%A8%EB%93%A0-%EB%9E%9C%EB%8D%94%EB%A7%81%EC%9D%80-%EA%B3%A0%EC%9C%A0%EC%9D%98-prop%EA%B3%BC-state%EA%B0%80-%EC%9E%88%EB%8B%A4">모든 랜더링은 고유의 Prop과 State가 있다</a>
+<ul>
+<li>state를 업데이트할 때마다, 리액트는 컴포넌트를 호출합니다. 이 state값은 함수 안에 상수로 존재하는 값입니다</li>
+<li>리액트를 통해 전달된 값(state)은 컴포넌트가 다시 호출됨에 따라 DOM에 업데이트 되는 것</li>
+<li>각각의 렌더링마다 격리된 고유한 값이 바뀌는 것이다</li>
+<li>특정 랜더링 시 그 내부에서 props와 state는 영원히 같은 상태로 유지됩니다</li>
+<li><code>컴포넌트의 랜더링 안에 있는 모든 함수는 (이벤트 핸들러, 이펙트, 타임아웃이나 그 안에서 호출되는 API 등) 랜더(render)가 호출될 때 정의된 props와 state 값을 잡아둔다</code></li>
+</ul>
+</li>
+<li><a href="https://overreacted.io/ko/a-complete-guide-to-useeffect/#%EC%99%9C-usereducer%EA%B0%80-hooks%EC%9D%98-%EC%B9%98%ED%8A%B8-%EB%AA%A8%EB%93%9C%EC%9D%B8%EA%B0%80">왜 useReducer가 Hooks의 치트 모드인가</a>
+<ul>
+<li>랜더링간 dispatch 의 동일성은 여전히 보장는 것을 이용하여</li>
+<li>reducer를 컴포넌트 내부에서 정의하고 props에 접근하도록 하고 모든 랜더링마다 새로운 props를 바라보도록 정리</li>
+<li>dispatch는 그냥 액션만 기억할뿐 새로운 스코프의 리듀서가 동작</li>
+</ul>
+</li>
+<li><a href="https://overreacted.io/ko/a-complete-guide-to-useeffect/#%ED%95%98%EC%A7%80%EB%A7%8C-%EC%A0%80%EB%8A%94-%EC%9D%B4-%ED%95%A8%EC%88%98%EB%A5%BC-%EC%9D%B4%ED%8E%99%ED%8A%B8-%EC%95%88%EC%97%90-%EB%84%A3%EC%9D%84-%EC%88%98-%EC%97%86%EC%96%B4%EC%9A%94">하지만 저는 이 함수를 이펙트 안에 넣을 수 없어요</a>
+<ul>
+<li>의존성을 추가하고 싶지 않은 경우</li>
+<li>prop이나 state를 반드시 요구하지 않는 함수는 컴포넌트 바깥에 선언</li>
+<li>유틸 함수로 빼는 것과 동일</li>
+</ul>
+</li>
+<li><a href="https://overreacted.io/ko/a-complete-guide-to-useeffect/#%ED%95%A8%EC%88%98%EB%8F%84-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%9D%90%EB%A6%84%EC%9D%98-%EC%9D%BC%EB%B6%80%EC%9D%B8%EA%B0%80">함수도 데이터 흐름의 일부인가?</a>
+<ul>
+<li><code>useCallback, useMemo 을 사용하면, 함수는 명백하게 데이터 흐름에 포함됩니다. 만약 함수의 입력값이 바뀌면 함수 자체가 바뀌고, 만약 그렇지 않다면 같은 함수로 남아있다고 말 할 수 있습니다</code></li>
+<li><a href="https://reactjs.org/docs/hooks-faq.html#how-to-avoid-passing-callbacks-down">콜백을 props로 내려보내는 것을 피하는 것이 더 좋다</a></li>
+<li>여러개의 콜백 props 보다 dispatch 전달하도록</li>
+<li>하지만 안티패턴을 자주 사용하고 있다</li>
+<li>그 예로 useCurring...</li>
+</ul>
+</li>
+</ul>
+<h4 id="react-native-screens-" style="position:relative;"><a href="#react-native-screens-" aria-label="react native screens  permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>react-native-screens</code> 🚨</h4>
+<ul>
+<li><a href="https://github.com/software-mansion/react-native-screens/releases/tag/3.18.0"><code>v3.18.0</code></a>이 나와서 드디어 fabric + android 조합을 쓸 수 있을까 기대했다
+<ul>
+<li>문제의 안드로이드 이슈가 해결되어 보였는데</li>
+<li>아직 여전히 빌드는 실패하고 있다</li>
+</ul>
+</li>
+<li>그럼에도 긍적적인!
+<ul>
+<li>에러 메세지가 바뀌었다</li>
+<li>👍
+<pre><code>Execution failed for task ':app:mergeDebugNativeLibs'.
+> A failure occurred while executing com.android.build.gradle.internal.tasks.MergeNativeLibsTask$MergeNativeLibsTaskWorkAction
+   > 2 files found with path 'lib/arm64-v8a/libc++_shared.so' from inputs:
+      - /Users/jiggag/Projects/react-native-starter/node_modules/react-native/ReactAndroid/build/intermediates/library_jni/debug/jni/arm64-v8a/libc++_shared.so
+      - /Users/jiggag/.gradle/caches/transforms-3/87b4b130d2c85494c51740eb879d8459/transformed/jetified-react-native-0.70.0-debug/jni/arm64-v8a/libc++_shared.so
+     If you are using jniLibs and CMake IMPORTED targets, see
+     https://developer.android.com/r/tools/jniLibs-vs-imported-targets
+</code></pre>
+</li>
+<li>무언가 패키지 설정을 정리해주어야만 할 것 같다 🤔</li>
+</ul>
+</li>
+</ul>
+<h4 id="react-fiber" style="position:relative;"><a href="#react-fiber" aria-label="react fiber permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>React Fiber</code></h4>
+<ul>
+<li><a href="https://velog.io/@jangws/React-Fiber">React Fiber 톱아보기</a></li>
+<li><code>Fiber</code>
+<ul>
+<li>Reconciliation 엔진 재구성</li>
+<li>애니메이션, 레이아웃, 제스처, 중단 또는 재사용 기능과 같은 영역에 대한 적합성을 높이고 다양한 유형의 업데이트에 우선 순위를 지정</li>
+<li>렌더링 작업을 여러 덩어리로 나누어 여러 프레임에 분산</li>
+</ul>
+</li>
+<li><code>Virtual DOM</code>
+<ul>
+<li>Real DOM의 in-memory 표현
+<ul>
+<li><code>React에서는 Virtual DOM이란 UI를 나타내는 객체로 통용되며, React elements와 연관된다.</code></li>
+<li><code>React는 컴포넌트 트리에 대한 추가 정보를 포함하기 위해 fibers라는 내부 객체를 사용한다.</code></li>
+</ul>
+</li>
+<li><code>reconciliation</code>: 호출되는 렌더 함수에서 화면에 표시되는 요소가 되는 사이에 발생한 단계</li>
+<li>Virtual DOM을 reconciliation 과정을 통해 React Elements를 나타낸다</li>
+</ul>
+</li>
+<li><code>Reconciliation</code>
+<ul>
+<li>React가 변경해야 할 부분을 결정하기 위해 <code>한 트리를 다른 트리와 비교하는 데 사용하는 알고리즘</code>이다.
+<ul>
+<li>앱에 업데이트를 반영하기 위해 앱 전체를 리렌더 하는 것은 비효율적이다</li>
+<li>따라서 <code>Reconciliation</code> 과정을 통해 최적화</li>
+</ul>
+</li>
+<li>Virtual DOM이 한다고 여겨지는 것의 알고리즘
+<ul>
+<li>각각 노드 트리 컴포넌트의 type, key를 확인하여 업데이트 요청한다</li>
+<li>컴포넌트의 type, key 자체가 다르면 diffing 조차 하지 않고 트리를 완전히 교체한다
+<ul>
+<li>상위 컴포넌트 type, key이 달라지면 트리가 아예 교체되어 버리니 하위 컴포넌트도 리렌더 해야한다</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Reconciler !== Renderer</code>
+<ul>
+<li><code>Reconciler</code>은 트리의 어떤 부분이 변경됐는지 계산한다</li>
+<li><code>Renderer</code>은 계산된 정보를 앱을 실제로 업데이트하는 데 사용한다</li>
+<li><code>React Core가 제공하는 동일한 Reconciler를 공유하면서 각자 자체적인 Renderer의 사용을 가능하게 한다.</code>
+<ul>
+<li>지난번에 보았던 React를 Reconciler 엔진을 통해 변환하면 Renderer가 그리는 내용!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>그렇다면 Fiber는 왜 나왔을까</code>
+<ul>
+<li>Fiber는 Reconciliation 엔진 재구성한 버전이다
+<ul>
+<li><code>Fiber === Reconciliation가 하던 역할 + 최적화</code></li>
+</ul>
+</li>
+<li>이미 <code>Reconciliation</code>는 diffing을 통해 업데이트를 진행하고 있는데, 여기서 좀 더 최적화를 진행한다면?</li>
+</ul>
+</li>
+<li>🚨 <code>모든 업데이트를 즉시 적용할 필요는 없다</code>
+<ul>
+<li>예를 들면, 스크린 전체가 업데이트가 되어야하지만 뷰포트 밖에 있는 것은 좀 더 나중에 업데이트 되어도 괜찮다</li>
+<li>이런 우선순위(=스케줄링)를 Fiber가 판단하여 최적화하는 것을 목표로 한다</li>
+</ul>
+</li>
+<li><code>다시 Fiber</code>
+<ul>
+<li>Fiber의 목표는 스케줄링을 통해 리액트 최적화 하는 것
+<ul>
+<li>하던 일 멈추고 우선순위 높은 일 진행하고 다시 돌아와서 마무리하거나 필요하지 않은 일 정리하기 등</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>리액트 컴포넌트를 그리는 것은 결국 콜스택에 함수를 호출하는 것인데
+<ul>
+<li>이 콜스택을 스케줄링을 통해 제어한다면 최적화를 진행할 수 있게 된다</li>
+<li>Fiber가 이 대단한 일을 하는 것
+<ul>
+<li>DOM을 재구성한 Virtual DOM</li>
+<li>Stack을 재구성한 Virtual Stack</li>
+</ul>
+</li>
+<li>메모리에 스택을 보관하고 원하는 시점에 실행</li>
+</ul>
+</li>
+<li><code>Fiber의 구조</code>
+<ul>
+<li><code>type, key</code>
+<ul>
+<li>컴포넌트 스택과 재조정 시 판단하기 위함</li>
+</ul>
+</li>
+<li><code>child, sibling</code>
+<ul>
+<li>재귀적인 트리 구조로 다른 Fiber를 나타낸다</li>
+<li>여기서 child가 하위 트리라고 생각했는데, 현재 Fiber에 의해 렌더되는 반환값이였다 😱</li>
+<li>다시 생각해보니 렌더된 반환값이 child 인게 맞구나!</li>
+<li>Fiber가 A컴포넌트를 그렸다면 child는 그 반환값인 B겠당</li>
+</ul>
+</li>
+<li><code>retur</code>
+<ul>
+<li>Fiber가 반환해야하는 Fiber</li>
+<li>Parent Fiber</li>
+</ul>
+</li>
+<li><code>pendingProps, memoizedProps</code>
+<ul>
+<li>함수 실행 시작 시 pendingProps, 끝에서 memoizedProps 설정</li>
+<li>이 두 값이 같다면 Fiber는 이전 결과를 재사용하여 불필요한 업데이트 방지</li>
+</ul>
+</li>
+<li><code>pendingWorkPriority</code>
+<ul>
+<li>Fiber가 처리하려는 작업의 우선순위</li>
+</ul>
+</li>
+<li><code>alternate, output</code>
+<ul>
+<li>alternate=flush이면 output을 화면에 렌더링 하는 것을 의미</li>
+<li>모든 Fiber가 output을 가지지만 트리 위로 전달되어 리프 노드에서만 생성되고</li>
+<li>Fiber가 호출한 함수의 반환값으로 최종적으로 렌더러가 처리한다</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="fabric이-가져올-효과" style="position:relative;"><a href="#fabric%EC%9D%B4-%EA%B0%80%EC%A0%B8%EC%98%AC-%ED%9A%A8%EA%B3%BC" aria-label="fabric이 가져올 효과 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>Fabric이 가져올 효과</code></h4>
+<ul>
+<li><a href="https://javascript.plainenglish.io/react-native-new-architecture-old-vs-new-d0130f42bc79">React Native Architecture — Old Vs New</a></li>
+<li>아래 React를 Reconciler가 해석해서 RN 이 그린다에 이어서</li>
+<li>그럼 RN이 그리는 방법은?
+<ul>
+<li>JS 스레드에서 브릿지를 통해 비동기로 Native, Main 스레드에서 처리하고 받는데
+<ul>
+<li>직렬화된 json을 브릿지로 전달하고 해석하고 그리고..</li>
+</ul>
+</li>
+<li>JS 스레드에서 이미 완료된 이벤트에 대해서도 비동기로 동작하다보니 아직 되돌려받지 못한 경우</li>
+<li>백화로 그려지는 이슈를 마주하게 될 수 있다</li>
+</ul>
+</li>
+<li>따라서 새로운 아키텍쳐인 Turbo module과 Fabric이 이걸 곧장 동기화 한다</li>
+</ul>
+<h4 id="reconciler" style="position:relative;"><a href="#reconciler" aria-label="reconciler permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>Reconciler</code></h4>
+<ul>
+<li>작년 feconf에서 봤었는데, 다시 톱아보기
+<ul>
+<li><a href="https://youtu.be/dJAEWhR83Ug">왜 나는 React를 사랑하는가</a></li>
+</ul>
+</li>
+<li>코드(js)를 엔진(v8)이 해석해서 cpu에게 전달하여 실행
+<ul>
+<li>cpu가 이해하는 어셈블리어는 모른채 js로만 작성</li>
+</ul>
+</li>
+<li>리액트에서는?</li>
+<li><code>reconciler</code>
+<ul>
+<li>function, class components, props, state, effect, ref... 등 리액트 문법</li>
+<li>렌더러와 무관하게 <code>리액트 코드를 해석하고 실행</code> (= 엔진)</li>
+</ul>
+</li>
+<li><code>react를 reconciler가 해석해서 호스트 환경(UI 렌더러)에 전달하여 실행</code>
+<ul>
+<li><code>다양한 호스트 환경</code>에서 <code>동일하게 사용</code>할 수 있는 리액트 문법으로 작성</li>
+<li>react-dom, react-native...</li>
+</ul>
+</li>
+<li>DOM을 직접 조작하지 않고 Virtual DOM을 통하는 이유
+<ul>
+<li>직접 DOM을 제어하지 않는다는 것이 <code>다양한 호스트 환경</code>을 고려한 것</li>
+<li>js를 실행하기만 할뿐 특정한 환경을 고려하지 않는다</li>
+<li><a href="https://overreacted.io/ko/how-does-setstate-know-what-to-do/">참고</a></li>
+<li><code>리액트 페키지들은 오직 당신이 리액트 특성들을 사용할수 있도록 해주지만 어떻게 사용될지에 대해서는 아무것도 모른다는 겁니다. 렌더러 페키지들은(리액트-돔, 리액트-네이티브, 등등) 리액트 특성들의 실행을 제공하고 특정-플렛폼의 논리를 제공합니다.</code></li>
+</ul>
+</li>
+<li><a href="https://overreacted.io/ko/algebraic-effects-for-the-rest-of-us/">대수적 효과</a>?
+<ul>
+<li>리액트가 마주한 문제를 해결하기 위해 사용한 답</li>
+<li>그리고 얻은 결과: context, suspense 🤔</li>
+<li><code>호출 스택(이 경우, 리액트)의 중간에 있는 함수들을 신경쓸 필요 없이, 혹은 그 함수들을 async나 제너레이터 함수로 강제로 변경할 필요 없이, 호출 스택의 아래쪽에 있는 코드가 윗쪽에 있는 코드에게 뭔가를 전달할 수 있다</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="fe-테스트" style="position:relative;"><a href="#fe-%ED%85%8C%EC%8A%A4%ED%8A%B8" aria-label="fe 테스트 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>FE 테스트</code></h4>
+<ul>
+<li><a href="https://doong-jo.github.io/posts/testable-frontend-architecture">테스트 가능한 프런트엔드: 좋은 것, 나쁜 것, 깨지기 쉬운 것</a>
+<ul>
+<li><code>한 코드를 테스트하려고 할 때, 우리는 종종 React 컴포넌트를 렌더링하고 결과를 테스트하는 React Testing Library와 같은 것에서부터 시작하거나, 프로젝트와 잘 작동하도록 Cypress를 구성하느라 정신없이 하다가 잘못된 구성으로 끝나거나 포기하는 경우가 많습니다.</code></li>
+</ul>
+</li>
+<li>단위테스트는 모킹을 많이 하는 특정 환경에 의존하기 때문에 좋지 않다
+<ul>
+<li>ex. 로컬 상태는 A이고 useHook에서 가져오는 것은 B이고 props에서 C를 가져오는 환경에서 이 기능은 D 한다</li>
+<li>그렇다면 어떤 테스트를 해야할까?</li>
+</ul>
+</li>
+<li>최대한 외부 의존성(redux, context)이 없는 컴포넌트로 분리하고 특성에 따라 단위, 통합, E2E 테스트</li>
+<li><code>관심사 분리</code>를 통해 테스트를 쉽게 진행할 수 있다
+<ul>
+<li>관심사 분리를 하면 단위 테스트 또는 UI 컴포넌트 테스트만 진행하면 되겠지만</li>
+<li>이런 분리가 쉽지 않은 서로 얽혀있는 경우에는 유일한 테스트 방법은 E2E 테스트로 모든 것을 테스트 하는 것</li>
+</ul>
+</li>
+</ul></div></div></main><footer class="footer"><div class="footer-label">©Jiggag, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></div><button type="button" aria-label="Github">Github</button></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-115373374-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/null/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-635a9dfd597478a1f0fa.js"],"app":["/app-b09e07e25d90c38eb055.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-168a7ecda92120439b43.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-56ac5eb6f68a10947a02.js"],"component---src-pages-markdown-remark-frontmatter-slug-tsx":["/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"],"component---src-pages-using-ssr-tsx":["/component---src-pages-using-ssr-tsx-a3849e895b554ed9c74d.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-2c91f22b06497815d93c.js"],"component---src-templates-using-dsg-tsx":["/component---src-templates-using-dsg-tsx-96c55d73ae3a8c0dec54.js"]};/*]]>*/</script><script src="/polyfill-635a9dfd597478a1f0fa.js" nomodule=""></script><script src="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js" async=""></script><script src="/commons-fba08f0dde7e26234785.js" async=""></script><script src="/app-b09e07e25d90c38eb055.js" async=""></script><script src="/framework-094b0089736b8f621f0d.js" async=""></script><script src="/webpack-runtime-0fbc006468ecd0e380ed.js" async=""></script></body></html>

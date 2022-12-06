@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.88bfdd443e73d3e6d82f.css" data-identity="gatsby-global-css">*{font-family:SUIT Variable,sans-serif!important}:root{--surface:silver;--content:#e2e2e2;--button-highlight:#fff;--button-face:#dfdfdf;--button-shadow:grey;--window-frame:#0a0a0a;--dialog-blue:navy;--dialog-blue-light:#1084d0;--dialog-gray:grey;--dialog-gray-light:#b5b5b5;--link-blue:#00f;--black:#000;--link-blue-95:#0000ff95;--element-spacing:8px;--border-width:1px;--border-raised-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight);--border-raised-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);--border-sunken-outer:inset -1px -1px var(--button-highlight),inset 1px 1px var(--window-frame);--border-sunken-inner:inset -2px -2px var(--button-face),inset 2px 2px var(--button-shadow);--border-window-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-face);--border-window-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-highlight)}body{margin:0}pre{background:var(--button-highlight);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);display:block;margin:4px 0;padding:var(--element-spacing)}pre code{background:unset;color:unset;font-size:12px}code{background:var(--link-blue-95);border-radius:10px;color:#fff;font-size:14px;padding:0 6px}a{color:var(--link-blue);text-decoration:none}.window{background:var(--surface);box-shadow:var(--border-window-outer),var(--border-window-inner);height:100vh;margin:auto}.window.minimize{max-width:500px}.window-container{display:flex;flex-direction:column;height:100%}.window-body{flex:1 1;margin:0 0 0 var(--element-spacing);overflow:auto;padding-right:var(--element-spacing)}.title-bar{align-items:center;background:linear-gradient(150deg,var(--dialog-blue),var(--dialog-blue-light));display:flex;justify-content:space-between;margin:3px 3px 0;padding:2px var(--element-spacing)}.title-bar .title{color:#fff;font-size:24px;margin:0;text-decoration:none}.title-bar-controls{display:flex}.title-bar-controls button{display:block;min-height:14px;min-width:16px;padding:0}.title-bar-controls button[aria-label=ScrollToTop]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:bottom 2px left 2px;background-repeat:no-repeat;height:20px;width:20px}.title-bar-controls button[aria-label=Minimize]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA2IDIiPjxyZWN0IHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9IiMwMDAiLz48L3N2Zz4=);background-position:bottom 5px left 7px;background-repeat:no-repeat;height:19px;width:20px}.title-bar-controls button[aria-label=Maximize]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjkiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA5IDkiPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTkgMEgwdjloOVYwWk04IDJIMXY2aDdWMloiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;width:20px}.title-bar-controls button[aria-label=Close]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA4IDciPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMGgydjFoMXYxaDJWMWgxVjBoMnYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxSDZWNkg1VjVIM3YxSDJ2MUgwVjZoMVY1aDFWNGgxVjNIMlYySDFWMUgwVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;margin-left:2px;width:20px}.title-bar-text{color:#fff;font-weight:700;letter-spacing:0;margin-right:24px}.blog-post-container{background:var(--content);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0 0 0;overflow-x:scroll;padding:var(--element-spacing)}.blog-post-content h1,h2{font-size:20px}.blog-post-content h3,h4{font-size:16px}.blog-post-content ul{padding-left:20px}.home-post-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.home-post-title p{font-size:12px;margin:4px 0}.footer{align-items:center;display:flex;padding:12px 15px}.footer .footer-label{align-self:flex-end;font-size:12px;width:100%}.not-found-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.not-found-title p{font-size:14px;margin:10px 0}button{background:var(--surface);border:none;border-radius:0;box-shadow:var(--border-raised-outer),var(--border-raised-inner);box-sizing:border-box;min-height:23px;min-width:75px;padding:0 12px}button:not(:disabled):active{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);padding:2px 3px 0 13px}@media (not(hover)){button:not(:disabled):hover{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner)}}button:focus{outline:1px dotted var(--black);outline-offset:-4px}button::-moz-focus-inner{border:0}::-webkit-scrollbar{width:16px}::-webkit-scrollbar:horizontal{height:17px}::-webkit-scrollbar-corner{background:var(--button-face)}::-webkit-scrollbar-track{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9InNpbHZlciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDB2MWgxdjFoMVYxSDFWMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxdjFIMHYxaDFWMWgxVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}::-webkit-scrollbar-thumb{background-color:var(--button-face);box-shadow:var(--border-raised-outer),var(--border-raised-inner)}::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement{display:block}::-webkit-scrollbar-button:vertical:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:vertical:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA2SDR2MWgxdjFoMXYxaDF2MWgxVjloMVY4aDFWN2gxVjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:horizontal:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDRIOHYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxaDFWNFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);width:16px}::-webkit-scrollbar-button:horizontal:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDRINnY3aDF2LTFoMVY5aDFWOGgxVjdIOVY2SDhWNUg3VjRaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);width:16px}.table-of-contents{border:1px dashed var(--link-blue-95);border-radius:10px;display:inline-flex;padding:10px 30px 20px 15px}.table-of-contents ul{list-style:none;margin:0;padding:0}.table-of-contents>ul>li{margin:10px 0}.table-of-contents>ul>li>a>code{font-size:14px;font-weight:700}.table-of-contents>ul>li>ul{margin:5px 0;padding-left:10px}.table-of-contents>ul>li li{margin-bottom:2px}.table-of-contents code{background:unset;border-bottom:1px solid var(--link-blue-95);border-radius:0;color:var(--black);font-size:12px}</style><meta name="generator" content="Gatsby 4.1.4"/><title data-react-helmet="true">11월 한달동안 로그 | JIGGAG</title><meta data-react-helmet="true" name="description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:title" content="11월 한달동안 로그"/><meta data-react-helmet="true" property="og:description" content="직각어깨를 꿈꾸는 개발자"/><meta data-react-helmet="true" property="og:type" content="website"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script data-gatsby="web-vitals-polyfill">
+            !function(){var e,t,n,i,r={passive:!0,capture:!0},a=new Date,o=function(){i=[],t=-1,e=null,f(addEventListener)},c=function(i,r){e||(e=r,t=i,n=new Date,f(removeEventListener),u())},u=function(){if(t>=0&&t<n-a){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+t};i.forEach((function(e){e(r)})),i=[]}},s=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){c(e,t),a()},i=function(){a()},a=function(){removeEventListener("pointerup",n,r),removeEventListener("pointercancel",i,r)};addEventListener("pointerup",n,r),addEventListener("pointercancel",i,r)}(t,e):c(t,e)}},f=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,s,r)}))},p="hidden"===document.visibilityState?0:1/0;addEventListener("visibilitychange",(function e(t){"hidden"===document.visibilityState&&(p=t.timeStamp,removeEventListener("visibilitychange",e,!0))}),!0);o(),self.webVitals={firstInputPolyfill:function(e){i.push(e),u()},resetFirstInputPolyfill:o,get firstHiddenTime(){return p}}}();
+          </script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>            
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-4711551515762404",
+                enable_page_level_ads: true
+              });
+          </script><link as="script" rel="preload" href="/webpack-runtime-0fbc006468ecd0e380ed.js"/><link as="script" rel="preload" href="/framework-094b0089736b8f621f0d.js"/><link as="script" rel="preload" href="/app-b09e07e25d90c38eb055.js"/><link as="script" rel="preload" href="/commons-fba08f0dde7e26234785.js"/><link as="script" rel="preload" href="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"/><link as="fetch" rel="preload" href="/page-data/blog/monthly-log/2022-11/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3000541721.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3293771174.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="window minimize"><div class="window-container"><header class="title-bar"><a class="title title-bar-text" href="/">JIGGAG</a><div class="title-bar-controls"><button type="button" aria-label="ScrollToTop"></button><button type="button" aria-label="Maximize"></button><button type="button" aria-label="Close"></button></div></header><main class="window-body"><div class="blog-post-container"><div class="blog-post-header"><h3>11월 한달동안 로그</h3><h6>2022년 12월 6일</h6></div><div class="blog-post-content"><div class="table-of-contents">
+<ul>
+<li><a href="#%EC%9D%BD%EC%96%B4%EB%B3%B4%EC%95%98%EB%8D%98"><code>읽어보았던</code></a>
+<ul>
+<li>
+<ul>
+<li><a href="#%EC%B6%94%EC%96%B5%EC%9D%98-css-in-js"><code>추억의 CSS-in-JS</code></a></li>
+<li><a href="#forwardref--memo%EC%9D%98-props-%ED%83%80%EC%9E%85-%EC%B6%94%EB%A1%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%98%EC%A7%80"><code>forwardRef + memo의 props 타입 추론 어떻게 하지</code></a></li>
+<li><a href="#rn-%EC%95%88%EB%93%9C-%EB%B9%8C%EB%93%9C-%EC%8B%A4%ED%8C%A8"><code>RN 안드 빌드 실패</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="읽어보았던" style="position:relative;"><a href="#%EC%9D%BD%EC%96%B4%EB%B3%B4%EC%95%98%EB%8D%98" aria-label="읽어보았던 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>읽어보았던</code></h2>
+<h4 id="추억의-css-in-js" style="position:relative;"><a href="#%EC%B6%94%EC%96%B5%EC%9D%98-css-in-js" aria-label="추억의 css in js permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>추억의 CSS-in-JS</code></h4>
+<ul>
+<li><a href="https://junghan92.medium.com/%EB%B2%88%EC%97%AD-%EC%9A%B0%EB%A6%AC%EA%B0%80-css-in-js%EC%99%80-%ED%97%A4%EC%96%B4%EC%A7%80%EB%8A%94-%EC%9D%B4%EC%9C%A0-a2e726d6ace6">(번역) 우리가 CSS-in-JS와 헤어지는 이유</a></li>
+<li><code>styled-components</code>를 좋았지만 현재는 이런저런 이유로 사용하지 않게 되었다
+<ul>
+<li>그럼에도 흥미롭다고 생각해서 돌아보기</li>
+</ul>
+</li>
+<li>런타임 CSS-in-JS는 코드 안에 작성된 스타일을 런타임에 해석하여 적용한다</li>
+<li><code>colocation이라는 장점을 가장 먼저 접했다</code>
+<ul>
+<li>컴포넌트 안에 스타일이 함께 위치한다는 것이 코드를 관리하는데 용이해진다</li>
+</ul>
+</li>
+<li><code>dynamic props 사용할 수 있다</code>
+<ul>
+<li>
+<pre><code class="language-tsx">  const Comp = styled(View)`
+  	backgroundColor: ${(props) => props.color};
+  	height: ${(props) => props.size};
+  `
+  ...
+  &#x3C;Comp color="red" size={15} />
+</code></pre>
+</li>
+<li>특정 상태에 따라 스타일을 다르게 적용하기 위해서 각각의 스타일을 따로 구성하거나 인라인으로 넣어줘야하는데</li>
+<li>이런식으로 props를 전달하여 바로 사용할 수 있던 것에서 가장 큰 매력을 느꼈다</li>
+</ul>
+</li>
+<li>반면 런타임이기 때문에 컴포넌트 레이아웃 직전에 스타일을 계산하고 반영해야하는 <code>성능 이슈</code>가 존재한다
+<ul>
+<li>이를 개선한 것으로 제로런타임(컴파일타임) css-in-js 가 있당 (ex. Linaria)</li>
+<li>런타임에 스타일을 계산하는게 아니라 빌드 타임에 미리 스타일을 만들어 두는 방법</li>
+<li>하지만 빌드타임에는 dynamic props에 대한 처리는 불가능하다</li>
+<li>결국 인라인으로 파라미터 처리를 하게 되는데, 개인적으로 인라인은 ❌ 하고 있다</li>
+</ul>
+</li>
+<li>그 외 번들 크기나 디버깅이 어려운 것은 개인적으로 단점으로 느껴지지 않았다
+<ul>
+<li>장점이 더 좋으니깐...!</li>
+<li>번들 크기 줄이는 방향으로 무언가 선택할 수 있다면 그것이 그 방향의 장점이 되는 것 아닐까</li>
+</ul>
+</li>
+<li>결국 가장 큰 문제점은 렌더타임의 성능 이슈이다
+<ul>
+<li>모든 컴포넌트가 css-in-js 라면 실질적인 UI 변경사항이 없더라도 컴포넌트가 리렌더 될 때 스타일도 다시 계산해야한다</li>
+<li>렌더마다 스타일 직렬화를 위한 비용이 추가되는 것이다</li>
+</ul>
+</li>
+<li>이러한 css-in-js를 사용하면서 얻고자 했던 장점만을 가져가는 형태로 스타일을 작성할 수 없을까?
+<ul>
+<li>하는 고민을 하게 된다 (계속 읽다보니 글에서도 언급하고 있었다 🥳)</li>
+<li>런타임, 컴파일타임 모두 해결할 수 없었던 오직 장점만 갖고 있는 시스템</li>
+</ul>
+</li>
+<li><code>colocation + dynamic props</code> 이것 아닐까
+<ul>
+<li>colocation을 위해 우선 하나의 컴포넌트 파일에서 해결하고자 한다</li>
+<li>dynamic props를 처리하기 위해서는 컴포넌트 안에 존재해야한다</li>
+</ul>
+</li>
+<li>추가로 위에서 언급한 내용 중 가장 큰 장점으로 느꼈졌던 <code>colocation</code>에 대한 글도 같이 읽어본다
+<ul>
+<li><a href="https://dkrnfls.tistory.com/408">Javascript Colocation (번역글)</a></li>
+</ul>
+</li>
+<li>좋았던 기억은 뒤로한채 단점이 더 크다고 느껴지기 때문에 사용하지 않고 있다 ㅠㅠ
+<ul>
+<li>다이나믹 스타일을 상태로 관리하고 있다</li>
+<li>colocation + dynamic props를 처리하는 방법으로</li>
+<li>컴포넌트 안에서 useMemo로 하나의 상태를 스타일로 주고 있다</li>
+<li>리렌더 상황에서 스타일을 재계산 하는 이슈를 그나마 해결하면서 번들 사이즈가 줄었다는 위안</li>
+</ul>
+</li>
+<li>지금 갑자기 의문을 갖게 되는데
+<pre><code class="language-tsx">const dynamicStyles = useMemo(() => ({
+	a: {...},
+	b: {...},
+}), [...]);
+
+...
+&#x3C;Comp style={dynamicStyles.a} />
+&#x3C;Comp style={dynamicStyles.b} />
+</code></pre>
+<ul>
+<li>이거 메모이제이션 제대로 되고 있는거 맞나..????</li>
+<li>확인하러 가야지</li>
+</ul>
+</li>
+<li>(+추가)</li>
+<li>확인결과 메모이제이션된 컴포넌트는 리렌더 되지 않았다
+<ul>
+<li>리렌더는 되었지만 DOM이 업데이트 되지 않았다</li>
+<li>실질적으로 우리가 얻고자 하는 것이 이것 아닌가</li>
+</ul>
+</li>
+<li>디펜던시만 제대로 정리된다면 메모이제이션 효과를 보는게 맞다</li>
+</ul>
+<h4 id="forwardref--memo의-props-타입-추론-어떻게-하지" style="position:relative;"><a href="#forwardref--memo%EC%9D%98-props-%ED%83%80%EC%9E%85-%EC%B6%94%EB%A1%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%98%EC%A7%80" aria-label="forwardref  memo의 props 타입 추론 어떻게 하지 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>forwardRef + memo의 props 타입 추론 어떻게 하지</code></h4>
+<ul>
+<li>forwardRef를 쓰면 이상하게 props 타입이 추론이 안되어서 불편했다
+<ul>
+<li>내가 무언가 잘못 사용한건 아닐까</li>
+</ul>
+</li>
+<li><a href="https://fettblog.eu/typescript-react-generic-forward-refs/">마치 경험기를 작성한 느낌이였다</a></li>
+<li>맨 처음 사용하고 있었던 방법은 forwardRef 후 memo 하는 것이다
+<pre><code class="language-tsx">const Component = forwardRef((props: Props, ref: RefObject&#x3C;View>) => {
+  return &#x3C;View ref={ref} {...props}>&#x3C;/View>;
+});
+const MemoizedComponent = memo(Component);
+</code></pre>
+<ul>
+<li>이렇게 하면 MemoizedComponent를 사용했을때 Props 추론이 정확하게 된다</li>
+<li>하지만 MemoizedComponent를 얻기 위해 너무 불필요한 단계를 거쳐야한다고 생각했다 (귀찮았다)</li>
+</ul>
+</li>
+<li><code>memo(forwardRef(...))</code> 이렇게 쓰고 싶다!
+<pre><code class="language-tsx">const Component = memo(forwardRef&#x3C;View, Props>((props, ref) => {
+  return &#x3C;View ref={ref} {...props}>&#x3C;/View>;
+}));
+</code></pre>
+<ul>
+<li>그래서 이렇게 정리했더니 Props 인터페이스에서 <code>PropType is defined but prop is never used</code>이 발생하였다</li>
+<li>쓰고 있지만 쓰고 있는 것을 알지 못하는게 타입 추론이 잘 되고 있지 않은 것 같다</li>
+</ul>
+</li>
+<li>대체 왜 추론이 안될까 하면서 제네릭을 통한 HoC로 빼보았다
+<pre><code class="language-tsx">export const withMemoRef = &#x3C;Props, Ref>(
+  Component: (props: Props, ref?: ForwardedRef&#x3C;Ref>) => JSX.Element,
+) => memo(forwardRef&#x3C;Ref, Props>(Component));
+
+const Component = withMemoRef&#x3C;Props, View>((props, ref) => {
+  return &#x3C;View ref={ref} {...props}>&#x3C;/View>;
+})
+</code></pre>
+<ul>
+<li>이제 아무런 이슈 없이 정상적으로 타입이 잡히고 있었다</li>
+</ul>
+</li>
+<li>중간 과정에서 위 글에 나온 것처럼 타입을 assert하거나 props 이름을 바꾸거나 시도해봤는데 모두 아름답지 않았다... ㅠㅠ</li>
+<li>글에서 제안하는 마지막 방법인 declare 하는 것은 생각 못해봤는데 이게 가장 깔끔해보인다
+<ul>
+<li>근데... memo로만 감싸면 ㅠㅠ</li>
+<li><code>PropType is defined but prop is never used</code>이 재발한다</li>
+</ul>
+</li>
+</ul>
+<h4 id="rn-안드-빌드-실패" style="position:relative;"><a href="#rn-%EC%95%88%EB%93%9C-%EB%B9%8C%EB%93%9C-%EC%8B%A4%ED%8C%A8" aria-label="rn 안드 빌드 실패 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>RN 안드 빌드 실패</code></h4>
+<ul>
+<li>
+<pre><code class="language-shell">  Execution failed for task ':app:mergeDebugNativeLibs'.
+  > A failure occurred while executing com.android.build.gradle.internal.tasks.MergeNativeLibsTask$MergeNativeLibsTaskWorkAction
+     > 2 files found with path 'lib/arm64-v8a/libc++_shared.so' from inputs:
+        - /Users/jiggag/Projects/react-native-starter/node_modules/react-native/ReactAndroid/build/intermediates/library_jni/debug/jni/arm64-v8a/libc++_shared.so
+        - /Users/jiggag/.gradle/caches/transforms-3/87b4b130d2c85494c51740eb879d8459/transformed/jetified-react-native-0.70.0-debug/jni/arm64-v8a/libc++_shared.so
+       If you are using jniLibs and CMake IMPORTED targets, see
+       https://developer.android.com/r/tools/jniLibs-vs-imported-targets
+</code></pre>
+</li>
+<li><a href="https://developer.android.com/studio/projects/gradle-external-native-builds?hl=ko#jniLibs">미리 빌드된 네이티브 라이브러리 포함</a>
+<ul>
+<li>Gradle에서 외부 네이티브 빌드에 사용되지 않은 미리 빌드된 네이티브 라이브러리를 패키징하도록 하려면 모듈의 src/main/jniLibs/ABI 디렉터리에 이 라이브러리를 추가합니다.</li>
+<li>4.0 버전 이전의 Android Gradle 플러그인은 jniLibs 디렉터리에 CMake IMPORTED 타겟을 포함해야 앱에 포함됩니다. 이전 버전의 플러그인에서 이전하는 경우 다음과 같은 오류가 발생할 수 있습니다.</li>
+<li>Android Gradle 플러그인 4.0을 사용한다면 IMPORTED CMake 타겟에서 사용하는 모든 라이브러리를 jniLibs 디렉터리 밖으로 이동하여 이러한 오류를 방지하세요.</li>
+</ul>
+</li>
+<li>현재 프로젝트에서 사용하고 있는 AGP는 v7인데 v4에서 발생하는 이슈가 나타났다?? ⁉️</li>
+<li>이슈로 가보았지만 검색되는 것은 없었고 FabricExample이 있어서 이를 참고하여 build.gradle을 다시 세팅해보았다
+<ul>
+<li>무언가 수상한 <a href="https://github.com/software-mansion/react-native-screens/blob/3.18.0/FabricExample/android/app/build.gradle#L262-L267">차이점</a>을 발견하였는데</li>
+<li>Fabric을 설정하면 react-native 모듈 대신 ReactAndroid를 바로 바라보도록 설정이 되어있었다</li>
+</ul>
+</li>
+<li>Fabric 적용하면서 c++ 영향이 여기에서 시작된걸까?
+<ul>
+<li>혹시나 기대를 해보았지마.. 여전히 실패하였다</li>
+</ul>
+</li>
+<li>다시 처음으로 돌아왔다</li>
+<li>같은 이슈를 겪은 이 <a href="https://rnathsus.tistory.com/332">블로그</a>처럼 이슈 내용 그대로 중복 발생하는 패키지를 정리하도록 설정을 하면 될 것 같다
+<ul>
+<li>그렇게 해도 안되던데....</li>
+<li>맨 처음 이슈를 마주하고 시도했던 <a href="https://stackoverflow.com/questions/64069449/execution-failed-for-task-appmergedebugnativelibs-in-react-native">패키지 설정</a>을 변경해보았을때 계속 이슈 발생하였다</li>
+</ul>
+</li>
+<li>AGP + jniLibs 관련해서 <code>react-native-gradle-plugin</code> 에 검색해보았다
+<ul>
+<li>그러다 찾게된 <a href="https://github.com/facebook/react-native/blob/3f77736e150c380ea8e23497fcc410c60d613151/packages/react-native-gradle-plugin/src/main/kotlin/com/facebook/react/utils/NdkConfiguratorUtils.kt#L75-L104">packagingOptions</a></li>
+</ul>
+</li>
+<li>이게 지금 적용이 안되고 있는건가??
+<ul>
+<li>빌드하면 발생하는 <code>lib*.so</code>를 하나씩 추가해보았다</li>
+<li>오류 메세지의 so가 달라지고 있었다</li>
+<li>하나씩 다음 단계로 넘어가고 있는듯 하다!!</li>
+<li>하나씩 추가해서는 끝이 나지 않을 것 같았다</li>
+<li>희망을 갖고 RNGP의 옵션을 전부 그대로 추가해보았다</li>
+<li>그랬더니 되지 않는다?!</li>
+<li>아..... <code>**/*.so</code> 통째로 넣어볼까?</li>
+<li>이게 되네....</li>
+</ul>
+</li>
+<li>이렇게 넣으면 안될 것 같은데
+<ul>
+<li>이 옵션이 수정된 RNGP 버전이 아직 <code>RN@0.70.4</code>에는 반영되지 않았나보다 🤔</li>
+<li><a href="https://github.com/reactwg/react-native-releases/discussions/41">RN@0.71.0</a>에 반영되려나!!!</li>
+<li>v0.71-rc를 또 먼저 들어가볼까 고민하다가도... 지난번 빌드 오류를 릴리즈 버전까지 해결하지 못했던 것을 떠올리면 기다려본다</li>
+</ul>
+</li>
+<li>(+추가)</li>
+<li><code>RN@0.71.0-rc.0</code>의 <code>build.gradle</code>에 이런 변경사항을 보았다
+<ul>
+<li>
+<pre><code>// The version of react-native is set by the React Native Gradle Plugin
+</code></pre>
+</li>
+</ul>
+<pre><code>implementation("com.facebook.react:react-native")
+  ```
+</code></pre>
+<ul>
+<li>이건 분명 위의 이슈가 해결됨을 암시하는 코멘트</li>
+</ul>
+</li>
+<li>악마의 속삭임
+<ul>
+<li>시작해보았지만 hermes 부터 안되는걸 🙈</li>
+<li>hermes를 꺼야 안드 빌드가 된다</li>
+</ul>
+</li>
+<li>이건 어떤 메리트가..?!?!
+<ul>
+<li>버전을 올리면서 hermes는 포기 했지만</li>
+<li>위에서 임시로 대응했던 <code>**/*.so</code> 설정을 제거할 수 있다는점?</li>
+<li>인줄 알았으나 <code>react-native-safe-area-context</code>와 충돌 🚨</li>
+<li>gradle이 항상 발목을</li>
+</ul>
+</li>
+<li>iOS 빌드는 왜 실패하는 걸까요
+<ul>
+<li>fabric과 함께 c++이 들어왔다가 이번에 버전 올리면서 사라졌는데 (RN이 알아서 처리하기로 했나보다)</li>
+<li><code>react-native/ReactCommon/hermes/inspector/chrome/MessageConverters.cpp:222:34: no member named 'toString' in 'facebook::jsi::BigInt'</code></li>
+<li>왜 터지는걸까요 🥳</li>
+<li>🚨 pod update 하는데 옵션을 안붙이고 써버렸네</li>
+<li>옵션이 있어야 Cpp 처리를 하는데 옵션이 없으니 fabric을 사용하지 않는 버전으로 업데이트를 받아버림</li>
+</ul>
+</li>
+</ul></div></div></main><footer class="footer"><div class="footer-label">©Jiggag, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></div><button type="button" aria-label="Github">Github</button></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-115373374-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/monthly-log/2022-11/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-635a9dfd597478a1f0fa.js"],"app":["/app-b09e07e25d90c38eb055.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-168a7ecda92120439b43.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-56ac5eb6f68a10947a02.js"],"component---src-pages-markdown-remark-frontmatter-slug-tsx":["/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js"],"component---src-pages-using-ssr-tsx":["/component---src-pages-using-ssr-tsx-a3849e895b554ed9c74d.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-2c91f22b06497815d93c.js"],"component---src-templates-using-dsg-tsx":["/component---src-templates-using-dsg-tsx-96c55d73ae3a8c0dec54.js"]};/*]]>*/</script><script src="/polyfill-635a9dfd597478a1f0fa.js" nomodule=""></script><script src="/component---src-pages-markdown-remark-frontmatter-slug-tsx-b578fbfaba7e485ee7df.js" async=""></script><script src="/commons-fba08f0dde7e26234785.js" async=""></script><script src="/app-b09e07e25d90c38eb055.js" async=""></script><script src="/framework-094b0089736b8f621f0d.js" async=""></script><script src="/webpack-runtime-0fbc006468ecd0e380ed.js" async=""></script></body></html>

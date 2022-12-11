@@ -47,6 +47,7 @@ pre {
     box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
     padding: var(--element-spacing);
     margin: 4px 0;
+    overflow: auto;
 }
 pre code {
     font-size: 12px;
@@ -59,6 +60,7 @@ code {
     border-radius: 10px;
     padding: 0 6px;
     font-size: 14px;
+    overflow-wrap: break-word;
 }
 a {
     color: var(--link-blue);

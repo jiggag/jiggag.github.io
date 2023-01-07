@@ -9,12 +9,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
-    'gatsby-plugin-sitemap',
+    'gatsby-plugin-advanced-sitemap',
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://jiggag.github.io',
-        sitemap: 'https://jiggag.github.io/sitemap/sitemap-index.xml',
+        sitemap: 'https://jiggag.github.io/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },

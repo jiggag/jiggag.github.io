@@ -1,0 +1,195 @@
+---
+slug: /blog/monthly-log/2023-01
+date: 2023-01-08
+layout : post
+published : true
+title : 12월 한달동안 로그
+subtitle : 찾아보고, 읽어보고, 적어두기
+tags : [log, functional-programming, algebraic-effects, typescript, islands-architecture]
+---
+```toc
+exclude: []
+tight: true
+from-heading: 2
+to-heading: 4
+```
+
+## `읽어보았던`
+#### `아직도 빌드 실패`
+- 잊고 있었는데.... 안드는 여전히 [react-native-safe-area-context build.gradle에서 newArchEnabled만 사용하면 빌드가 터진다
+](https://github.com/th3rdwave/react-native-safe-area-context/blob/main/android/build.gradle#L101-L108)
+	```
+	A problem occurred evaluating project ':react-native-safe-area-context'.
+	> Project with path ':ReactAndroid' could not be found in project ':react-native-safe-area-context'.
+	```
+	- 어디서 잘못된 것일까
+	- [이슈가 열렸당](https://github.com/th3rdwave/react-native-safe-area-context/issues/338)
+- 새로운 RN 버전이 나왔으니 올려보지만 여전히 빌드는 실패한다
+- 0.71.0-rc.5 iOS에서 터지는 오류
+	- `[RN]Copy Hermes framework` 스크립트
+	- `ios/Pods/hermes-engine/destroot/Library/Frameworks/iphonesimulator/hermes.framework does not exist.`
+	- 무척이나 당황스럽지만 hermes가 왜? 하면서 해당 경로로 가보면 없다
+	- 실제 경로에는 iphonesimulator는 없고 universal과 macosx만 존재한다
+	- Frameworks에 iphonesimulator이 없으니 당연히 그 아래 hermes.framework 도 못찾는게 맞는데
+	- 그럼 왜 여기서 iphonesimulator를 찾고 있는걸까?
+
+
+#### `다시 함수형 프로그래밍을 생각하며`
+- [(번역) 어쨌든 함수형 프로그래밍의 장점은 뭔가요?](https://junghan92.medium.com/%EB%B2%88%EC%97%AD-%EC%96%B4%EC%A8%8C%EB%93%A0-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-%EC%9E%A5%EC%A0%90%EC%9D%80-%EB%AD%94%EA%B0%80%EC%9A%94-a57f37872e4)
+- 함수형 프로그래밍이 주는 장점을 먼저 이야기 하기 보다는 `대수적 구조`에서 접근
+- 리액트 아티클 요런조런 읽다보면 많이 접하게 되는 마법 같은 `algebraic effects`
+- [참고: 대수적 효과?](https://overreacted.io/ko/algebraic-effects-for-the-rest-of-us/)
+	- 예를 들면 기존에는 trycatch에서 catch 블록에 도달하고 나면, 원래 코드를 이어서 실행할 수 있는 방법이 없다
+	- 대수학 효과에 따르면 catch 블록에서도 원래 코드에 접근할 수 있다
+	- [대수적 효과: 코드에서 무엇(what)과 어떻게(how)를 분리할 수 있게함](https://overreacted.io/ko/algebraic-effects-for-the-rest-of-us/#%EC%88%9C%EC%88%98%EC%84%B1purity%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%91%98-%EC%A0%90)
+	- `호출스택 중간에 있는 함수들을 신경쓸 필요 없이, 호출 스택의 아래쪽에 있는 코드가 윗쪽에 있는 코드에게 뭔가를 전달할 수 있다`
+		- 리액트의 입장에서 프라미스가 해결되었을 때 컴포넌트 트리를 다시 렌더링하는 것은 사실상 같은 개념이다
+		- 🚨 엇! 여기에서 갑자기 무언가 얻어갈 수 있는 것이 있어보이는 느낌+느낌+느낌
+		- 
+			```
+			대수적 효과의 또 다른 예시로 훅(Hooks)을 떠올리는 사람도 있을 것이다. 사람들이 가장 먼저 물어보는 것은 useState가 어떤 컴포넌트를 참조하고 있는지를 어떻게 알 수 있냐는 것이다.
+			```
+		- `useState가 어떤 컴포넌트를 참조하고 있는지를 어떻게 알 수 있지?`
+		- 이거 나도 useCurring에 필요한 해답이다 => `current dispatcher + current component`
+		- 혹은 이미 봤던가..?
+		- TODO ++++
+	- `불필요하게 많은 코드르 추가하지 않고도 효과에 대한 구체적인 구현 내용으로부터 프로그램 로직을 분리해낼 수 있다`
+	- `대수적 효과`를 사용하면 + `중간에 있는 코드는 효과에 대해 알 필요가 없는 상태로` + `효과 핸들러를 조합할 수 있기 때문에` + 표현력 아주 뛰어난 추상화를 만들어낼 수 있다
+		- HoC에서 로직을 구현해두고 내부 컴포넌트만 바꿔서 사용할 수 있는 것처럼
+	-
+		```
+		다시 말하지만, 자바스크립트에는 대수적 효과가 없기 때문에, 리액트가 실제로 이렇게 동작하지는 않는다. 대신에 현재 컴포넌트를 저장하는 숨겨진 필드가 있으며, 또한 useState의 구현체를 갖는 현재 “디스패처”를 가리키는 필드도 있다. 심지어 성능 최적화에 사용되는 마운트(mount)와 업데이트(update)만을 위한 별도의 useState 구현체도 있다. 하지만 정말 열린 마음으로 받아들인다면, 사실상 이 코드를 효과 핸들러라고 볼 수도 있을 것이다.
+		```
+	- 🙈
+- `대수적 구조는 추상화의 추상화` 🥺
+- v1 + `자바스크립트 배열 메서드 체인` + `pipe를 이용한 매개변수 배열 매핑` => v2 + `합성 규칙을 기반으로 최적화` => v3
+	```ts
+	// v1
+	const withDates = notificationData.map(addReadableDate);
+	const sanitized = withDates.map(sanitizeMessage);
+	const withSenders = sanitized.map(buildLinkToSender);
+	const withSources = withSenders.map(buildLinkToSource);
+	const dataForTemplate = withSources.map(addIcon);
+	
+	// v2	
+	const dataForTemplate = pipe(
+	  notificationData,
+	  map(addReadableDate),
+	  map(sanitizeMessage),
+	  map(buildLinkToSender),
+	  map(buildLinkToSource),
+	  map(addIcon)
+	);
+
+	// v3
+	const dataForTemplate = map(x => pipe(x,
+	  addReadableDate,
+	  sanitizeMessage,
+	  buildLinkToSender,
+	  buildLinkToSource,
+	  addIcon,
+	))(notificationData);
+	```
+- 최종적으로 각각 함수 내부에서 처리하는 것을 추상화하여 한번에 처리할 수 있도록 하는 것
+	- 추상화된 코드가 변경되더라도 v2의 결과물은 여전히 동일
+	- v2에 대한 테스트를 작성해두었다면 추상화 코드가 변경되었을때에도 테스트를 통과하고
+	- 무언가 더 로직을 추가하고 싶다면 pipe 라인에 추가하는 형태
+	- 함수형 프로그래밍을 처음 접했을때 이런 것이 엄청 간결해질 수 있겠는데! 하는 느낌을 받았다
+- 하지만 이런 깊은 추상화는 그 깊은 곳까지 알아둬야하는데
+	- 순수함수를 사용하므로써 항상 같은 결과를 낼 수 있다는 것을 기반으로
+	- 성능 최적화, 리팩터링 할 때 안정성을 유지한다
+- 가만히 보면 선호도에 따라 장단점이 크게 다가올 것 같다
+	- 아티클을 보면서 느낀 점은 이게 과면 코드의 안정성, 신뢰도를 높이는게 맞나? 하는 고민을 해보았다
+	- 모두가 함수형 프로그래밍에 대한 의미를 이해하고 있어야 깊게 추상화된 것을 유지하기 쉽지 않을까
+	- 나는 아직 부족하다!
+
+
+#### `새로운 작심삼일`
+- 데미안은 왜 스테디인걸까
+- 아마 가장 큰 원인과 결과이지 않을까 생각한다
+- 인문학은 어려워서 읽고 싶은 것만
+- 필요한 것만 읽게 되는데
+- 이런 것을 깨고 나가기 위해
+- 독서모임을 시작하고 싶지만
+- 무서워서 소박하게 다시 잡은 작심삼일
+- 분기에 한권
+
+
+#### `카카오맵 프로젝트`
+- 이번 연말 꼭 카카오맵 업데이트를 하고 말겠다는 일념으로
+  - 새해부터 계획적으로 작심삼일 === 연말에 허겁지겁 작심삼일
+- 항상 그렇듯 시작은 잘 했는데 왜 iOS 빌드가 안되는거지
+- DaumMap Framework에서 참조하는 symbol을 찾을 수 없다고 한다
+- `Undefined symbol: _sqlite3_*`
+- ⁉️
+- 갑자기 안되는건 무엇가 변경된걸까????
+- [DaumMap iOS 가이드](https://apis.map.kakao.com/ios/guide/)에 따라 `libsqlite3.tbd` 를 추가해두었는데 이게 프로젝트에 포함이 안되나보다
+- 그건 또 왜 그럴까
+- 우선 프로젝트에서 직접 추가해보니 정상 빌드는 된다
+- 그럼 왜 `framework`에 추가한 것이 제대로 동작하지 않는 것일까?
+- `framework`에 이미 `libsqlite3`가 추가되어있었지만 다시 한번 추가해보았다
+	- 그랬더니 버전이 다른 `libsqlite3`가 새로 추가되는게 아닌가?? 🤔 (MacOSX11.1 > MacOSX13.1)
+	- 하지만 앞에서 프로젝트에 직접 추가한 것을 제거하고 이 방법만으로 다시 시도해봐도 해결되지는 않았다
+- 다음 문제가 발생하였다
+- props 변경에 따라 iOS 업데이트가 일어나기를 기대했는데, 스레드 관련해서 오류가 발생했다
+	- react-native-reanimated에서 UI 스레드에서 동작하도록 runOnUI를 사용하는 이유와 동일하다
+	- 사용자 인터페이스 UI 관련된 것들은 다른 스레드가 아닌 메인 스레드에서 동작하도록 보장하는 것
+	- [참고1](https://rolypolytoy.tistory.com/22)
+	- [참고2](https://velog.io/@yongchul/iOSThread%EC%9D%98-%EA%B8%B0%EB%B3%B8%EA%B0%9C%EB%85%90)
+
+
+#### `당근책`
+- 아주 깔끔하게 흔적도 없이 사라져버린 루틴을 새롭게 만들고자 시작한지 한달정도
+- 상쾌하게 운동하러 나가자는 의도로 시작된 첫번째 계획 `달리기`
+- 날이 심하게 추워지는 바람에 흔들리고 있었다
+- 그러나 지금이 아니면 더이상 따뜻한 날은 없다고 생각되어지는 오늘
+- 하필이면 피곤함에 귀찮음이 높아지는 중...
+- 스스로에게 당근책을 제시한다
+- 앙버터 사먹으러 가는거야
+- 딱 5바퀴만 돌고 맛난거 사먹어야지
+- 그렇게 운동을 끝내고 천근만근 발걸음은 도저히 빵집까지 갈 수 없었다
+- 좋아 `내일의 당근`으로 써먹어야지
+
+
+#### `타입스크립트 컨벤션`
+- [우아한 타입스크립트 컨벤션 정하기 여정](https://techblog.woowahan.com/9804/)
+- 타입스크립트를 쓰고 있다면 한번쯤 논의해보았을만한 이야기
+- enum의 tree-shaking
+	- `tree-shaking이 되지 않았다고 해도, 그 enum 선언부가 엄청나게 크지 않은 이상, 이런 정도의 용량 다이어트가 필요한가 싶기도 했고요. 정말 프로젝트의 번들링 크기를 극한으로 줄여야 하는 게 아닌 이상, 이 정도는 무시해도 괜찮을 거라 생각했습니다.`
+- any 와 unknown
+	- `any 대신 unknown을 사용해서 더 안전한 코드를 작성할 수 있게 됩니다.`
+- interface 와 type alias
+	- 이 부분에서 조금 놀랬던 부분 `IDE의 미리보기가 다르다`는 것
+		- 프로젝트 내 사용하고 있는 타입은 자주 쓰다보면 유추가 가능한 네이밍 컨벤션이 맞춰지고
+		- 미리보기에서 상세 타입이 보이지 않더라도 이해할 수 있지 않을까 했는데,
+		- 인터페이스를 사용했을때 상세 타입이 보이지 않는다는 것이 어쩌면 불편함을 추가하고 있었겠구나 하는 사실
+		- 미리보기를 통해 인터페이스를 이동하고 다시 원래 코드로 돌아와야한다는 것 🤔
+	- 추가로 의도치 않은 인터페이스의 병합
+		- 글로벌 인터페이스의 네이밍이 같아서 병합되어버리는 문제를 겪을 수 있겠다는 사실
+	- 이런 여러 장단점을 통해 interface 보다는 type이 좋을까 고민해보겠지만...
+
+
+#### `Islands Architecture`
+- 잘 이해가 되지 않는데
+- 마이크로 아키텍처와의 차이점을 알아봐야할까
+	- SSR만으로 해결할 수 없는 동적인 영역을 각각의 앱으로 섬처럼 구성하여 단독으로 동작하도록 하는 것
+	- 크게 보면 마이크로에 속하지만 세밀하게 보면 앱을 단독으로 구성하였으나 SSR로 커다란 틀을 잡아두고
+	- 필요한 시점에 동적인 영역에 대한 스크립트를 호출하여 퍼포먼스를 끌어올리는 목적
+- 이렇게 이해했지만 조금 시간이 흐른 뒤 다시 돌아봐야겠다
+ - 지금은 계속 저 생각에 고정되어있어 다른 느낌을 느끼지 못했다
+- [참고: 패턴으로 볼 수 있구나](https://www.patterns.dev/posts/islands-architecture/)
+- [참고](https://betterprogramming.pub/understand-island-architecture-how-the-client-receives-no-js-9c6dfa6d7732)
+- (추가 + 한글을 사랑합니당)
+	- 시간이 흘러 오! 하는 순간이 왔다 ([참고](https://velog.io/@xiniha/Partial-Hydration-%EB%91%98%EB%9F%AC%EB%B3%B4%EA%B8%B0))
+	- 이걸 찾아보려던건 아니고 우연히 눈에 들어온 내용인데
+	- 처음 이 아키텍처를 이해하려고 했을때엔
+	- 마이크로에 초점을 너무 크게 두었던 것이 오히려 이해를 어렵게 했을지 모른다는 생각을 해보았다
+		- (🥺 한글이라 그런건 비밀이다)
+	- `하이드레이션이 이루어지지 않은 채로 존재하는 페이지 위에 하이드레이션된 구성요소들이 배치되는 방식`
+	- `정적인 페이지 위에 일부분만 동적으로 작동하는 페이지를 개발`
+	- 동적으로 렌더링하면 초기 로딩이 느려질 수 있는 단점이 있는데
+	- 이를 정적으로 렌더링한 페이지 위에 섬처럼 둥둥 동적인 페이지를 띄우는 형식
+	- 초기 로딩에는 정적인 부분만 그리면 되니깐 속도를 빠르게 가져가고
+	- 필요한 시점에 섬 영역을 추가하면 되니 가벼워질 수 있다는 것
+	
+

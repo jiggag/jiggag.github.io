@@ -14,7 +14,10 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://jiggag.github.io',
-        sitemap: 'https://jiggag.github.io/sitemap.xml',
+        sitemap: [
+          'https://jiggag.github.io/sitemap.xml',
+          'https://jiggag.github.io/sitemap-pages.xml'
+        ],
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },

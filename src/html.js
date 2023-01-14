@@ -13,6 +13,18 @@ const HTML = function (props) {
         />
         {props.headComponents}
 
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MMX0XS2YR7"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function gtag(){ window.dataLayer.push(arguments);}
+            gtag('js', new Date()); 
+            gtag('config', 'G-MMX0XS2YR7', { send_page_view: false });
+            `
+          }}
+        />
         {/*<script*/}
         {/*  async*/}
         {/*  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4711551515762404"*/}

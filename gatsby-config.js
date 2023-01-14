@@ -37,12 +37,12 @@ module.exports = {
           {
             resolve: `gatsby-remark-table-of-contents`,
             options: {
-              exclude: "Table of Contents",
+              exclude: 'Table of Contents',
               tight: false,
               ordered: false,
               fromHeading: 1,
               toHeading: 6,
-              className: "table-of-contents"
+              className: 'table-of-contents'
             },
           },
           `gatsby-remark-autolink-headers`
@@ -81,14 +81,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "349495612",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
-        // defaults to false
-        enableWebVitalsTracking: true,
+        trackingIds: ['G-MMX0XS2YR7'],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     {

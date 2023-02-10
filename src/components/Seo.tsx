@@ -15,10 +15,11 @@ interface SeoProps {
   lang?: string;
   meta?: HelmetProps['meta'];
   title: string;
+  keywords?: string;
 }
 
 export const Seo = function ({
-  description = '', lang = 'ko', meta = [], title,
+  description: descriptionProps = '', lang = 'ko', meta: metaProps = [], keywords = '', title,
 }: SeoProps) {
   const { site } = useStaticQuery<Site>(
     graphql`
@@ -33,7 +34,39 @@ export const Seo = function ({
     `,
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  const description = descriptionProps || site.siteMetadata.description;
+  const meta: HelmetProps['meta'] = [
+    { name: 'keywords', content: keywords },
+    {
+      name: 'description',
+      content: description,
+    },
+    {
+      name: 'twitter:title',
+      content: title,
+    },
+    {
+      name: 'twitter:description',
+      content: description,
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary',
+    },
+    {
+      property: 'og:title',
+      content: title,
+    },
+    {
+      property: 'og:description',
+      content: description,
+    },
+    {
+      property: 'og:type',
+      content: 'website',
+    },
+    ...metaProps,
+  ];
 
   return (
     <Helmet
@@ -42,24 +75,7 @@ export const Seo = function ({
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={([
-        {
-          name: 'description',
-          content: metaDescription,
-        },
-        {
-          property: 'og:title',
-          content: title,
-        },
-        {
-          property: 'og:description',
-          content: metaDescription,
-        },
-        {
-          property: 'og:type',
-          content: 'website',
-        },
-      ] as HelmetProps['meta']).concat(meta)}
+      meta={meta}
     />
   );
 };

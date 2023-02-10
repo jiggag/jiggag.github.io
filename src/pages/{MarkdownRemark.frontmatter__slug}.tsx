@@ -5,15 +5,24 @@ import { Seo } from 'components/Seo';
 import { MarkdownRemarkProps } from 'types';
 
 const MarkdownRemark = function ({
-  data: { markdownRemark: { frontmatter, html } },
-}: PageProps<MarkdownRemarkProps<'slug' | 'date' | 'title'>>) {
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        tags,
+        subtitle,
+        title,
+        date,
+      }, html,
+    },
+  },
+}: PageProps<MarkdownRemarkProps<'slug' | 'date' | 'title' | 'tags' | 'subtitle'>>) {
   return (
     <Layout>
-      <Seo title={frontmatter.title} />
+      <Seo title={title} keywords={tags.join(', ')} description={subtitle} />
       <div className="blog-post-container">
         <div className="blog-post-header">
-          <h3>{frontmatter.title}</h3>
-          <h6>{frontmatter.date}</h6>
+          <h3>{title}</h3>
+          <h6>{date}</h6>
         </div>
         <div
           className="blog-post-content"
@@ -34,6 +43,8 @@ export const pageQuery = graphql`
                 slug
                 date(formatString: "YYYY년 M월 D일")
                 title
+                subtitle
+                tags
             }
         }
     }

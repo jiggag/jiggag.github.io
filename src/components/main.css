@@ -307,10 +307,18 @@ button::-moz-focus-inner {
 .table-of-contents > ul > li li {
     margin-bottom: 2px;
 }
-.table-of-contents code {
+.table-of-contents code, .table-of-contents > ul > li > a {
     background: unset;
     color: var(--black);
     border-radius: 0;
     border-bottom: 1px solid var(--link-blue-95);
     font-size: 12px;
+}
+
+blockquote {
+    background-color: var(--surface);
+    font-style: italic;
+    padding: 1px 20px;
+    margin: 0;
+    border-radius: 4px;
 }

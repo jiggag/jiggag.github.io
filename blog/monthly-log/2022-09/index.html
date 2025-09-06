@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.25.3"/><meta data-react-helmet="true" name="keywords" content="log, 추상화, 리액트, 상태, 최적화"/><meta data-react-helmet="true" name="description" content="찾아보고, 읽어보고, 적어두기"/><meta data-react-helmet="true" name="twitter:title" content="9월 한달동안 로그"/><meta data-react-helmet="true" name="twitter:description" content="찾아보고, 읽어보고, 적어두기"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" property="og:title" content="9월 한달동안 로그"/><meta data-react-helmet="true" property="og:description" content="찾아보고, 읽어보고, 적어두기"/><meta data-react-helmet="true" property="og:type" content="website"/><style data-href="/styles.ec1b9285d9c490718aad.css" data-identity="gatsby-global-css">*{font-family:SUIT Variable,sans-serif!important}:root{--surface:silver;--content:#e2e2e2;--button-highlight:#fff;--button-face:#dfdfdf;--button-shadow:grey;--window-frame:#0a0a0a;--dialog-blue:navy;--dialog-blue-light:#1084d0;--dialog-gray:grey;--dialog-gray-light:#b5b5b5;--link-blue:#00f;--black:#000;--link-blue-95:#0000ff95;--element-spacing:8px;--border-width:1px;--border-raised-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight);--border-raised-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);--border-sunken-outer:inset -1px -1px var(--button-highlight),inset 1px 1px var(--window-frame);--border-sunken-inner:inset -2px -2px var(--button-face),inset 2px 2px var(--button-shadow);--border-window-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-face);--border-window-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-highlight)}body{margin:0}pre{background:var(--button-highlight);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);display:block;margin:4px 0;overflow:auto;padding:var(--element-spacing)}pre code{background:unset;color:unset;font-size:12px}code{background:var(--link-blue-95);border-radius:10px;color:#fff;font-size:14px;overflow-wrap:break-word;padding:0 6px}a{color:var(--link-blue);text-decoration:none}.window{background:var(--surface);box-shadow:var(--border-window-outer),var(--border-window-inner);height:100vh;margin:auto}.window.minimize{max-width:500px}.window-container{display:flex;flex-direction:column;height:100%}.window-body{flex:1 1;margin:0 0 0 var(--element-spacing);overflow:auto;padding-right:var(--element-spacing)}.title-bar{align-items:center;background:linear-gradient(150deg,var(--dialog-blue),var(--dialog-blue-light));display:flex;justify-content:space-between;margin:3px 3px 0;padding:2px var(--element-spacing)}.title-bar .title{color:#fff;font-size:24px;margin:0;text-decoration:none}.title-bar-controls{display:flex}.title-bar-controls button{display:block;min-height:14px;min-width:16px;padding:0}.title-bar-controls button[aria-label=ScrollToTop]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:bottom 2px left 2px;background-repeat:no-repeat;height:20px;width:20px}.title-bar-controls button[aria-label=Minimize]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA2IDIiPjxyZWN0IHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9IiMwMDAiLz48L3N2Zz4=);background-position:bottom 5px left 7px;background-repeat:no-repeat;height:19px;width:20px}.title-bar-controls button[aria-label=Maximize]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjkiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA5IDkiPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTkgMEgwdjloOVYwWk04IDJIMXY2aDdWMloiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;width:20px}.title-bar-controls button[aria-label=Close]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA4IDciPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMGgydjFoMXYxaDJWMWgxVjBoMnYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxSDZWNkg1VjVIM3YxSDJ2MUgwVjZoMVY1aDFWNGgxVjNIMlYySDFWMUgwVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;margin-left:2px;width:20px}.title-bar-text{color:#fff;font-weight:700;letter-spacing:0;margin-right:24px}.blog-post-container{background:var(--content);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0 0 0;overflow-x:scroll;padding:var(--element-spacing)}.blog-post-content h1,h2{font-size:20px}.blog-post-content h3,h4{font-size:16px}.blog-post-content ul{padding-left:20px}.home-post-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.home-post-title p{font-size:12px;margin:4px 0}.footer{align-items:center;display:flex;padding:12px 15px}.footer .footer-label{align-self:flex-end;font-size:12px;width:100%}.not-found-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.not-found-title p{font-size:14px;margin:10px 0}button{background:var(--surface);border:none;border-radius:0;box-shadow:var(--border-raised-outer),var(--border-raised-inner);box-sizing:border-box;min-height:23px;min-width:75px;padding:0 12px}button:not(:disabled):active{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);padding:2px 3px 0 13px}@media (not(hover)){button:not(:disabled):hover{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner)}}button:focus{outline:1px dotted var(--black);outline-offset:-4px}button::-moz-focus-inner{border:0}::-webkit-scrollbar{width:16px}::-webkit-scrollbar:horizontal{height:17px}::-webkit-scrollbar-corner{background:var(--button-face)}::-webkit-scrollbar-track{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9InNpbHZlciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDB2MWgxdjFoMVYxSDFWMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxdjFIMHYxaDFWMWgxVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}::-webkit-scrollbar-thumb{background-color:var(--button-face);box-shadow:var(--border-raised-outer),var(--border-raised-inner)}::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement{display:block}::-webkit-scrollbar-button:vertical:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:vertical:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA2SDR2MWgxdjFoMXYxaDF2MWgxVjloMVY4aDFWN2gxVjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:horizontal:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDRIOHYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxaDFWNFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);width:16px}::-webkit-scrollbar-button:horizontal:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDRINnY3aDF2LTFoMVY5aDFWOGgxVjdIOVY2SDhWNUg3VjRaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);width:16px}.table-of-contents{border:1px dashed var(--link-blue-95);border-radius:10px;display:inline-flex;padding:10px 30px 20px 15px}.table-of-contents ul{list-style:none;margin:0;padding:0}.table-of-contents>ul>li{margin:10px 0}.table-of-contents>ul>li>a>code{font-size:14px;font-weight:700}.table-of-contents>ul>li>ul{margin:5px 0;padding-left:10px}.table-of-contents>ul>li li{margin-bottom:2px}.table-of-contents code,.table-of-contents>ul>li>a{background:unset;border-bottom:1px solid var(--link-blue-95);border-radius:0;color:var(--black);font-size:12px}blockquote{background-color:var(--surface);border-radius:4px;font-style:italic;margin:0;padding:1px 20px}</style><title data-react-helmet="true">9월 한달동안 로그 | JIGGAG</title><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style type="text/css">
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.15.0"/><meta data-react-helmet="true" name="keywords" content="log, 추상화, 리액트, 상태, 최적화"/><meta data-react-helmet="true" name="description" content="찾아보고, 읽어보고, 적어두기"/><meta data-react-helmet="true" name="twitter:title" content="9월 한달동안 로그"/><meta data-react-helmet="true" name="twitter:description" content="찾아보고, 읽어보고, 적어두기"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" property="og:title" content="9월 한달동안 로그"/><meta data-react-helmet="true" property="og:description" content="찾아보고, 읽어보고, 적어두기"/><meta data-react-helmet="true" property="og:type" content="website"/><style data-href="/styles.ec1b9285d9c490718aad.css" data-identity="gatsby-global-css">*{font-family:SUIT Variable,sans-serif!important}:root{--surface:silver;--content:#e2e2e2;--button-highlight:#fff;--button-face:#dfdfdf;--button-shadow:grey;--window-frame:#0a0a0a;--dialog-blue:navy;--dialog-blue-light:#1084d0;--dialog-gray:grey;--dialog-gray-light:#b5b5b5;--link-blue:#00f;--black:#000;--link-blue-95:#0000ff95;--element-spacing:8px;--border-width:1px;--border-raised-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight);--border-raised-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);--border-sunken-outer:inset -1px -1px var(--button-highlight),inset 1px 1px var(--window-frame);--border-sunken-inner:inset -2px -2px var(--button-face),inset 2px 2px var(--button-shadow);--border-window-outer:inset -1px -1px var(--window-frame),inset 1px 1px var(--button-face);--border-window-inner:inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-highlight)}body{margin:0}pre{background:var(--button-highlight);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);display:block;margin:4px 0;overflow:auto;padding:var(--element-spacing)}pre code{background:unset;color:unset;font-size:12px}code{background:var(--link-blue-95);border-radius:10px;color:#fff;font-size:14px;overflow-wrap:break-word;padding:0 6px}a{color:var(--link-blue);text-decoration:none}.window{background:var(--surface);box-shadow:var(--border-window-outer),var(--border-window-inner);height:100vh;margin:auto}.window.minimize{max-width:500px}.window-container{display:flex;flex-direction:column;height:100%}.window-body{flex:1 1;margin:0 0 0 var(--element-spacing);overflow:auto;padding-right:var(--element-spacing)}.title-bar{align-items:center;background:linear-gradient(150deg,var(--dialog-blue),var(--dialog-blue-light));display:flex;justify-content:space-between;margin:3px 3px 0;padding:2px var(--element-spacing)}.title-bar .title{color:#fff;font-size:24px;margin:0;text-decoration:none}.title-bar-controls{display:flex}.title-bar-controls button{display:block;min-height:14px;min-width:16px;padding:0}.title-bar-controls button[aria-label=ScrollToTop]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:bottom 2px left 2px;background-repeat:no-repeat;height:20px;width:20px}.title-bar-controls button[aria-label=Minimize]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA2IDIiPjxyZWN0IHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9IiMwMDAiLz48L3N2Zz4=);background-position:bottom 5px left 7px;background-repeat:no-repeat;height:19px;width:20px}.title-bar-controls button[aria-label=Maximize]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjkiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA5IDkiPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTkgMEgwdjloOVYwWk04IDJIMXY2aDdWMloiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;width:20px}.title-bar-controls button[aria-label=Close]{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA4IDciPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMGgydjFoMXYxaDJWMWgxVjBoMnYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxSDZWNkg1VjVIM3YxSDJ2MUgwVjZoMVY1aDFWNGgxVjNIMlYySDFWMUgwVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);background-position:top 5px left 5px;background-repeat:no-repeat;height:19px;margin-left:2px;width:20px}.title-bar-text{color:#fff;font-weight:700;letter-spacing:0;margin-right:24px}.blog-post-container{background:var(--content);box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0 0 0;overflow-x:scroll;padding:var(--element-spacing)}.blog-post-content h1,h2{font-size:20px}.blog-post-content h3,h4{font-size:16px}.blog-post-content ul{padding-left:20px}.home-post-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.home-post-title p{font-size:12px;margin:4px 0}.footer{align-items:center;display:flex;padding:12px 15px}.footer .footer-label{align-self:flex-end;font-size:12px;width:100%}.not-found-title{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);margin:var(--element-spacing) 0;padding:var(--element-spacing)}.not-found-title p{font-size:14px;margin:10px 0}button{background:var(--surface);border:none;border-radius:0;box-shadow:var(--border-raised-outer),var(--border-raised-inner);box-sizing:border-box;min-height:23px;min-width:75px;padding:0 12px}button:not(:disabled):active{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner);padding:2px 3px 0 13px}@media (not(hover)){button:not(:disabled):hover{box-shadow:var(--border-sunken-outer),var(--border-sunken-inner)}}button:focus{outline:1px dotted var(--black);outline-offset:-4px}button::-moz-focus-inner{border:0}::-webkit-scrollbar{width:16px}::-webkit-scrollbar:horizontal{height:17px}::-webkit-scrollbar-corner{background:var(--button-face)}::-webkit-scrollbar-track{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9InNpbHZlciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDB2MWgxdjFoMVYxSDFWMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxdjFIMHYxaDFWMWgxVjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}::-webkit-scrollbar-thumb{background-color:var(--button-face);box-shadow:var(--border-raised-outer),var(--border-raised-inner)}::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement{display:block}::-webkit-scrollbar-button:vertical:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDZIN3YxSDZ2MUg1djFINHYxaDdWOWgtMVY4SDlWN0g4VjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:vertical:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA2SDR2MWgxdjFoMXYxaDF2MWgxVjloMVY4aDFWN2gxVjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);height:17px}::-webkit-scrollbar-button:horizontal:start{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDRIOHYxSDd2MUg2djFINXYxaDF2MWgxdjFoMXYxaDFWNFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);width:16px}::-webkit-scrollbar-button:horizontal:end{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2IDE3Ij48cGF0aCBmaWxsPSIjREZERkRGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAwSDB2MTZoMVYxaDE0VjBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDFIMXYxNGgxVjJoMTJWMUgyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYgMTdIMHYtMWgxNVYwaDF2MTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSJncmF5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSAxaC0xdjE0SDF2MWgxNFYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEzIiB4PSIyIiB5PSIyIiBmaWxsPSJzaWx2ZXIiLz48cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDRINnY3aDF2LTFoMVY5aDFWOGgxVjdIOVY2SDhWNUg3VjRaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);width:16px}.table-of-contents{border:1px dashed var(--link-blue-95);border-radius:10px;display:inline-flex;padding:10px 30px 20px 15px}.table-of-contents ul{list-style:none;margin:0;padding:0}.table-of-contents>ul>li{margin:10px 0}.table-of-contents>ul>li>a>code{font-size:14px;font-weight:700}.table-of-contents>ul>li>ul{margin:5px 0;padding-left:10px}.table-of-contents>ul>li li{margin-bottom:2px}.table-of-contents code,.table-of-contents>ul>li>a{background:unset;border-bottom:1px solid var(--link-blue-95);border-radius:0;color:var(--black);font-size:12px}blockquote{background-color:var(--surface);border-radius:4px;font-style:italic;margin:0;padding:1px 20px}</style><title data-react-helmet="true">9월 한달동안 로그 | JIGGAG</title><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style type="text/css">
     .anchor.before {
       position: absolute;
       top: 0;
@@ -240,11 +240,8 @@
 </li>
 <li>비즈니스 로직을 완전히 분리하여 View를 구성할 수 있다면 좋겠지만
 <ul>
-<li>분리하지 못한다면 비즈니스 로직을 포함한 거대한 컴포넌트가 되어버리는데
-<ul>
+<li>분리하지 못한다면 비즈니스 로직을 포함한 거대한 컴포넌트가 되어버리는데</li>
 <li>로직도 있고 View도 있고</li>
-</ul>
-</li>
 </ul>
 </li>
 <li>여기서 View만 이라도 한번 더 분리해서 UI 독립적일 수 있게 되면 좋겠지만
@@ -261,50 +258,59 @@
 </ul>
 <h4 id="선언형-명령형-관계" style="position:relative;"><a href="#%EC%84%A0%EC%96%B8%ED%98%95-%EB%AA%85%EB%A0%B9%ED%98%95-%EA%B4%80%EA%B3%84" aria-label="선언형 명령형 관계 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>선언형, 명령형 관계</code></h4>
 <ul>
-<li><a href="https://milooy.github.io/dev/220810-abstraction-and-declarative-programming/">선언형, 명령형 코드 그리고 추상화</a>
+<li>
+<p><a href="https://milooy.github.io/dev/220810-abstraction-and-declarative-programming/">선언형, 명령형 코드 그리고 추상화</a></p>
 <ul>
-<li>명령형 => 어떻게(How)
+<li>
+<p>명령형 => 어떻게(How)</p>
 <pre><code class="language-ts">const 등록완료된_리스트 = (list) => {
-	const result = [];
-	for (let i = 0; i &#x3C; list.length; i++) {
-		if (list[i].isCompleted) {
-		  result.push(list[i])
-		}
-	}
+  const result = [];
+  for (let i = 0; i &#x3C; list.length; i++) {
+    if (list[i].isCompleted) {
+      result.push(list[i]);
+    }
+  }
 
-	return result;
+  return result;
 };
 </code></pre>
 </li>
-<li>선언형 => 무엇을(What) => 명령형에서 어떻게(How)를 감추고 무엇을(What)만 노출 => 명령형을 추상화하였다
+<li>
+<p>선언형 => 무엇을(What) => 명령형에서 어떻게(How)를 감추고 무엇을(What)만 노출 => 명령형을 추상화하였다</p>
 <pre><code class="language-ts">const 등록완료된_리스트 = (list) => {
-	return list.filter(item => item.isCompleted);
+  return list.filter((item) => item.isCompleted);
 };
 </code></pre>
 </li>
-<li>선언형 내부에 명령형이 추상화되어 숨겨져있다</li>
+<li>
+<p>선언형 내부에 명령형이 추상화되어 숨겨져있다</p>
+</li>
 </ul>
 </li>
-<li>그렇다면 명령형 선언형 구분할 필요 없이 명령형을 구조적으로 정리하여 내부에 숨겨두는 것이 무조건 선언형인가?
+<li>
+<p>그렇다면 명령형 선언형 구분할 필요 없이 명령형을 구조적으로 정리하여 내부에 숨겨두는 것이 무조건 선언형인가?</p>
 <ul>
 <li><code>선언형은 사이드 이펙 없이 순수해야한다</code> 라는 내용에 따르면 <code>언제 어디서 + 어떤 상황에서 호출되어도 동일한 기댓값</code>을 주어야한다</li>
 <li>명령형 => 시간 순서를 지켜야하는 절차적으로 호출</li>
 <li>선언형 => 순수하기 때문에 시간 순서 상관없이 어디서든 호출</li>
 </ul>
 </li>
-<li>모든것을 선언형으로만 작성할 수 없을 것 같다
+<li>
+<p>모든것을 선언형으로만 작성할 수 없을 것 같다</p>
 <ul>
 <li>선언형 내부를 따라가다보면 결국 시간 순서에 따라 작성되어있는 명령형이 감춰져있을 것</li>
 <li>이것들을 추상화하여 잘 전달하고 사용하도록</li>
 </ul>
 </li>
-<li>그럼 이런 명령형 코드를 찾아보게 되는 시점이 언제 있을까?
+<li>
+<p>그럼 이런 명령형 코드를 찾아보게 되는 시점이 언제 있을까?</p>
 <ul>
 <li>추상화되어있는 RN 컴포넌트나 브릿지 사용하다가 무언가 오잉? 하는 시점에 따라가다보면</li>
 <li>어디엔가 나열되어있는 명령형 코드를 찾아볼 수 있다</li>
 </ul>
 </li>
-<li>이 글을 읽고 하나 더 와닿은
+<li>
+<p>이 글을 읽고 하나 더 와닿은</p>
 <ul>
 <li><code>회사 프론트 동료들과 추상화와 선언적인 코드의 관계에 대해서 이런저런 이야기를 나눴습니다. 머릿속에 추상적으로 있던 개념이 좀 각이 잡혀서 ㅎㅎ 한 번 글로 적어보려 합니다.</code></li>
 <li>이야기 한 것 만으로 머릿속에서 정리하고 흘러갈 수 있는 것을 기록하면서 다시 한번 다듬어서 남겨두기</li>
@@ -386,8 +392,11 @@
 </ul>
 <h4 id="리액트-상태-관리" style="position:relative;"><a href="#%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%83%81%ED%83%9C-%EA%B4%80%EB%A6%AC" aria-label="리액트 상태 관리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>리액트 상태 관리</code></h4>
 <ul>
-<li><a href="https://medium.com/@yujso66/%EB%B2%88%EC%97%AD-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%83%81%ED%83%9C-%EA%B4%80%EB%A6%AC%EC%9D%98-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%9D%90%EB%A6%84-6e5ed0022e39">[번역] 리액트 상태 관리의 새로운 흐름</a></li>
-<li>리액트에서는 전역으로 상태를 관리하는 방법에 대한 가이드라인이 없다
+<li>
+<p><a href="https://medium.com/@yujso66/%EB%B2%88%EC%97%AD-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%83%81%ED%83%9C-%EA%B4%80%EB%A6%AC%EC%9D%98-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%9D%90%EB%A6%84-6e5ed0022e39">[번역] 리액트 상태 관리의 새로운 흐름</a></p>
+</li>
+<li>
+<p>리액트에서는 전역으로 상태를 관리하는 방법에 대한 가이드라인이 없다</p>
 <ul>
 <li>단순히 전역으로 전달하는 것은 Context로 할 수 있지만</li>
 <li>여기서 말하는 상태 관리와는 목적이 다르다</li>
@@ -397,11 +406,11 @@
 <li>사용하는 곳에서 단순한 Context 변경사항에도 리렌더를 유발하게 된다
 <ul>
 <li>
-<pre><code>  Provider 하위에서 context를 구독하는 모든 컴포넌트는 Provider의 value prop가 바뀔 때마다 다시 렌더링 됩니다
-  .
-  상위 컴포넌트에서 React.memo 또는 shouldComponentUpdate를 사용하더라도 useContext를 사용하고 있는 컴포넌트 자체에서부터 다시 렌더링됩니다.
-  .
-  useContext를 호출한 컴포넌트는 context 값이 변경되면 항상 리렌더링 될 것입니다.
+<pre><code>Provider 하위에서 context를 구독하는 모든 컴포넌트는 Provider의 value prop가 바뀔 때마다 다시 렌더링 됩니다
+.
+상위 컴포넌트에서 React.memo 또는 shouldComponentUpdate를 사용하더라도 useContext를 사용하고 있는 컴포넌트 자체에서부터 다시 렌더링됩니다.
+.
+useContext를 호출한 컴포넌트는 context 값이 변경되면 항상 리렌더링 될 것입니다.
 </code></pre>
 </li>
 <li><a href="https://ko.reactjs.org/docs/hooks-reference.html#usecontext">문서: useContext</a></li>
@@ -415,12 +424,14 @@
 <li>하위 컴포넌트에서 최적화를 진행하더라도 결국 불필요한 리소스가 소요된다</li>
 </ul>
 </li>
-<li>각각의 라이브러리들은 서로 다른 문제에 대해 서로 다른 해결방법을 제시했는데
+<li>
+<p>각각의 라이브러리들은 서로 다른 문제에 대해 서로 다른 해결방법을 제시했는데</p>
 <ul>
 <li>요구사항에 맞는 적절한 라이브러리를 선택할 수 있어야한다</li>
 </ul>
 </li>
-<li>전역 상태 관리 라이브러리가 해결하고자 하는 문제
+<li>
+<p>전역 상태 관리 라이브러리가 해결하고자 하는 문제</p>
 <ul>
 <li>저장된 상태를 컴포넌트 트리 어디에서든지 읽어 올 수 있는 기능
 <ul>
@@ -442,35 +453,46 @@
 <li>메모리 사용을 최적화하는 메커니즘을 제공</li>
 </ul>
 </li>
-<li>이러한 문제를 해결하고자 Redux가 초기 도입되었다
-<ul>
-<li>그러나 전역상태 + 로컬 UI 상태 + 원격 API 상태 ....
+<li>
+<p>이러한 문제를 해결하고자 Redux가 초기 도입되었다</p>
 <ul>
 <li>
-<pre><code>  예를 들어 로컬 UI 상태의 경우 데이터와 해당 데이터를 업데이트하는 메서드 모두 드릴링하는 것은 상황이 커질수록 상대적으로 빠르게 문제가 되는 경우가 많습니다. 이 문제는 상태 끌어 올리기와 함께 컴포넌트 컴포지션 패턴을 사용하면 꽤 깔끔하게 해결할 수 있습니다.
+<p>그러나 전역상태 + 로컬 UI 상태 + 원격 API 상태 ....</p>
+<ul>
+<li>
+<pre><code>예를 들어 로컬 UI 상태의 경우 데이터와 해당 데이터를 업데이트하는 메서드 모두 드릴링하는 것은 상황이 커질수록 상대적으로 빠르게 문제가 되는 경우가 많습니다. 이 문제는 상태 끌어 올리기와 함께 컴포넌트 컴포지션 패턴을 사용하면 꽤 깔끔하게 해결할 수 있습니다.
 </code></pre>
 </li>
 <li>현재 마주하고 있는 문제이다</li>
 <li>이를 끌어올리거나 컴포지션으로 정리해야하는데...</li>
 </ul>
 </li>
-<li>수 많은 상태들이 분리되기 시작하였다
+<li>
+<p>수 많은 상태들이 분리되기 시작하였다</p>
 <ul>
 <li>여기서 또 다른 문제는 모든 상태가 전역에 들어가버릴 수 있다 (정말 불필요했다...)</li>
 </ul>
 </li>
 <li>
-<pre><code>  실제로 많은 웹 애플리케이션은 주로 프런트엔드를 원격 상태 데이터와 동기화해야 하는 CRUD(생성, 읽기, 업데이트 및 삭제) 스타일의 애플리케이션입니다.
+<pre><code>실제로 많은 웹 애플리케이션은 주로 프런트엔드를 원격 상태 데이터와 동기화해야 하는 CRUD(생성, 읽기, 업데이트 및 삭제) 스타일의 애플리케이션입니다.
 
-  즉, 시간을 할애할 가치가 있는 주요 문제는 원격 서버 캐시 문제들입니다. 이러한 문제에는 서버 상태를 가져오고 캐시하고 동기화하는 방법이 포함됩니다.
+즉, 시간을 할애할 가치가 있는 주요 문제는 원격 서버 캐시 문제들입니다. 이러한 문제에는 서버 상태를 가져오고 캐시하고 동기화하는 방법이 포함됩니다.
 </code></pre>
 </li>
-<li>이러한 이유 (=원격 API 상태를 관리하기 위해서)로 리액트 쿼리를 사용하게 되었는데</li>
+<li>
+<p>이러한 이유 (=원격 API 상태를 관리하기 위해서)로 리액트 쿼리를 사용하게 되었는데</p>
+</li>
 </ul>
 </li>
-<li>아직 리덕스, 컨텍스트에서 완전히 빠져나오지 못했으며</li>
-<li>잘못된 구독으로 불필요한 리렌더를 유발하는 것을 정리하지 못했다</li>
-<li>여기서 다시 보니 반가운 <a href="https://blog.isquaredsoftware.com/2021/01/context-redux-differences/">Context는 상태 관리가 아니다</a></li>
+<li>
+<p>아직 리덕스, 컨텍스트에서 완전히 빠져나오지 못했으며</p>
+</li>
+<li>
+<p>잘못된 구독으로 불필요한 리렌더를 유발하는 것을 정리하지 못했다</p>
+</li>
+<li>
+<p>여기서 다시 보니 반가운 <a href="https://blog.isquaredsoftware.com/2021/01/context-redux-differences/">Context는 상태 관리가 아니다</a></p>
+</li>
 </ul>
 <h2 id="91--94" style="position:relative;"><a href="#91--94" aria-label="91  94 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>9/1 ~ 9/4</code></h2>
 <h4 id="리액트-성능-최적화를-위해" style="position:relative;"><a href="#%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94%EB%A5%BC-%EC%9C%84%ED%95%B4" aria-label="리액트 성능 최적화를 위해 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>리액트 성능 최적화를 위해</code></h4>
@@ -510,4 +532,10 @@
 <li>쿠폰 서비스를 위한 ifelse 지옥...</li>
 <li>쿠폰 뿐만 아닌 그 어떤 곳에서도 마주할 수 있는 상황에서</li>
 <li>이를 조합으로 해결할 수 있을까하여 참고하고자</li>
-</ul></div></div></main><footer class="footer"><div class="footer-label">©Jiggag, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></div><button type="button" aria-label="Github">Github</button></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/monthly-log/2022-09/";window.___webpackCompilationHash="15505dec39ed5e5f52ef";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-c9fa82aa5b1f9c65f078.js"],"app":["/app-c377dbdb304db852add6.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-1471a3a7dac1535ef8de.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-c11508e49d441b4f51e7.js"],"component---src-pages-markdown-remark-frontmatter-slug-tsx":["/component---src-pages-markdown-remark-frontmatter-slug-tsx-700ca1e60d8a730290ee.js"],"component---src-pages-using-ssr-tsx":["/component---src-pages-using-ssr-tsx-8450b0ea8cab9d1dcb09.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-39ad1d3251e76cd3756b.js"],"component---src-templates-using-dsg-tsx":["/component---src-templates-using-dsg-tsx-41c5f2f229fe76d8d92d.js"]};/*]]>*/</script><script src="/polyfill-c9fa82aa5b1f9c65f078.js" nomodule=""></script><script src="/app-c377dbdb304db852add6.js" async=""></script><script src="/framework-a41a30b6052f08f79325.js" async=""></script><script src="/webpack-runtime-49224637a606069011ae.js" async=""></script></body></html>
+</ul></div></div></main><footer class="footer"><div class="footer-label">©Jiggag, Built with <a href="https://www.gatsbyjs.com">Gatsby</a></div><button type="button" aria-label="Github">Github</button></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/monthly-log/2022-09/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-8bf0eff0e497b23e9462.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-7d416e51c2a1198e6766.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-30196e7fe9df047cd582.js\"],\"component---src-pages-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-markdown-remark-frontmatter-slug-tsx-b35f10b8b21bdf2c13de.js\"],\"component---src-pages-using-ssr-tsx\":[\"/component---src-pages-using-ssr-tsx-a895b9e62977071b23a4.js\"],\"component---src-pages-using-typescript-tsx\":[\"/component---src-pages-using-typescript-tsx-c553722b4276ac2ebf04.js\"],\"component---src-templates-using-dsg-tsx\":[\"/component---src-templates-using-dsg-tsx-8a0b00763cd48432ff8b.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="34f34965f62a59f8de1f";</script><script src="/webpack-runtime-528934f7736bfe333b9f.js" async></script><script src="/framework-f11658f6be33b675e763.js" async></script><script src="/app-8bf0eff0e497b23e9462.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>

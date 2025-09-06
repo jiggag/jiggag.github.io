@@ -29,19 +29,24 @@ const IndexPage = function ({
 export default IndexPage;
 
 export const pageQuery = graphql`
-    query {
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        slug
-                        title
-                        published
-                        date(formatString: "YYYY-MM-DD")
-                    }
-                }
-            }
+  query {
+    allMarkdownRemark(
+      sort: [
+        { frontmatter: { date: DESC } },
+        { frontmatter: { title: DESC } },
+      ]
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            slug
+            title
+            published
+            date(formatString: "YYYY-MM-DD")
+          }
         }
+      }
     }
+  }
 `;

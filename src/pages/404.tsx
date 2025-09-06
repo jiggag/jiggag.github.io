@@ -35,7 +35,7 @@ export default NotFoundPage;
 
 export const pageQuery = graphql`
     query {
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+        allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
             edges {
                 node {
                     id

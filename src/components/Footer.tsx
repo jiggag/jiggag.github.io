@@ -12,11 +12,7 @@ export const Footer = function ({ author, onPressGithub }: FooterProps) {
         {`${author}, Built with `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>
       </div>
-      <button
-        type="button"
-        aria-label="Github"
-        onClick={onPressGithub}
-      >
+      <button type="button" aria-label="Github" onClick={onPressGithub}>
         Github
       </button>
     </footer>

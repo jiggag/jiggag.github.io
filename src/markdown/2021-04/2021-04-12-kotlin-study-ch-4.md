@@ -1,23 +1,24 @@
 ---
 slug: /blog/kotlin-study-ch4
 date: 2021-04-12
-layout : post
-published : true
-title : 코틀린의 반복문
-subtitle : Chapter 04 외부 반복과 아규먼트 매칭
-tags : [코틀린, 스터디, kotlin]
---- 
+layout: post
+published: true
+title: 코틀린의 반복문
+subtitle: Chapter 04 외부 반복과 아규먼트 매칭
+tags: [코틀린, 스터디, kotlin]
+---
 
 ```markdown
 [참고 도서]
+
 - 다재다능 코틀린 프로그래밍
 ```
 
 # 범위와 반복
 
 - 명령형 스타일의 외부 반복자과 함수형 스타일의 내부 반복자가 있다
-    - for i++, i—와 같은 시퀀스를 명시적으로 제어하는 외부 반복자
-    - 람다처럼 내부 로직에만 집중하고 시퀀스는 대신 제어해주는 내부 반복자
+  - for i++, i—와 같은 시퀀스를 명시적으로 제어하는 외부 반복자
+  - 람다처럼 내부 로직에만 집중하고 시퀀스는 대신 제어해주는 내부 반복자
 
 ## 레인지 클래스
 
@@ -29,8 +30,8 @@ val seekHelp: ClosedRange<String> = "hell".."help"
 
 - `..` 으로 범위를 지정하고 앞뒤 값을 모두 포함한다 (1 ≤ i ≤ 5)
 - `kotlin.ranges` 패키지의 타입으로 해당 범위 타입을 명확하게 한다
-    - 타입 추론을 통해 유추 가능
-    - int, char 원시타입 뿐만 아니라 String으로 범위 설정 가능
+  - 타입 추론을 통해 유추 가능
+  - int, char 원시타입 뿐만 아니라 String으로 범위 설정 가능
 
 ## 정방향 반복
 
@@ -47,7 +48,7 @@ for (word in "hell".."help") { print(word) }
 - i는 val로 선언되며 반복문 안에서 변경이 불가능하다
 - 스코프는 반복문 안으로 제한되어 있다
 - `IntRange` 나 `CharRange` 에는 `iterator()` 가 있지만 `ClosedRange<T>` 에는 iterator()가 없어서 오류가 발생한다
-    - `ch 12-2 서드파티 클래스 인젝팅` 에서 `ClosedRange<T>` 를 반복하는 확장하는 함수로 만들게 된다...
+  - `ch 12-2 서드파티 클래스 인젝팅` 에서 `ClosedRange<T>` 를 반복하는 확장하는 함수로 만들게 된다...
 
 ## 후방향 반복
 
@@ -57,14 +58,15 @@ for (i in 5 downTo 1) { print(i) } // 중위표기법으로 . 생략
 ```
 
 - 정방향과 반대로 감소하는 반복
-    - `for (i in 5..1)` 로는 동작하지 않는다
-    - 감소하는 반복을 위해 `IntProgression` 인스턴스를 만들어주는 `downTo()` 메소드를 호출한다
 
-        ```kotlin
-        public infix fun Int.downTo(to: Int): IntProgression {
-            return IntProgression.fromClosedRange(this, to, -1)
-        }
-        ```
+  - `for (i in 5..1)` 로는 동작하지 않는다
+  - 감소하는 반복을 위해 `IntProgression` 인스턴스를 만들어주는 `downTo()` 메소드를 호출한다
+
+    ```kotlin
+    public infix fun Int.downTo(to: Int): IntProgression {
+        return IntProgression.fromClosedRange(this, to, -1)
+    }
+    ```
 
 ## 범위 안의 값 건너뛰기
 
@@ -98,9 +100,9 @@ val intArray = intArrayOf(1, 2, 3) // 반환타입: IntArray
 
 - `for (i in array) { print(i) }` 형태로 배열을 반복한다
 - **Array<Int>**
-    - arrayOf에서 사용한 값이 `Int 타입의 정수 객체로 정수형 배열` 이 생성되었다
+  - arrayOf에서 사용한 값이 `Int 타입의 정수 객체로 정수형 배열` 이 생성되었다
 - **IntArray**
-    - 정수 객체가 아닌 `원시 자료형 Int의 배열`을 생성하기 위해서는 intArrayOf()를 사용한다
+  - 정수 객체가 아닌 `원시 자료형 Int의 배열`을 생성하기 위해서는 intArrayOf()를 사용한다
 
 ## 리스트
 
@@ -115,7 +117,7 @@ for ((index, value) in list.withIndex()) { print("index: $index, value: $value")
 ```
 
 - array와 유사하게 동작
-    - List<T> 형태로 intListOf는 없다...
+  - List<T> 형태로 intListOf는 없다...
 - 리스트의 `indices` 속성으로 리스트의 index를 가져올 수 있으며 `withIndex()` 함수로 구조분해된 형태로 index와 value를 가져올 수 있다
 
 # 코틀린의 when
@@ -145,7 +147,7 @@ print(isAlive(true, 12)) // false
 - 블록으로 작성하여 리턴타입이 추론되게 한다
 - 단일 표현식으로 when에서 리턴되는 값이 함수의 리턴값이다
 - 코틀린 컴파일러는 when에서 `else가 있는지, 표현식으로 조건을 구분할 수 있는 모든 케이스`에 대해 검증한다
-    - 컴파일 시간 체크는 코드의 정확성과 실수 오류를 줄여준다
+  - 컴파일 시간 체크는 코드의 정확성과 실수 오류를 줄여준다
 
 ```kotlin
 fun whatTodo(dayOfWeek: Any) = when (dayOfWeek) {
@@ -163,7 +165,7 @@ print(whatTodo("월화")) // 다시
 ```
 
 - when에 변수를 전달하는 경우 when 조건 구문이 Boolean이 아니라 각각의 값들에 맞는 조건을 사용한다
-    - 해당 파라미터가 조건에 맞는지 확인 후 반환한다
+  - 해당 파라미터가 조건에 맞는지 확인 후 반환한다
 
 ## 명령문 when
 
@@ -184,9 +186,9 @@ whatTodo("월화") //
 ```
 
 - 하나 이상의 값에 기반해서 다른 동작을 원하는 경우 명령문 when을 사용한다
-    - 특정 값을 리턴하는 것이 아니라 조건에 따라 어떤 행동만을 하게 된다
-    - 명령문으로 사용되는 when에서는 else가 존재하지 않아도 된다
-    - 조건에 맞는 내용이 없으면 아무런 행동도 취하지 않게 된다
+  - 특정 값을 리턴하는 것이 아니라 조건에 따라 어떤 행동만을 하게 된다
+  - 명령문으로 사용되는 when에서는 else가 존재하지 않아도 된다
+  - 조건에 맞는 내용이 없으면 아무런 행동도 취하지 않게 된다
 
 ## when에서의 변수 스코프
 
@@ -213,8 +215,8 @@ fun systemInfo(): String {
 ```
 
 - when 내부에서만 사용하는 변수의 스코프를 제한한다
-    - 첫번째 코드처럼 when 외부에서 선언하게 되면 when이 아닌 함수 내부의 다른 곳에서 해당 변수를 사용할 수 있게된다
-    - when의 인자로 내부 변수를 넣어버리면서 해당 변수의 스코프를 제한하고 when을 단일표현식으로 사용할 수 있게 되었다
+  - 첫번째 코드처럼 when 외부에서 선언하게 되면 when이 아닌 함수 내부의 다른 곳에서 해당 변수를 사용할 수 있게된다
+  - when의 인자로 내부 변수를 넣어버리면서 해당 변수의 스코프를 제한하고 when을 단일표현식으로 사용할 수 있게 되었다
 
 # 결론
 
@@ -229,6 +231,7 @@ fun systemInfo(): String {
 # 🙈 더 알아보기
 
 - when을 Decomplie하면?
+
   - if이거나 switch
 
   ```kotlin
@@ -262,5 +265,6 @@ fun systemInfo(): String {
       var10001 = false;
     }
   ```
+
 - import kotlin
-    - kotlin 패키지에 포함된 함수는 kotlin.arrayOf() 형태나 kotlin을 따로 import하지 않아도 arrayOf()로만 사용 가능하다
+  - kotlin 패키지에 포함된 함수는 kotlin.arrayOf() 형태나 kotlin을 따로 import하지 않아도 arrayOf()로만 사용 가능하다

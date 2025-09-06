@@ -7,12 +7,8 @@ import { MarkdownRemarkProps } from 'types';
 const MarkdownRemark = function ({
   data: {
     markdownRemark: {
-      frontmatter: {
-        tags,
-        subtitle,
-        title,
-        date,
-      }, html,
+      frontmatter: { tags, subtitle, title, date },
+      html,
     },
   },
 }: PageProps<MarkdownRemarkProps<'slug' | 'date' | 'title' | 'tags' | 'subtitle'>>) {
@@ -24,10 +20,7 @@ const MarkdownRemark = function ({
           <h3>{title}</h3>
           <h6>{date}</h6>
         </div>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
   );
@@ -36,16 +29,16 @@ const MarkdownRemark = function ({
 export default MarkdownRemark;
 
 export const pageQuery = graphql`
-    query($id: String!) {
-        markdownRemark(id: { eq: $id }) {
-            html
-            frontmatter {
-                slug
-                date(formatString: "YYYY년 M월 D일")
-                title
-                subtitle
-                tags
-            }
-        }
+  query ($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        slug
+        date(formatString: "YYYY년 M월 D일")
+        title
+        subtitle
+        tags
+      }
     }
+  }
 `;

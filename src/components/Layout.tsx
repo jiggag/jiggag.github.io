@@ -1,6 +1,4 @@
-import React, {
-  useEffect, useState, useCallback, ReactNode, useRef,
-} from 'react';
+import React, { useEffect, useState, useCallback, ReactNode, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Footer } from 'components/Footer';
 import { Header } from 'components/Header';
@@ -29,7 +27,7 @@ export const Layout = function ({ customHeader, children }: LayoutProps) {
   const [isMaximize, setIsMaximize] = useState(false);
 
   const toggleMaximize = useCallback(() => {
-    setIsMaximize(prev => {
+    setIsMaximize((prev) => {
       if (prev) {
         localStorage.removeItem('maximize');
       } else {

@@ -19,7 +19,11 @@ interface SeoProps {
 }
 
 export const Seo = function ({
-  description: descriptionProps = '', lang = 'ko', meta: metaProps = [], keywords = '', title,
+  description: descriptionProps = '',
+  lang = 'ko',
+  meta: metaProps = [],
+  keywords = '',
+  title,
 }: SeoProps) {
   const { site } = useStaticQuery<Site>(
     graphql`

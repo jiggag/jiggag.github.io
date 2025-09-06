@@ -7,10 +7,7 @@ const HTML = function (props) {
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         {props.headComponents}
 
         {/* <!-- Google tag (gtag.js) --> */}
@@ -22,23 +19,14 @@ const HTML = function (props) {
             window.gtag = function gtag(){ window.dataLayer.push(arguments);}
             gtag('js', new Date()); 
             gtag('config', 'G-MMX0XS2YR7', { send_page_view: false });
-            `
+            `,
           }}
         />
-        {/*<script*/}
-        {/*  async*/}
-        {/*  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4711551515762404"*/}
-        {/*  crossOrigin="anonymous"*/}
-        {/*/>*/}
         <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
-        <div
-          key="body"
-          id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
-        />
+        <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} />
         {props.postBodyComponents}
       </body>
     </html>

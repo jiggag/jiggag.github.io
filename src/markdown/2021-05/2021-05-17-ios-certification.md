@@ -1,12 +1,12 @@
 ---
 slug: /blog/ios-certification
 date: 2021-05-17
-layout : post
-published : true
-title : iOS 신뢰하는 인증서로 코드사이닝
-subtitle : 몰라서 알아두려고 했더니 더 모르게 되었다
-tags : [iOS, 키체인, 인증서, Certificates, Identifiers, Provisioning, Profile]
---- 
+layout: post
+published: true
+title: iOS 신뢰하는 인증서로 코드사이닝
+subtitle: 몰라서 알아두려고 했더니 더 모르게 되었다
+tags: [iOS, 키체인, 인증서, Certificates, Identifiers, Provisioning, Profile]
+---
 
 `키체인에 iOS Developer 인증서가 신뢰할 수 없다고 뜨는데 왜 그런거에요?`
 
@@ -15,9 +15,10 @@ tags : [iOS, 키체인, 인증서, Certificates, Identifiers, Provisioning, Prof
 
 `인증서를 생성하고 등록하고 다운 받고 키체인에 던졌었는데...`
 
-------
+---
 
 ## 나의 키체인에는
+
 인증서가 많이 있다.. 어떤게 진짠지 모르겠다. (정리하다가 앱 빌드가 안될까 아직 도전하지 않았다가 방금 했다!)
 
 우선 앱 배포를 위한 인증서 `Apple Distribution`가 하나 있다.
@@ -28,9 +29,10 @@ tags : [iOS, 키체인, 인증서, Certificates, Identifiers, Provisioning, Prof
 
 이렇게 각각 인증서가 뭔지도 모르는건 오히려 좋지 않으니 [참고: 애플 인증서 문서](https://help.apple.com/xcode/mac/current/#/dev97211aeac)를 확인해본다.
 
-------
+---
 
 ## 인증서 종류
+
 ```
 - Apple Development: 앱을 개발하는 동안 사용하는 인증서
 
@@ -42,12 +44,14 @@ tags : [iOS, 키체인, 인증서, Certificates, Identifiers, Provisioning, Prof
 
 - Developer ID Installer: Mac Installer Package(서명된 Mac 앱 포함)를 서명하고 배포하는데 사용하는 인증서
 ```
+
 인증서 종류가 많은데 나는 `Apple Development`랑 `Apple Distribution`만 사용하고 있다.
 `Developer ID Application` 이게 있기는 한데 왜 있는지.. 나는 Mac 앱을 개발한 적이 없는데 무언가 잘못하였네!
 
-------
+---
 
 ## 돌아보는 나의 인증서
+
 나는 그동안 애플 개발자 센터에서 `Membership`과 `Certificates, Identifiers & Profiles`만 사용했다.
 
 `Membership`에는 개발자 계정 1년마다 등록하는 그것에 관련한 내용으로 잘 안들어간다!
@@ -71,10 +75,12 @@ Bundle ID마다 각각 만들어서 던져줘야 하는 것 아닐까?
 
 `Automatically manage signing`을 체크해두었더니 `Provisioning Profile: Xcode Managed Profile`라고 뜨면서 `Identifiers`에 내가 등록한 앱이 아닌 `XC Wildcard`가 추가되었는데 아마 이것이 `Provisioning Profile: Xcode Managed Profile`가 되면서 `Provisioning Profile`을 추가 등록하지 않아도 되었던 것으로 보인다.
 
-------
+---
 
 ## 그래서 인증서를 신뢰하려면 어떻게 해야할까
+
 그래서 처음 질문 받았던 내용을 정리해본다.
+
 > 키체인에 iOS Developer 인증서가 신뢰할 수 없다고 뜨는데 왜 그런거에요?
 
 앱을 실행하려면 애플로부터 인증을 받은 `신뢰할 수 있는 앱`인지 `앱을 실행할 수 있는 권한`을 갖고 있는지를 확인한다.
@@ -88,7 +94,7 @@ Bundle ID마다 각각 만들어서 던져줘야 하는 것 아닐까?
 
 이 과정을 `코드사이닝`이라고 한다.
 
-------
+---
 
 그동안 `Automatically manage signing`를 체크하고 사용해서 프로비저닝이 하나 밖에 없어도 몰랐다.
 사실 이것도 이번에 알게된 내용이지만 invalid 떠있었다...

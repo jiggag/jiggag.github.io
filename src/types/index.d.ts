@@ -8,8 +8,8 @@ interface SiteMetadata {
 
 export interface Site {
   site: {
-    siteMetadata: SiteMetadata
-  }
+    siteMetadata: SiteMetadata;
+  };
 }
 
 interface Frontmatter {
@@ -31,9 +31,9 @@ interface Node<Keys extends keyof Frontmatter> {
 export interface AllMarkdownRemarkProps<Keys extends keyof Frontmatter> {
   allMarkdownRemark: {
     edges: Record<'node', Omit<Node<Keys>, 'html'>>[];
-  }
+  };
 }
 
 export interface MarkdownRemarkProps<Keys extends keyof Frontmatter> {
-  markdownRemark: Omit<Node<Keys>, 'id'>
+  markdownRemark: Omit<Node<Keys>, 'id'>;
 }

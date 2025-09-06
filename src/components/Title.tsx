@@ -10,10 +10,7 @@ interface TitleProps {
 
 export const Title = function ({ to = '', className, children }: TitleProps) {
   return (
-    <Link
-      to={to}
-      className={`title ${className}`}
-    >
+    <Link to={to} className={`title ${className}`}>
       {children}
     </Link>
   );

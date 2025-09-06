@@ -13,14 +13,23 @@ const IndexPage = function ({
     <Layout>
       <Seo title="Home" />
       <div className="home-container">
-        {edges.filter(({ node }) => node.frontmatter.published).map(({ node: { id, frontmatter: { title, slug, date } } }) => (
-          <Link to={slug} key={id}>
-            <div className="home-post-title">
-              {title}
-              <p>{date}</p>
-            </div>
-          </Link>
-        ))}
+        {edges
+          .filter(({ node }) => node.frontmatter.published)
+          .map(
+            ({
+              node: {
+                id,
+                frontmatter: { title, slug, date },
+              },
+            }) => (
+              <Link to={slug} key={id}>
+                <div className="home-post-title">
+                  {title}
+                  <p>{date}</p>
+                </div>
+              </Link>
+            ),
+          )}
       </div>
     </Layout>
   );
@@ -30,12 +39,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(
-      sort: [
-        { frontmatter: { date: DESC } },
-        { frontmatter: { title: DESC } },
-      ]
-    ) {
+    allMarkdownRemark(sort: [{ frontmatter: { date: DESC } }, { frontmatter: { title: DESC } }]) {
       edges {
         node {
           id
